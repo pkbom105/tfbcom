@@ -1,0 +1,3 @@
+cd 2_tcss/p01/my-app
+
+npm run dev
