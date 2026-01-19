@@ -6,11 +6,11 @@ npm run dev
 https://github.com/pkbom105/tfbcom.git
 github
 
-1. git add .
+git add .
 
-2. git commit -m "version 1.0"
+git commit -m "version 1.5"
 
-3. git push origin main
+git push origin main
 
 คำสั่ง,หน้าที่
 
