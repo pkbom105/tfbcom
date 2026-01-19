@@ -17,4 +17,3 @@ git push origin main
 git status,  เช็คดูว่ามีไฟล์ไหนบ้างที่เรายังไม่ได้อัปเดต
 git log,   ดูประวัติการ Commit ที่ผ่านมา
 git remote -v,   เช็คว่าโปรเจกต์นี้เชื่อมกับ GitHub URL ตัวไหนอยู่
-
