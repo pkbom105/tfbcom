@@ -6,7 +6,6 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-import { buttonVariants } from "@/components/ui/button";
 import { Info, Target, ShieldCheck, Palette, Banknote, Zap, Ruler } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -126,19 +125,25 @@ export default function CombinedGalleryPage() {
           </div>
         </div>
       </section>
-{/* Tabs Gallery Section */}
-<section id="gallery-section" className="pt-10 border-t border-slate-100">
+
+      {/* Tabs Gallery Section */}
+      <section id="gallery-section" className="pt-10 border-t border-slate-100">
         <h2 className="text-2xl font-bold mb-10 border-l-4 border-red-500 pl-4 text-slate-900">แคตตาล็อกเนื้อผ้า</h2>
         <Tabs defaultValue="tshirt" className="w-full">
           
-          {/* ปรับปรุง TabsList เป็น Grid 2 แถว แถวละ 5 ปุ่ม */}
+          {/* ปรับปรุง TabsList: ขยาย font +1 size */}
           <div className="flex justify-center mb-12">
-            <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-1.5 rounded-[2rem] h-auto w-full max-w-4xl border border-slate-200 shadow-inner gap-1">
+            <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-1.5 rounded-[2rem] h-auto w-full max-w-5xl border border-slate-200 shadow-inner gap-1">
               {tabItems.map((tab) => (
                 <TabsTrigger 
                   key={tab.value} 
                   value={tab.value} 
-                  className="rounded-xl text-xs md:text-sm px-2 py-3 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-sm transition-all font-semibold text-slate-500"
+                  className={cn(
+                    "rounded-xl transition-all font-bold py-3 px-2",
+                    // ขยายฟอนต์: มือถือเป็น text-sm (เดิม xs), Desktop เป็น text-base (เดิม sm)
+                    "text-sm md:text-base", 
+                    "data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-sm text-slate-800"
+                  )}
                 >
                   {tab.label}
                 </TabsTrigger>
@@ -163,9 +168,7 @@ export default function CombinedGalleryPage() {
 
       {/* Map Section */}
       <section id="map-section" className="pt-20 border-t border-slate-100 pb-20">
-        
         <div className="max-w-5xl mx-auto space-y-10 text-center">
-          
           <div className="space-y-4">
             <h3 className="font-bold text-4xl text-slate-900 tracking-tight">Toffy <span className="text-red-600">Boutique</span></h3>
             <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">Open Daily 09:00 - 20:00</p>

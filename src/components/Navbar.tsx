@@ -105,6 +105,7 @@ export function Navbar() {
                 <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/fabric")}>เนื้อผ้า</MenubarItem>
                 <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/colour")}>สีผ้า</MenubarItem>
                 <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/sizespec")}>ไซต์เสื้อ</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/ready-to-wear")}>สินค้าสำเร็จรูป</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
           </Menubar>
@@ -123,16 +124,18 @@ export function Navbar() {
             </MenubarMenu>
           </Menubar>
 
-          {/* ตัวอย่างสินค้า */}
+                    {/* ตัวอย่างสินค้า */}
           <Menubar className="border-none bg-transparent shadow-none p-0 h-auto">
             <MenubarMenu>
               <MenubarTrigger className={menubarTriggerStyles}>
                 ตัวอย่างสินค้า <ChevronsDown className="w-4 h-4" />
               </MenubarTrigger>
               <MenubarContent className="bg-white shadow-xl rounded-lg border border-slate-100 min-w-[200px] p-1 font-kanit font-bold">
-                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/faq")}>สินค้าสำเร็จรูป</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/past-collection")}>ผลงานที่ผ่านมา</MenubarItem>
                 <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/work-sample")}>ตัวอย่างงานปัก/พิมพ์</MenubarItem>
                 <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/customer-review")}>รีวิวจากลูกค้า</MenubarItem>
+                {/* เพิ่มเมนูใหม่ตรงนี้ */}
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/our-customer")}>ลูกค้าที่ไว้ใจเรา</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
           </Menubar>
@@ -203,6 +206,7 @@ export function Navbar() {
                       <button onClick={() => { router.push("/pages/fabric"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">เนื้อผ้า</button>
                       <button onClick={() => { router.push("/pages/colour"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">สีผ้า</button>
                       <button onClick={() => { router.push("/pages/sizespec"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">ไซต์เสื้อ</button>
+                      <button onClick={() => { router.push("/pages/ready-to-wear"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">สินค้าสำเร็จรูป</button>
                     </AccordionContent>
                   </AccordionItem>
 
@@ -228,17 +232,19 @@ export function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
-                  <AccordionItem value="faq" className="border-b">
+                  <AccordionItem value="samples" className="border-b">
                     <AccordionTrigger className="text-lg px-4 py-4 hover:no-underline font-bold hover:bg-slate-50">
-                      <div className="flex items-center gap-3 font-bold"><HelpCircle className="w-5 h-5 text-slate-500" /> ตอบคำถาม</div>
+                      <div className="flex items-center gap-3 font-bold"><Palette className="w-5 h-5 text-slate-500" /> ตัวอย่างสินค้า</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/50 font-bold">
-                      <button onClick={() => { router.push("/pages/faq"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">คำถามที่พบบ่อย</button>
-                      <button onClick={() => { router.push("/pages/quotation"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">การประเมินราคา</button>
-                      <button onClick={() => { router.push("/pages/payment"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold flex items-center gap-2"><CreditCard className="w-4 h-4 opacity-70" /> การชำระเงิน</button>
+                      <button onClick={() => { router.push("/pages/past-collection"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">ผลงานที่ผ่านมา</button>
+                      <button onClick={() => { router.push("/pages/work-sample"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">งานปัก/พิมพ์</button>
+                      <button onClick={() => { router.push("/pages/customer-review"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">รีวิวจากลูกค้า</button>
+                      {/* เพิ่มปุ่มใหม่ตรงนี้ */}
+                      <button onClick={() => { router.push("/pages/our-customer"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">ลูกค้าที่ไว้ใจเรา</button>
                     </AccordionContent>
                   </AccordionItem>
-                </Accordion>
+                  </Accordion>
 
                 <Link href="/pages/contact" onClick={() => setOpen(false)} className="flex items-center gap-3 text-lg font-bold p-4 hover:bg-red-50 hover:text-red-600 transition-all border-b group">
                   <PhoneCall className="w-5 h-5 text-slate-500 group-hover:text-red-500" /> ติดต่อเรา
