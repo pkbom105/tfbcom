@@ -77,10 +77,14 @@ export function Navbar() {
     "min-w-[130px] bg-transparent border-none shadow-none flex justify-center items-center gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
   );
 
-  // สไตล์เมนูย่อย: เปลี่ยนสีแดงเมื่อ Hover, ไม่มี Background
-  const subMenuItemStyles = "text-lg py-3 px-4 relative rounded-md cursor-pointer transition-colors duration-300 hover:text-red-600 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-kanit font-normal";
+  /**
+   * สไตล์เมนูย่อย v2.04: 
+   * - โชว์เส้นใต้เฉพาะตอน Hover (hover:underline)
+   * - ไม่ใส่ Animation effect ใดๆ
+   */
+  const subMenuItemStyles = "text-lg py-3 px-4 relative cursor-pointer transition-colors duration-300 hover:text-red-600 hover:underline underline-offset-[6px] decoration-2 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-kanit font-normal";
 
-  // คลาสสำหรับถมช่องว่าง (Invisible Bridge) เพื่อป้องกันเมาส์หลุด
+  // Invisible Bridge เพื่อเชื่อมช่องว่างเมนู
   const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[200px] p-1 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
 
   return (
@@ -100,7 +104,7 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Menu (980px+) */}
         <div className="hidden min-[980px]:flex items-center gap-1">
           <NavigationMenu>
             <NavigationMenuList className="flex gap-1 border-none">
@@ -115,7 +119,6 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Wrapper ที่คุม Mouseleave ให้กว้างขึ้นเล็กน้อยเพื่อความเสถียร */}
           <div className="flex items-center gap-1 h-full" onMouseLeave={() => setActiveMenu(null)}>
             
             {/* สั่งผลิต */}
@@ -206,37 +209,37 @@ export function Navbar() {
                 <Menu size={32} strokeWidth={2} className="text-slate-800" />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] xs:w-[300px] font-kanit bg-white p-0 border-l shadow-2xl">
-              <SheetHeader className="p-4 text-left border-b bg-slate-50/50">
+            <SheetContent side="right" className="w-[280px] xs:w-[300px] font-kanit bg-white p-0 border-l shadow-2xl overflow-y-auto">
+              <SheetHeader className="p-4 text-left border-b bg-slate-50/50 sticky top-0 bg-white z-10">
                 <SheetTitle className="text-xl font-bold flex items-center gap-2">
                   <div className="w-1.5 h-6 bg-red-500 rounded-full" />
                   เมนูหลัก
                 </SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col h-full overflow-y-auto pb-20">
+              <div className="flex flex-col h-full pb-20">
                 <div className="flex items-center justify-between p-4 bg-slate-50 border-b">
                   <div className="flex items-center gap-2 text-slate-600 font-bold text-sm">
                     <Languages size={18} /> ภาษา / Language
                   </div>
                   <div className="flex bg-white rounded-full border p-1 shadow-sm">
-                    <button onClick={() => setLang("TH")} className={cn("px-3 py-1 rounded-full text-xs font-bold transition-all", lang === "TH" ? "bg-red-500 text-white" : "text-slate-500")}>TH</button>
-                    <button onClick={() => setLang("EN")} className={cn("px-3 py-1 rounded-full text-xs font-bold transition-all", lang === "EN" ? "bg-red-500 text-white" : "text-slate-500")}>EN</button>
+                    <button onClick={() => setLang("TH")} className={cn("px-3 py-1 rounded-full text-xs font-bold", lang === "TH" ? "bg-red-500 text-white" : "text-slate-500")}>TH</button>
+                    <button onClick={() => setLang("EN")} className={cn("px-3 py-1 rounded-full text-xs font-bold", lang === "EN" ? "bg-red-500 text-white" : "text-slate-500")}>EN</button>
                   </div>
                 </div>
                 <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-3 text-lg font-bold p-4 hover:bg-red-50 hover:text-red-600 border-b group transition-all">
                   <Home className="w-5 h-5 text-slate-500 group-hover:text-red-500" /> หน้าแรก
                 </Link>
-                <Accordion type="single" collapsible className="w-full font-bold">
+                <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="order" className="border-b">
                     <AccordionTrigger className="text-lg px-4 py-4 hover:no-underline font-bold hover:bg-slate-50">
                       <div className="flex items-center gap-3"><Shirt className="w-5 h-5 text-slate-500" /> สั่งผลิต</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/50">
-                      <button onClick={() => { router.push("/pages/order"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500">ขั้นตอนการผลิต</button>
-                      <button onClick={() => { router.push("/pages/fabric"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500">เนื้อผ้า</button>
-                      <button onClick={() => { router.push("/pages/colour"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500">สีผ้า</button>
-                      <button onClick={() => { router.push("/pages/sizespec"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500">ไซต์เสื้อ</button>
-                      <button onClick={() => { router.push("/pages/ready-to-wear"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500">สินค้าสำเร็จรูป</button>
+                      <button onClick={() => { router.push("/pages/order"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">ขั้นตอนการผลิต</button>
+                      <button onClick={() => { router.push("/pages/fabric"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">เนื้อผ้า</button>
+                      <button onClick={() => { router.push("/pages/colour"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">สีผ้า</button>
+                      <button onClick={() => { router.push("/pages/sizespec"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">ไซต์เสื้อ</button>
+                      <button onClick={() => { router.push("/pages/ready-to-wear"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">สินค้าสำเร็จรูป</button>
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

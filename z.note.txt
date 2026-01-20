@@ -21,4 +21,5 @@ git log
 git remote -v
 ,   เช็คว่าโปรเจกต์นี้เชื่อมกับ GitHub URL ตัวไหนอยู่
 
-remark v1.9 full code
+
+Full Code: Navbar v2.04
