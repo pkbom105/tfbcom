@@ -117,9 +117,12 @@ export function Navbar() {
                 แบบเสื้อ <ChevronsDown className="w-4 h-4" />
               </MenubarTrigger>
               <MenubarContent className="bg-white shadow-xl rounded-lg border border-slate-100 min-w-[180px] p-1 font-kanit font-bold">
-                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/faq")}>คอกลม</MenubarItem>
-                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/quotation")}>โปโล</MenubarItem>
-                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/payment")}>เสื้อเชิ้ต</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/collection/t-shirt")}>คอกลม</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/collection/polo")}>โปโล</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/collection/shirt")}>เสื้อเชิ้ต</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/collection/mechanic")}>เสื้อช็อป</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/apron")}>ผ้ากันเปื้อน</MenubarItem>
+                <MenubarItem className="text-lg py-3 hover:bg-red-500 hover:text-white rounded-md cursor-pointer" onClick={() => router.push("/pages/pants")}>กางเกง</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
           </Menubar>
@@ -215,9 +218,12 @@ export function Navbar() {
                       <div className="flex items-center gap-3 font-bold"><Layers className="w-5 h-5 text-slate-500" /> แบบเสื้อ</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/50 font-bold">
-                      <button onClick={() => { router.push("/pages/faq"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">คอกลม</button>
-                      <button onClick={() => { router.push("/pages/quotation"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">โปโล</button>
-                      <button onClick={() => { router.push("/pages/payment"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">เสื้อเชิ้ต</button>
+                      <button onClick={() => { router.push("/pages/collection/t-shirt"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">คอกลม</button>
+                      <button onClick={() => { router.push("/pages/collection/polo"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">โปโล</button>
+                      <button onClick={() => { router.push("/pages/collection/shirt"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">เสื้อเชิ้ต</button>
+                      <button onClick={() => { router.push("/pages/collection/mechanic"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">คอกลม</button>
+                      <button onClick={() => { router.push("/pages/collection/apron"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">โปโล</button>
+                      <button onClick={() => { router.push("/pages/collection/pants"); setOpen(false); }} className="text-base py-3 px-10 text-left border-b border-white hover:text-red-500 font-bold">เสื้อเชิ้ต</button>                    
                     </AccordionContent>
                   </AccordionItem>
 

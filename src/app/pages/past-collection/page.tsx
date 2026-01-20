@@ -5,45 +5,34 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { 
-  Shirt, 
-  Layers, 
-  Palette, 
-  ChevronRight, 
-  CreditCard 
-} from "lucide-react";
 
 export default function PastCollectionPage() {
-  // ข้อมูลหมวดหมู่ 9 หมวดหมู่ตามเงื่อนไขที่กำหนด
   const tabItems = [
-    { value: "tshirt", label: "เสื้อคอกลม", title: "ตัวอย่างงานผลิตเสื้อคอกลม", count: 9, path: "tshirt", prefix: "TS" },
-    { value: "polo", label: "เสื้อโปโล", title: "ตัวอย่างงานผลิตเสื้อโปโล", count: 12, path: "polo", prefix: "PL" },
-    { value: "shirt", label: "เสื้อเชิ้ต", title: "ตัวอย่างงานผลิตเสื้อเชิ้ต", count: 6, path: "shirt", prefix: "SH" },
-    { value: "shop", label: "เสื้อช็อป", title: "ตัวอย่างงานผลิตเสื้อช็อป", count: 6, path: "shop", prefix: "SP" },
-    { value: "jacket", label: "แจ็กเก็ต", title: "ตัวอย่างงานผลิตแจ็กเก็ต", count: 6, path: "jacket", prefix: "JK" },
-    { value: "chef", label: "เสื้อเชฟ", title: "ตัวอย่างงานผลิตเสื้อเชฟ", count: 6, path: "chef", prefix: "CF" },
-    { value: "apron", label: "ผ้ากันเปื้อน", title: "ตัวอย่างงานผลิตผ้ากันเปื้อน", count: 6, path: "apron", prefix: "AP" },
-    { value: "pants", label: "กระโปรง/กางเกง", title: "ตัวอย่างงานผลิตกระโปรงและกางเกง", count: 6, path: "pants", prefix: "PT" },
-    { value: "others", label: "อื่นๆ", title: "ผลงานผลิตอื่นๆ", count: 6, path: "others", prefix: "OT" },
+    { value: "shirt", label: "เสื้อเชิ้ต", title: "ตัวอย่างงานผลิตเสื้อเชิ้ต", count: 9, folder: "shirt-sample", startNumber: 1, ext: "png" },
+    { value: "polo", label: "เสื้อโปโล", title: "ตัวอย่างงานผลิตเสื้อโปโล", count: 12, folder: "polo-sample", startNumber: 104, ext: "png" },
+    { value: "tshirt", label: "เสื้อคอกลม", title: "ตัวอย่างงานผลิตเสื้อคอกลม", count: 12, folder: "tshirt-sample", startNumber: 1, ext: "png" },
+    { value: "shop", label: "เสื้อช็อป", title: "ตัวอย่างงานผลิตเสื้อช็อป", count: 6, folder: "shop-sample", startNumber: 1, ext: "png" },
+    { value: "jacket", label: "แจ็กเก็ต", title: "ตัวอย่างงานผลิตแจ็กเก็ต", count: 6, folder: "jacket-sample", startNumber: 1, ext: "png" },
+    { value: "chef", label: "เสื้อเชฟ", title: "ตัวอย่างงานผลิตเสื้อเชฟ", count: 6, folder: "chef-sample", startNumber: 1, ext: "png" },
+    { value: "apron", label: "ผ้ากันเปื้อน", title: "ตัวอย่างงานผลิตผ้ากันเปื้อน", count: 6, folder: "apron-sample", startNumber: 1, ext: "png" },
+    { value: "pants", label: "กระโปรง/กางเกง", title: "ตัวอย่างงานผลิตกระโปรงและกางเกง", count: 6, folder: "pants-sample", startNumber: 1, ext: "png" },
+    { value: "others", label: "อื่นๆ", title: "ผลงานผลิตอื่นๆ", count: 6, folder: "others-sample", startNumber: 1, ext: "png" },
   ];
 
   return (
     <main className="min-h-screen bg-white font-kanit pb-20">
-      {/* --- Intro Section (Rewrite) --- */}
+      {/* --- Intro Section --- */}
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-            Sample Product <span className="text-red-500">|</span> ตัวอย่างงานผลิตเสื้อโปโล ยูนิฟอร์มพนักงาน
+            Sample Product <span className="text-red-500">|</span> ตัวอย่างงานผลิตคุณภาพ
           </h1>
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
+          <div className="space-y-4 text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
             <p className="font-semibold text-slate-800 text-xl">
-              ตัวอย่างงานผลิตเสื้อโปโล ยูนิฟอร์ม และชุดฟอร์มพนักงานคุณภาพสูง จากความไว้วางใจของลูกค้าทั่วประเทศ
+              ยูนิฟอร์มคุณภาพสูง จากความไว้วางใจของลูกค้าทั่วประเทศประสบการณ์กว่า 35 ปี
             </p>
             <p>
-              ลูกค้าที่เราได้รับความไว้วางใจให้ร่วมงานด้วย มีทั้งองค์กรระดับเล็กที่ผลิตสินค้าเพื่อจำหน่ายเอง เป็นของพรีเมี่ยมแจกลูกค้า เป็นเสื้อพนักงานในองค์กร ไปจนถึงองค์กรใหญ่ ผลิตสินค้าแบรนด์ขาย ทั้งในและนอกประเทศ 
-            </p>
-            <p>
-              ซึ่งเรามีประสบการณ์มากว่า 35 ปี ในการผลิตเสื้อโปโล ยูนิฟอร์มพนักงาน เสื้อฟอร์มพนักงาน เสื้อโปโลพนักงาน ชุดฟอร์มพนักงานโรงงาน เสื้อโปโลยูนิฟอร์มให้ตรงตามความต้องการอย่างมีประสิทธิภาพ ต้องขอขอบคุณลูกค้าผู้มีอุปการะคุณที่ไว้วางใจให้ <span className="text-red-600 font-bold">Toffy Boutique</span> ดูแลงานผลิต
+              ขอบคุณลูกค้าผู้มีอุปการะคุณที่ไว้วางใจให้ <span className="text-red-600 font-bold">Toffy Boutique</span> ดูแลงานผลิต
             </p>
           </div>
         </div>
@@ -55,17 +44,16 @@ export default function PastCollectionPage() {
           แคตตาล็อกผลงานผลิต
         </h2>
         
-        <Tabs defaultValue="polo" className="w-full">
-          {/* TabsList: Grid 2 แถว แถวแรก 5 ปุ่ม แถวสอง 4 ปุ่ม + ขยาย Font */}
+        <Tabs defaultValue="shirt" className="w-full">
           <div className="flex justify-center mb-16">
-            <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-2 rounded-[2rem] h-auto w-full max-w-5xl border border-slate-200 shadow-inner gap-2">
+            <TabsList className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 bg-slate-100/80 p-2 rounded-2xl md:rounded-[2rem] h-auto w-full max-w-6xl border border-slate-200 shadow-inner gap-1">
               {tabItems.map((tab) => (
                 <TabsTrigger 
                   key={tab.value} 
                   value={tab.value} 
                   className={cn(
-                    "rounded-xl transition-all font-bold text-slate-800 py-3.5",
-                    "text-sm md:text-base", // ขยาย Font +1 Size
+                    "rounded-xl transition-all font-bold text-slate-800 py-3",
+                    "text-xs md:text-sm lg:text-base px-1", 
                     "data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
                   )}
                 >
@@ -89,31 +77,36 @@ export default function PastCollectionPage() {
                     <div className="w-24 h-1 bg-red-500 mx-auto rounded-full"></div>
                   </div>
 
-                  {/* Grid รูปภาพ 1:1 แถวละ 3 รูป */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {Array.from({ length: tab.count }).map((_, index) => (
-                      <div 
-                        key={index} 
-                        className="group relative aspect-square overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 shadow-sm transition-all hover:shadow-2xl hover:-translate-y-2"
-                      >
-                        <Image
-                          src={`/picture/past-collection/${tab.path}/${tab.prefix}-${index + 1}.jpg`}
-                          alt={`${tab.label} ${index + 1}`}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 33vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-                        {/* Overlay เมื่อ Hover */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                           <div className="text-white">
-                             <p className="font-bold text-lg tracking-wide mb-1">
-                               รหัสงาน: {tab.prefix}-{String(index + 1).padStart(3, '0')}
-                             </p>
-                             <p className="text-sm text-slate-200">หมวดหมู่: {tab.label}</p>
-                           </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                    {Array.from({ length: tab.count }).map((_, index) => {
+                      const imageNumber = tab.startNumber + index;
+                      const imagePath = `/02catalog/${tab.folder}/${imageNumber}.${tab.ext}`;
+                      
+                      return (
+                        <div key={index} className="flex flex-col gap-3">
+                          <div 
+                            className={cn(
+                              "relative aspect-square overflow-hidden rounded-2xl bg-slate-50 border border-slate-100 transition-all duration-500",
+                              "hover:shadow-[0_20px_50px_rgba(239,68,68,0.15)] hover:border-red-200 hover:-translate-y-2"
+                            )}
+                          >
+                            <Image
+                              src={imagePath}
+                              alt={`${tab.label} ${imageNumber}`}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-700 hover:scale-105"
+                              priority={index < 6}
+                            />
+                          </div>
+                          {/* รหัสงานย้ายมาไว้ด้านล่างรูป แทนการทับบนรูป */}
+                          <div className="px-2">
+                             <p className="font-bold text-slate-800 text-sm">รหัสงาน: {imageNumber}</p>
+                             <p className="text-xs text-slate-400">หมวดหมู่: {tab.label}</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </motion.div>
               </TabsContent>
