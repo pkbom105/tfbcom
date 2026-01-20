@@ -20,3 +20,5 @@ git log
 ,   ดูประวัติการ Commit ที่ผ่านมา
 git remote -v
 ,   เช็คว่าโปรเจกต์นี้เชื่อมกับ GitHub URL ตัวไหนอยู่
+
+remark v1.9 full code
