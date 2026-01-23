@@ -22,6 +22,6 @@ git remote -v
 ,   เช็คว่าโปรเจกต์นี้เชื่อมกับ GitHub URL ตัวไหนอยู่
 
 
-Full Code: Navbar v2.04
+Full Code: Navbar v2.22
 
 https://freshdigital.co.th/
