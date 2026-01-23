@@ -11,11 +11,11 @@ export default function PastCollectionPage() {
     { value: "shirt", label: "เสื้อเชิ้ต", title: "ตัวอย่างงานผลิตเสื้อเชิ้ต", count: 9, folder: "shirt-sample", startNumber: 1, ext: "png" },
     { value: "polo", label: "เสื้อโปโล", title: "ตัวอย่างงานผลิตเสื้อโปโล", count: 12, folder: "polo-sample", startNumber: 104, ext: "png" },
     { value: "tshirt", label: "เสื้อคอกลม", title: "ตัวอย่างงานผลิตเสื้อคอกลม", count: 12, folder: "tshirt-sample", startNumber: 1, ext: "png" },
-    { value: "shop", label: "เสื้อช็อป", title: "ตัวอย่างงานผลิตเสื้อช็อป", count: 6, folder: "shop-sample", startNumber: 1, ext: "png" },
+    { value: "mac", label: "เสื้อช็อป", title: "ตัวอย่างงานผลิตเสื้อช็อป", count: 10, folder: "mac-sample", startNumber: 42, ext: "png" },
     { value: "jacket", label: "แจ็กเก็ต", title: "ตัวอย่างงานผลิตแจ็กเก็ต", count: 6, folder: "jacket-sample", startNumber: 1, ext: "png" },
     { value: "chef", label: "เสื้อเชฟ", title: "ตัวอย่างงานผลิตเสื้อเชฟ", count: 6, folder: "chef-sample", startNumber: 1, ext: "png" },
-    { value: "apron", label: "ผ้ากันเปื้อน", title: "ตัวอย่างงานผลิตผ้ากันเปื้อน", count: 6, folder: "apron-sample", startNumber: 1, ext: "png" },
-    { value: "pants", label: "กระโปรง/กางเกง", title: "ตัวอย่างงานผลิตกระโปรงและกางเกง", count: 6, folder: "pants-sample", startNumber: 1, ext: "png" },
+    { value: "apron", label: "ผ้ากันเปื้อน", title: "ตัวอย่างงานผลิตผ้ากันเปื้อน", count: 5, folder: "arpon", startNumber: 6, ext: "png" },
+    { value: "pants", label: "กระโปรง/กางเกง", title: "ตัวอย่างงานผลิตกระโปรงและกางเกง", count: 5, folder: "pants", startNumber: 1, ext: "png" },
     { value: "others", label: "อื่นๆ", title: "ผลงานผลิตอื่นๆ", count: 6, folder: "others-sample", startNumber: 1, ext: "png" },
   ];
 

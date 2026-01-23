@@ -8,7 +8,7 @@ github
 
 git add .
 
-git commit -m "version 1.8"
+git commit -m "version 2.33"
 
 git push origin main
 
@@ -23,3 +23,5 @@ git remote -v
 
 
 Full Code: Navbar v2.04
+
+https://freshdigital.co.th/
