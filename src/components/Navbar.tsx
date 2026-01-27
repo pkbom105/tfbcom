@@ -136,6 +136,7 @@ export function Navbar() {
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/past-collection")}>ผลงานที่ผ่านมา</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/work-sample")}>ตัวอย่างงานปัก/พิมพ์</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/customer-review")}>รีวิวจากลูกค้า</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/ready-to-wear")}>สินค้าสำเร็จรูป</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
 
@@ -251,6 +252,7 @@ export function Navbar() {
                         { label: "ผลงานที่ผ่านมา", path: "/pages/past-collection" },
                         { label: "ตัวอย่างงานปัก/พิมพ์", path: "/pages/work-sample" },
                         { label: "รีวิวจากลูกค้า", path: "/pages/customer-review" },
+                        { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },
                       ].map((item) => (
                         <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
