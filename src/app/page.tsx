@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className="text-2xl text-center mt-4" >
             หน้าเเรก  
-            v 2.45       
+            v 2.46       
         </div>
     
     )  ;
