@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const PROCESS_STEPS = [
-  { id: 1, title: "เย็บ", img: "/picture/process1.jpg" },
-  { id: 2, title: "ตัด", img: "/picture/process2.jpg" },
-  { id: 3, title: "แพทเทิร์น", img: "/picture/process3.jpg" },
-  { id: 4, title: "แพคกิ้ง", img: "/picture/process4.jpg" },
+  { id: 1, title: "เย็บ", img: "/hp/1.png" },
+  { id: 2, title: "ตัด", img: "/hp/2.png" },
+  { id: 3, title: "แพทเทิร์น", img: "/hp/3.png" },
+  { id: 4, title: "แพคกิ้ง", img: "/hp/4.png" },
 ];
 
 export default function Process() {

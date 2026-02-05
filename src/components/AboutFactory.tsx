@@ -21,15 +21,15 @@ export default function AboutFactory() {
               <p className="text-lg leading-relaxed text-slate-700 font-medium">{ABOUT_TEXT.history}</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative aspect-video rounded-xl overflow-hidden shadow-2xl">
-              <Image src="/picture/factory-main.jpg" alt="Factory Environment" fill className="object-cover" />
+              <Image src="/hp/s1.png"  alt="Factory Environment" fill className="object-cover" />
             </motion.div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
              <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="relative aspect-video rounded-xl overflow-hidden shadow-2xl order-2 lg:order-1">
-              <Image src="/picture/factory-sewing.jpg" alt="Sewing Line" fill className="object-cover" />
+              <Image src="/hp/s2.png"  alt="Sewing Line" fill className="object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="order-1 lg:order-2">
-              <h3 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">{ABOUT_TEXT.intention}</h3>
+              <h5 className="text-3xl md:text-2xl font-black text-slate-900 leading-tight">{ABOUT_TEXT.intention}</h5>
             </motion.div>
           </div>
         </div>
@@ -42,11 +42,11 @@ export default function AboutFactory() {
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-6">
               <h4 className="text-2xl font-black text-slate-900">บริษัท ทอฟฟี่ บูติก จำกัด</h4>
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
-                <Image src="/picture/office-building.jpg" alt="Office" fill className="object-cover" />
+                <Image src="/hp/s5.png"  alt="Office" fill className="object-cover" />
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg mt-0 lg:mt-12">
-              <Image src="/picture/fabric-samples.jpg" alt="Fabric Samples" fill className="object-cover" />
+              <Image src="/hp/s6.png"  alt="Fabric Samples" fill className="object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex flex-col justify-center space-y-12">
               <div className="space-y-4">
@@ -88,14 +88,42 @@ export default function AboutFactory() {
                 </div>
               </div>
             </div>
-            <div className="relative h-[600px]">
-              <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="absolute top-0 right-0 w-4/5 aspect-video rounded-lg overflow-hidden shadow-2xl border-8 border-white">
-                <Image src="/picture/video-thumb-1.jpg" alt="Video 1" fill className="object-cover" />
-              </motion.div>
-              <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute bottom-0 left-0 w-4/5 aspect-video rounded-lg overflow-hidden shadow-2xl border-8 border-white z-10">
-                <Image src="/picture/video-thumb-2.jpg" alt="Video 2" fill className="object-cover" />
-              </motion.div>
-            </div>
+            <div className="relative h-[500px] w-full flex items-center justify-center mr-20">
+                {/* Video 1 (ชิ้นบน - สัดส่วน 1:1 ขยับไปขวาบน) */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 50, y: -20 }} 
+                  whileInView={{ opacity: 1, x: 0, y: 0 }} 
+                  viewport={{ once: true }} 
+                  className="absolute top-0 right-0 w-[50%] aspect-square rounded-lg overflow-hidden shadow-2xl border-8 border-white"
+                >
+                  <video 
+                    src="/hp/vdo2.mp4" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="w-full h-full object-cover" 
+                  />
+                </motion.div>
+              
+                {/* Video 2 (ชิ้นล่าง - สัดส่วน 1:1 ขยับไปซ้ายล่าง) */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -50, y: 20 }} 
+                  whileInView={{ opacity: 1, x: 0, y: 0 }} 
+                  viewport={{ once: true }} 
+                  transition={{ delay: 0.3 }} 
+                  className="absolute bottom-0 left-0 w-[55%] aspect-square rounded-lg overflow-hidden shadow-2xl border-8 border-white z-10"
+                >
+                  <video 
+                    src="/hp/vdo1.mp4" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    className="w-full h-full object-cover" 
+                  />
+                </motion.div>
+              </div>
           </div>
         </div>
       </section>
