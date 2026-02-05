@@ -23,7 +23,7 @@
 # misc
 .DS_Store
 *.pem
-z.note.txt
+z.note2.txt
 
 # debug
 npm-debug.log*
