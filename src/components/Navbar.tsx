@@ -147,7 +147,7 @@ export function Navbar() {
               <MenubarContent sideOffset={8} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/faq")}>คำถามที่พบบ่อย</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/quotation")}>การประเมินราคา</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/payment")}>การจ่ายเงิน</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/payment")}> การชำระเงิน</MenubarItem>
               </MenubarContent>
             </MenubarMenu>
 
@@ -270,7 +270,7 @@ export function Navbar() {
                       {[
                         { label: "คำถามที่พบบ่อย", path: "/pages/faq" },
                         { label: "การประเมินราคา", path: "/pages/quotation" },
-                        { label: "การจ่ายเงิน", path: "/pages/payment" },
+                        { label: " การชำระเงิน", path: "/pages/payment" },
                       ].map((item) => (
                         <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}

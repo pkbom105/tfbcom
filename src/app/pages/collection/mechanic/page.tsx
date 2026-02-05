@@ -63,20 +63,25 @@ export default function ReadyToWearV232() {
     { value: "color2", label: "ชุดสีที่ 2", start: 33, end: 41, path: "/01collection/engineer-a" },
     { value: "color3", label: "ชุดสีที่ 3", start: 52, end: 60, path: "/01collection/engineer-a" },
     { value: "color4", label: "ชุดสีที่ 4", start: 70, end: 78, path: "/01collection/engineer-a" },
-    { value: "color5", label: "ชุดสีที่ 5", start: 61, end: 69, path: "/01collection/engineer-a" },   
+    { value: "color5", label: "ชุดสีที่ 5", start: 61, end: 69, path: "/01collection/engineer-a" },
+    { value: "color6", label: "แขนยาว", start: 79, end: 84, path: "/01collection/engineer-b" },
   ];
 
-  // ชุดสีสำหรับแขนยาว (B)
+  // เสื้อช็อป แขนสั้น (B)
   const subTabsB = [
-    { value: "color1", label: "ชุดสีที่ 1", start: 79, end: 84, path: "/01collection/engineer-b" },
-    { value: "color2", label: "ชุดสีที่ 2", start: 25, end: 30, path: "/01collection/engineer-b" },
-    { value: "color3", label: "ชุดสีที่ 3", start: 13, end: 18, path: "/01collection/engineer-b" },
-    { value: "color4", label: "ชุดสีที่ 4", start: 21, end: 30, path: "/01collection/engineer-b" },
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 12, path: "/01collection/engineer-c" },
+    { value: "color2", label: "ชุดสีที่ 2", start: 13, end: 24, path: "/01collection/engineer-c" },
+    { value: "color3", label: "ชุดสีที่ 3", start: 25, end: 36, path: "/01collection/engineer-c" },
+    { value: "color4", label: "ชุดสีที่ 4", start: 37, end: 48, path: "/01collection/engineer-c" },
+    { value: "color5", label: "ชุดสีที่ 5", start: 49, end: 60, path: "/01collection/engineer-c" },
+    { value: "color6", label: "ชุดสีที่ 6", start: 61, end: 72, path: "/01collection/engineer-c" },
+    { value: "color7", label: "ชุดสีที่ 7", start: 73, end: 84, path: "/01collection/engineer-c" },
+    { value: "color8", label: "ชุดสีที่ 8", start: 85, end: 96, path: "/01collection/engineer-c" },
   ];
 
   const tabItems = [
-    { value: "eng-a", label: "เสื้อช็อป แขนสั้น", title: "เสื้อช็อป แขนสั้น (Short Sleeve)", prefix: "ESA", subColorTabs: subTabsA },
-    { value: "eng-b", label: "เสื้อช็อป แขนยาว", title: "เสื้อช็อป แขนยาว (Long Sleeve)", prefix: "ELA", subColorTabs: subTabsB },   
+    { value: "eng-a", label: "เสื้อช็อป แขนสั้น (A)", title: "เสื้อช็อป แขนสั้น (A)", prefix: "ESA", subColorTabs: subTabsA },
+    { value: "eng-b", label: "เสื้อช็อป แขนสั้น (ฺB)", title: "เสื้อช็อป แขนสั้น (B)", prefix: "ELA", subColorTabs: subTabsB },   
   ];
 
   return (

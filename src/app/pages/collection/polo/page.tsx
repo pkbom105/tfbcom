@@ -59,13 +59,65 @@ export default function ReadyToWearV229() {
     { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 6, path: basePath },
     { value: "color2", label: "ชุดสีที่ 2", start: 7, end: 12, path: basePath },
     { value: "color3", label: "ชุดสีที่ 3", start: 13, end: 18, path: basePath },
-    { value: "color4", label: "ชุดสีที่ 4", start: 21, end: 30, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 19, end: 24, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 25, end: 30, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 31, end: 36, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 37, end: 42, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 43, end: 48, path: basePath },
+  ];
+  const createSubTabs2 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 49, end: 62, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 63, end: 76, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 77, end: 90, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 91, end: 104, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 105, end: 117, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 118, end: 131, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 132, end: 145, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 146, end: 159, path: basePath },
+  ];
+  const createSubTabs3 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 12, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 13, end: 24, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 25, end: 36, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 37, end: 48, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 49, end: 60, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 61, end: 72, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 73, end: 84, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 85, end: 96, path: basePath },
+  ];
+  const createSubTabs4 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 8, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 9, end: 16, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 17, end: 24, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 25, end: 32, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 33, end: 39, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 40, end: 47, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 48, end: 55, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 56, end: 63, path: basePath },
+  ];
+  const createSubTabs5 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 11, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 12, end: 22, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 23, end: 32, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 33, end: 43, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 44, end: 54, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 55, end: 65, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 66, end: 76, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 77, end: 87, path: basePath },
+  ];
+  const createSubTabs6 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 12, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 13, end: 24, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 25, end: 36, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 37, end: 48, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 49, end: 60, path: basePath },
+    { value: "color6", label: "ชุดสีที่ 6", start: 61, end: 72, path: basePath },
+    { value: "color7", label: "ชุดสีที่ 7", start: 73, end: 84, path: basePath },
+    { value: "color8", label: "ชุดสีที่ 8", start: 85, end: 96, path: basePath },
   ];
   const createSubTabs7 = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 19, end: 24, path: basePath },
-    { value: "color2", label: "ชุดสีที่ 2", start: 25, end: 30, path: basePath },
-    { value: "color3", label: "ชุดสีที่ 3", start: 13, end: 18, path: basePath },
-    { value: "color4", label: "ชุดสีที่ 4", start: 21, end: 30, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 25, end: 30, path: basePath },   
   ];
   const createSubTabs8 = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 31, end: 39, path: basePath },
@@ -81,18 +133,25 @@ export default function ReadyToWearV229() {
     { value: "color5", label: "ชุดสีที่ 5", start: 115, end: 126, path: basePath },
     { value: "color6", label: "ชุดสีที่ 6", start: 127, end: 138, path: basePath },   
   ];
+  const createSubTabs10 = (basePath: string) => [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 13, path: basePath },
+    { value: "color2", label: "ชุดสีที่ 2", start: 14, end: 26, path: basePath },
+    { value: "color3", label: "ชุดสีที่ 3", start: 27, end: 39, path: basePath },
+    { value: "color4", label: "ชุดสีที่ 4", start: 40, end: 52, path: basePath },
+    { value: "color5", label: "ชุดสีที่ 5", start: 53, end: 64, path: basePath },   
+  ];
 
   const tabItems = [
     { value: "polo-a", label: "โปโล A", title: "Polo A Series", prefix: "PA", subColorTabs: createSubTabs("/01collection/polo-a/color") },
-    { value: "polo-b", label: "โปโล B", title: "Polo B Series", prefix: "PB", subColorTabs: createSubTabs("/01collection/polo-b/color") },
-    { value: "polo-c", label: "โปโล C", title: "Polo C Series", prefix: "PC", subColorTabs: createSubTabs("/01collection/polo-c/color") },
-    { value: "polo-d", label: "โปโล D", title: "Polo D Series", prefix: "PA", subColorTabs: createSubTabs("/01collection/polo-d/color") },
-    { value: "polo-e", label: "โปโล E", title: "Polo E Series", prefix: "PB", subColorTabs: createSubTabs("/01collection/polo-e/color") },
-    { value: "polo-f", label: "โปโล F", title: "Polo F Series", prefix: "PC", subColorTabs: createSubTabs("/01collection/polo-f/color") },
+    { value: "polo-b", label: "โปโล B", title: "Polo B Series", prefix: "PB", subColorTabs: createSubTabs2("/01collection/polo-b") },
+    { value: "polo-c", label: "โปโล C", title: "Polo C Series", prefix: "PC", subColorTabs: createSubTabs3("/01collection/polo-c") },
+    { value: "polo-d", label: "โปโล D", title: "Polo D Series", prefix: "PA", subColorTabs: createSubTabs4("/01collection/polo-d") },
+    { value: "polo-e", label: "โปโล E", title: "Polo E Series", prefix: "PB", subColorTabs: createSubTabs5("/01collection/polo-e") },
+    { value: "polo-f", label: "โปโล F", title: "Polo F Series", prefix: "PC", subColorTabs: createSubTabs6("/01collection/polo-f") },
     { value: "polo-aa", label: "โปโล AA", title: "Polo AA Series", prefix: "PAA", subColorTabs: createSubTabs7("/01collection/polo-aa/color") },
     { value: "polo-collar", label: "ปกโปโล ", title: "Polo Collar", prefix: "PB", subColorTabs: createSubTabs8("/01collection/polo-collar/color") },
     { value: "polo-arm", label: "แขนโปโล ", title: "Polo Arm", prefix: "PC", subColorTabs: createSubTabs9("/01collection/polo-arm/color") },
-    { value: "coverall", label: "ชุดหมี", title: "Industrial Coverall", prefix: "CV", subColorTabs: createSubTabs("/01collection/coverall/color") },
+    { value: "plak", label: "สาปโปโล", title: "Planket", prefix: "CV", subColorTabs: createSubTabs10("/01collection/plak") },
   ];
 
   return (
