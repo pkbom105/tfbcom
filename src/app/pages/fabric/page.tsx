@@ -50,6 +50,7 @@ const FabricGallery = ({ title, count, path, prefix }: { title: string; count: n
 );
 
 export default function CombinedGalleryPage() {
+  // ข้อมูลปัจจัยการเลือก
   const selectionFactors = [
     { icon: <Target size={20} />, text: "ลักษณะการใช้งาน: ออฟฟิศ หรือ ลุยหน้างานกลางแจ้ง?" },
     { icon: <ShieldCheck size={20} />, text: "ความทนทาน: ทนต่อการซักบ่อย ไม่หด ไม่ย้วย ดูแลรักษาง่าย" },
@@ -58,23 +59,30 @@ export default function CombinedGalleryPage() {
     { icon: <Zap size={20} />, text: "ฟังก์ชันเสริม: การระบายอากาศ การยืดหยุ่น หรือคุณสมบัติพิเศษ" },
   ];
 
-  const suitabilities = [
-    { title: "Office & Sales", desc: "เน้นความสวยงามและระบายอากาศได้ดี เพื่อความคล่องตัว", color: "border-blue-500 bg-blue-50" },
-    { title: "Factory & Outdoor", desc: "เน้นผ้า Polyester สูง เพื่อความทนทานต่อการใช้งานหนัก", color: "border-orange-500 bg-orange-50" },
-    { title: "Field Work", desc: "เน้นนวัตกรรมการระบายความร้อน ลดความเหนื่อยล้าพนักงาน", color: "border-red-500 bg-red-50" }
-  ];
-
-  const tabItems = [
-    { value: "tshirt", label: "เสื้อคอกลม", title: "T-Shirt Color", path: "/fabric/f1-tshirt", prefix: "c", count: 15 },
-    { value: "polo", label: "เสื้อโปโล", title: "Polo Fabric", path: "/fabric/f2-polo", prefix: "d", count: 12 },
-    { value: "shirt", label: "เสื้อเชิ้ต", title: "Shirt Fabric", path: "/fabric/f3-shirt", prefix: "e", count: 12 },
-    { value: "shop", label: "เสื้อช็อป", title: "เนื้อผ้าเสื้อช็อป", path: "/fabric/f4", prefix: "f", count: 12 },
-    { value: "jacket", label: "แจ็คเก็ต", title: "เนื้อผ้าแจ็คเก็ต", path: "/fabric/f5", prefix: "g", count: 12 },
-    { value: "tech", label: "เสื้อช่าง", title: "เนื้อผ้าเสื้อช่าง", path: "/fabric/f6", prefix: "h", count: 12 },
-    { value: "apron", label: "ผ้ากันเปื้อน", title: "เนื้อผ้าผ้ากันเปื้อน", path: "/fabric/f7", prefix: "i", count: 12 },
-    { value: "sweater", label: "เสื้อกันหนาว", title: "เนื้อผ้าเสื้อกันหนาว", path: "/fabric/f8", prefix: "j", count: 12 },
-    { value: "bottoms", label: "กางเกง/กระโปรง", title: "เนื้อผ้ากางเกง/กระโปรง", path: "/fabric/f9", prefix: "k", count: 12 },
-    { value: "coverall", label: "ชุดหมี", title: "เนื้อผ้าชุดหมี", path: "/fabric/f10", prefix: "l", count: 12 },
+  // ข้อมูลกลุ่ม Tab (2 Tab หลัก)
+  const tabGroups = [
+    {
+      value: "knit",
+      label: "ผ้า Knit (ยืดหยุ่น/ใส่สบาย)",
+      items: [
+        { title: "T-Shirt Color", path: "/fabric/f1-tshirt", prefix: "c", count: 15 },
+        { title: "Polo Fabric", path: "/fabric/f2-polo", prefix: "d", count: 12 },
+        { title: "Jacket Fabric", path: "/fabric/f5", prefix: "g", count: 12 },
+        { title: "Sweater Fabric", path: "/fabric/f8", prefix: "j", count: 12 },
+      ]
+    },
+    {
+      value: "woven",
+      label: "ผ้า Woven (คงรูป/ทนทาน)",
+      items: [
+        { title: "Shirt Fabric", path: "/fabric/f3-shirt", prefix: "e", count: 12 },
+        { title: "เนื้อผ้าเสื้อช็อป", path: "/fabric/f4", prefix: "f", count: 12 },
+        { title: "เนื้อผ้าเสื้อช่าง", path: "/fabric/f6", prefix: "h", count: 12 },
+        { title: "เนื้อผ้ากางเกง/กระโปรง", path: "/fabric/f9", prefix: "k", count: 12 },
+        { title: "เนื้อผ้าผ้ากันเปื้อน", path: "/fabric/f7", prefix: "i", count: 12 },
+        { title: "เนื้อผ้าชุดหมี", path: "/fabric/f10", prefix: "l", count: 12 },
+      ]
+    }
   ];
 
   return (
@@ -86,97 +94,132 @@ export default function CombinedGalleryPage() {
 
       {/* Intro Section */}
       <section className="py-12 px-8 bg-white border border-slate-100 rounded-[2rem] shadow-sm overflow-hidden">
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">เลือกเนื้อผ้าที่ใช่... <span className="text-red-600 underline decoration-red-100 underline-offset-8">หัวใจสำคัญของยูนิฟอร์ม</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
+              เลือกเนื้อผ้าที่ใช่... <span className="text-red-600 underline decoration-red-100 underline-offset-8">หัวใจสำคัญของยูนิฟอร์ม</span>
+            </h2>
+            <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+              เปรียบเทียบความชัดเจนของการเลือกใช้ผ้าตามฟังก์ชัน 
+              ฝั่ง <strong className="text-blue-600">Knit (ผ้าถัก)</strong> เพื่อความยืดหยุ่นใส่สบาย 
+              และฝั่ง <strong className="text-orange-600">Woven (ผ้าทอ)</strong> เพื่อความทนทานและรักษารูปทรง
+            </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <h3 className="flex items-center gap-2 text-xl font-bold text-slate-800"><Info className="text-red-600" />ปัจจัยหลักในการเลือก</h3>
-              <div className="space-y-3">
-                {selectionFactors.map((f, i) => (
-                  <div key={i} className="flex items-start gap-4 p-4 bg-slate-50/50 rounded-2xl border border-slate-100 hover:bg-white transition-colors">
-                    <div className="text-red-600 mt-1">{f.icon}</div>
-                    <span className="text-slate-700 font-medium text-sm leading-relaxed">{f.text}</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "เสื้อคอกลม & โปโล", type: "Knit", desc: "เน้นการสวมใส่ง่าย ผ้านุ่ม ยืดหยุ่น และระบายอากาศได้ดีเยี่ยม", icon: <Zap className="text-blue-500" /> },
+              { title: "แจ็คเก็ต & สเวตเตอร์", type: "Knit (Heavy)", desc: "เน้นความอบอุ่น เนื้อผ้ามีความหนาแต่ยังคงความยืดหยุ่นในการเคลื่อนไหว", icon: <ShieldCheck className="text-indigo-500" /> },
+              { title: "เสื้อเชิ้ต", type: "Woven", desc: "เน้นความ 'คม' ของทรงเสื้อ ไม่ยืดหยุ่น รักษารูปทรงได้ดี ดูเนี้ยบเป็นทางการ", icon: <Palette className="text-purple-500" /> },
+              { title: "เสื้อช็อป & ชุดช่าง", type: "Woven (Twill)", desc: "เน้นความทนทานต่อการฉีกขาดและการเสียดสี ป้องกันสิ่งสกปรกได้ดี", icon: <ShieldCheck className="text-orange-500" /> },
+              { title: "กางเกง & กระโปรง", type: "Woven", desc: "เน้นทรงที่เป๊ะ ทนต่อการเสียดสี รักษารูปทรงขณะสวมใส่ได้ดีเยี่ยม", icon: <Ruler className="text-green-500" /> },
+              { title: "ผ้ากันเปื้อน", type: "Woven", desc: "ทนทานต่อแรงดึงและการซักล้างบ่อยครั้ง ป้องกันคราบซึมได้ดีกว่า", icon: <Info className="text-slate-500" /> },
+            ].map((item, idx) => (
+              <Card key={idx} className="border-none bg-slate-50/50 hover:bg-white hover:shadow-md transition-all duration-300">
+                <CardContent className="p-6 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-white rounded-lg shadow-sm">{item.icon}</div>
+                    <h4 className="font-bold text-slate-900">{item.title}</h4>
                   </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h3 className="flex items-center gap-2 text-xl font-bold text-slate-800"><Ruler className="text-red-600" />การเลือกผ้าตามหน้างาน</h3>
-              <div className="space-y-4">
-                {suitabilities.map((s, i) => (
-                  <Card key={i} className={cn("border-none border-l-4 shadow-sm transition-all hover:translate-x-1", s.color)}>
-                    <CardContent className="p-5">
-                      <h4 className="font-bold text-slate-900">{s.title}</h4>
-                      <p className="text-slate-600 text-sm mt-1">{s.desc}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
+                  <div className={cn(
+                    "inline-block px-2 py-1 text-[10px] font-bold rounded uppercase tracking-wider",
+                    item.type === "Knit" ? "bg-blue-50 text-blue-600" : "bg-orange-50 text-orange-600"
+                  )}>
+                    Category: {item.type}
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
-          <div className="bg-slate-900 rounded-[1.5rem] p-10 text-center text-white shadow-xl">
-            <p className="text-lg font-medium opacity-90 leading-relaxed max-w-2xl mx-auto">"การผลิตยูนิฟอร์มที่ดี คือการเลือก <strong className="text-red-500">เนื้อผ้าที่ใช่</strong> ให้เหมาะกับหน้าที่"</p>
-            <button className="mt-8 bg-red-600 hover:bg-red-700 px-10 py-4 rounded-full font-bold transition-all shadow-lg active:scale-95 text-sm uppercase tracking-wider">เปรียบเทียบ CVC / TC / Polyester</button>
+          {/* Table Summary */}
+          <div className="overflow-hidden border border-slate-100 rounded-2xl shadow-sm">
+            <table className="w-full text-left border-collapse bg-white">
+              <thead className="bg-slate-900 text-white text-sm uppercase">
+                <tr>
+                  <th className="p-4">รายการ</th>
+                  <th className="p-4">ประเภทผ้า</th>
+                  <th className="p-4">เหตุผลหลัก</th>
+                </tr>
+              </thead>
+              <tbody className="text-slate-900">
+                {[
+                  ["คอกลม/โปโล/แจ็คเก็ต", "Knit (ผ้าถัก) ", "นุ่ม ยืดหยุ่น ระบายอากาศ"],
+                  ["เชิ้ต/ชุดทำงาน", "Woven (ผ้าทอ)", "ทรงเป๊ะ ดูเป็นทางการ"],
+                  ["ช็อป/ช่าง/ชุดหมี", "Woven (ผ้าทอ)", "ทนทานต่อการใช้งานหนัก"],
+                  ["กางเกง/กันเปื้อน", "Woven (ผ้าทอ)", "รักษารูปทรง ทนการเสียดสี"],
+                ].map((row, i) => (
+                  <tr key={i} className="border-t border-slate-50 hover:bg-slate-50/50">
+                    <td className="p-4 font-bold">{row[0]}</td>
+                    <td className="p-4"><span className="px-2 py-1 bg-slate-100 rounded text-xs font-bold text-slate-900">{row[1]}</span></td>
+                    <td className="p-4 text-sm text-slate-800">{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      {/* Tabs Gallery Section */}
+      {/* Tabs Gallery Section - เหลือ 2 Tab หลัก */}
       <section id="gallery-section" className="pt-10 border-t border-slate-100">
-        <h2 className="text-2xl font-bold mb-10 border-l-4 border-red-500 pl-4 text-slate-900">แคตตาล็อกเนื้อผ้า</h2>
-        <Tabs defaultValue="tshirt" className="w-full">
-          
-          {/* ปรับปรุง TabsList: ขยาย font +1 size */}
+        <h2 className="text-2xl font-bold mb-10 border-l-4 border-red-500 pl-4 text-slate-900 uppercase tracking-widest">แคตตาล็อกเนื้อผ้าแยกตามประเภท</h2>
+        
+        <Tabs defaultValue="knit" className="w-full">
           <div className="flex justify-center mb-12">
-            <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-1.5 rounded-[2rem] h-auto w-full max-w-5xl border border-slate-200 shadow-inner gap-1">
-              {tabItems.map((tab) => (
+            <TabsList className="grid grid-cols-2 bg-slate-100/80 p-1.5 rounded-[2.5rem] h-auto w-full max-w-2xl border border-slate-200 shadow-inner gap-2">
+              {tabGroups.map((group) => (
                 <TabsTrigger 
-                  key={tab.value} 
-                  value={tab.value} 
+                  key={group.value} 
+                  value={group.value} 
                   className={cn(
-                    "rounded-xl transition-all font-bold py-3 px-2",
-                    // ขยายฟอนต์: มือถือเป็น text-sm (เดิม xs), Desktop เป็น text-base (เดิม sm)
-                    "text-sm md:text-base", 
-                    "data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-sm text-slate-800"
+                    "rounded-[2rem] transition-all font-bold py-4 px-6 text-base md:text-lg", 
+                    "data-[state=active]:text-white data-[state=active]:bg-slate-900 data-[state=active]:shadow-lg text-slate-500"
                   )}
                 >
-                  {tab.label}
+                  {group.label}
                 </TabsTrigger>
               ))}
             </TabsList>
           </div>
 
           <AnimatePresence mode="wait">
-            {tabItems.map((tab) => (
-              <TabsContent key={tab.value} value={tab.value} className="mt-0 focus-visible:outline-none">
-                <FabricGallery 
-                  title={tab.title} 
-                  count={tab.count} 
-                  path={tab.path} 
-                  prefix={tab.prefix} 
-                />
+            {tabGroups.map((group) => (
+              <TabsContent key={group.value} value={group.value} className="mt-0 focus-visible:outline-none">
+                <motion.div 
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  className="space-y-20"
+                >
+                  {group.items.map((item, idx) => (
+                    <div key={item.title}>
+                      <FabricGallery 
+                        title={item.title} 
+                        count={item.count} 
+                        path={item.path} 
+                        prefix={item.prefix} 
+                      />
+                      {idx !== group.items.length - 1 && (
+                        <hr className="border-slate-100 max-w-7xl mx-auto opacity-50" />
+                      )}
+                    </div>
+                  ))}
+                </motion.div>
               </TabsContent>
             ))}
           </AnimatePresence>
         </Tabs>
       </section>
 
-      {/* Map Section */}
-      <section id="map-section" className="pt-20 border-t border-slate-100 pb-20">
-        <div className="max-w-5xl mx-auto space-y-10 text-center">
-          <div className="space-y-4">
-            <h3 className="font-bold text-4xl text-slate-900 tracking-tight">Toffy <span className="text-red-600">Boutique</span></h3>
-            <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">Open Daily 09:00 - 20:00</p>
-            <Link href="#top1" className="inline-flex items-center text-red-500 hover:text-red-700 font-bold mt-4 p-4 hover:bg-red-50 rounded-2xl transition-all border border-transparent hover:border-red-100 shadow-sm">
-              ↑ Back to Top
-            </Link>
-          </div>
-        </div>
+      {/* Footer Section */}
+      <section className="pt-20 border-t border-slate-100 pb-20 text-center space-y-6">
+        <h3 className="font-bold text-4xl text-slate-900">Toffy <span className="text-red-600">Boutique</span></h3>
+        <p className="text-slate-500 font-medium tracking-widest text-sm uppercase">ผู้เชี่ยวชาญด้านเนื้อผ้าสำหรับยูนิฟอร์มทุกประเภท</p>
+        <Link href="#top1" className="inline-flex items-center text-red-500 hover:text-red-700 font-bold p-4 hover:bg-red-50 rounded-2xl transition-all border border-transparent hover:border-red-100">
+          ↑ กลับไปด้านบน
+        </Link>
       </section>
     </div>
   );
