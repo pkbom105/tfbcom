@@ -68,22 +68,22 @@ export default function AboutFactory() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="space-y-16">
               <div className="space-y-6">
-                <h2 className="text-6xl md:text-7xl font-black text-slate-900 leading-[0.9] tracking-tighter">Wardrobe Wear <br /> Digital Series</h2>
-                <div className="inline-block px-6 py-2 rounded-full border border-slate-300 text-sm font-bold uppercase text-slate-500">Video Production</div>
+                <h2 className="text-6xl md:text-7xl font-black text-slate-900 leading-[1.1] tracking-tighter">ด้วยประสบการณ์ <br /> และ ความเป็นมืออาชีพ</h2>
+                <div className="inline-block px-6 py-2 rounded-full border border-slate-300 text-sm font-bold uppercase text-slate-500"></div>
               </div>
               <div className="space-y-12">
                 <div className="flex gap-8 items-start">
-                  <span className="text-4xl font-black text-slate-900">01</span>
+                  <span className="text-4xl font-black text-slate-900"></span>
                   <div className="space-y-2">
-                    <h6 className="text-2xl font-bold">Background</h6>
-                    <p className="text-slate-500 font-medium max-w-sm">Give a brief overview of your project here.</p>
+                    <h6 className="text-2xl font-bold">ประสบการณ์ของทีมงานมากกว่า  35 ปี</h6>
+                    <p className="text-slate-800 text-xl max-w-sm">ทำให้เรามีระบบตรวจสอบสินค้าที่มีคุณภาพ เพื่อส่งต่อให้กับลูกค้า</p>
                   </div>
                 </div>
                 <div className="flex gap-8 items-start">
-                  <span className="text-4xl font-black text-slate-900">02</span>
+                  <span className="text-4xl font-black text-slate-900"></span>
                   <div className="space-y-2">
-                    <h6 className="text-2xl font-bold">Solution</h6>
-                    <p className="text-slate-500 font-medium max-w-sm">Talk about your idea here.</p>
+                    <h6 className="text-2xl font-bold">ความเป็นมืออาชีพ</h6>
+                    <p className="text-slate-800 text-xl  max-w-sm">ด้วยปณิธานของเรา คุณภาพสินค้าเป็นสิ่งสำคัญที่สุด ในการส่งมอบสินค้าให้กับลูกค้าของเรา</p>
                   </div>
                 </div>
               </div>

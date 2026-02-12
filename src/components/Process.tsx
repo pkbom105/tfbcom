@@ -39,7 +39,7 @@ export default function Process() {
                 <path d="M0 20H110M110 20L95 5M110 20L95 35" stroke="black" strokeWidth="2"/>
               </svg>
             </div>
-            <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-10 py-5 text-xl font-black uppercase hover:bg-slate-900 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100">
+            <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-10 py-5 text-xl font-black uppercase hover:bg-red-600 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100">
               Contact us
             </button>
           </div>

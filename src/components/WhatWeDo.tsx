@@ -163,7 +163,7 @@ export default function WhatWeDo() {
               >
                 {/* Tooltip on Hover */}
                 <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 pointer-events-none z-20">
-                   <span className="bg-slate-900 text-white text-[10px] md:text-xs px-3 py-1.5 rounded shadow-xl font-bold uppercase tracking-wider">
+                   <span className="bg-red-600 text-white text-[10px] md:text-xs px-3 py-1.5 rounded shadow-xl font-bold uppercase tracking-wider">
                      {item.name}
                    </span>
                    <div className="w-2 h-2 bg-slate-900 rotate-45 mx-auto -mt-1" />
@@ -193,7 +193,7 @@ export default function WhatWeDo() {
                 transition={{ delay: 0.8 + index * 0.05 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group flex items-center gap-4 border border-slate-300 rounded-full px-8 py-4 text-sm md:text-lg font-bold text-slate-800 bg-white hover:bg-slate-900 hover:text-white transition-all duration-500 shadow-sm"
+                className="group flex items-center gap-4 border border-slate-300 rounded-full px-8 py-4 text-sm md:text-lg font-bold text-slate-800 bg-white hover:bg-red-600 hover:text-white transition-all duration-500 shadow-sm"
               >
                 {item.name}
                 <MoveRight size={18} className="text-slate-400 group-hover:text-white transition-colors" />
