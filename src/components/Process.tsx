@@ -16,21 +16,30 @@ export default function Process() {
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        {/* Header Section - ปรับเป็น items-start เพื่อให้ปุ่มและหัวข้ออยู่ด้านบนสุด */}
+        <div className="flex flex-col md:flex-row md:items-start justify-between mb-16 gap-8">
           <div className="space-y-4">
-            <h2 className="text-6xl md:text-8xl font-black text-slate-900 leading-[0.9] tracking-tighter uppercase">
-              We Make <br /> every kind <br /> of uniform
+          <h5 className="ml-5 text-xl md:text-xl font-black text-slate-700 leading-[0.9] tracking-tighter">
+              Toffy <br /> 
+              Boutique 
+            </h5>            
+          </div>
+          <div>
+          <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-[0.9] tracking-tighter uppercase">
+              We Make <br /> 
+              every kind <br /> 
+              of uniform
             </h2>
           </div>
           
-          <div className="flex items-center gap-12">
+          {/* ส่วนปุ่มขยับขึ้นไปด้านบน */}
+          <div className="flex items-center gap-12 lg:mt-4"> {/* เพิ่ม mt เล็กน้อยเพื่อให้ระดับพอดีกับบรรทัดแรกของหัวข้อ */}
             <div className="hidden md:block">
               <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 20H110M110 20L95 5M110 20L95 35" stroke="black" strokeWidth="2"/>
               </svg>
             </div>
-            <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-10 py-5 text-xl font-black uppercase hover:bg-slate-900 hover:text-white transition-all duration-500">
+            <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-10 py-5 text-xl font-black uppercase hover:bg-slate-900 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100">
               Contact us
             </button>
           </div>

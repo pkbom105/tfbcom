@@ -6,8 +6,7 @@ import AboutFactory from "@/components/AboutFactory"; // Import ตัวให�
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-        <div className="text-2xl text-center ">Vesion  2.50</div>
+    <main className="min-h-screen">        
       {/* ส่วน Slide (aa1) */}
       <HeroSlider />
 

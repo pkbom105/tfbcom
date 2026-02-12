@@ -29,7 +29,7 @@ export default function AboutFactory() {
               <Image src="/hp/s2.png"  alt="Sewing Line" fill className="object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="order-1 lg:order-2">
-              <h5 className="text-3xl md:text-2xl font-black text-slate-900 leading-tight">{ABOUT_TEXT.intention}</h5>
+              <h3 className="text-lg leading-relaxed text-slate-700 font-medium">{ABOUT_TEXT.intention}</h3>
             </motion.div>
           </div>
         </div>

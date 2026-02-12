@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// นำเข้า Swiper
+// นำเข้า Swiper Components และ Modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
-// นำเข้า Swiper Styles (ขีดแดงจะหายไปหลังจากสร้างไฟล์ .d.ts)
+// นำเข้า Swiper Styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -17,32 +17,34 @@ const SLIDES = [
   {
     id: 1,
     bg: "/picture/bg1.png",
-    fg: "/picture/tfb2.png",
-    title: "PREMIUM POLO",
-    sub: "Comfortable and Stylish design for professional look.",
-    accent: "text-red-500",
-    btnHover: "hover:bg-red-600",
-    fgSize: "max-w-[350px] md:max-w-[500px] lg:max-w-[650px]" 
+    fgLeft: "/hp/fg66.png",
+    fgRight: "/hp/fg2.png",
+    fgSizeLeft: "max-w-[1000px]", // ขยายขนาดให้เต็มที่
+    fgSizeRight: "max-w-[1000px]"
   },
   {
     id: 2,
     bg: "/picture/bg2.png",
-    fg: "/picture/tfb3.png",
-    title: "WORKWEAR ELITE",
-    sub: "Durable fabrics engineered for every heavy-duty profession.",
-    accent: "text-blue-500",
-    btnHover: "hover:bg-blue-600",
-    fgSize: "max-w-[300px] md:max-w-[450px] lg:max-w-[550px]" 
+    fgLeft: "/hp/fg77.png",
+    fgRight: "/hp/fg3.png",
+    fgSizeLeft: "max-w-[1000px]",
+    fgSizeRight: "max-w-[1000px]"
   },
   {
     id: 3,
     bg: "/picture/bg3.png",
-    fg: "/picture/tfb4.png",
-    title: "CUSTOM UNIFORM",
-    sub: "Identity through quality. We build uniforms that build teams.",
-    accent: "text-emerald-500",
-    btnHover: "hover:bg-emerald-600",
-    fgSize: "max-w-[400px] md:max-w-[600px] lg:max-w-[700px]"
+    fgLeft: "/hp/fg8.png",
+    fgRight: "/hp/fg4.png",
+    fgSizeLeft: "max-w-[1000px]",
+    fgSizeRight: "max-w-[1000px]"
+  },
+  {
+    id: 4,
+    bg: "/picture/bg4.png",
+    fgLeft: "/hp/fg9.png",
+    fgRight: "/hp/fg5.png",
+    fgSizeLeft: "max-w-[1000px]",
+    fgSizeRight: "max-w-[1000px]"
   }
 ];
 
@@ -72,63 +74,69 @@ export default function HeroSlider() {
             {({ isActive }) => (
               <div className="relative w-full h-full flex items-center">
                 
-                {/* --- 1. Background Layer (Overlay 10%) --- */}
+                {/* --- 1. Background Layer --- */}
                 <div className="absolute inset-0 z-0">
-                  <motion.div
-                    initial={{ scale: 1.2, opacity: 0 }}
-                    animate={isActive ? { scale: 1, opacity: 1 } : { scale: 1.4, opacity: 0 }}
-                    transition={{ duration: 4, ease: "easeOut" }}
-                    className="relative w-full h-full"
-                  >
-                    <Image
-                      src={slide.bg}
-                      alt="Background"
-                      fill
-                      priority
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/10" />
-                  </motion.div>
+                  <Image
+                    src={slide.bg}
+                    alt="Background"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/5" />
                 </div>
 
-                <div className="relative z-20 container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
+                {/* --- 2. Content Grid (Gap-0 เพื่อให้ชิดกัน) --- */}
+                <div className="relative z-20 w-full h-full grid grid-cols-1 lg:grid-cols-10 items-center gap-0">
                   
-                  {/* --- 2. Left Content --- */}
+                  {/* --- Left Picture (30%) - ดันรูปไปทางขวา (Right) --- */}
                   <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={isActive ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
-                    transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-                    className="text-white space-y-6 order-2 lg:order-1"
-                    style={{ filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.5))" }}
+                    initial={{ x: -80, opacity: 0 }}
+                    animate={isActive ? { 
+                      x: 0, 
+                      opacity: 1,
+                      y: [0, -15, 0] 
+                    } : { x: -80, opacity: 0 }}
+                    transition={{ 
+                      x: { delay: 0.5, duration: 1.2 },
+                      opacity: { delay: 0.5, duration: 1 },
+                      y: { duration: 4, repeat: Infinity, ease: "easeInOut" } 
+                    }}
+                    className="relative w-full h-full flex lg:justify-end justify-center lg:col-span-4 overflow-visible"
                   >
-                    <span className={`inline-block px-4 py-1 border border-current ${slide.accent} text-[10px] font-black tracking-[0.3em] uppercase bg-black/40 backdrop-blur-sm`}>
-                      New Collection
-                    </span>
-                    <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-tight uppercase tracking-tighter">
-                      {slide.title}
-                    </h2>
-                    <p className="text-lg text-gray-100 max-w-md font-medium leading-relaxed">
-                      {slide.sub}
-                    </p>
-                    <button className={`bg-white text-black px-10 py-4 font-black text-sm uppercase shadow-2xl transition-all duration-300 ${slide.btnHover} hover:text-white transform hover:scale-105 active:scale-95`}>
-                      Shop Now
-                    </button>
+                    <div className={`relative w-full h-full ${slide.fgSizeLeft}`}>
+                      <Image
+                        src={slide.fgLeft}
+                        alt="Product Left"
+                        fill
+                        className="object-contain drop-shadow-2xl object-right" 
+                      />
+                    </div>
                   </motion.div>
 
-                  {/* --- 3. Right Content (FG) --- */}
+                  {/* --- Right Picture (70%) - ดันรูปไปทางซ้าย (Left) --- */}
                   <motion.div
-                    initial={{ x: 100, opacity: 0, scale: 0.9 }} 
-                    animate={isActive ? { x: 0, opacity: 1, scale: 1 } : { x: 100, opacity: 0, scale: 0.9 }}
-                    transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative w-full h-full flex items-center justify-center order-1 lg:order-2"
+                    initial={{ x: 80, opacity: 0, scale: 0.95 }} 
+                    animate={isActive ? { 
+                      x: 0, 
+                      opacity: 1, 
+                      scale: 1,
+                      y: [0, 15, 0] 
+                    } : { x: 80, opacity: 0, scale: 0.95 }}
+                    transition={{ 
+                      x: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
+                      scale: { duration: 1.5 },
+                      opacity: { duration: 1.5 },
+                      y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }
+                    }}
+                    className="relative w-full h-full flex lg:justify-start justify-center lg:col-span-6"
                   >
-                    <div className={`relative w-full aspect-square flex items-center justify-center ${slide.fgSize}`}>
+                    <div className={`relative w-full h-full flex items-center lg:justify-start justify-center ${slide.fgSizeRight}`}>
                         <Image
-                          src={slide.fg}
-                          alt="Product"
+                          src={slide.fgRight}
+                          alt="Product Right"
                           fill
-                          className="object-contain drop-shadow-[0_35px_60px_rgba(0,0,0,0.4)]"
-                          sizes="(max-width: 1024px) 100vw, 50vw"
+                          className="object-contain drop-shadow-[0_35px_60px_rgba(0,0,0,0.3)] object-left" 
                         />
                     </div>
                   </motion.div>
@@ -137,9 +145,10 @@ export default function HeroSlider() {
               </div>
             )}
           </SwiperSlide>
-        ))}
+        ))}   
         
-        <div className="custom-pagination absolute bottom-12 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-3" />
+        {/* Custom Pagination Dots */}
+        <div className="custom-pagination absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-3" />
       </Swiper>
 
       <style jsx global>{`
