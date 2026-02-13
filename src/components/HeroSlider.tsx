@@ -19,32 +19,32 @@ const SLIDES = [
     bg: "/picture/bg1.png",
     fgLeft: "/hp/fg66.png",
     fgRight: "/hp/fg2.png",
-    fgSizeLeft: "max-w-[1000px]", // ขยายขนาดให้เต็มที่
-    fgSizeRight: "max-w-[1000px]"
+    fgSizeLeft: "max-w-[900px]", // ขยายขนาดให้เต็มที่
+    fgSizeRight: "max-w-[800px]"
   },
   {
     id: 2,
     bg: "/picture/bg2.png",
     fgLeft: "/hp/fg77.png",
     fgRight: "/hp/fg3.png",
-    fgSizeLeft: "max-w-[1000px]",
-    fgSizeRight: "max-w-[1000px]"
+    fgSizeLeft: "max-w-[900px]",
+    fgSizeRight: "max-w-[800px]"
   },
   {
     id: 3,
     bg: "/picture/bg3.png",
     fgLeft: "/hp/fg8.png",
     fgRight: "/hp/fg4.png",
-    fgSizeLeft: "max-w-[1000px]",
-    fgSizeRight: "max-w-[1000px]"
+    fgSizeLeft: "max-w-[900px]",
+    fgSizeRight: "max-w-[800px]"
   },
   {
     id: 4,
     bg: "/picture/bg4.png",
     fgLeft: "/hp/fg9.png",
     fgRight: "/hp/fg5.png",
-    fgSizeLeft: "max-w-[1000px]",
-    fgSizeRight: "max-w-[1000px]"
+    fgSizeLeft: "max-w-[900px]",
+    fgSizeRight: "max-w-[800px]"
   }
 ];
 
@@ -58,7 +58,7 @@ export default function HeroSlider() {
   if (!mounted) return <div className="h-screen w-full bg-slate-900" />;
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-white">
+    <section className="relative w-full  h-screen overflow-hidden bg-white">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -70,7 +70,7 @@ export default function HeroSlider() {
         className="w-full h-full"
       >
         {SLIDES.map((slide) => (
-          <SwiperSlide key={slide.id} className="relative w-full h-full">
+          <SwiperSlide key={slide.id} className="relative max-w-[100vw] mx-auto h-full">
             {({ isActive }) => (
               <div className="relative w-full h-full flex items-center">
                 

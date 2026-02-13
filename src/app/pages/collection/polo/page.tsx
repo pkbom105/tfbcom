@@ -4,10 +4,10 @@ import React from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Palette, Maximize2 } from "lucide-react";
+import { Sparkles, Maximize2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// --- ส่วนที่ 1: Gallery Component (ดึงรูปตามช่วงตัวเลขที่กำหนด) ---
+// --- ส่วนที่ 1: Gallery Component (แสดงรูปภาพพร้อม Hover Ring เอฟเฟกต์) ---
 const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix: string; start: number; end: number }) => {
   const images = [];
   for (let i = start; i <= end; i++) {
@@ -24,7 +24,10 @@ const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix:
       {images.map((num) => {
         const fileName = `${num}.png`; 
         return (
-          <div key={num} className="group relative aspect-square overflow-hidden rounded-[2.5rem] border border-slate-100 bg-[#F8FAFC] transition-all duration-500 hover:bg-red-50 hover:shadow-2xl hover:shadow-red-100 hover:-translate-y-2">
+          <div 
+            key={num} 
+            className="group relative aspect-square overflow-hidden rounded-[3rem] bg-gray-100 transition-all duration-300 hover:ring-3 hover:ring-red-500 hover:ring-offset-4 hover:-translate-y-1 shadow-sm hover:shadow-2xl"
+          >
             {/* รูปภาพสินค้า */}
             <Image
               src={`${path}/${fileName}`}
@@ -33,20 +36,6 @@ const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix:
               className="object-contain p-8 transition-transform duration-700 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            
-            {/* รหัส Code แสดงที่มุมล่าง (แบบสะอาดตา) */}
-            <div className="absolute bottom-6 left-0 w-full text-center pointer-events-none">
-              <span className="bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-800 border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Code: {prefix}-{num}
-              </span>
-            </div>
-
-            {/* ปุ่มขยายรูป (Maximize Icon) */}
-            <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <div className="bg-white p-3 rounded-full shadow-lg border border-slate-100">
-                <Maximize2 size={20} className="text-red-500" />
-              </div>
-            </div>
           </div>
         );
       })}
@@ -55,6 +44,7 @@ const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix:
 };
 
 export default function ReadyToWearV229() {
+  // --- ส่วนที่ 2: Original Data (SubTabs 1-10) ---
   const createSubTabs = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 6, path: basePath },
     { value: "color2", label: "ชุดสีที่ 2", start: 7, end: 12, path: basePath },
@@ -117,7 +107,7 @@ export default function ReadyToWearV229() {
   ];
   const createSubTabs7 = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 19, end: 24, path: basePath },
-    { value: "color2", label: "ชุดสีที่ 2", start: 25, end: 30, path: basePath },   
+    { value: "color2", label: "ชุดสีที่ 2", start: 25, end: 30, path: basePath },    
   ];
   const createSubTabs8 = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 31, end: 39, path: basePath },
@@ -131,16 +121,17 @@ export default function ReadyToWearV229() {
     { value: "color3", label: "ชุดสีที่ 3", start: 91, end: 102, path: basePath },
     { value: "color4", label: "ชุดสีที่ 4", start: 103, end: 114, path: basePath },
     { value: "color5", label: "ชุดสีที่ 5", start: 115, end: 126, path: basePath },
-    { value: "color6", label: "ชุดสีที่ 6", start: 127, end: 138, path: basePath },   
+    { value: "color6", label: "ชุดสีที่ 6", start: 127, end: 138, path: basePath },    
   ];
   const createSubTabs10 = (basePath: string) => [
     { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 13, path: basePath },
     { value: "color2", label: "ชุดสีที่ 2", start: 14, end: 26, path: basePath },
     { value: "color3", label: "ชุดสีที่ 3", start: 27, end: 39, path: basePath },
     { value: "color4", label: "ชุดสีที่ 4", start: 40, end: 52, path: basePath },
-    { value: "color5", label: "ชุดสีที่ 5", start: 53, end: 64, path: basePath },   
+    { value: "color5", label: "ชุดสีที่ 5", start: 53, end: 64, path: basePath },    
   ];
 
+  // --- ส่วนที่ 3: Tab Items (ครบถ้วนตามเดิม) ---
   const tabItems = [
     { value: "polo-a", label: "โปโล A", title: "Polo A Series", prefix: "PA", subColorTabs: createSubTabs("/01collection/polo-a/color") },
     { value: "polo-b", label: "โปโล B", title: "Polo B Series", prefix: "PB", subColorTabs: createSubTabs2("/01collection/polo-b") },
@@ -155,78 +146,84 @@ export default function ReadyToWearV229() {
   ];
 
   return (
-    <div className="container mx-auto px-4 md:px-10 py-10 space-y-20 scroll-smooth font-noto">
-      {/* Header Section */}
-      <header className="text-center space-y-4 pt-10">
-        <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-6 py-2 rounded-full border border-red-100">
-          <Palette size={16} className="animate-pulse" />
-          <span className="text-xs font-black uppercase tracking-[0.2em]">Toffy Boutique Selection</span>
+    <div className="w-full scroll-smooth font-noto">
+      {/* --- ส่วน Header (Full Width) --- */}
+      <section className="bg-slate-100 py-16 px-6 border-b border-slate-200 w-full">
+        <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8"> 
+                Polo Collection Design | <span className="text-red-600">แบบเสื้อคอกลม</span>
+            </h1>  
+            <div className="inline-flex items-center gap-3 bg-red-50 text-red-600 px-8 py-2.5 rounded-full border border-red-100 shadow-sm">
+              <Sparkles size={18} className="animate-pulse" />
+              <span className="text-[11px] font-black uppercase tracking-[0.5em]">Toffy Boutique Selection</span>
+            </div>  
+            <p className="text-slate-500 font-bold mt-8 text-xl max-w-2xl mx-auto leading-relaxed">
+                เลือกสรรดีไซน์และชุดสีคุณภาพพรีเมียม เพื่อภาพลักษณ์ที่โดดเด่นขององค์กรคุณ
+            </p>
         </div>
-        <h1 className="text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter text-center">
-          Collection <span className="text-red-600">Design</span>
-        </h1>
-        <p className="text-slate-400 font-bold text-lg md:text-xl text-center">เลือกหมวดหมู่และชุดสีที่ต้องการสั่งผลิต</p>
-      </header>
+      </section>
+      
+      <div className="container mx-auto px-6 md:px-12 py-12 space-y-24">
+        {/* Main Tabs Selection */}
+        <section>
+          <Tabs defaultValue="polo-a" className="w-full">
+            <div className="flex justify-center mb-16">
+              <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-2 rounded-[3rem] h-auto w-full max-w-6xl border border-slate-200 shadow-inner gap-2">
+                {tabItems.map((tab) => (
+                  <TabsTrigger 
+                    key={tab.value} 
+                    value={tab.value} 
+                    className="rounded-[2.5rem] py-5 font-black text-sm md:text-base uppercase transition-all data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-xl text-slate-800 hover:text-red-600"
+                  >
+                    {tab.label}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
 
-      {/* Main Tabs */}
-      <section>
-        <Tabs defaultValue="polo-a" className="w-full">
-          <div className="flex justify-center mb-16">
-            <TabsList className="grid grid-cols-2 sm:grid-cols-5 bg-slate-100/80 p-2 rounded-[3rem] h-auto w-full max-w-6xl border border-slate-200 shadow-inner gap-2">
-              {tabItems.map((tab) => (
-                <TabsTrigger 
-                  key={tab.value} 
-                  value={tab.value} 
-                  className="rounded-[2.5rem] py-5 font-black text-sm md:text-base uppercase transition-all data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-xl text-slate-800 hover:text-red-600"
-                >
-                  {tab.label}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-          </div>
-
-          <AnimatePresence mode="wait">
-            {tabItems.map((mainTab) => (
-              <TabsContent key={mainTab.value} value={mainTab.value} className="focus-visible:outline-none">
-                <div className="text-center mb-12 space-y-2">
-                  <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tight">{mainTab.title}</h2>
-                  <div className="w-24 h-1.5 bg-red-600 mx-auto rounded-full" />
-                </div>
-
-                {/* Sub-Tabs Section */}
-                <Tabs defaultValue="color1" className="w-full">
-                  <div className="flex justify-center mb-10">
-                    <TabsList className="bg-white border-2 border-slate-100 p-1.5 rounded-full h-auto gap-2 shadow-sm">
-                      {mainTab.subColorTabs.map((sub) => (
-                        <TabsTrigger 
-                          key={sub.value} 
-                          value={sub.value} 
-                          className="rounded-full px-6 md:px-10 py-3 font-black text-sm md:text-base uppercase data-[state=active]:bg-slate-900 data-[state=active]:text-white text-slate-800 transition-all"
-                        >
-                          {sub.label}
-                        </TabsTrigger>
-                      ))}
-                    </TabsList>
+            <AnimatePresence mode="wait">
+              {tabItems.map((mainTab) => (
+                <TabsContent key={mainTab.value} value={mainTab.value} className="focus-visible:outline-none">
+                  <div className="text-center mb-12 space-y-2">
+                    <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tight">{mainTab.title}</h2>
+                    <div className="w-24 h-1.5 bg-red-600 mx-auto rounded-full" />
                   </div>
 
-                  {mainTab.subColorTabs.map((sub) => (
-                    <TabsContent key={sub.value} value={sub.value}>
-                      <ColorRangeGallery 
-                        path={sub.path} 
-                        prefix={mainTab.prefix} 
-                        start={sub.start} 
-                        end={sub.end} 
-                      />
-                    </TabsContent>
-                  ))}
-                </Tabs>
-              </TabsContent>
-            ))}
-          </AnimatePresence>
-        </Tabs>
-      </section>
+                  {/* Sub-Tabs Section */}
+                  <Tabs defaultValue="color1" className="w-full">
+                    <div className="flex justify-center mb-10">
+                      <TabsList className="bg-white border-2 border-slate-100 p-1.5 rounded-full h-auto gap-2 shadow-sm flex flex-wrap justify-center">
+                        {mainTab.subColorTabs.map((sub) => (
+                          <TabsTrigger 
+                            key={sub.value} 
+                            value={sub.value} 
+                            className="rounded-full px-6 md:px-10 py-3 font-black text-sm md:text-base uppercase data-[state=active]:bg-slate-900 data-[state=active]:text-white text-slate-800 transition-all"
+                          >
+                            {sub.label}
+                          </TabsTrigger>
+                        ))}
+                      </TabsList>
+                    </div>
 
-      {/* Footer Branding */}
+                    {mainTab.subColorTabs.map((sub) => (
+                      <TabsContent key={sub.value} value={sub.value}>
+                        <ColorRangeGallery 
+                          path={sub.path} 
+                          prefix={mainTab.prefix} 
+                          start={sub.start} 
+                          end={sub.end} 
+                        />
+                      </TabsContent>
+                    ))}
+                  </Tabs>
+                </TabsContent>
+              ))}
+            </AnimatePresence>
+          </Tabs>
+        </section>
+      </div>
+
+      {/* Footer Section */}
       <footer className="pt-20 border-t border-slate-100 pb-20 text-center">
         <h3 className="font-black text-5xl md:text-6xl text-slate-900 tracking-tighter uppercase text-center">
           Toffy <span className="text-red-600">Boutique</span>

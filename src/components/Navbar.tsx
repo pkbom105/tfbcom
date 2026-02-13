@@ -76,8 +76,9 @@ export function Navbar() {
 
   return (
     <header className={cn(
-      "w-full border-b sticky top-0 bg-white z-[100] transition-all duration-300",
-      isScrolled ? "shadow-md py-1" : "shadow-sm py-2"
+      "w-full sticky top-0 bg-white z-[100] transition-all duration-300",
+      // ลบ border-b ออก และให้แสดงเส้นขอบหรือเงาเฉพาะตอน scroll หรือบนมือถือเท่านั้น
+      isScrolled ? "shadow-md py-1 border-b-0" : "py-2 border-b-0"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
         

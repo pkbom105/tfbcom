@@ -7,43 +7,35 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Palette, Maximize2, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-// --- 1. Gallery Component (แสดงผลรูปภาพกึ่งกลาง) ---
+// --- ส่วนที่ 1: Gallery Component (แสดงรูปภาพพร้อม Hover Ring เอฟเฟกต์) ---
 const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix: string; start: number; end: number }) => {
-  const images = Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  const images = [];
+  for (let i = start; i <= end; i++) {
+    images.push(i);
+  }
 
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }} 
       animate={{ opacity: 1, y: 0 }} 
       exit={{ opacity: 0, y: -20 }}
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12 justify-items-center"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10"
     >
       {images.map((num) => {
         const fileName = `${num}.png`; 
         return (
-          <div key={num} className="group relative aspect-square w-full overflow-hidden rounded-[3rem] border border-slate-100 bg-[#F8FAFC] transition-all duration-500 hover:bg-red-50 hover:shadow-2xl hover:shadow-red-100/50 hover:-translate-y-3">
+          <div 
+            key={num} 
+            className="group relative aspect-square overflow-hidden rounded-[3rem] bg-gray-100 transition-all duration-300 hover:ring-3 hover:ring-red-500 hover:ring-offset-4 hover:-translate-y-1 shadow-sm hover:shadow-2xl"
+          >
             {/* รูปภาพสินค้า */}
             <Image
               src={`${path}/${fileName}`}
               alt={`${prefix} image ${num}`}
               fill
-              className="object-contain p-10 transition-transform duration-700 group-hover:scale-110"
+              className="object-contain p-8 transition-transform duration-700 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            
-            {/* รหัสสินค้า (แสดงเมื่อ Hover) */}
-            <div className="absolute bottom-8 left-0 w-full flex justify-center pointer-events-none">
-              <span className="bg-white/90 backdrop-blur-md px-5 py-2 rounded-full text-[11px] font-black uppercase tracking-[0.2em] text-slate-800 shadow-sm border border-slate-100 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                Code: {prefix}-{num}
-              </span>
-            </div>
-
-            {/* ไอคอนขยาย */}
-            <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-all duration-500">
-              <div className="bg-white p-4 rounded-full shadow-lg border border-slate-50">
-                <Maximize2 size={22} className="text-red-600" />
-              </div>
-            </div>
           </div>
         );
       })}
@@ -68,7 +60,7 @@ export default function ReadyToWearV233() {
     { 
       value: "tshirt-a", 
       label: "คอกลม", 
-      title: "Polo A Series", 
+      title: "T-Shirt Series", 
       prefix: "PA", 
       path: "/01collection/tshirt-a",
       subColorTabs: subTabsData 
@@ -76,26 +68,28 @@ export default function ReadyToWearV233() {
   ];
 
   return (
-    <div className="container mx-auto px-4 md:px-12 py-12 space-y-24 scroll-smooth font-noto">
+    <div className="w-full scroll-smooth font-noto">
+    {/* Section นี้จะกว้างเต็มจอ (Full Width) */}
+      <section className="bg-slate-100 py-16 px-6 border-b border-slate-100 w-full">
+        {/* ใช้ container ด้านในเพื่อจัดเนื้อหาให้อยู่ตรงกลาง */} {/* --- Header Section --- */}
+        <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8"> 
+                T-Shirt Collection Design | <span className="text-red-600">แบบเสื้อคอกลม</span>
+            </h1>  
+            <div className="inline-flex items-center gap-3 bg-red-50 text-red-600 px-8 py-2.5 rounded-full border border-red-100 shadow-sm">
+              <Sparkles size={18} className="animate-pulse" />
+              <span className="text-[11px] font-black uppercase tracking-[0.5em]">Toffy Boutique Selection</span>
+            </div>  
+            <p className="text-slate-400 font-bold mt-8 text-xl max-w-2xl mx-auto leading-relaxed">
+                เลือกสรรดีไซน์และชุดสีคุณภาพพรีเมียม เพื่อภาพลักษณ์ที่โดดเด่นขององค์กรคุณ
+              </p>
+          </div>
+      </section>
       
-      {/* --- 3. Header Section (Centered) --- */}
-      <header className="flex flex-col items-center text-center space-y-6 pt-12 relative">
-        <div className="inline-flex items-center gap-3 bg-red-50 text-red-600 px-8 py-2.5 rounded-full border border-red-100 shadow-sm">
-          <Sparkles size={18} className="animate-pulse" />
-          <span className="text-[11px] font-black uppercase tracking-[0.3em]">Toffy Boutique Selection</span>
-        </div>
-        
-        <div className="space-y-2">
-          <h1 className="text-6xl md:text-8xl font-black text-slate-900 uppercase tracking-tighter">
-            Collection <span className="text-red-600">Design</span>
-          </h1>
-          <p className="text-slate-400 font-bold text-xl max-w-2xl mx-auto leading-relaxed">
-            เลือกสรรดีไซน์และชุดสีคุณภาพพรีเมียม เพื่อภาพลักษณ์ที่โดดเด่นขององค์กรคุณ
-          </p>
-        </div>
-      </header>
+     {/* container  */}      
+<div className="container mx-auto px-15 md:px-12 py-12 space-y-24">
 
-      {/* --- 4. Main Navigation Tabs (Centered) --- */}
+          {/* --- 4. Main Navigation Tabs (Centered) --- */}
       <section className="flex flex-col items-center w-full">
         <Tabs defaultValue="tshirt-a" className="w-full">
           <div className="flex justify-center mb-20 px-4">
@@ -155,6 +149,7 @@ export default function ReadyToWearV233() {
           </AnimatePresence>
         </Tabs>
       </section>
+      </div>
 
       {/* --- 6. Footer Branding (Centered) --- */}
       <footer className="pt-32 border-t border-slate-100 pb-20 flex flex-col items-center text-center">

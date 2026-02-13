@@ -22,6 +22,9 @@ export default function CustomerReviewPage() {
       {/* --- Intro Section --- */}
       <section className="bg-slate-50 py-16 px-6 border-b">
         <div className="max-w-4xl mx-auto text-center space-y-6">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
+                Customer Reviews | <span className="text-red-600">รูปรีวิวจากลูกค้า</span>
+            </h1> 
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -30,24 +33,6 @@ export default function CustomerReviewPage() {
             <Heart size={20} fill="currentColor" />
             <span className="uppercase tracking-widest text-sm text-slate-500">Customer Satisfaction</span>
           </motion.div>
-
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-            รูปรีวิวจากลูกค้า
-          </h1>
-
-          <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-slate-500 font-medium">
-            <span className="flex items-center gap-1">
-              <UserCheck size={16} className="text-red-500" /> by admin
-            </span>
-            <span className="hidden md:inline">|</span>
-            <span className="flex items-center gap-1 text-center">
-              <Calendar size={16} className="text-red-500" /> Posted in: 
-              <span className="text-slate-700 underline decoration-red-200">
-                บทความเกี่ยวกับยูนิฟอร์มพนักงาน เสื้อโปโลพนักงาน
-              </span>
-            </span>
-          </div>
-
           <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-4 max-w-3xl mx-auto">
             <p className="text-xl font-bold text-slate-800 leading-relaxed">
               รูปรีวิวยูนิฟอร์มพนักงาน เสื้อโปโลพนักงาน ชุดฟอร์มพนักงานโรงงานจากลูกค้าของเรา

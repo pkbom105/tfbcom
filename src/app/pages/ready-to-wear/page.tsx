@@ -22,12 +22,13 @@ export default function ProductPageV238() {
       {/* --- Intro Section --- */}
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-6 leading-tight uppercase">
-            Our Products <span className="text-red-500">|</span> สินค้าพร้อมส่งและสั่งผลิตราคาพิเศษ
-          </h1>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
+                Past Products Catalog | <span className="text-red-600">สินค้าที่เคยผลิต</span>
+            </h1> 
           <div className="space-y-6 text-lg text-slate-800 leading-relaxed max-w-4xl mx-auto">
-            <p className="font-bold text-slate-800 text-xl">ศูนย์รวมยูนิฟอร์มสำเร็จรูปพร้อมจัดส่ง และบริการงานสั่งผลิตมาตรฐานพรีเมียมในราคาโรงงาน</p>
-            <p>เราบริหารจัดการสินค้าที่มีอยู่ในสต็อก (Ready to Ship) ทั้งเสื้อโปโลและชุดเชิ้ตพนักงานหลากหลายดีไซน์ ผ่านกระบวนการ QC ที่เข้มงวด พร้อมบริการจัดส่งด่วนให้คุณใช้งานได้ทันที</p>
+            <p className="text-slate-800 text-md">ด้วยประสบการณ์อันยาวนาน 
+                <p >นี้คือ สินค้าตัวอย่างบางส่วน ที่เราเคยผลิตให้ลูกค้าสวมใส่ ในระยะเวลาที่ผ่านมา</p>
+            </p>
           </div>
         </div>
       </section>

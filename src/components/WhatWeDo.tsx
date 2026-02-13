@@ -143,7 +143,7 @@ export default function WhatWeDo() {
                 initial={{ opacity: 0, y: 80, scale: 0.5 }}
                 whileInView={{ 
                   opacity: 1, 
-                  y: [0, -25, 0], // Infinite bouncing sequence
+                  y: [0, 1, 0], // Infinite bouncing sequence y: [0, -25, 0],
                   scale: 1 
                 }}
                 viewport={{ once: true, margin: "-100px" }}

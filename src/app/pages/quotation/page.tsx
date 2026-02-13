@@ -55,23 +55,14 @@ export default function QuotationPage() {
   return (
     <main className="min-h-screen font-kanit bg-slate-50/50 pb-20">
       {/* Header Section */}
-      <section className="bg-white py-16 border-b">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="flex justify-center mb-4"
-          >
-            <div className="bg-red-100 p-3 rounded-2xl">
-              <Calculator className="w-10 h-10 text-red-600" />
-            </div>
-          </motion.div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+      <section className="bg-white py-16 border-b-0">
+        <div className="max-w-4xl mx-auto px-6 text-center">          
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
             Quotation | <span className="text-red-600">การประเมินราคา</span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             หลักการประเมินราคางานรับผลิตเสื้อยูนิฟอร์มและชุดฟอร์มพนักงานโรงงาน 
-            เพื่อให้คุณได้รับความคุ้มค่าและคุณภาพสูงสุด
+            <p>เพื่อให้คุณได้รับความคุ้มค่าและคุณภาพสูงสุด</p>
           </p>
         </div>
       </section>

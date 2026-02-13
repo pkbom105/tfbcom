@@ -32,17 +32,19 @@ export default function SampleWorkPage() {
       {/* --- Hero Section & SEO Text --- */}
       <section className="bg-slate-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-4">
+          <div>
+                <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
+                Silk Screen & Embroidery | <span className="text-red-600">ตัวอย่างงานพิมพ์ งานปัก</span>
+                </h1> 
+          </div>
           <motion.div 
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex items-center justify-center gap-2 text-red-600 font-bold uppercase tracking-widest text-sm"
+            className="flex items-center justify-center gap-2 text-red-600 font-bold"
           >
-            <Award size={20} />
-            <span>Premium Quality Workmanship</span>
+            <Award size={20} fill="currentColor" />
+            <span className="uppercase tracking-widest text-sm text-slate-500">Quality Assurance</span>
           </motion.div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-            Sample Work <span className="text-red-600">| ตัวอย่างผลงาน</span>
-          </h1>
           {/* SEO Text Description */}
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             รวบรวมผลงานผลิตจริงจาก <strong>Toffy Boutique</strong> เราคือโรงงานผลิตเสื้อโปโลและยูนิฟอร์มพนักงานที่ได้รับความไว้วางใจจากองค์กรชั้นนำ 
@@ -65,7 +67,7 @@ export default function SampleWorkPage() {
                 value="screen" 
                 className="px-8 rounded-full text-lg data-[state=active]:bg-red-600 data-[state=active]:text-white transition-all"
               >
-                <Printer className="mr-2 w-5 h-5" /> งานพิมพ์ (Screen)
+                <Printer className="mr-2 w-5 h-5" /> งานพิมพ์ (Silk Screen)
               </TabsTrigger>
             </TabsList>
           </div>

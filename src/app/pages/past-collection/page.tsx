@@ -24,9 +24,9 @@ export default function PastCollectionPage() {
       {/* --- Intro Section --- */}
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
-            Sample Product <span className="text-red-500">|</span> ตัวอย่างงานผลิตคุณภาพ
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+          Sample Product  | <span className="text-red-600">ตัวอย่างงานผลิตคุณภาพ</span>
+          </h1>  
           <div className="space-y-4 text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
             <p className="font-semibold text-slate-800 text-xl">
               ยูนิฟอร์มคุณภาพสูง จากความไว้วางใจของลูกค้าทั่วประเทศประสบการณ์กว่า 35 ปี

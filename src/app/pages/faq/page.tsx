@@ -53,19 +53,11 @@ export default function FAQPage() {
   return (
     <main className="min-h-screen font-kanit pb-20 bg-white">
       {/* Header Section */}
-      <section className="bg-slate-50 py-16 px-6 border-b">
+      <section className="bg-slate-50 py-16 px-6 border-b-0">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 bg-red-100 text-red-600 px-4 py-1.5 rounded-full text-sm font-bold mb-4"
-          >
-            <HelpCircle className="w-4 h-4" />
-            FAQ
-          </motion.div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-            คำถามที่พบบ่อย
-          </h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+            FAQ | <span className="text-red-600">คำถามที่พบบ่อย</span>
+          </h1>          
           <p className="text-lg text-muted-foreground italic">
             รวมคำตอบเกี่ยวกับ ยูนิฟอร์มพนักงาน เสื้อฟอร์มพนักงาน เสื้อโปโลพนักงาน โดย ทอฟฟี่ บูติก
           </p>
@@ -85,7 +77,7 @@ export default function FAQPage() {
               <AccordionTrigger className="text-left text-lg font-semibold hover:text-red-600 hover:no-underline py-5">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-base text-gray-600 leading-relaxed pb-5 border-t pt-4">
+              <AccordionContent className="text-lg text-gray-800 leading-relaxed pb-5 border-t pt-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

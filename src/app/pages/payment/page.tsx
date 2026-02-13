@@ -12,16 +12,16 @@ export default function PaymentPage() {
     {
       bankName: "ธนาคารกสิกรไทย",
       accountName: "บริษัท ทอฟฟี่ บูติก จำกัด",
-      accountNumber: "012-3-45678-9",
-      branch: "สาขาพุทธบูชา",
+      accountNumber: "090-2-40899-1",
+      branch: "สาขาบางมด",
       color: "bg-green-600",
     },
     {
       bankName: "ธนาคารไทยพาณิชย์",
       accountName: "บริษัท ทอฟฟี่ บูติก จำกัด",
-      accountNumber: "987-6-54321-0",
-      branch: "สาขาเซ็นทรัล พระราม 2",
-      color: "bg-purple-700",
+      accountNumber: "808-2-00307-3",
+      branch: "สาขาบางมด",
+      color: "bg-blue-700",
     },
   ];
 
@@ -33,10 +33,10 @@ export default function PaymentPage() {
   return (
     <main className="min-h-screen font-kanit bg-white pb-20">
       {/* --- Header --- */}
-      <section className="bg-slate-50 py-16 px-6 border-b text-center">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
-          Payment <span className="text-red-600">| การชำระเงิน</span>
-        </h1>
+      <section className="bg-slate-50 py-16 px-6 border-b-0 text-center">        
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+            Payment | <span className="text-red-600">การชำระเงิน</span>
+        </h1>    
         <p className="text-slate-500 max-w-2xl mx-auto">
           ตรวจสอบรายละเอียดเลขที่บัญชีธนาคารเพื่อดำเนินการชำระเงินมัดจำค่าสินค้า
         </p>
@@ -65,19 +65,19 @@ export default function PaymentPage() {
                   <div className="flex justify-between items-start mb-6">
                     <div>
                       <h3 className="font-bold text-lg text-slate-900">{acc.bankName}</h3>
-                      <p className="text-xs text-slate-500">{acc.branch}</p>
+                      <p className="text-md text-slate-500">{acc.branch}</p>
                     </div>
                     <div className="bg-slate-100 p-2 rounded-full">
                       <ShieldCheck className="text-blue-600 w-5 h-5" />
                     </div>
                   </div>
                   
-                  <div className="bg-slate-900 p-5 rounded-xl text-white relative group">
-                    <p className="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Account Number</p>
+                  <div className="bg-slate-300 p-5 rounded-xl text-black relative group">
+                    <p className="text-[18px] uppercase tracking-widest text-slate-800 mb-1">Account Number</p>
                     <p className="text-2xl font-mono font-bold">{acc.accountNumber}</p>
                     <button 
                       onClick={() => copyToClipboard(acc.accountNumber)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 p-2 hover:bg-white/10 rounded-lg transition-colors"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 p-2 hover:bg-black/50 rounded-lg transition-colors"
                       title="Copy Number"
                     >
                       <Copy size={18} className="text-slate-400 group-hover:text-white" />
@@ -85,8 +85,8 @@ export default function PaymentPage() {
                   </div>
 
                   <div className="mt-5">
-                    <p className="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Account Name</p>
-                    <p className="font-bold text-slate-800 text-sm">{acc.accountName}</p>
+                    <p className="text-[12px] uppercase tracking-widest text-slate-400 mb-1">Account Name</p>
+                    <p className="font-bold text-slate-800 text-lg">{acc.accountName}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -95,10 +95,10 @@ export default function PaymentPage() {
 
           {/* เงื่อนไขการชำระเงิน (ด้านล่างคอลัมน์ซ้าย) */}
           <div className="bg-blue-50/50 border-l-4 border-blue-500 p-5 rounded-r-xl mt-10">
-            <h4 className="text-blue-900 font-bold text-sm mb-2 flex items-center gap-2">
-              <ExternalLink size={16} /> เงื่อนไขการชำระเงิน
+            <h4 className="text-blue-900 font-bold text-lg mb-2 flex items-center gap-2">
+              <ExternalLink size={18} /> เงื่อนไขการชำระเงิน
             </h4>
-            <ul className="text-xs text-blue-700 space-y-2 list-disc pl-4 leading-relaxed">
+            <ul className="text-md text-black-600 space-y-2 list-disc pl-4 leading-relaxed">
               <li>ชำระเงินมัดจำ 50% เพื่อยืนยันการผลิต</li>
               <li>ชำระส่วนที่เหลือ 50% ก่อนจัดส่งสินค้า</li>
               <li>กรุณาแจ้งสลิปทันทีหลังโอนเงินเสร็จสิ้น</li>
@@ -111,14 +111,7 @@ export default function PaymentPage() {
           <div className="flex items-center justify-between">
              <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
                <Download className="text-red-600 w-6 h-6" /> ภาพสรุปเลขบัญชี
-             </h2>
-             <a 
-               href="/picture/payment-tfb.jpg" 
-               download="Payment-Details-Toffy-Boutique.jpg"
-               className="text-sm font-bold text-red-600 hover:underline flex items-center gap-1"
-             >
-               Download JPG <Download size={14} />
-             </a>
+             </h2>             
           </div>
 
           <motion.div
@@ -147,8 +140,14 @@ export default function PaymentPage() {
             </Card>
           </motion.div>
 
-          <p className="text-center text-slate-400 text-xs italic">
-            * ท่านสามารถบันทึกภาพหน้าจอนี้เพื่อใช้เป็นข้อมูลในการชำระเงิน
+          <p className=" text-slate-400 text-lg italic">
+            <a 
+                href="/picture/payment-tfb.jpg" 
+                download="Payment-Details-Toffy-Boutique.jpg"
+                className="flex mx-auto text-center text-lg font-bold text-red-600 hover:underline gap-1"
+              >
+              <Download size={24} />_ Download บันทึกเลขที่บัญชี 
+              </a>
           </p>
         </div>
       </section>

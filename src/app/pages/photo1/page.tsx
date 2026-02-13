@@ -3,9 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronRight, Palette, Layers, Image as ImageIcon } from "lucide-react";
+import { ChevronRight, Palette, Image as ImageIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function ColorGalleryPage() {
   // --- CONFIGURATION SECTION ---
@@ -27,23 +26,15 @@ export default function ColorGalleryPage() {
     end: 12
   };
 
-  // --- NEW SECTION 3 CONFIG: Individual File Names ---
   const Section3Config = {
     title: "Featured Showcases",
     folder: "/photo1",
-    // คุณสามารถแก้ไขชื่อไฟล์ทั้ง 6 รูปได้ที่นี่
     files: [
-      "colour-13.svg",
-      "colour-14.svg",
-      "colour-15.svg",
-      "colour-16.svg",
-      "colour-17.svg",
-      "colour-18.svg",
-      "colour-19.svg",
+      "colour-13.svg", "colour-14.svg", "colour-15.svg",
+      "colour-16.svg", "colour-17.svg", "colour-18.svg", "colour-19.svg",
     ]
   };
 
-  // Helper สำหรับ Section 1 & 2
   const generatePhotos = (config: any) => 
     Array.from({ length: config.end - config.start + 1 }, (_, i) => ({
       id: i + config.start,
@@ -51,7 +42,6 @@ export default function ColorGalleryPage() {
       alt: `Gallery Item ${i + config.start}`,
     }));
 
-  // Helper สำหรับ Section 3
   const section3Photos = Section3Config.files.map((filename, idx) => ({
     id: `s3-${idx}`,
     src: `${Section3Config.folder}/${filename}`,
@@ -63,8 +53,8 @@ export default function ColorGalleryPage() {
 
   return (
     <main className="min-h-screen font-kanit bg-white pb-20">
-      {/* --- Page Hero Header --- */}
-      <section className="bg-slate-50 py-16 px-6 border-b">
+      {/* --- Page Hero Header (เอา border-b ออก) --- */}
+      <section className="bg-slate-50 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex items-center justify-center gap-2 text-red-600 font-bold uppercase text-sm">
             <Palette size={20} />
@@ -76,7 +66,7 @@ export default function ColorGalleryPage() {
         </div>
       </section>
 
-      {/* --- SECTION 1 & 2 (เหมือนเดิม) --- */}
+      {/* --- Gallery Sections --- */}
       <section className="max-w-6xl mx-auto px-6 pt-16">
         <div className="flex items-center gap-3 mb-10"><div className="h-8 w-1.5 bg-red-600 rounded-full" /><h2 className="text-2xl font-bold">{Section1Config.title}</h2></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -91,7 +81,6 @@ export default function ColorGalleryPage() {
         </div>
       </section>
 
-      {/* --- NEW SECTION 3: Individual Photos --- */}
       <section className="max-w-6xl mx-auto px-6 pt-24">
         <div className="flex items-center gap-3 mb-10">
           <div className="h-8 w-1.5 bg-blue-600 rounded-full" />
@@ -116,7 +105,7 @@ export default function ColorGalleryPage() {
   );
 }
 
-// Reusable Gallery Card
+// Reusable Gallery Card (เอา border ออกทั้งหมด)
 function GalleryCard({ photo, index }: { photo: any, index: number }) {
   return (
     <motion.div
@@ -125,8 +114,10 @@ function GalleryCard({ photo, index }: { photo: any, index: number }) {
       transition={{ delay: (index % 3) * 0.1 }}
       viewport={{ once: true }}
     >
-      <Card className="group overflow-hidden border-none shadow-sm hover:shadow-2xl transition-all duration-500 rounded-2xl bg-white p-3 hover:bg-red-50">
-        <CardContent className="p-0 relative aspect-[3/2] overflow-hidden rounded-xl border border-slate-100 bg-slate-50">
+      {/* เอา border-none ออก และเน้นใช้ Shadow แทน */}
+      <Card className="group border-none shadow-none hover:shadow-2xl transition-all duration-500 rounded-2xl bg-transparent hover:bg-red-50 p-3">
+        {/* เอา border-slate-100 ออกจาก Container รูปภาพ */}
+        <CardContent className="p-0 relative aspect-[3/2] overflow-hidden rounded-xl bg-slate-50">
           <Image
             src={photo.src}
             alt={photo.alt}

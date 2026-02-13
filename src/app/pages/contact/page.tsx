@@ -12,7 +12,7 @@ export default function ContactPage() {
       title: "Location",
       titleTh: "ที่ตั้งโรงงาน",
       description: (
-        <div className="space-y-1 text-left mt-2 italic text-sm">
+        <div className="space-y-1 text-left mt-2 italic text-lg">
           <p>258 ถนน พุทธบูชา แขวง บางมด เขตจอมทอง กรุงเทพฯ 10150</p>
           <p>258 Putthabucha Road Bangmod Jomthong Bangkok 10150</p>
         </div>
@@ -23,7 +23,7 @@ export default function ContactPage() {
       title: "Call Us",
       titleTh: "เบอร์โทรศัพท์",
       description: (
-        <div className="space-y-1 text-left mt-2 text-sm">
+        <div className="space-y-1 text-left mt-2 text-lg">
           <p><span className="font-semibold">Office:</span> 02-428-2591, 02-874-0205</p>
           <p><span className="font-semibold">คุณอ๊อบ:</span> 084-099-3799</p>
           <p><span className="font-semibold">คุณก้อย:</span> 095-639-6142</p>
@@ -35,11 +35,56 @@ export default function ContactPage() {
       title: "Social Media",
       titleTh: "ช่องทางติดต่ออื่นๆ",
       description: (
-        <div className="space-y-1 text-left mt-2 text-sm">
-          <p><span className="font-semibold">Email:</span> sales@toffyboutique.com</p>
-          <p><span className="font-semibold">Line ID:</span> @toffyboutique</p>
-          <p><span className="font-semibold">Facebook:</span> toffyboutique</p>
+        <div className="space-y-1 text-left mt-2 text-lg">
+  <p>
+    <span className="font-semibold">Email:</span>{" "}
+    <a href="mailto:sales@toffyboutique.com" className="hover:text-red-600 transition-colors">
+      sales@toffyboutique.com
+    </a>
+  </p>
+  <p>
+    <span className="font-semibold">Facebook:</span>{" "}
+    <a 
+      href="https://www.facebook.com/toffyboutique" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="hover:text-red-600 transition-colors"
+    >
+      toffyboutique
+    </a>
+  </p>
+    <p>
+      <span className="font-semibold">Line ID:</span>{" "}
+      <a 
+        href="https://line.me/R/ti/p/@toffyboutique" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="hover:text-red-600 transition-colors"
+      >
+        @toffyboutique
+      </a>
+  </p>
+
+  {/* --- Line QR Code Section --- */}
+      <div className="mt-6 pt-4 border-t border-slate-100">
+        <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-3">
+          Scan to Add Line
+        </p>
+            <div className="relative group w-32 h-32 bg-white p-2 rounded-2xl shadow-md border border-slate-100 transition-all duration-500 hover:shadow-xl hover:-translate-y-1">
+              <Image 
+                src="/picture/loa_toffyboutique.png" // เปลี่ยน path เป็นไฟล์รูป QR Code จริงของคุณ
+                alt="Line QR Code Toffy Boutique"
+                fill
+                className="object-contain p-1"
+              />
+              {/* ตกแต่งมุมเพิ่มความพรีเมียม */}
+              <div className="absolute -top-1 -right-1 flex h-4 w-4">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
+              </div>
         </div>
+  </div>
+</div>
       ),
     },
   ];
@@ -53,7 +98,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-start mb-12"
           >
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">Contact Us</h1>
             <p className="text-muted-foreground text-lg">ติดต่อสอบถามข้อมูลการผลิตเสื้อโปโลและยูนิฟอร์มครบวงจร</p>
