@@ -88,7 +88,7 @@ export default function ReadyToWearV231() {
                 {tabItems.map((tab) => (
                   <TabsTrigger 
                     key={tab.value} 
-                    value={tab.value} 
+                    value={sub.value}
                     className="rounded-[3rem] px-10 py-5 font-black text-sm md:text-base uppercase transition-all data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-2xl text-slate-500 hover:text-red-600 min-w-[140px]"
                   >
                     {tab.label}
