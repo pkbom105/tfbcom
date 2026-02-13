@@ -32,14 +32,12 @@ const ColorRangeGallery = ({
         return (
           <div 
             key={num} 
-            // เอฟเฟกต์ Ring และขยับขึ้นยังคงอยู่ แต่ลบความสามารถในการซูมภาพข้างในออก
             className="group relative aspect-square overflow-hidden rounded-[3rem] bg-gray-100 transition-all duration-300 hover:ring-3 hover:ring-red-500 hover:ring-offset-4 hover:-translate-y-1 shadow-sm hover:shadow-2xl"
           >
             <Image
               src={`${path}/${fileName}`}
               alt={`${prefix} catalog ${num}`}
               fill
-              // ลบ group-hover:scale-110 ออกจากตรงนี้แล้ว
               className="object-contain p-10 transition-transform duration-700" 
               sizes="(max-width: 768px) 100vw, 33vw"
             />
@@ -88,7 +86,7 @@ export default function ReadyToWearV231() {
                 {tabItems.map((tab) => (
                   <TabsTrigger 
                     key={tab.value} 
-                    value={sub.value}
+                    value={tab.value} // แก้ไขจาก sub.value เป็น tab.value
                     className="rounded-[3rem] px-10 py-5 font-black text-sm md:text-base uppercase transition-all data-[state=active]:bg-red-600 data-[state=active]:text-white data-[state=active]:shadow-2xl text-slate-500 hover:text-red-600 min-w-[140px]"
                   >
                     {tab.label}
@@ -112,8 +110,8 @@ export default function ReadyToWearV231() {
                       <TabsList className="flex flex-wrap justify-center bg-white border-2 border-slate-100 p-2 rounded-full h-auto gap-2 shadow-xl shadow-slate-100/50">
                         {mainTab.subColorTabs.map((sub) => (
                           <TabsTrigger 
-                            key={sub.id} 
-                            value={sub.value} 
+                            key={sub.value} // แก้ไขจาก tab.value เป็น sub.value
+                            value={sub.value} // แก้ไขจาก tab.value เป็น sub.value
                             className="rounded-full px-12 py-4 font-black text-sm md:text-base uppercase data-[state=active]:bg-slate-900 data-[state=active]:text-white text-slate-400 transition-all duration-300"
                           >
                             {sub.label}
