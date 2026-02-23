@@ -14,9 +14,6 @@ import {
   Languages,
   HelpCircle,
   Scissors,
-  Star,
-  MessageCircle,
-  FileText
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -68,7 +65,6 @@ export function Navbar() {
 
   const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[200px] p-1 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
 
-  // ฟังก์ชันช่วยย้ายหน้าและปิดเมนู Mobile
   const navigateTo = (path: string) => {
     router.push(path);
     setOpen(false);
@@ -77,7 +73,6 @@ export function Navbar() {
   return (
     <header className={cn(
       "w-full sticky top-0 bg-white z-[100] transition-all duration-300",
-      // ลบ border-b ออก และให้แสดงเส้นขอบหรือเงาเฉพาะตอน scroll หรือบนมือถือเท่านั้น
       isScrolled ? "shadow-md py-1 border-b-0" : "py-2 border-b-0"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
@@ -109,7 +104,7 @@ export function Navbar() {
               <MenubarContent sideOffset={8} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/order")}>ขั้นตอนการผลิต</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/fabric")}>เนื้อผ้า</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/colour")}>สีผ้า</MenubarItem>
+                {/* ลบสีผ้าออกแล้ว */}
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/sizespec")}>ไซต์เสื้อ</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/ready-to-wear")}>สินค้าสำเร็จรูป</MenubarItem>
               </MenubarContent>
@@ -183,7 +178,6 @@ export function Navbar() {
               </SheetHeader>
 
               <div className="flex flex-col h-full bg-white font-noto pb-10">
-                {/* Language Switcher Mobile */}
                 <div className="flex items-center justify-between px-5 py-4 bg-slate-50 border-b">
                   <div className="flex items-center gap-2 text-slate-500 font-black text-xs tracking-widest">
                     <Languages size={18} className="text-red-500" /> LANGUAGE
@@ -194,15 +188,13 @@ export function Navbar() {
                   </div>
                 </div>
                 
-                {/* Home Link */}
                 <button onClick={() => navigateTo("/")} className="flex items-center gap-4 text-base font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
                   <Home className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> หน้าแรก
                 </button>
 
-                {/* Accordion Menus */}
                 <Accordion type="single" collapsible className="w-full">
                   
-                  {/* สั่งผลิต */}
+                  {/* สั่งผลิต Mobile */}
                   <AccordionItem value="order" className="border-b">
                     <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Shirt className="w-5 h-5 text-slate-400" /> สั่งผลิต</div>
@@ -211,7 +203,7 @@ export function Navbar() {
                       {[
                         { label: "ขั้นตอนการผลิต", path: "/pages/order" },
                         { label: "เนื้อผ้า", path: "/pages/fabric" },
-                        { label: "สีผ้า", path: "/pages/colour" },
+                        // ลบสีผ้าออกแล้ว
                         { label: "ไซต์เสื้อ", path: "/pages/sizespec" },
                         { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },
                       ].map((item) => (
@@ -222,7 +214,6 @@ export function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
-                  {/* แบบเสื้อ */}
                   <AccordionItem value="collection" className="border-b">
                     <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Palette className="w-5 h-5 text-slate-400" /> แบบเสื้อ</div>
@@ -243,7 +234,6 @@ export function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
-                  {/* ตัวอย่างสินค้า */}
                   <AccordionItem value="sample" className="border-b">
                     <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Scissors className="w-5 h-5 text-slate-400" /> ตัวอย่างสินค้า</div>
@@ -262,7 +252,6 @@ export function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
-                  {/* ตอบคำถาม */}
                   <AccordionItem value="faq" className="border-b">
                     <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><HelpCircle className="w-5 h-5 text-slate-400" /> ตอบคำถาม</div>
@@ -282,12 +271,10 @@ export function Navbar() {
 
                 </Accordion>
 
-                {/* Contact Link */}
                 <button onClick={() => navigateTo("/pages/contact")} className="flex items-center gap-4 text-base font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
                   <PhoneCall className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> ติดต่อเรา
                 </button>
                 
-                {/* Social / Footer in Menu */}
                 <div className="mt-auto p-5 text-center">
                   <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">Toffy Boutique - Uniform Expert</p>
                 </div>
