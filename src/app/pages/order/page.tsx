@@ -82,26 +82,20 @@ export default function MakeToOrderPage() {
   ];
 
   return (
-    <main className="min-h-screen font-kanit bg-white pb-20">
-      {/* Hero Section */}
-      <section className="bg-slate-50 py-24 px-6 mb-16">
-        <div className="max-w-5xl mx-auto">
-          <motion.span 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-red-600 font-black uppercase tracking-[0.3em] text-sm block mb-4"
-          >
-            Production Workflow
-          </motion.span>
-          <h1 className="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
-            Make to <span className="text-red-600">Order</span> <br />
-            Process
-          </h1>
-          <p className="text-xl text-slate-500 max-w-2xl font-medium leading-relaxed">
-            ขั้นตอนการสั่งผลิตมาตรฐาน ทอฟฟี่ บูติก ที่ช่วยให้คุณได้ยูนิฟอร์มคุณภาพเยี่ยม ตรงตามสเปก และส่งมอบตรงเวลา
+    <main className="min-h-screen bg-white font-noto pb-20">
+    {/* --- Intro Section --- */}
+    <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
+      <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
+              Make to Order Process | <span className="text-red-600">ขั้นตอนการสั่งผลิต</span>
+          </h1> 
+        <div className="space-y-6 text-lg text-slate-800 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-slate-800 text-md"> ขั้นตอนการสั่งผลิตมาตรฐาน ทอฟฟี่ บูติก 
+          ที่ช่วยให้คุณได้ยูนิฟอร์มคุณภาพเยี่ยม ตรงตามสเปก และส่งมอบตรงเวลา
           </p>
         </div>
-      </section>
+      </div>
+    </section>  
 
       {/* Left-Aligned Timeline Section */}
       <section className="max-w-5xl mx-auto px-6 relative">
