@@ -80,10 +80,10 @@ export function Navbar() {
         {/* LOGO */}
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
           <Image 
-            src="/picture/toffyboutique-logo.png"
+            src="/picture/toffy_logo_2.png"
             alt="Toffy Boutique Logo"
             width={160} height={80}
-            className={cn("transition-all duration-300 object-contain", isScrolled ? "h-9" : "h-10")}
+            className={cn("transition-all duration-300 object-contain", isScrolled ? "h-9" : "h-15")}
           />
         </Link>
 

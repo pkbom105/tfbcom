@@ -32,6 +32,9 @@ export default function PaymentPage() {
 
   return (
     <main className="min-h-screen font-kanit bg-white pb-20">
+          <div id="111" className="scroll-mt-40"> 
+              {/* scroll-mt-24 ช่วยให้เวลาเลื่อนมาแล้วไม่โดน Navbar บัง */}
+        </div>
       {/* --- Header --- */}
       <section className="bg-slate-50 py-16 px-6 border-b-0 text-center">        
         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">

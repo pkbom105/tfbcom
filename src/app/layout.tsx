@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Noto_Sans_Thai } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 /**
  * 1. Initialize Noto Sans Thai Font
@@ -75,12 +76,14 @@ export default function RootLayout({
         </main>
 
         {/* Footer ส่วนท้ายของเว็บไซต์ */}
-        <footer className="p-10 border-t bg-slate-50 text-center text-sm text-gray-500">
+        <Footer />
+        
+        {/* <footer className="p-10 border-t bg-slate-50 text-center text-sm text-gray-500">
           <div className="container mx-auto">
             <p className="font-bold text-slate-900 mb-2">บริษัท ทอฟฟี่ บูติก จำกัด</p>
             <p>© 2026 Toffy Boutique. All rights reserved.</p>
           </div>
-        </footer>
+        </footer> */}
 
       </body>
     </html>

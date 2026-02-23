@@ -52,6 +52,9 @@ export default function FAQPage() {
 
   return (
     <main className="min-h-screen font-kanit pb-20 bg-white">
+        <div id="333" className="scroll-mt-40"> 
+              {/* scroll-mt-24 ช่วยให้เวลาเลื่อนมาแล้วไม่โดน Navbar บัง */}
+        </div>
       {/* Header Section */}
       <section className="bg-slate-50 py-16 px-6 border-b-0">
         <div className="max-w-4xl mx-auto text-center">

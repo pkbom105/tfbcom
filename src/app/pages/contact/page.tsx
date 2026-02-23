@@ -195,6 +195,9 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
+      <div id="222" className="scroll-mt-40"> 
+              {/* scroll-mt-24 ช่วยให้เวลาเลื่อนมาแล้วไม่โดน Navbar บัง */}
+      </div>
 
       {/* SECTION 3: Map & Download Button */}
       <section className="bg-gray-100 py-24 px-6 text-black overflow-hidden">

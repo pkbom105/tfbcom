@@ -305,7 +305,7 @@ const buttonGroups: ButtonData[] = [
   {
     id: "pants",
     labelB: "กางเกง",
-    tabIcon: "/04sizespec/28.png", // Custom Icon แยก
+    tabIcon: "/hp/50.png",  // Custom Icon แยก
     label: "กางเกงสแล็ค / กางเกงทำงาน",
     image: "/04sizespec/28.png",
     data: [
