@@ -6,7 +6,7 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Clock, 
+  Clock,  
   Facebook, 
   MessageCircle, 
   ArrowRightCircle,
@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 text-gray-900 font-noto border-t border-gray-200 w-full">
       {/* ปรับ max-w เป็น 1720px เพื่อรองรับจอ 1800px ได้สวยงามพอดี */}
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-16 py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-16 lg:py-24">
         
         {/* ปรับ Gap ให้กว้างขึ้นในจอใหญ่ (xl:gap-20) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 xl:gap-20">
@@ -61,22 +61,28 @@ export default function Footer() {
                     <ExternalLink size={14} /> ดูแผนที่ Google Maps
                   </span>
                 </a>        
-              </div>
-              
-              <div className="space-y-2">
-                <p className="text-xs font-black text-gray-500 uppercase tracking-widest">Office :</p>
-                <div className="flex items-center gap-3 text-gray-800 hover:text-red-600 transition-colors font-bold text-lg">
-                  <Phone size={16} className="text-red-600" />
-                  <a href="tel:024282591">02-428-2591</a>, <a href="tel:028740205">02-874-0205</a>
-                </div>
+              </div>             
+            
+              <div className="space-y-2 pt-2">
+              <h5 className="text-black font-bold flex items-center gap-2 text-lg">
+                <Phone size={20} className="text-red-600" /> Office
+              </h5>               
+                <p className="text-base lg:text-md text-gray-700">
+                02-428-2591 <a href="tel:0840993799" className="text-black text-md font-black hover:text-red-600">084-099-3799</a>
+                </p>
+                <p className="text-base lg:text-md text-gray-700">
+                02-428-2591 <a href="tel:0956396142" className="text-black text-md font-black hover:text-red-600">095-639-6142</a>
+                </p>
               </div>
 
               <div className="space-y-2 pt-2">
-                <p className="text-xs font-black text-gray-500 uppercase tracking-widest">Sale :</p>
-                <p className="text-base lg:text-lg text-gray-700">
+                <h5 className="text-black font-bold flex items-center gap-2 text-lg">
+                  <Phone size={20} className="text-red-600" /> Sale
+                </h5>
+                <p className="text-base lg:text-md text-gray-700">
                   คุณอ๊อบ: <a href="tel:0840993799" className="text-black font-black hover:text-red-600">084-099-3799</a>
                 </p>
-                <p className="text-base lg:text-lg text-gray-700">
+                <p className="text-base lg:text-md text-gray-700">
                   คุณก้อย: <a href="tel:0956396142" className="text-black font-black hover:text-red-600">095-639-6142</a>
                 </p>
               </div>
@@ -91,21 +97,21 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shadow-md">
                   <MessageCircle size={20} />
                 </div>
-                <span className="text-lg font-semibold">Line ID: @toffyboutique</span>
+                <span className="text-md font-semibold">Line ID: @toffyboutique</span>
               </a>
               
               <a href="mailto:sales@toffyboutique.com" className="flex items-center gap-4 text-gray-700 hover:text-red-600 transition-colors group">
-                <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-all shadow-md">
+                <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center  group-hover:bg-red-600 group-hover:text-white transition-all shadow-md">
                   <Mail size={20} />
                 </div>
-                <span className="text-lg font-semibold">sales@toffyboutique.com</span>
+                <span className="text-md font-semibold">sales@toffyboutique.com</span>
               </a>
 
               <a href="#" className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition-colors group">
                 <div className="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all shadow-md">
                   <Facebook size={20} />
                 </div>
-                <span className="text-lg font-semibold">toffyboutique</span>
+                <span className="text-md font-semibold">toffyboutique</span>
               </a>             
             </div>
           </div>

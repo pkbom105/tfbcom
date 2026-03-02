@@ -83,7 +83,7 @@ export default function ContactPage() {
       {/* SECTION 1: Contact Cards */}
       <section className="bg-slate-50/50 py-20 xl:py-32 px-6">
         {/* ขยาย Container เป็น 1550px */}
-        <div className="max-w-[1550px] mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +138,7 @@ export default function ContactPage() {
       </section>
 
       {/* SECTION 2: About Our Factory */}
-      <section className="max-w-[1550px] mx-auto px-6 py-24 xl:py-40">
+      <section className="max-w-[1200px] mx-auto px-6 py-24 xl:py-40">
         <div className="grid lg:grid-cols-2 gap-20 xl:gap-32 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -40 }}

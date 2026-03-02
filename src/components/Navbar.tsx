@@ -77,7 +77,7 @@ export default function Navbar() {
       isScrolled ? "shadow-md py-1 border-b" : "py-3 border-b-0"
     )}>
       {/* ขยาย Container เป็น max-w-[1550px] เพื่อจอ 1600px */}
-      <div className="max-w-[1600px] mx-auto flex items-center justify-between px-6 xl:px-10">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 xl:px-10">
         
         {/* LOGO - ขยายขนาดขึ้นเล็กน้อย */}
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
