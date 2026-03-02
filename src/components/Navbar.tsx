@@ -39,7 +39,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function Navbar() {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [lang, setLang] = useState<"TH" | "EN">("TH");
@@ -56,14 +56,15 @@ export function Navbar() {
     <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 transform scale-x-0 transition-transform duration-[600ms] origin-center group-hover:scale-x-100" />
   );
 
+  // ปรับสไตล์เมนูให้ใหญ่ขึ้นสำหรับหน้าจอ 1600px+
   const menubarTriggerStyles = cn(
-    "text-lg cursor-pointer relative group transition-colors duration-300 hover:text-red-600 font-normal flex items-center justify-center h-[44px]",
-    "min-w-[100px] px-4 bg-transparent border-none shadow-none gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
+    "text-lg xl:text-xl cursor-pointer relative group transition-colors duration-300 hover:text-red-600 font-normal flex items-center justify-center h-[50px]",
+    "min-w-[100px] xl:min-w-[130px] px-4 xl:px-6 bg-transparent border-none shadow-none gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
   );
 
-  const subMenuItemStyles = "text-base py-3 px-4 relative cursor-pointer transition-colors duration-300 hover:text-red-600 hover:underline underline-offset-[6px] decoration-2 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-normal";
+  const subMenuItemStyles = "text-base py-3 px-5 relative cursor-pointer transition-colors duration-300 hover:text-red-600 hover:underline underline-offset-[6px] decoration-2 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-normal";
 
-  const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[200px] p-1 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
+  const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[220px] p-2 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
 
   const navigateTo = (path: string) => {
     router.push(path);
@@ -73,23 +74,25 @@ export function Navbar() {
   return (
     <header className={cn(
       "w-full sticky top-0 bg-white z-[100] transition-all duration-300",
-      isScrolled ? "shadow-md py-1 border-b-0" : "py-2 border-b-0"
+      isScrolled ? "shadow-md py-1 border-b" : "py-3 border-b-0"
     )}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+      {/* ขยาย Container เป็น max-w-[1550px] เพื่อจอ 1600px */}
+      <div className="max-w-[1600px] mx-auto flex items-center justify-between px-6 xl:px-10">
         
-        {/* LOGO */}
+        {/* LOGO - ขยายขนาดขึ้นเล็กน้อย */}
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
           <Image 
             src="/picture/toffy_logo_2.png"
             alt="Toffy Boutique Logo"
-            width={160} height={80}
-            className={cn("transition-all duration-300 object-contain", isScrolled ? "h-9" : "h-15")}
+            width={180} 
+            height={90}
+            className={cn("transition-all duration-300 object-contain", isScrolled ? "h-10" : "h-16")}
           />
         </Link>
 
         {/* --- Desktop Menu --- */}
-        <div className="hidden min-[980px]:flex items-center gap-0" onMouseLeave={() => setActiveMenu(null)}>
-          <Menubar value={activeMenu || ""} onValueChange={setActiveMenu} className="border-none bg-transparent shadow-none p-0 h-auto flex gap-0 font-noto">
+        <div className="hidden min-[980px]:flex items-center gap-2" onMouseLeave={() => setActiveMenu(null)}>
+          <Menubar value={activeMenu || ""} onValueChange={setActiveMenu} className="border-none bg-transparent shadow-none p-0 h-auto flex gap-1 xl:gap-4 font-noto">
             
             <MenubarMenu value="home">
               <MenubarTrigger className={menubarTriggerStyles} onClick={() => router.push("/")} onMouseEnter={() => setActiveMenu("home")}>
@@ -99,12 +102,11 @@ export function Navbar() {
 
             <MenubarMenu value="order">
               <MenubarTrigger className={menubarTriggerStyles} onMouseEnter={() => setActiveMenu("order")}>
-                สั่งผลิต <ChevronsDown className="w-4 h-4" /> <NavUnderline />
+                สั่งผลิต <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
-              <MenubarContent sideOffset={8} className={dropdownContentStyles}>
+              <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/order")}>ขั้นตอนการผลิต</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/fabric")}>เนื้อผ้า</MenubarItem>
-                {/* ลบสีผ้าออกแล้ว */}
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/sizespec")}>ไซต์เสื้อ</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/ready-to-wear")}>สินค้าสำเร็จรูป</MenubarItem>
               </MenubarContent>
@@ -112,9 +114,9 @@ export function Navbar() {
 
             <MenubarMenu value="collection">
               <MenubarTrigger className={menubarTriggerStyles} onMouseEnter={() => setActiveMenu("collection")}>
-                แบบเสื้อ <ChevronsDown className="w-4 h-4" /> <NavUnderline />
+                แบบเสื้อ <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
-              <MenubarContent sideOffset={8} className={dropdownContentStyles}>
+              <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/t-shirt")}>คอกลม</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/polo")}>โปโล</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/shirt")}>เสื้อเชิ้ต</MenubarItem>
@@ -126,9 +128,9 @@ export function Navbar() {
 
             <MenubarMenu value="sample">
               <MenubarTrigger className={menubarTriggerStyles} onMouseEnter={() => setActiveMenu("sample")}>
-                ตัวอย่างสินค้า <ChevronsDown className="w-4 h-4" /> <NavUnderline />
+                ตัวอย่างสินค้า <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
-              <MenubarContent sideOffset={8} className={dropdownContentStyles}>
+              <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/past-collection")}>ผลงานที่ผ่านมา</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/work-sample")}>ตัวอย่างงานปัก/พิมพ์</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/customer-review")}>รีวิวจากลูกค้า</MenubarItem>
@@ -138,9 +140,9 @@ export function Navbar() {
 
             <MenubarMenu value="faq">
               <MenubarTrigger className={menubarTriggerStyles} onMouseEnter={() => setActiveMenu("faq")}>
-                ตอบคำถาม <ChevronsDown className="w-4 h-4" /> <NavUnderline />
+                ตอบคำถาม <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
-              <MenubarContent sideOffset={8} className={dropdownContentStyles}>
+              <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/faq")}>คำถามที่พบบ่อย</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/quotation")}>การประเมินราคา</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/payment")}> การชำระเงิน</MenubarItem>
@@ -154,10 +156,11 @@ export function Navbar() {
             </MenubarMenu>
           </Menubar>
 
-          <div className="flex items-center ml-4 border-l pl-4 gap-2 text-base h-[20px] font-noto">
-            <button onClick={() => setLang("TH")} className={cn("transition-colors", lang === "TH" ? "text-red-500 font-bold" : "text-slate-400 hover:text-slate-600")}>TH</button>
+          {/* ปรับ Language Switcher ให้ชัดเจนขึ้น */}
+          <div className="flex items-center ml-6 xl:ml-10 border-l pl-6 xl:pl-10 gap-3 text-lg h-[24px] font-noto">
+            <button onClick={() => setLang("TH")} className={cn("transition-colors", lang === "TH" ? "text-red-500 font-bold underline underline-offset-4" : "text-slate-400 hover:text-slate-600")}>TH</button>
             <span className="text-slate-300">|</span>
-            <button onClick={() => setLang("EN")} className={cn("transition-colors", lang === "EN" ? "text-red-500 font-bold" : "text-slate-400 hover:text-slate-600")}>EN</button>
+            <button onClick={() => setLang("EN")} className={cn("transition-colors", lang === "EN" ? "text-red-500 font-bold underline underline-offset-4" : "text-slate-400 hover:text-slate-600")}>EN</button>
           </div>
         </div>
 
@@ -168,7 +171,7 @@ export function Navbar() {
               <button className="p-2 hover:bg-slate-100 rounded-lg outline-none transition-colors">
                 <Menu size={32} strokeWidth={2.5} className="text-slate-800" />
               </button>
-              </SheetTrigger>
+            </SheetTrigger>
             <SheetContent side="right" className="w-[340px] bg-white p-0 border-l shadow-2xl overflow-y-auto">
               <SheetHeader className="p-5 text-left border-b sticky top-0 bg-white z-20">
                 <SheetTitle className="text-xl font-black flex items-center gap-3">
@@ -193,8 +196,6 @@ export function Navbar() {
                 </button>
 
                 <Accordion type="single" collapsible className="w-full">
-                  
-                  {/* สั่งผลิต Mobile */}
                   <AccordionItem value="order" className="border-b">
                     <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Shirt className="w-5 h-5 text-slate-400" /> สั่งผลิต</div>
@@ -203,7 +204,6 @@ export function Navbar() {
                       {[
                         { label: "ขั้นตอนการผลิต", path: "/pages/order" },
                         { label: "เนื้อผ้า", path: "/pages/fabric" },
-                        // ลบสีผ้าออกแล้ว
                         { label: "ไซต์เสื้อ", path: "/pages/sizespec" },
                         { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },
                       ].map((item) => (
@@ -268,7 +268,6 @@ export function Navbar() {
                       ))}
                     </AccordionContent>
                   </AccordionItem>
-
                 </Accordion>
 
                 <button onClick={() => navigateTo("/pages/contact")} className="flex items-center gap-4 text-base font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
