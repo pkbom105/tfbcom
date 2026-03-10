@@ -18,7 +18,7 @@ const DESKTOP_SLIDES = [
   { id: 3, bg: "/hp/slide/bg3.png", fg: "/hp/slide/fg3.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
   { id: 4, bg: "/hp/slide/bg4.png", fg: "/hp/slide/fg4.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
   { id: 5, bg: "/hp/slide/bg5.png", fg: "/hp/slide/fg5.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
-  { id: 6, bg: "/hp/slide/bg66.png", fg: "/hp/slide/fg6666.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 6, bg: "/hp/slide/bg666.png", fg: "/hp/slide/fg6661.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
 ];
 
 // ข้อมูล Slide สำหรับ Mobile
