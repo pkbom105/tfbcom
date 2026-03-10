@@ -56,15 +56,15 @@ export default function Navbar() {
     <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 transform scale-x-0 transition-transform duration-[600ms] origin-center group-hover:scale-x-100" />
   );
 
-  // ปรับสไตล์เมนูให้ใหญ่ขึ้นสำหรับหน้าจอ 1600px+
+  // --- Desktop Styles (text-sm: 14px) ---
   const menubarTriggerStyles = cn(
-    "text-lg xl:text-xl cursor-pointer relative group transition-colors duration-300 hover:text-red-600 font-normal flex items-center justify-center h-[50px]",
-    "min-w-[100px] xl:min-w-[130px] px-4 xl:px-6 bg-transparent border-none shadow-none gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
+    "text-sm xl:text-base cursor-pointer relative group transition-colors duration-300 hover:text-red-600 font-normal flex items-center justify-center h-[50px]",
+    "min-w-[90px] xl:min-w-[120px] px-3 xl:px-5 bg-transparent border-none shadow-none gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
   );
 
-  const subMenuItemStyles = "text-base py-3 px-5 relative cursor-pointer transition-colors duration-300 hover:text-red-600 hover:underline underline-offset-[6px] decoration-2 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-normal";
+  const subMenuItemStyles = "text-sm py-3 px-5 relative cursor-pointer transition-colors duration-300 hover:text-red-600 hover:underline underline-offset-[6px] decoration-2 hover:bg-transparent focus:bg-transparent focus:text-red-600 data-[highlighted]:bg-transparent data-[highlighted]:text-red-600 font-normal";
 
-  const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[220px] p-2 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
+  const dropdownContentStyles = "bg-white shadow-xl rounded-lg border border-slate-100 min-w-[200px] p-2 animate-in fade-in slide-in-from-top-1 z-[110] before:content-[''] before:absolute before:-top-4 before:left-0 before:w-full before:h-4 before:block";
 
   const navigateTo = (path: string) => {
     router.push(path);
@@ -76,10 +76,9 @@ export default function Navbar() {
       "w-full sticky top-0 bg-white z-[100] transition-all duration-300",
       isScrolled ? "shadow-md py-1 border-b" : "py-3 border-b-0"
     )}>
-      {/* ขยาย Container เป็น max-w-[1550px] เพื่อจอ 1600px */}
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 xl:px-10">
+      <div className="max-w-[1250px] mx-auto flex items-center justify-between px-6 xl:px-10">
         
-        {/* LOGO - ขยายขนาดขึ้นเล็กน้อย */}
+        {/* LOGO */}
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity shrink-0">
           <Image 
             src="/picture/toffy_logo_2.png"
@@ -90,9 +89,9 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* --- Desktop Menu --- */}
+        {/* --- Desktop Menu (text-sm) --- */}
         <div className="hidden min-[980px]:flex items-center gap-2" onMouseLeave={() => setActiveMenu(null)}>
-          <Menubar value={activeMenu || ""} onValueChange={setActiveMenu} className="border-none bg-transparent shadow-none p-0 h-auto flex gap-1 xl:gap-4 font-noto">
+          <Menubar value={activeMenu || ""} onValueChange={setActiveMenu} className="border-none bg-transparent shadow-none p-0 h-auto flex gap-1 xl:gap-2 font-noto">
             
             <MenubarMenu value="home">
               <MenubarTrigger className={menubarTriggerStyles} onClick={() => router.push("/")} onMouseEnter={() => setActiveMenu("home")}>
@@ -156,48 +155,49 @@ export default function Navbar() {
             </MenubarMenu>
           </Menubar>
 
-          {/* ปรับ Language Switcher ให้ชัดเจนขึ้น */}
-          <div className="flex items-center ml-6 xl:ml-10 border-l pl-6 xl:pl-10 gap-3 text-lg h-[24px] font-noto">
+          {/* Language Switcher - text-sm */}
+          <div className="flex items-center ml-4 xl:ml-6 border-l pl-4 xl:pl-6 gap-3 text-sm h-[20px] font-noto">
             <button onClick={() => setLang("TH")} className={cn("transition-colors", lang === "TH" ? "text-red-500 font-bold underline underline-offset-4" : "text-slate-400 hover:text-slate-600")}>TH</button>
             <span className="text-slate-300">|</span>
             <button onClick={() => setLang("EN")} className={cn("transition-colors", lang === "EN" ? "text-red-500 font-bold underline underline-offset-4" : "text-slate-400 hover:text-slate-600")}>EN</button>
           </div>
         </div>
 
-        {/* --- Mobile Menu Section (Sheet) --- */}
+        {/* --- Mobile Menu Section (text-md: 16px) --- */}
         <div className="min-[980px]:hidden flex items-center gap-2 font-noto">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button className="p-2 hover:bg-slate-100 rounded-lg outline-none transition-colors">
-                <Menu size={32} strokeWidth={2.5} className="text-slate-800" />
+                <Menu size={28} strokeWidth={2.5} className="text-slate-800" />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[340px] bg-white p-0 border-l shadow-2xl overflow-y-auto">
+            <SheetContent side="right" className="w-[300px] bg-white p-0 border-l shadow-2xl overflow-y-auto">
               <SheetHeader className="p-5 text-left border-b sticky top-0 bg-white z-20">
-                <SheetTitle className="text-xl font-black flex items-center gap-3">
-                  <div className="w-1.5 h-6 bg-red-600 rounded-full" />
+                <SheetTitle className="text-lg font-black flex items-center gap-3">
+                  <div className="w-1.5 h-5 bg-red-600 rounded-full" />
                   MENU
                 </SheetTitle>
               </SheetHeader>
 
               <div className="flex flex-col h-full bg-white font-noto pb-10">
                 <div className="flex items-center justify-between px-5 py-4 bg-slate-50 border-b">
-                  <div className="flex items-center gap-2 text-slate-500 font-black text-xs tracking-widest">
-                    <Languages size={18} className="text-red-500" /> LANGUAGE
+                  <div className="flex items-center gap-2 text-slate-500 font-black text-[10px] tracking-widest">
+                    <Languages size={16} className="text-red-500" /> LANGUAGE
                   </div>
                   <div className="flex bg-white rounded-full border p-1 shadow-sm">
-                    <button onClick={() => setLang("TH")} className={cn("px-4 py-1.5 rounded-full text-xs font-black transition-all", lang === "TH" ? "bg-red-600 text-white" : "text-slate-400")}>TH</button>
-                    <button onClick={() => setLang("EN")} className={cn("px-4 py-1.5 rounded-full text-xs font-black transition-all", lang === "EN" ? "bg-red-600 text-white" : "text-slate-400")}>EN</button>
+                    <button onClick={() => setLang("TH")} className={cn("px-3 py-1 rounded-full text-[10px] font-black transition-all", lang === "TH" ? "bg-red-600 text-white" : "text-slate-400")}>TH</button>
+                    <button onClick={() => setLang("EN")} className={cn("px-3 py-1 rounded-full text-[10px] font-black transition-all", lang === "EN" ? "bg-red-600 text-white" : "text-slate-400")}>EN</button>
                   </div>
                 </div>
                 
-                <button onClick={() => navigateTo("/")} className="flex items-center gap-4 text-base font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
+                {/* Mobile Main Links - text-md */}
+                <button onClick={() => navigateTo("/")} className="flex items-center gap-4 text-md font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
                   <Home className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> หน้าแรก
                 </button>
 
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="order" className="border-b">
-                    <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
+                    <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Shirt className="w-5 h-5 text-slate-400" /> สั่งผลิต</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
@@ -207,7 +207,7 @@ export default function Navbar() {
                         { label: "ไซต์เสื้อ", path: "/pages/sizespec" },
                         { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },
                       ].map((item) => (
-                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
+                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
                         </button>
                       ))}
@@ -215,7 +215,7 @@ export default function Navbar() {
                   </AccordionItem>
 
                   <AccordionItem value="collection" className="border-b">
-                    <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
+                    <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Palette className="w-5 h-5 text-slate-400" /> แบบเสื้อ</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
@@ -227,7 +227,7 @@ export default function Navbar() {
                         { label: "กางเกง", path: "/pages/collection/pants" },
                         { label: "ผ้ากันเปื้อน", path: "/pages/collection/arpon" },
                       ].map((item) => (
-                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
+                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
                         </button>
                       ))}
@@ -235,7 +235,7 @@ export default function Navbar() {
                   </AccordionItem>
 
                   <AccordionItem value="sample" className="border-b">
-                    <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
+                    <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Scissors className="w-5 h-5 text-slate-400" /> ตัวอย่างสินค้า</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
@@ -245,7 +245,7 @@ export default function Navbar() {
                         { label: "รีวิวจากลูกค้า", path: "/pages/customer-review" },
                         { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },
                       ].map((item) => (
-                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
+                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
                         </button>
                       ))}
@@ -253,7 +253,7 @@ export default function Navbar() {
                   </AccordionItem>
 
                   <AccordionItem value="faq" className="border-b">
-                    <AccordionTrigger className="text-base px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
+                    <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><HelpCircle className="w-5 h-5 text-slate-400" /> ตอบคำถาม</div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
@@ -262,7 +262,7 @@ export default function Navbar() {
                         { label: "การประเมินราคา", path: "/pages/quotation" },
                         { label: " การชำระเงิน", path: "/pages/payment" },
                       ].map((item) => (
-                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-[15px] py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
+                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
                         </button>
                       ))}
@@ -270,7 +270,7 @@ export default function Navbar() {
                   </AccordionItem>
                 </Accordion>
 
-                <button onClick={() => navigateTo("/pages/contact")} className="flex items-center gap-4 text-base font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
+                <button onClick={() => navigateTo("/pages/contact")} className="flex items-center gap-4 text-md font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
                   <PhoneCall className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> ติดต่อเรา
                 </button>
                 

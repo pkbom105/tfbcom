@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import HeroSlider from "@/components/HeroSlider";
+import HeroSlider2 from "@/components/HeroSlider2";
 import Process from "@/components/Process";
 import WhatWeDo, { SizeSpec } from "@/components/WhatWeDo";
 import AboutFactory from "@/components/AboutFactory"; // Import ตัวใหม่
@@ -8,7 +9,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">        
       {/* ส่วน Slide (aa1) */}
-      <HeroSlider />
+      <HeroSlider2 />
 
       {/* ส่วน Process (aa2) */}
       <Process />

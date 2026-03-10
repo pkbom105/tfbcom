@@ -36,8 +36,8 @@ export default function NestedCollectionPage() {
       subOptions: [
         { 
             id: "s1-1", 
-            label: "CM 20", 
-            title: "CM 20 Single Jersey", 
+            label: "C0M 20", 
+            title: "Single Jersey Semi/Com 20", 
             desc: (
               <ul className="list-disc ml-5 space-y-1">
                 <li><strong>ประเภทผ้า:</strong> CM 20 Single Jersey (100% Cotton)</li>
@@ -50,8 +50,44 @@ export default function NestedCollectionPage() {
             start: 1, 
             end: 2 
           },
-        { id: "s1-2", label: "SC 32", 
-        title: " SC 32 Single Jersey", 
+          { id: "s1-2", label: "COM 30", 
+            title: " Single Jersey Com 30", 
+            desc: (
+                <ul className="list-disc ml-5 space-y-1">
+                <li><strong>ประเภทผ้า:</strong> SC 32 Single Jersey (100% Cotton)</li>
+                <li><strong>น้ำหนักผ้า:</strong> 150 gsm (เนื้อผ้าบาง ใส่ไม่ร้อน)</li>
+                <li><strong>สัมผัส:</strong> ผลิตจากเส้นใยธรรมชาติ 100% (ฝ้าย) เนื้อเรียบ ละเอียด ไม่ระคายผิว</li>
+                <li><strong>การใช้งาน:</strong> ซับเหงื่อได้ดี สวมใส่สบายตัว</li>
+                <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม ราคาไม่สูง</li>
+              </ul>
+            ),        
+            start: 4, end: 6 },
+            { id: "s1-3", label: "COM 32", 
+              title: " Single Jersey Semi/Com 32", 
+              desc: (
+                  <ul className="list-disc ml-5 space-y-1">
+                  <li><strong>ประเภทผ้า:</strong> SC 32 Single Jersey (100% Cotton)</li>
+                  <li><strong>น้ำหนักผ้า:</strong> 150 gsm (เนื้อผ้าบาง ใส่ไม่ร้อน)</li>
+                  <li><strong>สัมผัส:</strong> ผลิตจากเส้นใยธรรมชาติ 100% (ฝ้าย) เนื้อเรียบ ละเอียด ไม่ระคายผิว</li>
+                  <li><strong>การใช้งาน:</strong> ซับเหงื่อได้ดี สวมใส่สบายตัว</li>
+                  <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม ราคาไม่สูง</li>
+                </ul>
+              ),        
+              start: 4, end: 6 },
+              { id: "s1-4", label: "Micro", 
+                title: " Micro", 
+                desc: (
+                    <ul className="list-disc ml-5 space-y-1">
+                    <li><strong>ประเภทผ้า:</strong> SC 32 Single Jersey (100% Cotton)</li>
+                    <li><strong>น้ำหนักผ้า:</strong> 150 gsm (เนื้อผ้าบาง ใส่ไม่ร้อน)</li>
+                    <li><strong>สัมผัส:</strong> ผลิตจากเส้นใยธรรมชาติ 100% (ฝ้าย) เนื้อเรียบ ละเอียด ไม่ระคายผิว</li>
+                    <li><strong>การใช้งาน:</strong> ซับเหงื่อได้ดี สวมใส่สบายตัว</li>
+                    <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม ราคาไม่สูง</li>
+                  </ul>
+                ),        
+                start: 4, end: 6 },
+        { id: "s1-5", label: "Supersoft 20", 
+        title: "Supersoft 20", 
         desc: (
             <ul className="list-disc ml-5 space-y-1">
             <li><strong>ประเภทผ้า:</strong> SC 32 Single Jersey (100% Cotton)</li>
@@ -62,7 +98,7 @@ export default function NestedCollectionPage() {
           </ul>
         ),        
         start: 4, end: 6 },
-        { id: "s1-3", label: "Drytech", title: "Drytech", 
+        { id: "s1-6", label: "Drytech", title: "Drytech", 
             desc: (
                 <ul className="list-disc ml-5 space-y-1">
                   <li><strong>ประเภทผ้า:</strong> DRYTECH 201 (55% Cotton - 45% Polyester)</li>
@@ -73,7 +109,7 @@ export default function NestedCollectionPage() {
                 </ul>
               ), 
         start: 3, end: 3 },
-        { id: "s1-4", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
+        { id: "s1-7", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
@@ -83,7 +119,7 @@ export default function NestedCollectionPage() {
             </ul>
           ),
         start: 4, end: 6 },
-        { id: "s1-5", label: "SUPERSOFF 20", title: "SUPERSOFF 20 ทอปดาย (100% Cotton)", 
+        { id: "s1-8", label: "SUPERSOFF 20", title: "SUPERSOFF 20 ทอปดาย (100% Cotton)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> SUPERSOFF 20 ทอปดาย (100% Cotton)</li>
@@ -94,40 +130,63 @@ export default function NestedCollectionPage() {
             </ul>
           ),
         start: 4, end: 6 },
+        { id: "s1-9", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
+              <li><strong>คุณสมบัติ:</strong> ผลิตจากเส้นใย Polyester 100% ไม่หด ไม่ย้วย</li>
+              <li><strong>ข้อควรระวัง:</strong> มีโอกาสเป็นขุยเมื่อใช้ไประยะหนึ่ง ระบายอากาศไม่ค่อยดี</li>
+              <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล</li>
+            </ul>
+          ),
+        start: 4, end: 6 },
+        { id: "s1-10", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
+              <li><strong>คุณสมบัติ:</strong> ผลิตจากเส้นใย Polyester 100% ไม่หด ไม่ย้วย</li>
+              <li><strong>ข้อควรระวัง:</strong> มีโอกาสเป็นขุยเมื่อใช้ไประยะหนึ่ง ระบายอากาศไม่ค่อยดี</li>
+              <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล</li>
+            </ul>
+          ),
+        start: 4, end: 6 },
+        { id: "s1-11", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
+              <li><strong>คุณสมบัติ:</strong> ผลิตจากเส้นใย Polyester 100% ไม่หด ไม่ย้วย</li>
+              <li><strong>ข้อควรระวัง:</strong> มีโอกาสเป็นขุยเมื่อใช้ไประยะหนึ่ง ระบายอากาศไม่ค่อยดี</li>
+              <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล</li>
+            </ul>
+          ),
+        start: 4, end: 6 },
+        { id: "s1-12", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
+              <li><strong>คุณสมบัติ:</strong> ผลิตจากเส้นใย Polyester 100% ไม่หด ไม่ย้วย</li>
+              <li><strong>ข้อควรระวัง:</strong> มีโอกาสเป็นขุยเมื่อใช้ไประยะหนึ่ง ระบายอากาศไม่ค่อยดี</li>
+              <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล</li>
+            </ul>
+          ),
+        start: 4, end: 6 },
       ]
     },
     { 
       id: "2", name: "เสื้อโปโล", img: "/hp/6.png", path: "/02colour/tshirt",
       subOptions: [
-        { 
-            id: "s2-1", 
-            label: "CM 20", 
-            title: "CM 20 Single Jersey", 
-            desc: (
+        { id: "s2-1", label: "Drytech 201", title: "Drytech 201", 
+          desc: (
               <ul className="list-disc ml-5 space-y-1">
-                <li><strong>ประเภทผ้า:</strong> CM 20 Single Jersey (100% Cotton)</li>
-                <li><strong>น้ำหนักผ้า:</strong> 200 gsm (เนื้อผ้าหนาเล็กน้อย อยู่ทรงสวย)</li>
-                <li><strong>สัมผัส:</strong> ผลิตจากฝ้ายธรรมชาติ 100% เนื้อเรียบเนียน ไม่ระคายผิว</li>
-                <li><strong>การใช้งาน:</strong> ซับเหงื่อได้ดีเยี่ยม สวมใส่สบายตัว</li>
-                <li><strong>เหมาะสำหรับ:</strong> เสื้อยืดคอกลมเกรดพรีเมียม หรือเสื้อโปโล</li>
+                <li><strong>ประเภทผ้า:</strong> DRYTECH 201 (55% Cotton - 45% Polyester)</li>
+                <li><strong>น้ำหนักผ้า:</strong> 175 gsm</li>
+                <li><strong>สัมผัส:</strong> เส้นใยผสมระหว่าง Cotton กับ Polyester รูปทรงคงทน ไม่หด ไม่ย้วย</li>
+                <li><strong>การใช้งาน:</strong> ซึมซับเหงื่อได้ทันทีด้วยโครงสร้างแบบตาข่าย (Mesh Back) แห้งสบาย ระบายอากาศดีมาก</li>
+                <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล ยับยาก รีดง่าย</li>
               </ul>
-            ),
-            start: 1, 
-            end: 2 
-          },
-        { id: "s2-2", label: "SC 32", 
-        title: " SC 32 Single Jersey", 
-        desc: (
-            <ul className="list-disc ml-5 space-y-1">
-            <li><strong>ประเภทผ้า:</strong> SC 32 Single Jersey (100% Cotton)</li>
-            <li><strong>น้ำหนักผ้า:</strong> 150 gsm (เนื้อผ้าบาง ใส่ไม่ร้อน)</li>
-            <li><strong>สัมผัส:</strong> ผลิตจากเส้นใยธรรมชาติ 100% (ฝ้าย) เนื้อเรียบ ละเอียด ไม่ระคายผิว</li>
-            <li><strong>การใช้งาน:</strong> ซับเหงื่อได้ดี สวมใส่สบายตัว</li>
-            <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม ราคาไม่สูง</li>
-          </ul>
-        ),        
-        start: 10, end: 12 },
-        { id: "s2-3", label: "Drytech", title: "Drytech", 
+            ), 
+      start: 3, end: 3 },        
+        { id: "s2-2", label: "Drytech 401", title: "Drytech 401", 
             desc: (
                 <ul className="list-disc ml-5 space-y-1">
                   <li><strong>ประเภทผ้า:</strong> DRYTECH 201 (55% Cotton - 45% Polyester)</li>
@@ -138,44 +197,7 @@ export default function NestedCollectionPage() {
                 </ul>
               ), 
         start: 3, end: 3 },
-        { id: "s2-4", label: "ไมโครเรียบ", title: "ไมโครเรียบ (100% Polyester)", 
-          desc: (
-            <ul className="list-disc ml-5 space-y-1">
-              <li><strong>ประเภทผ้า:</strong> ไมโครเรียบ (100% Polyester)</li>
-              <li><strong>คุณสมบัติ:</strong> ผลิตจากเส้นใย Polyester 100% ไม่หด ไม่ย้วย</li>
-              <li><strong>ข้อควรระวัง:</strong> มีโอกาสเป็นขุยเมื่อใช้ไประยะหนึ่ง ระบายอากาศไม่ค่อยดี</li>
-              <li><strong>เหมาะสำหรับ:</strong> ทำเสื้อยืดคอกลม โปโล</li>
-            </ul>
-          ),
-        start: 7, end: 7 },
-        { id: "s2-5", label: "TK Micro", title: "TK Micro", 
-          desc: (
-            <ul className="list-disc ml-5 space-y-1">
-              <li><strong>ประเภทผ้า:</strong> ผ้า TK Micro (100% Polyester) ทอด้วยเส้นใยขนาดเล็กพิเศษ (Microfiber)</li>
-              <li><strong>น้ำหนักผ้า:</strong> ประมาณ 160 - 170 GMS (ใกล้เคียงกับ ViralBlock VB 201)</li>
-              <li><strong>สัมผัส:</strong> เนื้อผ้าละเอียด เรียบเนียน ผิวสัมผัสนุ่มลื่นสบายผิวมากกว่าผ้า TK ทั่วไป</li>
-              <li><strong>คุณสมบัติพิเศษ:</strong> ผ้าไม่ยับง่าย (Non-Iron) คืนตัวได้ดี ไม่ต้องรีดหลังซัก และไม่ย้วยง่าย</li>
-              <li><strong>การระบายอากาศ:</strong> ระบายอากาศได้ดีปานกลาง แห้งไว ไม่เก็บความชื้น ทำให้รู้สึกแห้งสบายขณะสวมใส่</li>
-              <li><strong>งานสกรีน:</strong> เหมาะอย่างยิ่งสำหรับงานพิมพ์ Sublimation เพราะเส้นใยโพลีเอสเตอร์ช่วยให้สีซึมลึกและสดใส</li>
-              <li><strong>ความทนทาน:</strong> ทนทานต่อการซัก ไม่ขึ้นขนง่าย และรักษารูปทรงเสื้อได้ดีในระยะยาว</li>
-              <li><strong>เหมาะสำหรับ:</strong> เสื้อกิจกรรม, เสื้อพนักงาน, เสื้อทีมงาน และเสื้อที่ต้องการงานพิมพ์ลายเต็มตัว</li>
-            </ul>
-         ),
-        start: 5, end: 6 },
-        { id: "s2-6", label: "Viral Block", title: "Viral Block", 
-          desc: (
-            <ul className="list-disc ml-5 space-y-1">
-              <li><strong>ประเภทผ้า:</strong> ผ้า ViralBlock VB 201 (Antivirus Fabric) รองรับการพิมพ์ Sublimation</li>
-              <li><strong>น้ำหนักผ้า:</strong> 165 GMS</li>
-              <li><strong>สัมผัส:</strong> สัมผัสฟูนุ่ม ไม่ระคายผิว ไม่เป็นอันตรายต่อผิวสัมผัส และปลอดภัยจากการสวมใส่</li>
-              <li><strong>คุณสมบัติพิเศษ:</strong> ยับยั้งเชื้อไวรัสได้ถึง 96.84% (มาตรฐาน ISO 18184:2019) และแบคทีเรีย 99.9% แม้ผ่านการซักมากกว่า 30 ครั้ง</li>
-              <li><strong>นวัตกรรม:</strong> Anti Microbial Filament Yarn ปลอดภัยสูง ไม่มีการปล่อยสารเคมีเข้าสู่ร่างกาย</li>
-              <li><strong>มาตรฐานรองรับ:</strong> ผ่านการรับรองจาก THTI (สถาบันสิ่งทอไทย) และ EPA ประเทศสหรัฐอเมริกา</li>
-              <li><strong>การใช้งาน:</strong> เหมาะสำหรับผลิตชุดทำงาน, ชุดกีฬา, สินค้าอนามัย และงานอีเวนท์ที่เน้นสุขอนามัย</li>
-            </ul>
-         ),
-        start: 4, end: 4 },
-        { id: "s2-7", label: "Dry-Touch ", title: "ผ้า Dry-Touch (Super Soft)", 
+        { id: "s2-3", label: "Dry-Touch ", title: "ผ้า Dry-Touch (Super Soft)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้า Dry-Touch เทคโนโลยีผ้า 5.0 โครงสร้างการทอแบบสองชั้น (Super Double-Weaving)</li>
@@ -189,7 +211,48 @@ export default function NestedCollectionPage() {
             </ul>
          ),
         start: 8, end: 9 },
-        { id: "s2-8", label: "Micro Hybrid", title: "ผ้า Micro Hybrid", 
+        { id: "s2-4", label: "Dry First", title: "ผ้า Dry First", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้า TK Micro (100% Polyester) ทอด้วยเส้นใยขนาดเล็กพิเศษ (Microfiber)</li>
+              <li><strong>น้ำหนักผ้า:</strong> ประมาณ 160 - 170 GMS (ใกล้เคียงกับ ViralBlock VB 201)</li>
+              <li><strong>สัมผัส:</strong> เนื้อผ้าละเอียด เรียบเนียน ผิวสัมผัสนุ่มลื่นสบายผิวมากกว่าผ้า TK ทั่วไป</li>
+              <li><strong>คุณสมบัติพิเศษ:</strong> ผ้าไม่ยับง่าย (Non-Iron) คืนตัวได้ดี ไม่ต้องรีดหลังซัก และไม่ย้วยง่าย</li>
+              <li><strong>การระบายอากาศ:</strong> ระบายอากาศได้ดีปานกลาง แห้งไว ไม่เก็บความชื้น ทำให้รู้สึกแห้งสบายขณะสวมใส่</li>
+              <li><strong>งานสกรีน:</strong> เหมาะอย่างยิ่งสำหรับงานพิมพ์ Sublimation เพราะเส้นใยโพลีเอสเตอร์ช่วยให้สีซึมลึกและสดใส</li>
+              <li><strong>ความทนทาน:</strong> ทนทานต่อการซัก ไม่ขึ้นขนง่าย และรักษารูปทรงเสื้อได้ดีในระยะยาว</li>
+              <li><strong>เหมาะสำหรับ:</strong> เสื้อกิจกรรม, เสื้อพนักงาน, เสื้อทีมงาน และเสื้อที่ต้องการงานพิมพ์ลายเต็มตัว</li>
+            </ul>
+        ),
+        start: 5, end: 6 },
+        { id: "s2-5", label: "CVC Juti", title: "ผ้า CVC Juti", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้า ViralBlock VB 201 (Antivirus Fabric) รองรับการพิมพ์ Sublimation</li>
+              <li><strong>น้ำหนักผ้า:</strong> 165 GMS</li>
+              <li><strong>สัมผัส:</strong> สัมผัสฟูนุ่ม ไม่ระคายผิว ไม่เป็นอันตรายต่อผิวสัมผัส และปลอดภัยจากการสวมใส่</li>
+              <li><strong>คุณสมบัติพิเศษ:</strong> ยับยั้งเชื้อไวรัสได้ถึง 96.84% (มาตรฐาน ISO 18184:2019) และแบคทีเรีย 99.9% แม้ผ่านการซักมากกว่า 30 ครั้ง</li>
+              <li><strong>นวัตกรรม:</strong> Anti Microbial Filament Yarn ปลอดภัยสูง ไม่มีการปล่อยสารเคมีเข้าสู่ร่างกาย</li>
+              <li><strong>มาตรฐานรองรับ:</strong> ผ่านการรับรองจาก THTI (สถาบันสิ่งทอไทย) และ EPA ประเทศสหรัฐอเมริกา</li>
+              <li><strong>การใช้งาน:</strong> เหมาะสำหรับผลิตชุดทำงาน, ชุดกีฬา, สินค้าอนามัย และงานอีเวนท์ที่เน้นสุขอนามัย</li>
+            </ul>
+         ),
+        start: 4, end: 4 },
+        { id: "s2-6", label: "CVC Lacoste ", title: "ผ้า CVC Lacoste", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้า Dry-Touch เทคโนโลยีผ้า 5.0 โครงสร้างการทอแบบสองชั้น (Super Double-Weaving)</li>
+              <li><strong>น้ำหนักผ้า:</strong> ประมาณ 160-170 GMS (เน้นความบางเบาแต่คงรูปทรง)</li>
+              <li><strong>นวัตกรรม:</strong> เทคโนโลยีผ้า 5.0 โครงสร้างการทอแบบสองชั้น (Super Double-Weaving)</li>
+              <li><strong>ประเภทเส้นใย:</strong> ผสมผสาน Micro-Fibered เพื่อดูดซับความชื้น และเส้นใย Cotton ธรรมชาติเพื่อคืนความแห้งสบาย</li>
+              <li><strong>สัมผัส:</strong> เนื้อผ้านุ่มพิเศษ (Super Soft) ให้ความรู้สึกพรีเมียม สบายผิวตลอดการสวมใส่</li>
+              <li><strong>การจัดการเหงื่อ:</strong> ดูดซับความชื้นจากผิวสัมผัสทันทีและระเหยออกอย่างรวดเร็ว (Fast Ventilation & Evaporate)</li>
+              <li><strong>การรักษารูปทรง:</strong> เนื้อผ้าคืนตัวได้ดี ไม่ย้วย ไม่หด และรักษารูปทรงเสื้อได้ยาวนาน (Long Lasting Shape)</li>
+              <li><strong>การดูแลรักษา:</strong> ดูแลรักษาง่าย (Easy to Care) แม้ผ่านการซักหลายครั้งก็ยังคงความนุ่มและคุณสมบัติเดิม</li>
+            </ul>
+         ),
+        start: 8, end: 9 },
+        { id: "s2-7", label: "TC Jiti", title: "ผ้า TC Jiti", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้า Micro Hybrid (การทอร่วมของเส้นใย 2 ชนิด) โครงสร้างทอจูติแบบละเอียด</li>
@@ -203,7 +266,7 @@ export default function NestedCollectionPage() {
             </ul>
          ),
          start: 8, end: 9 },
-         { id: "s2-9", label: "Endurance", title: "ผ้า Endurance (Technicore Technology)", 
+         { id: "s2-8", label: "Endurance", title: "ผ้า Endurance (Technicore Technology)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้า Endurance (Technicore Technology) "Cotton Feel" Polyester</li>
@@ -215,7 +278,7 @@ export default function NestedCollectionPage() {
             </ul>
          ),
          start: 13, end: 13 },
-         { id: "s2-10", label: "DT Lacoste", title: "ผ้า DT Lacoste", 
+         { id: "s2-9", label: "TC Lacoste", title: "ผ้า TC Lacoste", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้า DT Lacoste (Double Texture) ทอด้วยเทคนิคพิเศษให้มีลายรูพรุนคล้ายรังผึ้งหรือรูปข้าวหลามตัด</li>
@@ -228,12 +291,40 @@ export default function NestedCollectionPage() {
             </ul>
          ),
          start: 14, end: 15 },
+         { id: "s2-10", label: "TK Micro", title: "TK Micro", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้า TK Micro (100% Polyester) ทอด้วยเส้นใยขนาดเล็กพิเศษ (Microfiber)</li>
+              <li><strong>น้ำหนักผ้า:</strong> ประมาณ 160 - 170 GMS (ใกล้เคียงกับ ViralBlock VB 201)</li>
+              <li><strong>สัมผัส:</strong> เนื้อผ้าละเอียด เรียบเนียน ผิวสัมผัสนุ่มลื่นสบายผิวมากกว่าผ้า TK ทั่วไป</li>
+              <li><strong>คุณสมบัติพิเศษ:</strong> ผ้าไม่ยับง่าย (Non-Iron) คืนตัวได้ดี ไม่ต้องรีดหลังซัก และไม่ย้วยง่าย</li>
+              <li><strong>การระบายอากาศ:</strong> ระบายอากาศได้ดีปานกลาง แห้งไว ไม่เก็บความชื้น ทำให้รู้สึกแห้งสบายขณะสวมใส่</li>
+              <li><strong>งานสกรีน:</strong> เหมาะอย่างยิ่งสำหรับงานพิมพ์ Sublimation เพราะเส้นใยโพลีเอสเตอร์ช่วยให้สีซึมลึกและสดใส</li>
+              <li><strong>ความทนทาน:</strong> ทนทานต่อการซัก ไม่ขึ้นขนง่าย และรักษารูปทรงเสื้อได้ดีในระยะยาว</li>
+              <li><strong>เหมาะสำหรับ:</strong> เสื้อกิจกรรม, เสื้อพนักงาน, เสื้อทีมงาน และเสื้อที่ต้องการงานพิมพ์ลายเต็มตัว</li>
+            </ul>
+        ),
+        start: 5, end: 6 },
+        { id: "s2-11", label: "Micro", title: "Micro", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้า TK Micro (100% Polyester) ทอด้วยเส้นใยขนาดเล็กพิเศษ (Microfiber)</li>
+              <li><strong>น้ำหนักผ้า:</strong> ประมาณ 160 - 170 GMS (ใกล้เคียงกับ ViralBlock VB 201)</li>
+              <li><strong>สัมผัส:</strong> เนื้อผ้าละเอียด เรียบเนียน ผิวสัมผัสนุ่มลื่นสบายผิวมากกว่าผ้า TK ทั่วไป</li>
+              <li><strong>คุณสมบัติพิเศษ:</strong> ผ้าไม่ยับง่าย (Non-Iron) คืนตัวได้ดี ไม่ต้องรีดหลังซัก และไม่ย้วยง่าย</li>
+              <li><strong>การระบายอากาศ:</strong> ระบายอากาศได้ดีปานกลาง แห้งไว ไม่เก็บความชื้น ทำให้รู้สึกแห้งสบายขณะสวมใส่</li>
+              <li><strong>งานสกรีน:</strong> เหมาะอย่างยิ่งสำหรับงานพิมพ์ Sublimation เพราะเส้นใยโพลีเอสเตอร์ช่วยให้สีซึมลึกและสดใส</li>
+              <li><strong>ความทนทาน:</strong> ทนทานต่อการซัก ไม่ขึ้นขนง่าย และรักษารูปทรงเสื้อได้ดีในระยะยาว</li>
+              <li><strong>เหมาะสำหรับ:</strong> เสื้อกิจกรรม, เสื้อพนักงาน, เสื้อทีมงาน และเสื้อที่ต้องการงานพิมพ์ลายเต็มตัว</li>
+            </ul>
+        ),
+        start: 5, end: 6 },
       ]
     },
     { 
       id: "3", name: "เสื้อเชิ้ต", img: "/hp/7.png", path: "/02colour/shirt",
       subOptions: [
-        { id: "s3-1", label: "Comb Twill", title: "ผ้าคอมทวิว (Combed Twill)", 
+        { id: "s3-1", label: "TC Comb Twill", title: "ผ้าคอมทวิว (Combed Twill)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้าคอมทวิว (Combed Twill) ทอแบบเฉียงที่มีความละเอียดสูง (เส้นด้าย Combed)</li>
@@ -246,7 +337,18 @@ export default function NestedCollectionPage() {
             </ul>
          ),
           start: 1, end: 5 },
-          { id: "s3-2", label: "Twill", title: "ผ้าทวิลล์ (Twill)", 
+          { id: "s3-2", label: "Oxford Chambray", title: "ผ้าอ๊อกฟอร์ดแชมเบรย์ (Oxford Chambray)", 
+            desc: (
+              <ul className="list-disc ml-5 space-y-1">
+                <li><strong>ประเภทผ้า:</strong> ผ้าอ๊อกฟอร์ดแชมเบรย์อย่างดี รหัส No.4550 ทอด้วยเส้นด้ายสลับสีให้ลุคที่มีมิติ</li>
+                <li><strong>ส่วนผสม:</strong> มีส่วนผสมของฝ้าย (Cotton) ในปริมาณมาก ทำให้ระบายอากาศได้ดีและใส่สบาย</li>
+                <li><strong>ลักษณะเนื้อผ้า:</strong> เนื้อผ้ามีความหนาปานกลาง อยู่ทรงสวย มีความทนทานสูง</li>
+                <li><strong>ข้อแนะนำการใช้งาน:</strong> เนื่องจากมีส่วนผสมของฝ้ายมาก ควรซัก 1-2 ครั้งก่อนตัด เพื่อดูความยืดหยุ่นและเผื่อการหดของผ้า</li>
+                <li><strong>เหมาะสำหรับ:</strong> เสื้อเชิ้ตทำงาน, เสื้อยูนิฟอร์มสไตล์กึ่งลำลอง และเสื้อเชิ้ตแฟชั่น</li>
+              </ul>
+           ),
+          start: 8, end: 10 },
+          { id: "s3-3", label: "Stripe", title: "ผ้า Stripe", 
             desc: (
               <ul className="list-disc ml-5 space-y-1">
                 <li><strong>ประเภทผ้า:</strong> ผ้าทวิลล์ (Twill) มีลักษณะการทอที่เห็นเป็นลายเส้นแนวเฉียง (Diagonal Weave) ที่เป็นเอกลักษณ์</li>
@@ -259,7 +361,7 @@ export default function NestedCollectionPage() {
               </ul>
            ),
           start: 6, end: 6 },
-         { id: "s3-3", label: "Orlon", title: "ผ้าออร์ลอน (Orlon)", 
+         { id: "s3-4", label: "Orlon", title: "ผ้าออร์ลอน (Orlon)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้าออร์ลอน (Orlon) เส้นใยอะคริลิกสังเคราะห์ที่มีความนุ่มและฟูเป็นพิเศษ</li>
@@ -272,7 +374,7 @@ export default function NestedCollectionPage() {
             </ul>
          ),
         start: 7, end: 7 },
-        { id: "s3-4", label: "Oxford Chambray", title: "ผ้าอ๊อกฟอร์ดแชมเบรย์ (Oxford Chambray)", 
+        { id: "s3-5", label: "Oxford Chambray", title: "ผ้าอ๊อกฟอร์ดแชมเบรย์ (Oxford Chambray)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้าอ๊อกฟอร์ดแชมเบรย์อย่างดี รหัส No.4550 ทอด้วยเส้นด้ายสลับสีให้ลุคที่มีมิติ</li>
@@ -288,7 +390,7 @@ export default function NestedCollectionPage() {
     { 
       id: "4", name: "เสื้อเชิ้ตช่าง", img: "/hp/8.png", path: "/01collection/workshop",
       subOptions: [
-        { id: "s4-1", label: "Comb Twill", title: "ผ้าคอมทวิว (Combed Twill)", 
+        { id: "s4-1", label: "TC Comb Twill", title: "ผ้าคอมทวิว (Combed Twill)", 
           desc: (
             <ul className="list-disc ml-5 space-y-1">
               <li><strong>ประเภทผ้า:</strong> ผ้าคอมทวิว (Combed Twill) ทอแบบเฉียงที่มีความละเอียดสูง (เส้นด้าย Combed)</li>
@@ -299,8 +401,56 @@ export default function NestedCollectionPage() {
               <li><strong>การรักษารูปทรง:</strong> คืนตัวได้ดี ไม่ค่อยหดหรือย้วยหลังซัก ช่วยให้เสื้อผ้าดูเป็นทรงสวยตลอดวัน</li>
               <li><strong>เหมาะสำหรับ:</strong> เสื้อเชิ้ตพนักงาน, ชุดยูนิฟอร์มสำนักงาน, ชุดกาวน์, และกางเกงสแล็ค</li>
             </ul>
-         ), start: 1, end: 3 
-        },
+         ),
+          start: 1, end: 5 },
+          { id: "s4-2", label: "Oxford Chambray", title: "ผ้าอ๊อกฟอร์ดแชมเบรย์ (Oxford Chambray)", 
+            desc: (
+              <ul className="list-disc ml-5 space-y-1">
+                <li><strong>ประเภทผ้า:</strong> ผ้าอ๊อกฟอร์ดแชมเบรย์อย่างดี รหัส No.4550 ทอด้วยเส้นด้ายสลับสีให้ลุคที่มีมิติ</li>
+                <li><strong>ส่วนผสม:</strong> มีส่วนผสมของฝ้าย (Cotton) ในปริมาณมาก ทำให้ระบายอากาศได้ดีและใส่สบาย</li>
+                <li><strong>ลักษณะเนื้อผ้า:</strong> เนื้อผ้ามีความหนาปานกลาง อยู่ทรงสวย มีความทนทานสูง</li>
+                <li><strong>ข้อแนะนำการใช้งาน:</strong> เนื่องจากมีส่วนผสมของฝ้ายมาก ควรซัก 1-2 ครั้งก่อนตัด เพื่อดูความยืดหยุ่นและเผื่อการหดของผ้า</li>
+                <li><strong>เหมาะสำหรับ:</strong> เสื้อเชิ้ตทำงาน, เสื้อยูนิฟอร์มสไตล์กึ่งลำลอง และเสื้อเชิ้ตแฟชั่น</li>
+              </ul>
+           ),
+          start: 8, end: 10 },
+          { id: "s4-3", label: "Stripe", title: "ผ้า Stripe", 
+            desc: (
+              <ul className="list-disc ml-5 space-y-1">
+                <li><strong>ประเภทผ้า:</strong> ผ้าทวิลล์ (Twill) มีลักษณะการทอที่เห็นเป็นลายเส้นแนวเฉียง (Diagonal Weave) ที่เป็นเอกลักษณ์</li>
+                <li><strong>สัมผัส:</strong> เนื้อผ้ามีความหนาแน่น นุ่มนวล และมีน้ำหนักทิ้งตัวสวย (Drape) ให้ลุคที่ดูภูมิฐาน</li>
+                <li><strong>ความทนทาน:</strong> แข็งแรงทนทานต่อการเสียดสีและการใช้งานหนัก เนื่องจากโครงสร้างการทอที่แน่นหนา</li>
+                <li><strong>คุณสมบัติพิเศษ:</strong> ไม่ยับง่าย คืนตัวได้ดีกว่าการทอแบบขัดปกติ และช่วยพรางคราบสกปรกได้ดีจากลายเส้นเฉียงบนเนื้อผ้า</li>
+                <li><strong>การดูแลรักษา:</strong> ดูแลรักษาง่าย ซักทำความสะอาดได้บ่อยโดยที่เนื้อผ้าไม่เปื่อยยุ่ยง่าย และสีสันติดทนนาน</li>
+                <li><strong>การรักษารูปทรง:</strong> คงรูปทรงได้ดีเยี่ยม ไม่หดตัวง่ายหลังการซัก ช่วยให้เสื้อผ้าดูเนี๊ยบตลอดวัน</li>
+                <li><strong>เหมาะสำหรับ:</strong> เสื้อเชิ้ตทำงาน, ชุดยูนิฟอร์มพนักงาน, กางเกงสแล็ค, และเสื้อแจ็คเก็ต</li>
+              </ul>
+           ),
+          start: 6, end: 6 },
+         { id: "s4-3", label: "Orlon", title: "ผ้าออร์ลอน (Orlon)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้าออร์ลอน (Orlon) เส้นใยอะคริลิกสังเคราะห์ที่มีความนุ่มและฟูเป็นพิเศษ</li>
+              <li><strong>สัมผัส:</strong> ให้ความรู้สึกนุ่มนวล อบอุ่น และน้ำหนักเบา คล้ายกับขนสัตว์ธรรมชาติแต่ไม่ระคายเคืองผิว</li>
+              <li><strong>คุณสมบัติพิเศษ:</strong> มีความยืดหยุ่นสูง คืนตัวได้ดี ไม่ยับง่าย และทนทานต่อแสงแดดและสารเคมีได้ดีเยี่ยม</li>
+              <li><strong>การรักษาความร้อน:</strong> เก็บกักความอบอุ่นได้ดีมาก แต่ยังสามารถระบายอากาศได้เพื่อไม่ให้อึดอัดจนเกินไป</li>
+              <li><strong>ความทนทาน:</strong> ทนต่อการซัก ไม่หดตัวง่าย ทนต่อเชื้อราและแมลง (ต่างจากขนสัตว์แท้ที่แมลงมักกัดกิน)</li>
+              <li><strong>การดูแลรักษา:</strong> ดูแลรักษาง่าย แห้งไว และสีสันติดทนนาน ไม่ซีดจางง่ายจากการซักหรือแสงแดด</li>
+              <li><strong>เหมาะสำหรับ:</strong> เสื้อกันหนาว, เสื้อไหมพรม, เสื้อแจ็คเก็ตน้ำหนักเบา, และผ้าพันคอพรีเมียม</li>
+            </ul>
+         ),
+        start: 7, end: 7 },
+        { id: "s4-4", label: "Oxford Chambray", title: "ผ้าอ๊อกฟอร์ดแชมเบรย์ (Oxford Chambray)", 
+          desc: (
+            <ul className="list-disc ml-5 space-y-1">
+              <li><strong>ประเภทผ้า:</strong> ผ้าอ๊อกฟอร์ดแชมเบรย์อย่างดี รหัส No.4550 ทอด้วยเส้นด้ายสลับสีให้ลุคที่มีมิติ</li>
+              <li><strong>ส่วนผสม:</strong> มีส่วนผสมของฝ้าย (Cotton) ในปริมาณมาก ทำให้ระบายอากาศได้ดีและใส่สบาย</li>
+              <li><strong>ลักษณะเนื้อผ้า:</strong> เนื้อผ้ามีความหนาปานกลาง อยู่ทรงสวย มีความทนทานสูง</li>
+              <li><strong>ข้อแนะนำการใช้งาน:</strong> เนื่องจากมีส่วนผสมของฝ้ายมาก ควรซัก 1-2 ครั้งก่อนตัด เพื่อดูความยืดหยุ่นและเผื่อการหดของผ้า</li>
+              <li><strong>เหมาะสำหรับ:</strong> เสื้อเชิ้ตทำงาน, เสื้อยูนิฟอร์มสไตล์กึ่งลำลอง และเสื้อเชิ้ตแฟชั่น</li>
+            </ul>
+         ),
+        start: 8, end: 10 },
       ]
     },
     { 
