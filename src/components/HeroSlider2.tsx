@@ -13,7 +13,7 @@ import "swiper/css/effect-fade";
 
 // ข้อมูล Slide สำหรับ Desktop
 const DESKTOP_SLIDES = [
-  { id: 1, bg: "/hp/slide/bg1.png", fg: "/hp/slide/fg11.png", fgWidth: 2000, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 1, bg: "/hp/slide/bg1.png", fg: "/hp/slide/fg1.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
   { id: 2, bg: "/hp/slide/bg2.png", fg: "/hp/slide/fg2.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
   { id: 3, bg: "/hp/slide/bg3.png", fg: "/hp/slide/fg3.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
   { id: 4, bg: "/hp/slide/bg4.png", fg: "/hp/slide/fg4.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
