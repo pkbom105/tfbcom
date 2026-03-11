@@ -111,47 +111,53 @@ export default function HeroSlider() {
         </Swiper>
       </div>
 
-      {/* --- 2. Mobile Slider --- */}
-      <div className="block lg:hidden h-[100vh]">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          speed={800}
-          autoplay={{ delay: 4000 }}
-          pagination={{ clickable: true, el: '.custom-pagination-mobile' }}
-          loop={true}
-          className="w-full h-full"
-        >
-          {MOBILE_SLIDES.map((mSlide) => (
-            <SwiperSlide key={mSlide.id} className="w-full h-full">
-              <div className="relative w-full h-full">
-                <Image
-                  src={mSlide.img}
-                  alt={`Mobile Slide ${mSlide.id}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+{/* --- 2. Mobile Slider --- */}
+<div className="block lg:hidden w-full h-screen"> {/* ใช้ h-screen เพื่อให้เต็มความสูงจอ */}
+  <Swiper
+    modules={[Autoplay, Pagination]}
+    speed={800}
+    autoplay={{ delay: 4000 }}
+    pagination={{ clickable: true, el: '.custom-pagination-mobile' }}
+    loop={true}
+    className="w-full h-full" // บังคับ Swiper ให้สูงเท่า Parent
+  >
+    {MOBILE_SLIDES.map((mSlide) => (
+      <SwiperSlide key={mSlide.id} className="w-full h-full relative">
+        <div className="relative w-full h-full">
+          <Image
+            src={mSlide.img}
+            alt={`Mobile Slide ${mSlide.id}`}
+            fill
+            priority // เพิ่ม priority สำหรับรูปแรกๆ เพื่อลดอาการวูบขาว
+            sizes="100vw"
+            className="object-contain object-center" // object-cover จะทำให้รูปขยายเต็มพื้นที่โดยไม่เสียสัดส่วน
+          />
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
 
       <div className="custom-pagination custom-pagination-mobile absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-2" />
 
-      <style jsx global>{`
-        .custom-pagination .swiper-pagination-bullet {
-          background: #ef4444 !important;
-          opacity: 0.3;
-          width: 8px;
-          height: 8px;
-          transition: all 0.4s ease;
-        }
-        .custom-pagination .swiper-pagination-bullet-active {
-          opacity: 1;
-          width: 30px;
-          border-radius: 10px;
-        }
-      `}</style>
+        <style jsx global>{`
+          /* ปรับให้รองรับทั้ง Desktop และ Mobile */
+          .custom-pagination .swiper-pagination-bullet,
+          .custom-pagination-mobile .swiper-pagination-bullet {
+            background: #ef4444 !important;
+            opacity: 0.3;
+            width: 8px;
+            height: 8px;
+            transition: all 0.4s ease;
+          }
+          
+          .custom-pagination .swiper-pagination-bullet-active,
+          .custom-pagination-mobile .swiper-pagination-bullet-active {
+            opacity: 1;
+            width: 30px;
+            border-radius: 10px;
+          }
+        `}</style>
     </section>
   );
 }
