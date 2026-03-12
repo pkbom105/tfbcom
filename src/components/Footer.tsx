@@ -69,10 +69,10 @@ export default function Footer() {
                   <Phone size={18} className="text-red-600" /> สำนักงาน
                 </h5>                
                 <p className="text-md md:text-sm text-gray-700">
-                  02-428-2591 <a href="tel:0840993799" className="text-black font-black hover:text-red-600">084-099-3799</a>
+                สำนักงาน  <a href="tel:024282591" className="text-black font-black hover:text-red-600">02-428-2591</a>
                 </p>
                 <p className="text-md md:text-sm text-gray-700">
-                  02-428-2591 <a href="tel:0956396142" className="text-black font-black hover:text-red-600">095-639-6142</a>
+                สำนักงาน  <a href="tel:028740205" className="text-black font-black hover:text-red-600">02-874-0205</a>
                 </p>
               </div>
 

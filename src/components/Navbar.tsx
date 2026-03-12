@@ -104,6 +104,7 @@ export default function Navbar() {
                 สั่งผลิต <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
               <MenubarContent sideOffset={12} className={dropdownContentStyles}>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/process")}>ขบวนการผลิต</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/order")}>ขั้นตอนการผลิต</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/fabric")}>เนื้อผ้า</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/sizespec")}>ไซต์เสื้อ</MenubarItem>
@@ -149,9 +150,13 @@ export default function Navbar() {
             </MenubarMenu>
 
             <MenubarMenu value="contact">
-              <MenubarTrigger className={menubarTriggerStyles} onClick={() => router.push("/pages/contact")} onMouseEnter={() => setActiveMenu("contact")}>
-                ติดต่อเรา <NavUnderline />
+              <MenubarTrigger className={menubarTriggerStyles} onMouseEnter={() => setActiveMenu("contact")}>
+                ติดต่อเรา <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
+              <MenubarContent sideOffset={12} className={dropdownContentStyles}>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/contact")}>ติดต่อเรา</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/aboutus")}>เกี่ยวกับเรา</MenubarItem>
+              </MenubarContent>
             </MenubarMenu>
           </Menubar>
 
@@ -202,6 +207,7 @@ export default function Navbar() {
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
                       {[
+                        { label: "ขบวนการผลิต", path: "/pages/process" },
                         { label: "ขั้นตอนการผลิต", path: "/pages/order" },
                         { label: "เนื้อผ้า", path: "/pages/fabric" },
                         { label: "ไซต์เสื้อ", path: "/pages/sizespec" },

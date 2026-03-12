@@ -4,6 +4,7 @@ import HeroSlider2 from "@/components/HeroSlider2";
 import Process from "@/components/Process";
 import WhatWeDo, { SizeSpec } from "@/components/WhatWeDo";
 import AboutFactory from "@/components/AboutFactory"; // Import ตัวใหม่
+import OurClient from "@/components/OurClient";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,8 @@ export default function HomePage() {
 
       {/* ส่วนประวัติและผลงาน (aa5, aa6, aa7) */}
       <AboutFactory />
+      
+      <OurClient />
     </main>
   );
 }
