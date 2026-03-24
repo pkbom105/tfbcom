@@ -2,8 +2,11 @@
 import HeroSlider from "@/components/HeroSlider";
 import HeroSlider2 from "@/components/HeroSlider2";
 import Process from "@/components/Process";
-import WhatWeDo, { SizeSpec } from "@/components/WhatWeDo";
-import AboutFactory from "@/components/AboutFactory"; // Import ตัวใหม่
+import StepByStep from "@/components/StepByStep";
+import WhatWeDo from "@/components/WhatWeDo";
+import SizeSpec from "@/components/SizeSpec";
+import WhatWeProvide  from "@/components/WhatWeProvide";
+// import AboutFactory from "@/components/AboutFactory"; // Import ตัวใหม่
 import OurClient from "@/components/OurClient";
 
 export default function HomePage() {
@@ -18,11 +21,13 @@ export default function HomePage() {
       {/* ส่วนหมวดหมู่สินค้า (aa3) */}
       <WhatWeDo />
 
-      {/* ส่วน Size Spec (aa4) */}
+      {/* ส่วน Size Spec  */}
       <SizeSpec />
-
+      
+      <StepByStep />
+      <WhatWeProvide />
       {/* ส่วนประวัติและผลงาน (aa5, aa6, aa7) */}
-      <AboutFactory />
+      {/* <AboutFactory /> */}
       
       <OurClient />
     </main>
