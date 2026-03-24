@@ -50,7 +50,7 @@ export default function SizeSpec() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.32 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="md:col-span-6 flex justify-center items-center"
