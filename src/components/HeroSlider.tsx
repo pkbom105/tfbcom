@@ -1,51 +1,44 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion"; 
 import Image from "next/image";
-
-// นำเข้า Swiper Components และ Modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
-// นำเข้า Swiper Styles
+// Swiper Styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-const SLIDES = [
-  {
-    id: 1,
-    bg: "/picture/bg1.png",
-    fgLeft: "/hp/fg66.png",
-    fgRight: "/hp/fg2.png",
-    fgSizeLeft: "max-w-[900px]", // ขยายขนาดให้เต็มที่
-    fgSizeRight: "max-w-[800px]"
-  },
-  {
-    id: 2,
-    bg: "/picture/bg2.png",
-    fgLeft: "/hp/fg77.png",
-    fgRight: "/hp/fg3.png",
-    fgSizeLeft: "max-w-[900px]",
-    fgSizeRight: "max-w-[800px]"
-  },
-  {
-    id: 3,
-    bg: "/picture/bg3.png",
-    fgLeft: "/hp/fg8.png",
-    fgRight: "/hp/fg4.png",
-    fgSizeLeft: "max-w-[900px]",
-    fgSizeRight: "max-w-[800px]"
-  },
-  {
-    id: 4,
-    bg: "/picture/bg4.png",
-    fgLeft: "/hp/fg9.png",
-    fgRight: "/hp/fg5.png",
-    fgSizeLeft: "max-w-[900px]",
-    fgSizeRight: "max-w-[800px]"
-  }
+// ข้อมูล Slide สำหรับ Desktop
+const DESKTOP_SLIDES = [
+  { id: 1, bg: "/hp/slide/bg1.png", fg: "/hp/slide/fg1.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 2, bg: "/hp/slide/bg2.png", fg: "/hp/slide/fg2.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 3, bg: "/hp/slide/bg3.png", fg: "/hp/slide/fg3.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 4, bg: "/hp/slide/bg4.png", fg: "/hp/slide/fg4.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 5, bg: "/hp/slide/bg5.png", fg: "/hp/slide/fg5.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+  { id: 6, bg: "/hp/slide/bg666.png", fg: "/hp/slide/fg6661.png", fgWidth: 1800, fgHeight: 500, bgHeight: "h-[500px]" },
+];
+
+// ข้อมูล Slide สำหรับ Tablet (เพิ่มใหม่)
+const TABLET_SLIDES = [
+  { id: 1, img: "/hp/slide/m1.png" },
+  { id: 2, img: "/hp/slide/m2.png" },
+  { id: 3, img: "/hp/slide/m3.png" },
+  { id: 4, img: "/hp/slide/m4.png" },
+  { id: 5, img: "/hp/slide/m5.png" },
+  { id: 6, img: "/hp/slide/m6.png" },
+];
+
+// ข้อมูล Slide สำหรับ Mobile
+const MOBILE_SLIDES = [
+  { id: 1, img: "/hp/slide/m1.png" },
+  { id: 2, img: "/hp/slide/m2.png" },
+  { id: 3, img: "/hp/slide/m3.png" },
+  { id: 4, img: "/hp/slide/m4.png" },
+  { id: 5, img: "/hp/slide/m5.png" },
+  { id: 6, img: "/hp/slide/m6.png" },
 ];
 
 export default function HeroSlider() {
@@ -55,113 +48,117 @@ export default function HeroSlider() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="h-screen w-full bg-slate-900" />;
+  if (!mounted) return <div className="h-[500px] w-full bg-slate-100" />;
 
   return (
-    <section className="relative w-full  h-screen overflow-hidden bg-white">
-      <Swiper
-        modules={[Autoplay, Pagination, EffectFade]}
-        effect="fade"
-        speed={1500}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        pagination={{ clickable: true, el: '.custom-pagination' }}
-        fadeEffect={{ crossFade: true }}
-        loop={true}
-        className="w-full h-full"
-      >
-        {SLIDES.map((slide) => (
-          <SwiperSlide key={slide.id} className="relative max-w-[100vw] mx-auto h-full">
-            {({ isActive }) => (
-              <div className="relative w-full h-full flex items-center">
-                
-                {/* --- 1. Background Layer --- */}
-                <div className="absolute inset-0 z-0">
-                  <Image
-                    src={slide.bg}
-                    alt="Background"
-                    fill
-                    priority
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/5" />
+    <section className="relative w-full overflow-hidden bg-white">
+      
+      {/* --- 1. Desktop Slider --- */}
+      <div className="hidden lg:block">
+        <Swiper
+          modules={[Autoplay, Pagination, EffectFade]}
+          effect="fade"
+          speed={1500}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{ clickable: true, el: '.custom-pagination' }}
+          fadeEffect={{ crossFade: true }}
+          loop={true}
+          className="w-full h-full"
+        >
+          {DESKTOP_SLIDES.map((slide) => (
+            <SwiperSlide key={slide.id} className={`relative w-full ${slide.bgHeight}`}>
+              {({ isActive }) => (
+                <div className="relative w-full h-full flex items-end justify-center">
+                  <div className="absolute inset-0 z-0">
+                    <Image src={slide.bg} alt="Background" fill priority className="object-cover" />
+                  </div>
+                  <AnimatePresence mode="wait">
+                    {isActive && (
+                      <motion.div
+                        key={slide.id}
+                        initial={{ x: -300, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: 300, opacity: 0 }}
+                        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                        className="relative z-10 flex items-end justify-center"
+                        style={{ width: slide.fgWidth, height: slide.fgHeight }}
+                      >
+                        <Image src={slide.fg} alt="Product Highlight" width={slide.fgWidth} height={slide.fgHeight} className="object-contain object-bottom" />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
+              )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-                {/* --- 2. Content Grid (Gap-0 เพื่อให้ชิดกัน) --- */}
-                <div className="relative z-20 w-full h-full grid grid-cols-1 lg:grid-cols-10 items-center gap-0">
-                  
-                  {/* --- Left Picture (30%) - ดันรูปไปทางขวา (Right) --- */}
-                  <motion.div
-                    initial={{ x: -80, opacity: 0 }}
-                    animate={isActive ? { 
-                      x: 0, 
-                      opacity: 1,
-                      y: [0, -15, 0] 
-                    } : { x: -80, opacity: 0 }}
-                    transition={{ 
-                      x: { delay: 0.5, duration: 1.2 },
-                      opacity: { delay: 0.5, duration: 1 },
-                      y: { duration: 4, repeat: Infinity, ease: "easeInOut" } 
-                    }}
-                    className="relative w-full h-full flex lg:justify-end justify-center lg:col-span-4 overflow-visible"
-                  >
-                    <div className={`relative w-full h-full ${slide.fgSizeLeft}`}>
-                      <Image
-                        src={slide.fgLeft}
-                        alt="Product Left"
-                        fill
-                        className="object-contain drop-shadow-2xl object-right" 
-                      />
-                    </div>
-                  </motion.div>
-
-                  {/* --- Right Picture (70%) - ดันรูปไปทางซ้าย (Left) --- */}
-                  <motion.div
-                    initial={{ x: 80, opacity: 0, scale: 0.95 }} 
-                    animate={isActive ? { 
-                      x: 0, 
-                      opacity: 1, 
-                      scale: 1,
-                      y: [0, 15, 0] 
-                    } : { x: 80, opacity: 0, scale: 0.95 }}
-                    transition={{ 
-                      x: { duration: 1.5, ease: [0.16, 1, 0.3, 1] },
-                      scale: { duration: 1.5 },
-                      opacity: { duration: 1.5 },
-                      y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }
-                    }}
-                    className="relative w-full h-full flex lg:justify-start justify-center lg:col-span-6"
-                  >
-                    <div className={`relative w-full h-full flex items-center lg:justify-start justify-center ${slide.fgSizeRight}`}>
-                        <Image
-                          src={slide.fgRight}
-                          alt="Product Right"
-                          fill
-                          className="object-contain drop-shadow-[0_35px_60px_rgba(0,0,0,0.3)] object-left" 
-                        />
-                    </div>
-                  </motion.div>
-
-                </div>
+      {/* --- 2. Tablet Slider (เพิ่มใหม่) --- */}
+      <div className="hidden md:block lg:hidden w-full h-[500px]">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          speed={800}
+          autoplay={{ delay: 4000 }}
+          pagination={{ clickable: true, el: '.custom-pagination' }}
+          loop={true}
+          className="w-full h-full"
+        >
+          {TABLET_SLIDES.map((tSlide) => (
+            <SwiperSlide key={tSlide.id} className="w-full h-full relative">
+              <div className="relative w-full h-full">
+                <Image
+                  src={tSlide.img}
+                  alt={`Tablet Slide ${tSlide.id}`}
+                  fill
+                  className="object-contain object-center"
+                />
               </div>
-            )}
-          </SwiperSlide>
-        ))}   
-        
-        {/* Custom Pagination Dots */}
-        <div className="custom-pagination absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-3" />
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* --- 3. Mobile Slider --- */}
+      <div className="block md:hidden w-full h-[65vh]"> 
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          speed={800}
+          autoplay={{ delay: 4000 }}
+          pagination={{ clickable: true, el: '.custom-pagination' }}
+          loop={true}
+          className="w-full h-full"
+        >
+          {MOBILE_SLIDES.map((mSlide) => (
+            <SwiperSlide key={mSlide.id} className="w-full h-full relative">
+              <div className="relative w-full h-full">
+                <Image
+                  src={mSlide.img}
+                  alt={`Mobile Slide ${mSlide.id}`}
+                  fill
+                  priority
+                  sizes="100vw"
+                  className="object-contain object-center"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className="custom-pagination absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-2" />
 
       <style jsx global>{`
         .custom-pagination .swiper-pagination-bullet {
-          background: white !important;
-          opacity: 0.5;
+          background: #ef4444 !important;
+          opacity: 0.3;
           width: 8px;
           height: 8px;
           transition: all 0.4s ease;
         }
         .custom-pagination .swiper-pagination-bullet-active {
           opacity: 1;
-          width: 35px;
+          width: 30px;
           border-radius: 10px;
         }
       `}</style>

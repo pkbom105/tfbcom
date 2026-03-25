@@ -9,7 +9,7 @@ export default function AboutSection() {
     <main className="min-h-screen font-noto bg-white overflow-hidden">
       
       {/* SECTION 1: ประวัติบริษัท (ลดระยะห่างช่วงบน) */}
-      <section className="max-w-[1300px] mx-auto px-6 py-12 xl:py-20">
+      <section className="max-w-[1200px] mx-auto px-6 py-12 xl:py-20">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
           
           {/* ฝั่งซ้าย: รูปภาพจริง (Ratio 3:4) */}
@@ -80,7 +80,7 @@ export default function AboutSection() {
       </section>
 
       {/* SECTION 2: ความเชี่ยวชาญ (ชิดขอบขึ้น) */}
-      <section className="max-w-[1300px] mx-auto px-6 py-10 border-t border-gray-50">
+      <section className="max-w-[1200px] mx-auto px-6 py-10 border-t border-gray-50">
         <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
           
           <motion.div 
@@ -128,42 +128,62 @@ export default function AboutSection() {
         </div>
       </section>
 
-      {/* SECTION 3: ความตั้งใจ (Image Bleed Left - ลด Padding ส่วนรอยต่อ) */}
-      <section className="border-t border-gray-50 overflow-hidden py-10 lg:py-0">
-        <div className="grid lg:grid-cols-2 items-center">
-          
-          <motion.div 
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative w-full h-full lg:pr-12 xl:pr-24"
-          >
-            <div className="relative z-10 overflow-hidden lg:rounded-r-2xl shadow-xl">
-              <Image
-                src="/hp/c5.png"
-                alt="ความตั้งใจในการผลิต"
-                width={800}
-                height={500}
-                className="w-full h-auto lg:h-[500px] object-cover object-center"
-              />
-            </div>
-          </motion.div>
-
-          <div className="max-w-[650px] px-6 py-12 lg:py-10">
+      {/* SECTION 3: ความตั้งใจ (Contained - max-w-[1200px]) */}
+      <section className="bg-white py-20 lg:py-32 overflow-hidden border-t border-gray-50 font-noto">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            {/* ฝั่งซ้าย: รูปภาพ (Contained with Rounded Corners) */}
             <motion.div 
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              transition={{ duration: 0.8 }}
+              className="relative"
             >
-              <h4 className="text-2xl xl:text-xl font-black text-gray-600 leading-[1.8] xl:leading-[2.0] uppercase tracking-tighter">
-                ความตั้งใจในการทำงานของเรา <br />
-                <span className="text-gray-600">คือ การได้ผลิตสินค้าที่มีคุณภาพ และทำให้ลูกค้าของเรา</span><br />
-                <span className="text-gray-600">ได้รับความพึงพอใจ และรู้สึกคุ้มค่า</span><br />
-                <span className="text-gray-600">กับการสั่งผลิตสินค้ากับทอฟฟี่บูติกให้ได้มากที่สุด</span>
-              </h4>
-              <div className="w-16 h-2 bg-red-600"></div>
+              <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl group">
+                <Image
+                  src="/hp/c5.png"
+                  alt="ความตั้งใจในการผลิต"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto aspect-[4/3] lg:aspect-square object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
+                {/* ตกแต่งด้วย Overlay บางๆ */}
+                <div className="absolute inset-0 border-[12px] border-white/10 pointer-events-none rounded-3xl"></div>
+              </div>
+              
+              {/* ตกแต่งพื้นหลังรูป (ถาดสีแดงจางๆ) */}
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-red-50 rounded-full -z-10 blur-2xl opacity-60"></div>
             </motion.div>
+
+            {/* ฝั่งขวา: เนื้อหาข้อความ */}
+            <div className="flex flex-col justify-center">
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="space-y-8"
+              >
+                <div className="space-y-4">
+                  <span className="text-red-600 font-bold tracking-widest uppercase text-sm">Our Commitment</span>
+                  <h3 className="text-5xl xl:text-4xl font-black text-gray-900 leading-tight uppercase tracking-tighter">
+                    ความตั้งใจในการทำงานของเรา <br />
+                    คือ การได้ผลิตสินค้าที่มีคุณภาพ <br />
+                    <span className="text-gray-500 font-medium">และทำให้ลูกค้าของเราได้รับความพึงพอใจ 
+                    และรู้สึกคุ้มค่ากับการสั่งผลิตสินค้ากับทอฟฟี่บูติกให้ได้มากที่สุด</span>
+                  </h3>
+                </div>
+                
+                {/* เส้นขีดแดงดีไซน์ใหม่ */}
+                <div className="flex items-center gap-4">
+                  <div className="w-20 h-1.5 bg-red-600 rounded-full"></div>
+                  <div className="w-3 h-1.5 bg-red-200 rounded-full"></div>
+                </div>
+              </motion.div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -187,7 +207,7 @@ export default function AboutSection() {
             />
           </motion.div>
 
-          <div className="max-w-[1300px] mx-auto px-6 mt-8 text-center">
+          <div className="max-w-[1200px] mx-auto px-6 mt-8 text-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

@@ -34,7 +34,7 @@ export default function MakeToOrderPage() {
 
       {/* --- Section 2: ตรวจสอบวัตถุดิบ --- */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-6">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Material Quality Check</h2>
@@ -68,7 +68,7 @@ export default function MakeToOrderPage() {
 
       {/* --- Section 3: สายการผลิต --- */}
       <section className="py-20 px-6 bg-slate-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Cutting | <span className="text-red-600">แผนกตัด</span>
@@ -106,41 +106,59 @@ export default function MakeToOrderPage() {
         </div>
       </section>
 
-      {/* --- Section 4: ตรวจสอบคุณภาพ --- */}
-      <section className="w-full min-h-screen flex flex-col md:flex-row bg-white border-t border-slate-100">
-        <div className="w-full md:w-1/2 h-[50vh] md:h-auto">
-          <img src="/process/p12.png" alt="การตรวจสอบ" className="w-full h-full object-cover" />
-        </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-between p-8 md:p-16 lg:p-24 bg-slate-50">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-8">
-              Sewing | <span className="text-red-600">แผนกเย็บ</span>
-            </h2>
-              <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                ทอฟฟี่ บูติก มุ่งเน้นการผลิตด้วยความประณีต 
-                เราพร้อมให้คำปรึกษาและดูแลคุณในทุกขั้นตอนเพื่อให้ได้ชุดยูนิฟอร์มที่สมบูรณ์แบบที่สุด
-              </p>
-            <div className="flex w-full overflow-hidden rounded-xl shadow-xl my-8">
-              <div className="w-1/2 aspect-[3/2] border-r border-white/10">
-                <img src="/process/p13.png" alt="รายละเอียด 1" className="w-full h-full object-cover" />
+      {/* --- Section 4: แผนกเย็บ (ปรับเป็น Max-w-6xl) --- */}
+      <section className="py-20 px-6 bg-white border-t border-slate-100 font-noto">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            
+            {/* ฝั่งซ้าย: รูปภาพหลัก (ปรับจาก Full Screen เป็น Rounded Box) */}
+            <div className="w-full aspect-[4/5] md:aspect-square lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl order-1">
+              <img 
+                src="/process/p12.png" 
+                alt="บรรยากาศแผนกเย็บ" 
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
+              />
+            </div>
+
+            {/* ฝั่งขวา: เนื้อหาและรูปรายละเอียด */}
+            <div className="flex flex-col h-full order-2">
+              <div className="mb-10">
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                  Sewing | <span className="text-red-600">แผนกเย็บ</span>
+                </h2>
+                <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                  ทอฟฟี่ บูติก มุ่งเน้นการผลิตด้วยความประณีต 
+                  เราพร้อมให้คำปรึกษาและดูแลคุณในทุกขั้นตอนเพื่อให้ได้ชุดยูนิฟอร์มที่สมบูรณ์แบบที่สุด
+                </p>
+
+                {/* รูปรายละเอียด 2 รูปคู่กึ่งกลาง */}
+                <div className="flex w-full overflow-hidden rounded-2xl shadow-lg my-8 bg-slate-100">
+                  <div className="w-1/2 aspect-[3/2] border-r border-white/20">
+                    <img src="/process/p13.png" alt="รายละเอียดการเย็บ 1" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="w-1/2 aspect-[3/2]">
+                    <img src="/process/p14.png" alt="รายละเอียดการเย็บ 2" className="w-full h-full object-cover" />
+                  </div>
+                </div>
               </div>
-              <div className="w-1/2 aspect-[3/2]">
-                <img src="/process/p14.png" alt="รายละเอียด 2" className="w-full h-full object-cover" />
+
+              {/* ส่วนท้าย: เน้นย้ำเรื่องฝีมือ */}
+              <div className="mt-auto p-8 bg-slate-50 rounded-2xl border-l-4 border-red-600">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">การเย็บที่ประณีต</h3>
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  ขั้นตอนการเย็บคือหัวใจสำคัญ งานทุกชิ้นผ่านมือช่างผู้เชี่ยวชาญที่มีประสบการณ์สูง 
+                  เราให้ความสำคัญกับความละเอียดของฝีเข็มและความทนทาน 
+                  เพื่อให้มั่นใจว่ายูนิฟอร์มทุกตัวจะได้มาตรฐานระดับสากล
+                </p>
               </div>
             </div>
-          </div>
-          <div className="mt-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">การเย็บที่ปราณีต</h3>
-            <p className="text-slate-600 text-lg leading-relaxed">
-            ขั้นตอนการเย็บเป็นหัวใจสำคัญของเสื้อผ้าแต่ละชิ้น งานผลิตจากทอฟฟี่ บูติก ผ่านมือช่างแต่ละคนที่มีประสบการณ์ในการเย็บมานาน ทั้งในเรื่องประสบการณ์และความชำนาญ 
-            เราจึงผลิตสินค้าได้อย่างถูกต้องแม่นยำตอบโจทย์ลูกค้าได้ อีกทั้งความละเอียดของฝีเข็มที่จะไม่ทำให้เสื้อไม่ทนทานหรือไม่มีคุณภาพ
-            </p>
+
           </div>
         </div>
       </section>
 {/* --- Section 5: บริการและความเชี่ยวชาญ (3-Column Grid) --- */}
 <section className="py-20 px-6 bg-slate-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -186,7 +204,7 @@ export default function MakeToOrderPage() {
       </section>
       {/* --- Section 6: การจัดส่ง (Layout 30/70 และ 3-Column Content) --- */}
       <section className="py-15 px-6 bg-white overflow-hidden">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           
           {/* --- Part 1: Header (30/70 Transparent Image) --- */}
           <div className="grid grid-cols-1 md:grid-cols-10 gap-8 mb-4 items-center">
@@ -287,7 +305,7 @@ export default function MakeToOrderPage() {
       </section>
        {/* --- Section 7: รูป --- */}
        <section className="w-full min-h-screen flex flex-col md:flex-row bg-white border-t border-slate-100">
-        <div className="w-full  h-[50vh] md:h-auto">
+        <div className="w-full  md:h-auto">
           <img src="/process/p21.png" alt="การตรวจสอบ" className="w-full h-full object-cover" />
         </div>        
       </section>

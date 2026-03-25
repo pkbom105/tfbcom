@@ -83,28 +83,25 @@ export default function MakeToOrderPage() {
 
   return (
     <main className="min-h-screen bg-white font-noto pb-20">
-    {/* --- Intro Section --- */}
-    <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
-      <div className="max-w-5xl mx-auto text-center">
+      {/* --- Intro Section --- */}
+      <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
+        <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
-              Ordering Process | <span className="text-red-600">ขั้นตอนการสั่งผลิต</span>
+            Ordering Process | <span className="text-red-600">ขั้นตอนการสั่งผลิต</span>
           </h1> 
-        <div className="space-y-6 text-lg text-slate-800 leading-relaxed max-w-4xl mx-auto">
-          <p className="text-slate-800 text-md"> ขั้นตอนการสั่งผลิตมาตรฐาน ทอฟฟี่ บูติก 
-          ที่ช่วยให้คุณได้ยูนิฟอร์มคุณภาพเยี่ยม ตรงตามสเปก และส่งมอบตรงเวลา
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            ขั้นตอนการสั่งผลิตมาตรฐานที่ช่วยให้คุณได้ยูนิฟอร์มคุณภาพเยี่ยม ตรงตามสเปก และส่งมอบตรงเวลา
           </p>
         </div>
-      </div>
-    </section>  
+      </section>
 
-      {/* Left-Aligned Timeline Section */}
-      <section className="max-w-5xl mx-auto px-6 relative">
-        
-        {/* Vertical Line - ปรับตำแหน่งให้อยู่ชิดซ้าย */}
+      {/* --- Timeline Section --- */}
+      <section className="max-w-5xl mx-auto px-6 relative mt-20">
+        {/* Vertical Line */}
         <div className="absolute left-[34px] top-0 h-full w-1 bg-slate-100 z-0 rounded-full"></div>
 
         <div className="space-y-12 relative z-10">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <motion.div 
               key={step.id}
               initial={{ opacity: 0, x: -20 }}
@@ -112,30 +109,27 @@ export default function MakeToOrderPage() {
               viewport={{ once: true, margin: "-100px" }}
               className="flex items-start gap-8 md:gap-12 group"
             >
-              {/* 1. ตัวเลขและจุดเชื่อม (Left) */}
+              {/* 1. ตัวเลขสลับสี: ปกติแดง / Hover ดำ */}
               <div className="relative flex-shrink-0 mt-2">
-                <div className="w-14 h-14 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-black text-xl shadow-xl transition-transform duration-500 group-hover:scale-110 group-hover:bg-red-600">
+                <div 
+                  className="w-14 h-14 rounded-2xl bg-red-600 text-white flex items-center justify-center font-black text-xl shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:bg-slate-900 shadow-red-100 group-hover:shadow-slate-200"
+                >
                   {step.id}
                 </div>
               </div>
 
-              {/* 2. Card เนื้อหา (Right) */}
+              {/* 2. Card เนื้อหา */}
               <div className="flex-1 pb-4">
-                <Card className="border-none shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(220,38,38,0.12)] transition-all duration-500 rounded-[2rem] bg-white overflow-hidden border-l-0 hover:translate-x-2">
+                <Card className="border-none shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(220,38,38,0.12)] transition-all duration-500 rounded-[2rem] bg-white overflow-hidden hover:translate-x-2">
                   <CardContent className="p-8 md:p-10">
                     <div className="flex flex-col md:flex-row md:items-center gap-8">
-                      {/* Icon Block */}
                       <div className={`flex-shrink-0 w-20 h-20 rounded-3xl ${step.color} flex items-center justify-center shadow-inner`}>
                         {step.icon}
                       </div>
-
-                      {/* Text Block */}
                       <div className="flex-1 space-y-3">
-                        <div className="flex items-center gap-3">
-                          <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                            {step.title}
-                          </h3>
-                        </div>
+                        <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                          {step.title}
+                        </h3>
                         <p className="text-slate-500 text-lg leading-relaxed font-medium">
                           {step.description}
                         </p>
@@ -149,25 +143,25 @@ export default function MakeToOrderPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* --- Call to Action (ปรับเป็น Grey-100) --- */}
       <section className="max-w-5xl mx-auto px-6 mt-32">
-        <div className="bg-slate-900 p-12 md:p-20 rounded-[3.5rem] text-center text-white relative overflow-hidden">
+        <div className="bg-gray-200 p-12 md:p-20 rounded-[3.5rem] text-center relative overflow-hidden border border-gray-200">
           <div className="relative z-10 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter">Ready to Build Your Brand?</h2>
-            <p className="text-xl text-slate-400 max-w-xl mx-auto font-medium">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900">Ready to Build Your Brand?</h2>
+            <p className="text-xl text-slate-600 max-w-xl mx-auto font-medium">
               ให้ ทอฟฟี่ บูติก เป็นส่วนหนึ่งในการสร้างความสำเร็จผ่านยูนิฟอร์มที่พรีเมียมที่สุด
             </p>
             <div className="flex justify-center">
               <a 
                 href="/pages/contact" 
-                className="bg-red-600 text-white px-12 py-5 rounded-full font-black text-xl hover:bg-white hover:text-red-600 transition-all duration-500 shadow-2xl"
+                className="bg-red-600 text-white px-12 py-5 rounded-full font-black text-xl hover:bg-slate-900 transition-all duration-500 shadow-2xl hover:shadow-slate-300"
               >
                 เริ่มปรึกษาผู้เชี่ยวชาญ
               </a>
             </div>
           </div>
           {/* Subtle Decorative Circle */}
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-600/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
         </div>
       </section>
     </main>
