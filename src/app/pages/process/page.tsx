@@ -10,7 +10,7 @@ export default function MakeToOrderPage() {
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
-            Manufacturing Process | <span className="text-red-600">ขบวนการผลิต</span>
+            Manufacturing Process | <span className="text-red-600">ขั้นตอนการผลิต</span>
           </h1> 
           <div className="space-y-6 text-lg text-slate-800 leading-relaxed max-w-4xl mx-auto">
             <p className="text-slate-800 text-md"> 

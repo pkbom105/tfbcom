@@ -4,14 +4,16 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 
-// Data เหมือนเดิม
+// --- Data Configuration ---
 const DESKTOP_SLIDES = [
   { id: 1, bg: "/hp/slide/bg1.png", fg: "/hp/slide/fg1.png" },
   { id: 2, bg: "/hp/slide/bg2.png", fg: "/hp/slide/fg2.png" },
@@ -52,13 +54,17 @@ export default function HeroSlider() {
     <section className="relative w-full overflow-hidden bg-white">
       
       {/* --- 1. Desktop Slider (xl: 1280px+) --- */}
-      <div className="hidden xl:block">
+      <div className="hidden xl:block relative">
         <Swiper
-          modules={[Autoplay, Pagination, EffectFade]}
+          modules={[Autoplay, Pagination, EffectFade, Navigation]}
           effect="fade"
           speed={1500}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
+          navigation={{
+            prevEl: '.prev-slide',
+            nextEl: '.next-slide',
+          }}
           fadeEffect={{ crossFade: true }}
           loop={true}
           className="w-full h-[500px]"
@@ -67,6 +73,7 @@ export default function HeroSlider() {
             <SwiperSlide key={slide.id} className="relative w-full h-[500px]">
               {({ isActive }) => (
                 <div className="relative w-full h-full flex items-end justify-center">
+                  {/* Background Layer (ตัดขอบซ้ายขวาอัตโนมัติ) */}
                   <div className="absolute inset-0">
                     <Image 
                       src={slide.bg} 
@@ -76,6 +83,8 @@ export default function HeroSlider() {
                       className="object-cover object-center pointer-events-none" 
                     />
                   </div>
+
+                  {/* Foreground Image Layer (จัดกึ่งกลาง Center) */}
                   <AnimatePresence mode="wait">
                     {isActive && (
                       <motion.div
@@ -103,10 +112,19 @@ export default function HeroSlider() {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* --- Custom Navigation (ขยับมาซ้าย 20% และ Z+10) --- */}
+        <div className="absolute bottom-12 right-[20%] z-[10] flex gap-4">
+          <button className="prev-slide w-10 h-10 flex items-center justify-center rounded-full bg-white/90 border border-slate-200 shadow-xl hover:bg-red-600 hover:text-white transition-all duration-300">
+            <ChevronLeft size={20} />
+          </button>
+          <button className="next-slide w-10 h-10 flex items-center justify-center rounded-full bg-white/90 border border-slate-200 shadow-xl hover:bg-red-600 hover:text-white transition-all duration-300">
+            <ChevronRight size={20} />
+          </button>
+        </div>
       </div>
 
       {/* --- 2. Tablet Slider (md: 768px to xl: 1279px) --- */}
-      {/* ปรับให้รองรับจอที่กว้างขึ้นจนถึงเกือบ 1300px */}
       <div className="hidden md:block xl:hidden w-full aspect-[16/9] sm:aspect-video lg:h-[500px]">
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -120,9 +138,9 @@ export default function HeroSlider() {
             <SwiperSlide key={tSlide.id} className="relative w-full h-full">
               <Image 
                 src={tSlide.img} 
-                alt="Tablet" 
+                alt="Tablet Full Size" 
                 fill 
-                className="object-fill object-center" // ใช้ object-fill เพื่อให้รูปแผ่เต็มขนาดไฟล์จริง
+                className="object-fill object-center" 
               />
             </SwiperSlide>
           ))}
@@ -143,25 +161,29 @@ export default function HeroSlider() {
             <SwiperSlide key={mSlide.id} className="relative w-full h-full">
               <Image 
                 src={mSlide.img} 
-                alt="mobile" 
+                alt="Mobile Full Size" 
                 fill 
-                className="object-fill object-center" // แสดงผลแบบเต็มขนาดไฟล์ (Full Size)
+                className="object-fill object-center" 
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* Pagination Container */}
+      {/* --- Pagination Dots (Common) --- */}
       <div className="custom-pagination absolute bottom-6 lg:bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-2" />
 
       <style jsx global>{`
         .custom-pagination .swiper-pagination-bullet {
           background: #ef4444 !important;
-          opacity: 0.3; width: 8px; height: 8px; transition: all 0.4s ease;
+          opacity: 0.3; width: 3px; height: 3px; transition: all 0.4s ease;
         }
         .custom-pagination .swiper-pagination-bullet-active {
-          opacity: 1; width: 30px; border-radius: 10px;
+          opacity: 1; width: 10px; border-radius: 10px;
+        }
+        /* ลบสไตล์เดิมของลูกศร Swiper */
+        .swiper-button-next, .swiper-button-prev {
+          display: none !important;
         }
       `}</style>
     </section>

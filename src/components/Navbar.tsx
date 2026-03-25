@@ -104,8 +104,8 @@ export default function Navbar() {
                 สั่งผลิต <ChevronsDown className="w-4 h-4 text-red-500" /> <NavUnderline />
               </MenubarTrigger>
               <MenubarContent sideOffset={12} className={dropdownContentStyles}>
-                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/process")}>ขบวนการผลิต</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/order")}>ขั้นตอนการผลิต</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/process")}>ขั้นตอนการผลิต</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/order")}>การสั่งผลิต</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/fabric")}>เนื้อผ้า</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/sizespec")}>ไซต์เสื้อ</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/ready-to-wear")}>สินค้าสำเร็จรูป</MenubarItem>
@@ -207,8 +207,8 @@ export default function Navbar() {
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col bg-slate-50/80">
                       {[
-                        { label: "ขบวนการผลิต", path: "/pages/process" },
-                        { label: "ขั้นตอนการผลิต", path: "/pages/order" },
+                        { label: "ขั้นตอนการผลิต", path: "/pages/process" },
+                        { label: "การสั่งผลิต", path: "/pages/order" },
                         { label: "เนื้อผ้า", path: "/pages/fabric" },
                         { label: "ไซต์เสื้อ", path: "/pages/sizespec" },
                         { label: "สินค้าสำเร็จรูป", path: "/pages/ready-to-wear" },

@@ -87,7 +87,7 @@ export default function MakeToOrderPage() {
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6"> 
-            Ordering Process | <span className="text-red-600">ขั้นตอนการสั่งผลิต</span>
+            Ordering Process | <span className="text-red-600">การสั่งผลิต</span>
           </h1> 
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             ขั้นตอนการสั่งผลิตมาตรฐานที่ช่วยให้คุณได้ยูนิฟอร์มคุณภาพเยี่ยม ตรงตามสเปก และส่งมอบตรงเวลา
