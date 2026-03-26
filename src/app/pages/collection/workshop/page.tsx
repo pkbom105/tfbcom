@@ -18,7 +18,7 @@ const ColorRangeGallery = ({ path, prefix, start, end }: { path: string; prefix:
       className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12"
     >
       {images.map((num) => {
-        const fileName = `${num}.jpg`; 
+        const fileName = `${num}.png`; 
         return (
           <div 
             key={num} 
@@ -44,14 +44,28 @@ export default function ReadyToWearV232() {
   // --- 2. การจัดการข้อมูล (Configuration) ---
   
   const subTabsA = [
-    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 12, path: "/01collection/mach-1" },
-    { value: "color2", label: "ชุดสีที่ 2", start: 13, end: 24, path: "/01collection/mach-1" },
-    { value: "color3", label: "ชุดสีที่ 3", start: 25, end: 36, path: "/01collection/mach-1" },   
+    { value: "color1", label: "ชุดสีที่ 1", start: 24, end: 32, path: "/01collection/engineer-a" },
+    { value: "color2", label: "ชุดสีที่ 2", start: 33, end: 41, path: "/01collection/engineer-a" },
+    { value: "color3", label: "ชุดสีที่ 3", start: 52, end: 60, path: "/01collection/engineer-a" },
+    { value: "color4", label: "ชุดสีที่ 4", start: 70, end: 78, path: "/01collection/engineer-a" },
+    { value: "color5", label: "ชุดสีที่ 5", start: 61, end: 69, path: "/01collection/engineer-a" },
+    { value: "color6", label: "แขนยาว", start: 79, end: 84, path: "/01collection/engineer-b" },
   ];
-  
+
+  const subTabsB = [
+    { value: "color1", label: "ชุดสีที่ 1", start: 1, end: 12, path: "/01collection/engineer-c" },
+    { value: "color2", label: "ชุดสีที่ 2", start: 13, end: 24, path: "/01collection/engineer-c" },
+    { value: "color3", label: "ชุดสีที่ 3", start: 25, end: 36, path: "/01collection/engineer-c" },
+    { value: "color4", label: "ชุดสีที่ 4", start: 37, end: 48, path: "/01collection/engineer-c" },
+    { value: "color5", label: "ชุดสีที่ 5", start: 49, end: 60, path: "/01collection/engineer-c" },
+    { value: "color6", label: "ชุดสีที่ 6", start: 61, end: 72, path: "/01collection/engineer-c" },
+    { value: "color7", label: "ชุดสีที่ 7", start: 73, end: 84, path: "/01collection/engineer-c" },
+    { value: "color8", label: "ชุดสีที่ 8", start: 85, end: 96, path: "/01collection/engineer-c" },
+  ];
 
   const tabItems = [
-    { value: "eng-a", label: "แบบเสื้อช่าง", title: "แบบเสื้อช่าง", prefix: "ESA", subColorTabs: subTabsA },   
+    { value: "eng-a", label: "เสื้อช็อป แขนสั้น (A)", title: "เสื้อช็อป แขนสั้น (A)", prefix: "ESA", subColorTabs: subTabsA },
+    { value: "eng-b", label: "เสื้อช็อป แขนสั้น (B)", title: "เสื้อช็อป แขนสั้น (B)", prefix: "ELA", subColorTabs: subTabsB },   
   ];
 
   return (
@@ -60,7 +74,7 @@ export default function ReadyToWearV232() {
       <section className="bg-slate-100 py-16 px-6 border-b border-slate-100 w-full">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8"> 
-            Machanic Collection Design | <span className="text-red-600">แบบเสื้อช่าง</span>
+            Workshop Collection Design | <span className="text-red-600">แบบเสื้อช็อป</span>
           </h1>  
           <div className="inline-flex items-center gap-3 bg-red-50 text-red-600 px-8 py-2.5 rounded-full border border-red-100 shadow-sm">
             <Sparkles size={18} className="animate-pulse" />

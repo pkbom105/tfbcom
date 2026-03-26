@@ -8,11 +8,11 @@ import Link from "next/link"; // นำเข้า Link สำหรับ Next
 // --- Data Configuration (เพิ่ม slug ให้ตรงกับหน้า collection) ---
 const SIZE_CATEGORIES = [
   { id: 1, name: "เสื้อยืด T-shirt", slug: "t-shirt" },
-  { id: 2, name: "เสื้อเชิ้ตช่าง Workshop shirt", slug: "workshop-shirt" },
+  { id: 2, name: "เสื้อเชิ้ตช่าง Workshop shirt", slug: "workshop" },
   { id: 3, name: "เสื้อแม่บ้าน House Maid Uniform", slug: "maid-uniform" },
   { id: 4, name: "กางเกง Pant", slug: "pant" },
   { id: 5, name: "เสื้อโปโล Polo", slug: "polo" },
-  { id: 6, name: "เสื้อช็อป Engineer Jacket", slug: "shop-shirt" },
+  { id: 6, name: "เสื้อช็อป Engineer Jacket", slug: "mechanic" },
   { id: 7, name: "เสื้อเชฟ Chef Uniform", slug: "chef-uniform" },
   { id: 8, name: "เสื้อกั๊ก Vest", slug: "vest" },
   { id: 9, name: "เสื้อเชิ้ต Shirt", slug: "shirt" },

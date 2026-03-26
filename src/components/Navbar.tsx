@@ -120,7 +120,8 @@ export default function Navbar() {
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/t-shirt")}>คอกลม</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/polo")}>โปโล</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/shirt")}>เสื้อเชิ้ต</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/mechanic")}>เสื้อช็อป</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/mechanic")}>เสื้อช่าง</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/workshop")}>เสื้อช็อป</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/pants")}>กางเกง</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => router.push("/pages/collection/arpon")}>ผ้ากันเปื้อน</MenubarItem>
               </MenubarContent>
@@ -229,7 +230,8 @@ export default function Navbar() {
                         { label: "คอกลม", path: "/pages/collection/t-shirt" },
                         { label: "โปโล", path: "/pages/collection/polo" },
                         { label: "เสื้อเชิ้ต", path: "/pages/collection/shirt" },
-                        { label: "เสื้อช็อป", path: "/pages/collection/mechanic" },
+                        { label: "เสื้อช่าง", path: "/pages/collection/mechanic" },
+                        { label: "เสื้อช็อป", path: "/pages/collection/workshop" },
                         { label: "กางเกง", path: "/pages/collection/pants" },
                         { label: "ผ้ากันเปื้อน", path: "/pages/collection/arpon" },
                       ].map((item) => (
