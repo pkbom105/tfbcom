@@ -303,10 +303,14 @@ export default function MakeToOrderPage() {
           </div>
         </div>
       </section>
-       {/* --- Section 7: รูป --- */}
-       <section className="w-full min-h-screen flex flex-col md:flex-row bg-white border-t border-slate-100">
-        <div className="w-full  md:h-auto">
-          <img src="/process/p21.png" alt="การตรวจสอบ" className="w-full h-full object-cover" />
+      {/* --- Section 7: รูปปิดท้าย (แก้ไขลด White Space) --- */}
+      <section className="w-full bg-white border-t border-slate-100">
+        <div className="w-full h-auto">
+          <img 
+            src="/process/p21.png" 
+            alt="การตรวจสอบคุณภาพสุดท้าย" 
+            className="w-full h-auto object-contain block" 
+          />
         </div>        
       </section>
     </main>
