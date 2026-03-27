@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 z.note2.txt
+.github/
 
 # debug
 npm-debug.log*
