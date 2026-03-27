@@ -73,7 +73,6 @@ export default function HeroSlider() {
             <SwiperSlide key={slide.id} className="relative w-full h-[500px]">
               {({ isActive }) => (
                 <div className="relative w-full h-full flex items-end justify-center">
-                  {/* Background Layer (ตัดขอบซ้ายขวาอัตโนมัติ) */}
                   <div className="absolute inset-0">
                     <Image 
                       src={slide.bg} 
@@ -83,8 +82,6 @@ export default function HeroSlider() {
                       className="object-cover object-center pointer-events-none" 
                     />
                   </div>
-
-                  {/* Foreground Image Layer (จัดกึ่งกลาง Center) */}
                   <AnimatePresence mode="wait">
                     {isActive && (
                       <motion.div
@@ -113,7 +110,6 @@ export default function HeroSlider() {
           ))}
         </Swiper>
 
-        {/* --- Custom Navigation (ขยับมาซ้าย 20% และ Z+10) --- */}
         <div className="absolute bottom-12 right-[20%] z-[10] flex gap-4">
           <button className="prev-slide w-10 h-10 flex items-center justify-center rounded-full bg-white/90 border border-slate-200 shadow-xl hover:bg-red-600 hover:text-white transition-all duration-300">
             <ChevronLeft size={20} />
@@ -124,53 +120,57 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* --- 2. Tablet Slider (md: 768px to xl: 1279px) --- */}
-      <div className="hidden md:block xl:hidden w-full aspect-[16/9] sm:aspect-video lg:h-[500px]">
+      {/* --- 2. Tablet Slider (Ratio ตามต้นฉบับ) --- */}
+      <div className="hidden md:block xl:hidden w-full h-auto">
         <Swiper
           modules={[Autoplay, Pagination]}
           speed={1000}
+          autoHeight={true} // ปรับความสูงตามรูปอัตโนมัติ
           autoplay={{ delay: 4500 }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           loop={true}
           className="w-full h-full"
         >
           {TABLET_SLIDES.map((tSlide) => (
-            <SwiperSlide key={tSlide.id} className="relative w-full h-full">
-              <Image 
-                src={tSlide.img} 
-                alt="Tablet Full Size" 
-                fill 
-                className="object-fill object-center" 
-              />
+            <SwiperSlide key={tSlide.id} className="relative w-full">
+              {/* ใช้ Relative และวาง Image แบบ Responsive เพื่อคง Ratio */}
+              <div className="w-full h-full">
+                <img 
+                  src={tSlide.img} 
+                  alt="Tablet Content" 
+                  className="w-full h-auto object-contain" 
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* --- 3. Mobile Slider (below 768px) --- */}
-      <div className="block md:hidden w-full aspect-[9/16]"> 
+      {/* --- 3. Mobile Slider (Ratio ตามต้นฉบับ) --- */}
+      <div className="block md:hidden w-full h-auto"> 
         <Swiper
           modules={[Autoplay, Pagination]}
           speed={800}
+          autoHeight={true} // ปรับความสูงตามรูปอัตโนมัติ
           autoplay={{ delay: 4000 }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           loop={true}
           className="w-full h-full"
         >
           {MOBILE_SLIDES.map((mSlide) => (
-            <SwiperSlide key={mSlide.id} className="relative w-full h-full">
-              <Image 
-                src={mSlide.img} 
-                alt="Mobile Full Size" 
-                fill 
-                className="object-fill object-center" 
-              />
+            <SwiperSlide key={mSlide.id} className="relative w-full">
+              <div className="w-full h-full">
+                <img 
+                  src={mSlide.img} 
+                  alt="Mobile Content" 
+                  className="w-full h-auto object-contain" 
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* --- Pagination Dots (Common) --- */}
       <div className="custom-pagination absolute bottom-6 lg:bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-2" />
 
       <style jsx global>{`
@@ -181,7 +181,6 @@ export default function HeroSlider() {
         .custom-pagination .swiper-pagination-bullet-active {
           opacity: 1; width: 10px; border-radius: 10px;
         }
-        /* ลบสไตล์เดิมของลูกศร Swiper */
         .swiper-button-next, .swiper-button-prev {
           display: none !important;
         }
