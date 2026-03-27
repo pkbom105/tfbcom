@@ -56,7 +56,7 @@ const OurClient = () => {
                 {[...row, ...row].map((src, idx) => (
                   <div
                     key={`${rowIndex}-${idx}`}
-                    className="w-28 h-28 md:w-40 md:h-40 flex-shrink-0 flex items-center justify-center p-3  rounded-2xl transition-all duration-300 "
+                    className="w-20 h-20 md:w-30 md:h-30 flex-shrink-0 flex items-center justify-center p-3  rounded-2xl transition-all duration-300 "
                   >
                     <img
                       src={src}

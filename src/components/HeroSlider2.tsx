@@ -48,17 +48,18 @@ export default function HeroSlider() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="h-[500px] w-full bg-slate-50" />;
+  if (!mounted) return <div className="min-h-[400px] w-full bg-slate-50" />;
 
   return (
     <section className="relative w-full overflow-hidden bg-white">
       
-      {/* --- 1. Desktop Slider (xl: 1280px+) --- */}
-      <div className="hidden xl:block relative">
+      {/* --- 1. Desktop Slider (xl: 1280px+) ปรับให้ FG Ratio คงเดิม --- */}
+      <div className="hidden xl:block relative w-full">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade, Navigation]}
           effect="fade"
           speed={1500}
+          autoHeight={true} // สำคัญ: ปรับความสูงสไลด์ตามรูป FG จริง
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           navigation={{
@@ -67,13 +68,15 @@ export default function HeroSlider() {
           }}
           fadeEffect={{ crossFade: true }}
           loop={true}
-          className="w-full h-[500px]"
+          className="w-full"
         >
           {DESKTOP_SLIDES.map((slide) => (
-            <SwiperSlide key={slide.id} className="relative w-full h-[500px]">
+            <SwiperSlide key={slide.id} className="relative w-full overflow-hidden">
               {({ isActive }) => (
-                <div className="relative w-full h-full flex items-end justify-center">
-                  <div className="absolute inset-0">
+                <div className="relative w-full flex items-end justify-center min-h-[300px]">
+                  
+                  {/* Background Layer: เต็มพื้นที่เสมอ */}
+                  <div className="absolute inset-0 z-0">
                     <Image 
                       src={slide.bg} 
                       alt="Background" 
@@ -82,25 +85,24 @@ export default function HeroSlider() {
                       className="object-cover object-center pointer-events-none" 
                     />
                   </div>
+
+                  {/* Foreground Image Layer: รักษา Ratio ต้นฉบับ 100% */}
                   <AnimatePresence mode="wait">
                     {isActive && (
                       <motion.div
                         key={slide.id}
-                        initial={{ x: -200, opacity: 0 }}
+                        initial={{ x: -150, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: 200, opacity: 0 }}
+                        exit={{ x: 150, opacity: 0 }}
                         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                        className="relative z-10 w-full h-full flex items-end justify-center pointer-events-none"
+                        className="relative z-10 w-full max-w-[1600px] mx-auto flex items-end justify-center pointer-events-none"
                       >
-                        <div className="relative w-full h-full max-w-[1600px] flex items-end justify-center">
-                          <Image 
-                            src={slide.fg} 
-                            alt="Product" 
-                            width={1800} 
-                            height={500}
-                            className="w-auto h-full object-contain object-bottom select-none"
-                          />
-                        </div>
+                        {/* ใช้แท็ก img + w-full h-auto เพื่อคง Aspect Ratio ของไฟล์ภาพ */}
+                        <img 
+                          src={slide.fg} 
+                          alt="Product Highlight" 
+                          className="w-full h-auto object-contain select-none"
+                        />
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -110,6 +112,7 @@ export default function HeroSlider() {
           ))}
         </Swiper>
 
+        {/* Custom Navigation (Z+10) */}
         <div className="absolute bottom-12 right-[20%] z-[10] flex gap-4">
           <button className="prev-slide w-10 h-10 flex items-center justify-center rounded-full bg-white/90 border border-slate-200 shadow-xl hover:bg-red-600 hover:text-white transition-all duration-300">
             <ChevronLeft size={20} />
@@ -125,7 +128,7 @@ export default function HeroSlider() {
         <Swiper
           modules={[Autoplay, Pagination]}
           speed={1000}
-          autoHeight={true} // ปรับความสูงตามรูปอัตโนมัติ
+          autoHeight={true}
           autoplay={{ delay: 4500 }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           loop={true}
@@ -133,7 +136,6 @@ export default function HeroSlider() {
         >
           {TABLET_SLIDES.map((tSlide) => (
             <SwiperSlide key={tSlide.id} className="relative w-full">
-              {/* ใช้ Relative และวาง Image แบบ Responsive เพื่อคง Ratio */}
               <div className="w-full h-full">
                 <img 
                   src={tSlide.img} 
@@ -151,7 +153,7 @@ export default function HeroSlider() {
         <Swiper
           modules={[Autoplay, Pagination]}
           speed={800}
-          autoHeight={true} // ปรับความสูงตามรูปอัตโนมัติ
+          autoHeight={true}
           autoplay={{ delay: 4000 }}
           pagination={{ clickable: true, el: '.custom-pagination' }}
           loop={true}
@@ -171,6 +173,7 @@ export default function HeroSlider() {
         </Swiper>
       </div>
 
+      {/* Pagination Dots */}
       <div className="custom-pagination absolute bottom-6 lg:bottom-8 left-1/2 -translate-x-1/2 z-30 flex justify-center gap-2" />
 
       <style jsx global>{`
