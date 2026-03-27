@@ -14,6 +14,7 @@ import {
   Languages,
   HelpCircle,
   Scissors,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -56,7 +57,6 @@ export default function Navbar() {
     <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 transform scale-x-0 transition-transform duration-[600ms] origin-center group-hover:scale-x-100" />
   );
 
-  // --- Desktop Styles (text-sm: 14px) ---
   const menubarTriggerStyles = cn(
     "text-sm xl:text-base cursor-pointer relative group transition-colors duration-300 hover:text-red-600 font-normal flex items-center justify-center h-[50px]",
     "min-w-[90px] xl:min-w-[120px] px-3 xl:px-5 bg-transparent border-none shadow-none gap-1 hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-red-600"
@@ -89,7 +89,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* --- Desktop Menu (text-sm) --- */}
+        {/* --- Desktop Menu --- */}
         <div className="hidden min-[980px]:flex items-center gap-2" onMouseLeave={() => setActiveMenu(null)}>
           <Menubar value={activeMenu || ""} onValueChange={setActiveMenu} className="border-none bg-transparent shadow-none p-0 h-auto flex gap-1 xl:gap-2 font-noto">
             
@@ -161,7 +161,6 @@ export default function Navbar() {
             </MenubarMenu>
           </Menubar>
 
-          {/* Language Switcher - text-sm */}
           <div className="flex items-center ml-4 xl:ml-6 border-l pl-4 xl:pl-6 gap-3 text-sm h-[20px] font-noto">
             <button onClick={() => setLang("TH")} className={cn("transition-colors", lang === "TH" ? "text-red-500 font-bold underline underline-offset-4" : "text-slate-400 hover:text-slate-600")}>TH</button>
             <span className="text-slate-300">|</span>
@@ -169,7 +168,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* --- Mobile Menu Section (text-md: 16px) --- */}
+        {/* --- Mobile Menu --- */}
         <div className="min-[980px]:hidden flex items-center gap-2 font-noto">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -196,12 +195,12 @@ export default function Navbar() {
                   </div>
                 </div>
                 
-                {/* Mobile Main Links - text-md */}
                 <button onClick={() => navigateTo("/")} className="flex items-center gap-4 text-md font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
                   <Home className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> หน้าแรก
                 </button>
 
                 <Accordion type="single" collapsible className="w-full">
+                  {/* หมวดสั่งผลิต */}
                   <AccordionItem value="order" className="border-b">
                     <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Shirt className="w-5 h-5 text-slate-400" /> สั่งผลิต</div>
@@ -221,6 +220,7 @@ export default function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
+                  {/* หมวดแบบเสื้อ */}
                   <AccordionItem value="collection" className="border-b">
                     <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Palette className="w-5 h-5 text-slate-400" /> แบบเสื้อ</div>
@@ -242,6 +242,7 @@ export default function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
+                  {/* หมวดตัวอย่างสินค้า */}
                   <AccordionItem value="sample" className="border-b">
                     <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><Scissors className="w-5 h-5 text-slate-400" /> ตัวอย่างสินค้า</div>
@@ -260,6 +261,7 @@ export default function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
 
+                  {/* หมวดตอบคำถาม */}
                   <AccordionItem value="faq" className="border-b">
                     <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
                       <div className="flex items-center gap-4"><HelpCircle className="w-5 h-5 text-slate-400" /> ตอบคำถาม</div>
@@ -268,7 +270,24 @@ export default function Navbar() {
                       {[
                         { label: "คำถามที่พบบ่อย", path: "/pages/faq" },
                         { label: "การประเมินราคา", path: "/pages/quotation" },
-                        { label: " การชำระเงิน", path: "/pages/payment" },
+                        { label: "การชำระเงิน", path: "/pages/payment" },
+                      ].map((item) => (
+                        <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
+                          {item.label}
+                        </button>
+                      ))}
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  {/* หมวดติดต่อเรา (ปรับใหม่ให้เหมือน Desktop) */}
+                  <AccordionItem value="contact" className="border-b">
+                    <AccordionTrigger className="text-md px-5 py-5 font-bold hover:bg-slate-50 hover:no-underline">
+                      <div className="flex items-center gap-4"><Users className="w-5 h-5 text-slate-400" /> ติดต่อเรา</div>
+                    </AccordionTrigger>
+                    <AccordionContent className="flex flex-col bg-slate-50/80">
+                      {[
+                        { label: "ติดต่อเรา", path: "/pages/contact" },
+                        { label: "เกี่ยวกับเรา", path: "/pages/aboutus" },
                       ].map((item) => (
                         <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}
@@ -277,10 +296,6 @@ export default function Navbar() {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
-
-                <button onClick={() => navigateTo("/pages/contact")} className="flex items-center gap-4 text-md font-bold p-5 hover:bg-red-50 hover:text-red-600 border-b transition-colors group">
-                  <PhoneCall className="w-5 h-5 text-slate-400 group-hover:text-red-500" /> ติดต่อเรา
-                </button>
                 
                 <div className="mt-auto p-5 text-center">
                   <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">Toffy Boutique - Uniform Expert</p>
