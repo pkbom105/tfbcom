@@ -41,7 +41,7 @@ const MOBILE_SLIDES = [
   { id: 6, img: "/hp/slide/m6.png" },
 ];
 
-export default function HeroSlider() {
+export default function HeroSlider({ lang }: { lang: string }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -101,6 +101,7 @@ export default function HeroSlider() {
                         <img 
                           src={slide.fg} 
                           alt="Product Highlight" 
+                          loading="eager"
                           className="w-full h-auto object-contain select-none"
                         />
                       </motion.div>

@@ -10,7 +10,7 @@ const SIZE_CATEGORIES = [
   { id: 1, name: "เสื้อยืด T-shirt", slug: "t-shirt" },
   { id: 2, name: "เสื้อเชิ้ตช่าง Workshop shirt", slug: "workshop" },
   { id: 3, name: "เสื้อแม่บ้าน House Maid Uniform", slug: "maid-uniform" },
-  { id: 4, name: "กางเกง Pant", slug: "pant" },
+  { id: 4, name: "กางเกง Pant", slug: "pants" },
   { id: 5, name: "เสื้อโปโล Polo", slug: "polo" },
   { id: 6, name: "เสื้อช็อป Engineer Jacket", slug: "mechanic" },
   { id: 7, name: "เสื้อเชฟ Chef Uniform", slug: "chef-uniform" },
@@ -21,14 +21,14 @@ const SIZE_CATEGORIES = [
   { id: 12, name: "ผ้ากันเปื้อน Apron", slug: "apron" },
 ];
 
-export default function SizeSpec() {
+export default function SizeSpec({ lang, dict }: { lang: string; dict?: any }) {
   return (
     <section className="py-24 bg-[#F2F2F2] overflow-hidden font-noto">
       <div className="max-w-6xl mx-auto border-0 pt-16 px-6">
-        
+
         {/* --- Part 1: Header (30/70 Split) --- */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-5 mb-10 items-center">
-          
+
           {/* Title (30% Area) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -36,7 +36,7 @@ export default function SizeSpec() {
             viewport={{ once: true }}
             className="md:col-span-3 flex flex-col justify-center lg:ml-10"
           >
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-[0.9] tracking-tighter italic uppercase">
+            <h2 className="text-6xl md:text-7xl font-black text-slate-900 leading-[1.3] tracking-tighter italic uppercase">
               Size spec <br />
               template
             </h2>
@@ -55,12 +55,12 @@ export default function SizeSpec() {
             transition={{ duration: 0.8 }}
             className="md:col-span-6 flex justify-center items-center"
           >
-            <div className="w-full h-[280px] md:h-[380px] relative">
-              <Image 
-                src="/hp/20.png" 
-                alt="Size Spec Template Preview" 
+            <div className="w-full h-[340px] md:h-[420px] relative">
+              <Image
+                src="/hp/20.png"
+                alt="Size Spec Template Preview"
                 fill
-                className="object-contain" 
+                className="object-contain"
               />
             </div>
           </motion.div>
@@ -70,9 +70,9 @@ export default function SizeSpec() {
         <div className="max-w-6xl mx-auto border-t border-slate-300 pt-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-12">
             {SIZE_CATEGORIES.map((category, index) => (
-              <Link 
-                key={category.id} 
-                href={`/pages/collection/${category.slug}`}
+              <Link
+                key={category.id}
+                href={lang === "en" ? `/en/pages/collection/${category.slug}` : `/pages/collection/${category.slug}`}
                 className="group relative inline-flex items-center self-start text-slate-700 hover:text-red-600 transition-colors duration-300 pb-2 w-fit"
               >
                 <motion.div
@@ -85,7 +85,7 @@ export default function SizeSpec() {
                   {/* Text + Arrow Container */}
                   <span className="text-[15px] font-medium tracking-tight relative flex items-center gap-2">
                     {category.name}
-                    
+
                     {/* Arrow Indicator */}
                     <span className="text-slate-400 group-hover:text-red-600 group-hover:translate-x-1 transition-all duration-300 text-md">
                       →

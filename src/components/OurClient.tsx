@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 
-const OurClient = () => {
+const OurClient = ({ lang, dict }: { lang: string; dict?: any }) => {
   // 1. เตรียมข้อมูลโลโก้ (customer01.svg - customer57.svg)
   const clientLogos = Array.from({ length: 57 }, (_, i) => {
     const cardNumber = (i + 1).toString().padStart(2, '0');
@@ -37,57 +37,58 @@ const OurClient = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 mb-16 text-center">
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter italic">
-            Our Trusted Clients
+            {dict?.trusted_title || "Our Trusted Clients"}
           </h2>
-          <p className="text-slate-500 mt-2 font-medium">ความไว้วางใจจากองค์กรชั้นนำทั่วประเทศ</p>
+          <p className="text-slate-500 mt-2 font-medium">{dict?.trusted_subtitle || "ความไว้วางใจจากองค์กรชั้นนำทั่วประเทศ"}</p>
           <div className="w-20 h-1.5 bg-red-600 mx-auto mt-6"></div>
         </div>
 
         {/* ส่วนของการเลื่อนโลโก้ */}
-        <div className="flex flex-col gap-6 md:gap-8">
-          {[row1, row2, row3].map((row, rowIndex) => (
-            <div key={rowIndex} className="relative flex whitespace-nowrap overflow-hidden">
-              <motion.div
-                className="flex gap-6 md:gap-8"
-                variants={marqueeVariants(rowIndex === 1 ? "right" : "left")}
-                animate="animate"
-              >
-                {/* Render โลโก้ 2 ชุดซ้อนกัน ([...row, ...row]) เพื่อให้เชื่อมต่อกันตอนจบ Loop */}
-                {[...row, ...row].map((src, idx) => (
-                  <div
-                    key={`${rowIndex}-${idx}`}
-                    className="w-20 h-20 md:w-30 md:h-30 flex-shrink-0 flex items-center justify-center p-3  rounded-2xl transition-all duration-300 "
-                  >
-                    <img
-                      src={src}
-                      alt="Customer Logo"
-                      className="max-w-full max-h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </motion.div>
-            </div>
-          ))}
-        </div>
+          <div className="flex flex-col gap-6 md:gap-10">
+            {[row1, row2, row3].map((row, rowIndex) => (
+              <div key={rowIndex} className="relative flex whitespace-nowrap overflow-hidden py-4">
+                <motion.div
+                  className="flex items-center gap-10 md:gap-16" // ปรับระยะห่างระหว่างรูปที่นี่
+                  variants={marqueeVariants(rowIndex === 1 ? "right" : "left")}
+                  animate="animate"
+                >
+                  {/* Render โลโก้ 2 ชุดซ้อนกัน ([...row, ...row]) */}
+                  {[...row, ...row].map((src, idx) => (
+                    <div
+                      key={`${rowIndex}-${idx}`}
+                      className="h-16 md:h-24 flex-shrink-0 flex items-center justify-center transition-all duration-300"
+                      // ลบ w-20 / w-30 ออกเพื่อให้กว้างตามรูป
+                    >
+                      <img
+                        src={src}
+                        alt="Customer Logo"
+                        className="w-auto h-full object-contain" // ใช้ w-auto และ h-full เพื่อรักษา Ratio และกว้างตามจริง
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </motion.div>
+              </div>
+            ))}
+          </div>
       </section>
 
       {/* --- SECTION 2: WHY US --- */}
       <section className="py-24 px-6 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div className="space-y-8 order-2 lg:order-1 text-center lg:text-left">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight tracking-tighter">
-                  Why Us | <span className="text-red-600 italic">ทำไมต้องเลือกเรา</span>
+                  {dict?.whyus_title || "Why Us"} |  <span className="text-red-600 italic">{dict?.whyus_subtitle || "ทำไมต้องเลือกเรา"}</span>
                 </h2>
                 <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                  ทำไมต้องสั่งผลิตเสื้อกับ <span className="font-bold text-slate-900">Toffy Boutique</span> เราคือผู้เชี่ยวชาญด้านการผลิตเครื่องแต่งกายที่ได้รับความไว้วางใจจากองค์กรชั้นนำทั่วประเทศ ด้วยประสบการณ์ที่ยาวนานและกระบวนการผลิตที่ทันสมัย
+                  {dict?.whyus_desc || "ทำไมต้องสั่งผลิตเสื้อกับ Toffy Boutique เราคือผู้เชี่ยวชาญด้านการผลิตเครื่องแต่งกายที่ได้รับความไว้วางใจจากองค์กรชั้นนำทั่วประเทศ ด้วยประสบการณ์ที่ยาวนานและกระบวนการผลิตที่ทันสมัย"}
                 </p>
               </div>
               <button className="px-10 py-4 bg-red-600 text-white font-bold rounded-full hover:bg-slate-900 transition-all transform hover:scale-105 shadow-xl">
-                สอบถามข้อมูลการผลิต
+                {dict?.whyus_button || "สอบถามข้อมูลการผลิต"}
               </button>
             </div>
 
@@ -106,9 +107,9 @@ const OurClient = () => {
 
       {/* --- SECTION 3: TESTIMONIALS --- */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tighter italic">What Clients Say</h2>
+            <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tighter italic">{dict?.review_title || "What Clients Say"}</h2>
             <div className="w-16 h-1 bg-red-600 mx-auto mt-4"></div>
           </div>
         

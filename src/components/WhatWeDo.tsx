@@ -19,23 +19,23 @@ const PRODUCT_IMAGES = [
 
 // --- รายการสำหรับปุ่มกด (เพิ่ม slug สำหรับทำ Link) ---
 const PRODUCT_BUTTONS = [
-  { name: "เสื้อยืด T-shirt", slug: "t-shirt" },
-  { name: "เสื้อโปโล Polo", slug: "polo" },
-  { name: "เสื้อเชิ้ต Shirt", slug: "shirt" },
-  { name: "เสื้อเชิ้ตช่าง Workshop shirt", slug: "workshop" },
-  { name: "เสื้อช็อป Engineer Jacket", slug: "mechanic" },
-  { name: "เสื้อแจ็คเก็ต Jacket", slug: "jacket" },
-  { name: "เสื้อแม่บ้าน House Maid Uniform", slug: "maid-uniform" },
-  { name: "เสื้อเชฟ Chef Uniform", slug: "chef-uniform" },
-  { name: "เสื้อรปภ. Security Uniform", slug: "security-uniform" },
-  { name: "กางเกง Pant", slug: "pant" },
-  { name: "เสื้อกั๊ก Vest", slug: "vest" },
-  { name: "เสื้อฮู้ด Hoodie", slug: "hoodie" },
-  { name: "ผ้ากันเปื้อน Apron", slug: "apron" },
-  { name: "ยูนิฟอร์มอื่นๆ Uniform", slug: "others" },
+  { name: "เสื้อยืด T-shirt", nameEn: "T-Shirt", slug: "t-shirt" },
+  { name: "เสื้อโปโล Polo", nameEn: "Polo Shirt", slug: "polo" },
+  { name: "เสื้อเชิ้ต Shirt", nameEn: "Dress Shirt", slug: "shirt" },
+  { name: "เสื้อเชิ้ตช่าง Workshop shirt", nameEn: "Workshop Shirt", slug: "workshop" },
+  { name: "เสื้อช็อป Engineer Jacket", nameEn: "Engineer Jacket", slug: "mechanic" },
+  { name: "เสื้อแจ็คเก็ต Jacket", nameEn: "Jacket", slug: "jacket" },
+  { name: "เสื้อแม่บ้าน House Maid Uniform", nameEn: "House Maid Uniform", slug: "maid-uniform" },
+  { name: "เสื้อเชฟ Chef Uniform", nameEn: "Chef Uniform", slug: "chef-uniform" },
+  { name: "เสื้อรปภ. Security Uniform", nameEn: "Security Uniform", slug: "security-uniform" },
+  { name: "กางเกง Pant", nameEn: "Pants", slug: "pants" },
+  { name: "เสื้อกั๊ก Vest", nameEn: "Vest", slug: "vest" },
+  { name: "เสื้อฮู้ด Hoodie", nameEn: "Hoodie", slug: "hoodie" },
+  { name: "ผ้ากันเปื้อน Apron", nameEn: "Apron", slug: "apron" },
+  { name: "ยูนิฟอร์มอื่นๆ Uniform", nameEn: "Other Uniforms", slug: "others" },
 ];
 
-export default function WhatWeDo() {
+export default function WhatWeDo({ lang, dict }: { lang: string; dict?: any }) {
   return (
     <section className="py-24 bg-white overflow-hidden font-noto">
       <div className="container mx-auto px-6 text-center">
@@ -43,10 +43,10 @@ export default function WhatWeDo() {
         {/* --- Header --- */}
         <div className="space-y-4 mb-20">
           <h2 className="text-7xl md:text-[100px] font-black text-slate-900 leading-tight tracking-tighter italic">
-            What <span className="font-light">we do</span>
+            {dict?.title1 || "What"} <span className="font-light">{dict?.title2 || "we do"}</span>
           </h2>
           <p className="text-xl md:text-2xl text-slate-500 font-medium">
-            ยูนิฟอร์มหลากหลายรูปแบบ
+            {dict?.subtitle || "ยูนิฟอร์มหลากหลายรูปแบบ"}
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function WhatWeDo() {
               >
                 <Image
                   src={item.img}
-                  alt="Uniform product"
+                  alt="ตัวอย่างผลงานชุดยูนิฟอร์ม - Toffy Boutique"
                   fill
                   className="object-contain grayscale-[20%] hover:grayscale-0 transition-all"
                 />
@@ -75,29 +75,10 @@ export default function WhatWeDo() {
         </div>
 
         {/* --- Buttons Grid --- */}
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex flex-wrap justify-center gap-3">
-             <Button item={PRODUCT_BUTTONS[0]} />
-             <Button item={PRODUCT_BUTTONS[1]} />
-             <Button item={PRODUCT_BUTTONS[2]} />
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-             <Button item={PRODUCT_BUTTONS[3]} />
-             <Button item={PRODUCT_BUTTONS[4]} />
-             <Button item={PRODUCT_BUTTONS[5]} />
-             <Button item={PRODUCT_BUTTONS[6]} />
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-             <Button item={PRODUCT_BUTTONS[7]} />
-             <Button item={PRODUCT_BUTTONS[8]} />
-             <Button item={PRODUCT_BUTTONS[9]} />
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-             <Button item={PRODUCT_BUTTONS[10]} />
-             <Button item={PRODUCT_BUTTONS[11]} />
-             <Button item={PRODUCT_BUTTONS[12]} />
-             <Button item={PRODUCT_BUTTONS[13]} />
-          </div>
+        <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          {PRODUCT_BUTTONS.map((button) => (
+            <Button key={button.slug} item={button} lang={lang} />
+          ))}
         </div>
 
       </div>
@@ -106,15 +87,17 @@ export default function WhatWeDo() {
 }
 
 // --- Reusable Button Component ---
-function Button({ item }: { item: { name: string; slug: string } }) {
+function Button({ item, lang }: { item: { name: string; nameEn: string; slug: string }; lang: string }) {
+  const href = lang === "en" ? `/en/pages/collection/${item.slug}` : `/pages/collection/${item.slug}`;
+  const displayName = lang === "en" ? item.nameEn : item.name;
   return (
-    <Link href={`/pages/collection/${item.slug}`} className="block">
+    <Link href={href} className="block">
       <motion.button
         whileHover={{ scale: 1.03, borderColor: "#ef4444" }}
         whileTap={{ scale: 0.98 }}
         className="group flex items-center gap-3 border border-slate-300 rounded-full px-6 py-3 md:px-10 md:py-4 text-sm md:text-lg font-medium text-slate-700 bg-white hover:text-red-600 transition-all duration-300 shadow-sm"
       >
-        {item.name}
+        {displayName}
         <MoveRight size={18} className="text-slate-400 group-hover:text-red-600 group-hover:translate-x-1 transition-all" />
       </motion.button>
     </Link>

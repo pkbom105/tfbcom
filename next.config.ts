@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'www.pngmart.com'], 
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'www.pngmart.com' },
+    ],
     unoptimized: true, // จำเป็น: เพราะ FTP/Static Hosting ไม่มี Node.js มาจัดการย่อรูปให้
   },
   output: 'export', // สำคัญมาก: เพื่อให้สร้างโฟลเดอร์ 'out' สำหรับ FTP

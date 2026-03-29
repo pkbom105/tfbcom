@@ -1,0 +1,234 @@
+{
+  "common": {
+    "home": "Home",
+    "order": "Order",
+    "collection": "Collection",
+    "sample": "Samples",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "about": "About Us",
+    "view_more": "View More",
+    "factory": "Factory"
+  },
+  "hero": {
+    "title": "Past Products Catalog",
+    "subtitle": "Previous Collections",
+    "badge": "Toffy Boutique Selection",
+    "description": "With years of expertise, here are some of our previous masterpieces crafted for our valued clients."
+  },
+  "whatwedo": {
+    "title1": "What",
+    "title2": "we do",
+    "subtitle": "Various types of uniforms"
+  },
+  "process": {
+    "step1": "Sewing",
+    "step2": "Cutting",
+    "step3": "Pattern",
+    "step4": "Packing",
+    "contact": "Contact us"
+  },
+  "stepbystep": {
+    "title": "Step-by-Step Process",
+    "step1": "1. Prepare Design",
+    "step2": "2. Choose Fabric",
+    "step3": "3. Specify Quantity",
+    "step4": "4. Get Quotation",
+    "step5": "5. Make Sample",
+    "step6": "6. Approve Sample",
+    "step7": "7. Mass Production",
+    "step8": "8. Delivery",
+    "img1_label": "Design",
+    "img2_label": "Fabric & Color Chart",
+    "img3_label": "Sample Product",
+    "img4_label": "Production Process"
+  },
+  "whatweprovide": {
+    "title": "What we provide",
+    "subtitle": "What we offer",
+    "item1_title": "High Quality & Accurate",
+    "item1_desc": "Beyond neat stitching, we prioritize communication to fully understand your design, ensuring every delivered piece is beautiful and meets your expectations.",
+    "item2_title": "Variety of Services",
+    "item2_desc": "More than just a factory, we are a partner ready to support all your needs. With our diverse expertise, we make your procurement process easier, complete, and fast.",
+    "item3_title": "Attentive Service",
+    "item3_desc": "We know accurate details are the heart of quality. Our staff acts as your partner, patiently understanding your needs to ensure every product is satisfying and worthwhile.",
+    "item4_title": "Product Warranty",
+    "item4_desc": "We understand your concerns when ordering and take care from production to delivery. If any corrections are needed, we are fully prepared to ensure your highest satisfaction."
+  },
+  "sizespec": {
+    "title": "Size Spec",
+    "subtitle": "Standard Sizes",
+    "desc_p1": "Our factory's standard sizes for polo shirts, dress shirts, workshop shirts, and jackets are specifically designed to fit the Thai physique. If you need to adjust sizes to better fit your organization, we are happy to consult and modify as appropriate.",
+    "desc_p2": "We are very pleased to provide on-site measurement services at your company, or you can send us your Site-Spec to ensure the most perfect fit for your requirements."
+  },
+  "ourclient": {
+    "trusted_title": "Our Trusted Clients",
+    "trusted_subtitle": "Trusted by leading organizations nationwide",
+    "whyus_title": "Why Us",
+    "whyus_subtitle": "Why choose us",
+    "whyus_desc": "Why order from Toffy Boutique? We are garment manufacturing experts trusted by leading organizations nationwide, with years of experience and modern production processes.",
+    "whyus_button": "Inquire About Production",
+    "review_title": "What Clients Say"
+  },
+  "collections": {
+    "badge": "Toffy Boutique Selection",
+    "desc": "Select from our premium designs and color sets for an outstanding corporate image.",
+    "footer_slogan": "Quality & Innovation since 1990",
+    "footer_slogan_alt": "Premium Quality Since 1990",
+    "color_set": "Color Set",
+    "long_sleeve": "Long Sleeve",
+    "short_sleeve": "Short Sleeve",
+    "polo_collar": "Polo Collar",
+    "polo_arm": "Polo Sleeve",
+    "planket": "Placket",
+    "titles": {
+      "arpon": "Apron Design",
+      "mechanic": "Mechanic Shirt Design",
+      "pants": "Pants Design",
+      "polo": "Polo Design",
+      "shirt": "Shirt Design",
+      "tshirt": "T-Shirt Design",
+      "workshop": "Workshop Shirt Design"
+    },
+    "tabs": {
+      "arpon_a": "Apron (A)",
+      "arpon_b": "Apron (B)",
+      "mechanic": "Mechanic Shirt",
+      "pants": "Pants Collection",
+      "polo_a": "Polo A",
+      "polo_b": "Polo B",
+      "polo_c": "Polo C",
+      "polo_d": "Polo D",
+      "polo_e": "Polo E",
+      "polo_f": "Polo F",
+      "polo_aa": "Polo AA",
+      "polo_collar": "Collar",
+      "polo_arm": "Sleeve",
+      "polo_planket": "Placket",
+      "shirt_a": "Shirt A",
+      "tshirt_a": "Crew Neck",
+      "workshop_a": "Short Sleeve (A)",
+      "workshop_b": "Short Sleeve (B)"
+    }
+  },
+  "ready_to_wear": {
+    "title_th": "Past Products",
+    "badge": "Toffy Boutique Selection",
+    "desc_1": "With our long-standing experience,",
+    "desc_2": "these are some of the sample products we have manufactured for our clients in the past.",
+    "catalog_title": "Product Catalog",
+    "tabs": {
+      "tshirt_label": "T-Shirt",
+      "tshirt_title": "T-Shirt Products",
+      "polo_label": "Polo",
+      "polo_title": "Polo Products",
+      "shirt_label": "Men's Shirt",
+      "shirt_title": "Men's Shirt Products",
+      "mac_label": "Workshop Shirt",
+      "mac_title": "Workshop Shirt Products",
+      "pants_label": "Cargo Pants",
+      "pants_title": "Pants/Skirts Products",
+      "arpon_label": "Apron",
+      "arpon_title": "Apron Products"
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "order": {
+      "title": "Order",
+      "items": {
+        "process": "Process",
+        "how_to_order": "How to Order",
+        "fabric": "Fabrics",
+        "size_spec": "Size Spec",
+        "ready_to_wear": "Ready-to-Wear"
+      }
+    },
+    "collections": {
+      "title": "Collections",
+      "items": {
+        "tshirt": "T-Shirt",
+        "polo": "Polo",
+        "shirt": "Shirt",
+        "mechanic": "Mechanic",
+        "workshop": "Workshop",
+        "pants": "Pants",
+        "arpon": "Apron"
+      }
+    },
+    "samples": {
+      "title": "Samples",
+      "items": {
+        "past_works": "Past Works",
+        "embroidery": "Embroidery & Print",
+        "reviews": "Reviews",
+        "ready_to_wear": "Ready-to-Wear"
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": {
+        "faq": "FAQ",
+        "quotation": "Quotation",
+        "payment": "Payment"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "items": {
+        "contact_us": "Contact Us",
+        "about_us": "About Us"
+      }
+    },
+      "mobile": {
+      "menu": "MENU",
+      "language": "LANGUAGE"
+    }
+  },
+  "process_page": {
+    "hero": {
+      "title": "Manufacturing Process",
+      "subtitle": "Production Stages",
+      "desc": "The standard Toffy Boutique manufacturing process that ensures you receive premium-quality uniforms, perfectly tailored to your specifications, delivered on time."
+    },
+    "material": {
+      "title": "Material Quality Check",
+      "subtitle": "Raw material inspection and premium fabric selection process.",
+      "precision": "Precision Manufacturing",
+      "precision_desc": "The foundation of a great uniform starts with high-quality raw materials. Our standardized production begins with a rigorous fabric inspection. We pay close attention to the fabric's quality and specifications to ensure they meet the defined standards, including color, weight, thickness, and shrinkage. Every piece of fabric used in our apparel passes strict screening before entering actual production."
+    },
+    "cutting": {
+      "title": "Cutting",
+      "subtitle": "Cutting Department",
+      "desc1": "Pattern drafting and marker layout processes.",
+      "desc2": "Another crucial step in ensuring high-quality production is creating excellent patterns. A good pattern guarantees that when worn, the apparel fits the body perfectly, allowing the wearer to feel confident and comfortable."
+    },
+    "sewing": {
+      "title": "Sewing",
+      "subtitle": "Sewing Department",
+      "desc1": "At Toffy Boutique, we focus on meticulous craftsmanship. We are ready to provide consultation and take care of every step to ensure you get the most perfect uniform.",
+      "expert_title": "Exquisite Stitching",
+      "expert_desc": "The sewing process is the heart of production. Every piece passes through the hands of highly experienced experts. We prioritize the precision of our stitches and durability, ensuring that every uniform meets international standards."
+    },
+    "packing": {
+      "title": "Packing",
+      "subtitle": "Packing Department",
+      "item1": "Thread trimming and final quality inspection.",
+      "item2": "Ironing the products to ensure a beautiful and neat appearance before delivery.",
+      "item3": "Folding and bagging the products, ready to be handed over to the customer."
+    },
+    "delivery": {
+      "title": "Delivery",
+      "subtitle": "Logistics & Shipping",
+      "video_caption": "Atmosphere of packing and preparing for delivery.",
+      "box_title1": "Products will be packed in standard cartons",
+      "box_title2": "and delivered as scheduled.",
+      "list1_1": "For orders of 100 pieces or more,",
+      "list1_2": "we provide free shipping within Bangkok.",
+      "list2": "Production takes within 30 days after the sample has been approved.",
+      "list3": "For other provinces, we ship via private logistics companies at actual cost.",
+      "quote": "\"We prioritize speed and safety to ensure the products reach your hands in perfect condition.\"",
+      "truck_caption": "Toffy Boutique delivery trucks ready for service."
+    }
+  }
+}

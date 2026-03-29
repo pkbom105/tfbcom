@@ -14,30 +14,29 @@ interface StepImage {
   border?: boolean; // เครื่องหมาย ? หมายถึงจะมีหรือไม่มีก็ได้
 }
 
-// 2. ข้อมูลขั้นตอน (1-8)
-const steps: StepItem[] = [
-  { id: 1, items: ["1. มีแบบเสื้อที่ต้องการ", "2. เลือกเนื้อผ้า"] },
-  { id: 2, items: ["3. ระบุจำนวน", "4. ประเมินราคา"] },
-  { id: 3, items: ["5. ขึ้นเสื้อตัวอย่าง", "6. อนุมัติเสื้อตัวอย่าง"] },
-  { id: 4, items: ["7. ลงผลิต", "8. จัดส่ง"] },
-];
+export default function StepByStep({ lang, dict }: { lang: string; dict?: any }) {
+  // 2. ข้อมูลขั้นตอน (1-8)
+  const steps: StepItem[] = [
+    { id: 1, items: [dict?.step1 || "1. มีแบบเสื้อที่ต้องการ", dict?.step2 || "2. เลือกเนื้อผ้า"] },
+    { id: 2, items: [dict?.step3 || "3. ระบุจำนวน", dict?.step4 || "4. ประเมินราคา"] },
+    { id: 3, items: [dict?.step5 || "5. ขึ้นเสื้อตัวอย่าง", dict?.step6 || "6. อนุมัติเสื้อตัวอย่าง"] },
+    { id: 4, items: [dict?.step7 || "7. ลงผลิต", dict?.step8 || "8. จัดส่ง"] },
+  ];
 
-// 3. ข้อมูลรูปภาพ (4 รูปด้านล่าง)
-const images: StepImage[] = [
-  { src: "/hp/z1.png", label: "แบบเสื้อ" },
-  { src: "/hp/z2.png", label: "เนื้อผ้าและชาร์ทสี",  },
-  { src: "/hp/z3.png", label: "ตัวอย่างงานผลิต" },
-  { src: "/hp/z4.png", label: "ขั้นตอนการผลิต" },
-];
-
-export default function StepByStep() {
+  // 3. ข้อมูลรูปภาพ (4 รูปด้านล่าง)
+  const images: StepImage[] = [
+    { src: "/hp/z1.png", label: dict?.img1_label || "แบบเสื้อ" },
+    { src: "/hp/z2.png", label: dict?.img2_label || "เนื้อผ้าและชาร์ทสี",  },
+    { src: "/hp/z3.png", label: dict?.img3_label || "ตัวอย่างงานผลิต" },
+    { src: "/hp/z4.png", label: dict?.img4_label || "ขั้นตอนการผลิต" },
+  ];
   return (
     <section className="py-24 px-6 bg-white font-noto overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         
         {/* --- Title Section --- */}
         <h2 className="text-5xl md:text-7xl font-light italic text-gray-900 mb-16 tracking-tighter">
-          Step-by-Step Process
+          {dict?.title || "Step-by-Step Process"}
         </h2>
 
         {/* --- Steps Text Grid (1-8) --- */}

@@ -4,14 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const PROCESS_STEPS = [
-  { id: 1, title: "เย็บ", img: "/hp/1.png" },
-  { id: 2, title: "ตัด", img: "/hp/2.png" },
-  { id: 3, title: "แพทเทิร์น", img: "/hp/3.png" },
-  { id: 4, title: "แพคกิ้ง", img: "/hp/4.png" },
-];
+export default function Process({ lang, dict }: { lang: string; dict?: any }) {
+  const PROCESS_STEPS = [
+    { id: 1, title: dict?.step1 || "เย็บ", img: "/hp/1.png" },
+    { id: 2, title: dict?.step2 || "ตัด", img: "/hp/2.png" },
+    { id: 3, title: dict?.step3 || "แพทเทิร์น", img: "/hp/3.png" },
+    { id: 4, title: dict?.step4 || "แพคกิ้ง", img: "/hp/4.png" },
+  ];
 
-export default function Process() {
   return (
     <section className="py-24 bg-white overflow-hidden">
       {/* เพิ่ม max-w-[1250px] และ mx-auto เพื่อให้คอนเทนต์อยู่กึ่งกลาง
@@ -43,7 +43,7 @@ export default function Process() {
               </svg>
             </div>
             <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-8 py-4 text-lg font-black uppercase hover:bg-red-600 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100 whitespace-nowrap">
-              Contact us
+              {dict?.contact || "Contact us"}
             </button>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Process() {
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100 shadow-lg transition-all duration-700 group-hover:-translate-y-4">
                 <Image 
                   src={step.img} 
-                  alt={step.title} 
+                  alt={`${step.title} - ขั้นตอนการผลิตยูนิฟอร์ม Toffy Boutique`} 
                   fill 
                   className="object-cover transition-transform duration-1000 group-hover:scale-110" 
                 />
