@@ -24,7 +24,7 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="/hp/c2.png"
-                alt="บรรยากาศโรงงาน ทอฟฟี่ บูติก"
+                alt={isEn ? "Toffy Boutique Factory Atmosphere" : "บรรยากาศโรงงาน ทอฟฟี่ บูติก"}
                 width={500}
                 height={800}
                 priority
@@ -102,12 +102,14 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
             {/* เพิ่ม leading-[1.5] */}
             <div className="space-y-4">
               <p className="text-md text-slate-600 leading-[1.5]">
-                ด้วยประสบการณ์การทำงานด้านการผลิตมานาน ทำให้เราเชี่ยวชาญในเรื่องการควบคุมงานผลิต 
-                การคัดสรรวัตุดิบ เนื้อผ้าที่มีมาตรฐาน และมีคุณภาพที่สม่ำเสมอ
+                {isEn 
+                  ? "With years of manufacturing experience, we are experts in production control, selecting standard raw materials, and ensuring consistent fabric quality."
+                  : "ด้วยประสบการณ์การทำงานด้านการผลิตมานาน ทำให้เราเชี่ยวชาญในเรื่องการควบคุมงานผลิต การคัดสรรวัตุดิบ เนื้อผ้าที่มีมาตรฐาน และมีคุณภาพที่สม่ำเสมอ"}
               </p>
               <p className="text-md text-slate-600 leading-[1.5]">
-                ทำให้เราเป็นที่ไว้วางใจของลูกค้าหลากหลายวงการ 
-                ที่กลับมาสั่งผลิตสินค้ากับเรามาเป็นระยะเวลานาน
+                {isEn
+                  ? "This has earned the trust of customers across various industries who have continued to order from us for a long time."
+                  : "ทำให้เราเป็นที่ไว้วางใจของลูกค้าหลากหลายวงการ ที่กลับมาสั่งผลิตสินค้ากับเรามาเป็นระยะเวลานาน"}
               </p>
             </div>
           </motion.div>
@@ -122,7 +124,7 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="/hp/c4.png"
-                alt="คุณภาพการผลิต ทอฟฟี่ บูติก"
+                alt={isEn ? "Toffy Boutique Production Quality" : "คุณภาพการผลิต ทอฟฟี่ บูติก"}
                 width={800}
                 height={500}
                 className="w-full aspect-[4/3] object-cover"
@@ -147,7 +149,7 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
               <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl group">
                 <Image
                   src="/hp/c5.png"
-                  alt="ความตั้งใจในการผลิต"
+                  alt={isEn ? "Commitment to Production" : "ความตั้งใจในการผลิต"}
                   width={800}
                   height={600}
                   className="w-full h-auto aspect-[4/3] lg:aspect-square object-cover object-center transition-transform duration-700 group-hover:scale-105"
@@ -197,7 +199,7 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
           >
             <Image
               src="/hp/c6.png"
-              alt="ขอบคุณลูกค้า ทอฟฟี่ บูติก"
+              alt={isEn ? "Thank you Toffy Boutique customers" : "ขอบคุณลูกค้า ทอฟฟี่ บูติก"}
               width={1200}
               height={500}
               priority

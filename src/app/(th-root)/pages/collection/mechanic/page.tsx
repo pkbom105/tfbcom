@@ -73,16 +73,16 @@ export default function ReadyToWearV232({ lang = "th" }: { lang?: string }) {
 
       {/* Content Container */}
       <div className="container mx-auto px-4 md:px-12 pb-24">
-        <Tabs defaultValue="eng-a" className="w-full">
+        <Tabs defaultValue="eng-a" className="w-full flex flex-col items-center">
 
-          {/* --- Main Tabs (จัดกึ่งกลางและโค้งมนตามรูป) --- */}
-          <div className="flex justify-center mb-16">
-            <TabsList className="flex bg-slate-100/60 p-1.5 rounded-full h-auto w-fit border border-slate-200/50 shadow-inner">
+          {/* Main Tabs (Centered Pill) */}
+          <div className="w-full flex justify-center mb-16">
+            <TabsList className="flex h-auto p-1.5 bg-slate-100/60 rounded-full border border-slate-200/50 shadow-inner w-fit">
               {tabItems.map((tab) => (
                 <TabsTrigger
                   key={tab.value}
                   value={tab.value}
-                  className="rounded-full px-8 py-3 text-sm md:text-base font-bold transition-all duration-300
+                  className="rounded-full px-10 py-3 text-sm md:text-base font-bold transition-all duration-300
                              data-[state=active]:bg-white data-[state=active]:text-red-600 data-[state=active]:shadow-lg text-slate-500 hover:text-slate-800"
                 >
                   {tab.label}
@@ -93,22 +93,22 @@ export default function ReadyToWearV232({ lang = "th" }: { lang?: string }) {
 
           <AnimatePresence mode="wait">
             {tabItems.map((mainTab) => (
-              <TabsContent key={mainTab.value} value={mainTab.value} className="focus-visible:outline-none">
+              <TabsContent key={mainTab.value} value={mainTab.value} className="w-full flex flex-col items-center focus-visible:outline-none">
 
                 <div className="text-center mb-12">
                   <h2 className="text-4xl font-black text-slate-900 italic uppercase tracking-tighter">{mainTab.title}</h2>
-                  <div className="w-16 h-1.5 bg-red-600 mx-auto mt-4 rounded-full" />
+                  <div className="w-24 h-1.5 bg-red-600 mx-auto mt-6 rounded-full" />
                 </div>
 
-                <Tabs defaultValue="color1" className="w-full">
-                  {/* --- Sub Tabs (สีชุด) จัดกึ่งกลางพอดีคำ --- */}
-                  <div className="flex justify-center mb-10">
-                    <TabsList className="flex bg-slate-50 p-1.5 rounded-full h-auto w-fit border border-slate-100 shadow-sm">
-                      {mainTab.subColorTabs.map((sub) => (
+                <Tabs defaultValue="color1" className="w-full flex flex-col items-center">
+                  {/* Sub Tabs (Centered Pill) */}
+                  <div className="w-full flex justify-center mb-10">
+                    <TabsList className="flex flex-wrap h-auto p-1.5 bg-slate-50 rounded-full border border-slate-100 shadow-sm w-fit justify-center">
+                      {mainTab.subColorTabs.map((sub: any) => (
                         <TabsTrigger
                           key={sub.value}
                           value={sub.value}
-                          className="rounded-full px-6 py-2.5 text-xs md:text-sm font-bold transition-all
+                          className="rounded-full px-6 py-2.5 text-xs md:text-sm font-bold transition-all duration-300
                                      data-[state=active]:bg-white data-[state=active]:text-red-600 data-[state=active]:shadow-md text-slate-400"
                         >
                           {sub.label}
@@ -117,8 +117,8 @@ export default function ReadyToWearV232({ lang = "th" }: { lang?: string }) {
                     </TabsList>
                   </div>
 
-                  {mainTab.subColorTabs.map((sub) => (
-                    <TabsContent key={sub.value} value={sub.value}>
+                  {mainTab.subColorTabs.map((sub: any) => (
+                    <TabsContent key={sub.value} value={sub.value} className="w-full outline-none">
                       <ColorRangeGallery
                         path={sub.path}
                         prefix={mainTab.prefix}

@@ -155,7 +155,7 @@ export default function Navbar({ lang: initialLang }: { lang: string }) {
               <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/faq")}>{dict.faq.items.faq}</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/quotation")}>{dict.faq.items.quotation}</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/payment")}>{dict.faq.items.payment}</MenubarItem>
+                {/* <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/payment")}>{dict.faq.items.payment}</MenubarItem> */}
               </MenubarContent>
             </MenubarMenu>
 
@@ -293,7 +293,7 @@ export default function Navbar({ lang: initialLang }: { lang: string }) {
                       {[
                         { label: dict.faq.items.faq, path: "/pages/faq" },
                         { label: dict.faq.items.quotation, path: "/pages/quotation" },
-                        { label: dict.faq.items.payment, path: "/pages/payment" },
+                        // { label: dict.faq.items.payment, path: "/pages/payment" },
                       ].map((item) => (
                         <button key={item.path} onClick={() => navigateTo(item.path)} className="text-md py-4 pl-14 text-left border-b border-white/50 hover:text-red-600 font-medium">
                           {item.label}

@@ -109,7 +109,7 @@ export default function Footer({ lang }: { lang: string }) {
                 <div className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-all shadow-sm">
                   <Mail size={18} />
                 </div>
-                <span className="text-md md:text-sm font-semibold">sales@tfb.co.th</span>
+                <span className="text-md md:text-sm font-semibold">sales@toffyboutique.com</span>
               </a>
 
               <a href="#" className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition-colors group">

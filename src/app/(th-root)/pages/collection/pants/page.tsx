@@ -91,63 +91,65 @@ export default function ReadyToWearV231({ lang = "th" }: { lang?: string }) {
       </section>
  
       <div className="container mx-auto px-4 md:px-12 py-12 space-y-24">
-        <section className="relative w-full">
-          <Tabs defaultValue="polo-a" className="w-full">
-            <div className="flex justify-center w-full mb-20 px-4">
-              <TabsList className="flex flex-wrap justify-center p-2 rounded-[3.5rem] h-auto w-auto max-w-full border border-slate-200 shadow-inner gap-2">
-                {tabItems.map((tab) => (
-                  <TabsTrigger 
-                    key={tab.value} 
-                    value={tab.value} // แก้ไขจาก sub.value เป็น tab.value
-                    className="rounded-xl transition-all font-bold text-slate-800 py-3 text-xs md:text-sm lg:text-base px-1 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md h-full w-full"
-                  >
-                    {tab.label}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-            </div>
+        <Tabs defaultValue="polo-a" className="w-full flex flex-col items-center">
+          
+          {/* Main Tabs (Centered Pill) */}
+          <div className="w-full flex justify-center mb-20 px-4">
+            <TabsList className="flex h-auto p-1.5 bg-slate-100/60 rounded-full border border-slate-200/50 shadow-inner w-fit">
+              {tabItems.map((tab) => (
+                <TabsTrigger 
+                  key={tab.value} 
+                  value={tab.value} 
+                  className="rounded-full px-10 py-3 font-bold text-slate-500 transition-all duration-300 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-lg hover:text-slate-800 text-base"
+                >
+                  {tab.label}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
 
-            <AnimatePresence mode="wait">
-              {tabItems.map((mainTab) => (
-                <TabsContent key={mainTab.value} value={mainTab.value} className="focus-visible:outline-none">
-                  <div className="text-center mb-16 space-y-4">
-                    <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">
-                      {mainTab.title}
-                    </h2>
-                    <div className="w-32 h-2 bg-red-600 mx-auto rounded-full shadow-lg shadow-red-200" />
+          <AnimatePresence mode="wait">
+            {tabItems.map((mainTab) => (
+              <TabsContent key={mainTab.value} value={mainTab.value} className="w-full flex flex-col items-center outline-none">
+                
+                <div className="text-center mb-16">
+                  <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight">
+                    {mainTab.title}
+                  </h2>
+                  <div className="w-24 h-1.5 bg-red-600 mx-auto mt-6 rounded-full" />
+                </div>
+
+                <Tabs defaultValue="color1" className="w-full flex flex-col items-center">
+                  {/* Sub Tabs (Centered Pill) */}
+                  <div className="flex justify-center mb-12 px-4">
+                        <TabsList className="flex flex-wrap h-auto p-1.5 bg-slate-50 rounded-full border border-slate-100 shadow-sm w-fit justify-center">
+                          {mainTab.subColorTabs.map((sub) => (
+                            <TabsTrigger 
+                              key={sub.value} 
+                              value={sub.value} 
+                              className="rounded-full px-6 py-2.5 font-bold text-slate-400 text-sm transition-all duration-300 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
+                            >
+                              {sub.label}
+                            </TabsTrigger>
+                          ))}
+                        </TabsList>
                   </div>
 
-                  <Tabs defaultValue="color1" className="w-full">
-                    <div className="flex justify-center mb-12 px-4">
-                          <TabsList className="flex flex-wrap justify-center bg-slate-100/80 p-2 rounded-2xl md:rounded-full h-auto w-auto border border-slate-200 shadow-inner gap-1">
-                            {mainTab.subColorTabs.map((sub) => (
-                              <TabsTrigger 
-                                key={sub.value} 
-                                value={sub.value} 
-                                className="rounded-xl md:rounded-full transition-all font-bold text-slate-800 py-2 px-4 text-xs md:text-sm data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
-                              >
-                                {sub.label}
-                              </TabsTrigger>
-                            ))}
-                          </TabsList>
-                    </div>
-
-                    {mainTab.subColorTabs.map((sub) => (
-                      <TabsContent key={sub.value} value={sub.value}>
-                        <ColorRangeGallery 
-                          path={sub.path} 
-                          prefix={mainTab.prefix} 
-                          start={sub.start} 
-                          end={sub.end} 
-                        />
-                      </TabsContent>
-                    ))}
-                  </Tabs>
-                </TabsContent>
-              ))}
-            </AnimatePresence>
-          </Tabs>
-        </section>
+                  {mainTab.subColorTabs.map((sub) => (
+                    <TabsContent key={sub.value} value={sub.value} className="w-full outline-none">
+                      <ColorRangeGallery 
+                        path={sub.path} 
+                        prefix={mainTab.prefix} 
+                        start={sub.start} 
+                        end={sub.end} 
+                      />
+                    </TabsContent>
+                  ))}
+                </Tabs>
+              </TabsContent>
+            ))}
+          </AnimatePresence>
+        </Tabs>
       </div>
 
       <footer className="pt-32 border-t border-slate-100 pb-20 text-center">

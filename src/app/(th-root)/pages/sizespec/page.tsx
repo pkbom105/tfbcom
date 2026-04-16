@@ -427,7 +427,7 @@ export default function SizeSpecPage() {
       <section className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl py-6 border-b border-slate-100 shadow-sm overflow-x-auto no-scrollbar">
         <div className="max-w-fit mx-auto px-4">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-            <TabsList className="grid grid-cols-2 md:grid-cols-4 bg-slate-100/80 p-2 rounded-2xl md:rounded-[2rem] h-auto w-full max-w-4xl border border-slate-200 shadow-inner gap-1">
+            <TabsList className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-9  bg-slate-100/80 p-2 rounded-2xl md:rounded-[2rem] h-auto w-full max-w-4xl border border-slate-200 shadow-inner gap-1">
               {buttonGroups.map((group) => (
                 <TabsTrigger
                   key={group.id}

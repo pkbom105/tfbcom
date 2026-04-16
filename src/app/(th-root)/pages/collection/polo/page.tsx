@@ -175,16 +175,16 @@ export default function ReadyToWearV229({ lang = "th" }: { lang?: string }) {
       </section>
       
       <div className="container mx-auto px-6 md:px-12 py-12 space-y-24">
-        {/* Main Tabs Selection */}
-        <section>
-          <Tabs defaultValue="polo-a" className="w-full">
-            <div className="flex justify-center mb-16">
-              <TabsList className="grid grid-cols-2 md:grid-cols-5 bg-slate-100/80 p-2 rounded-2xl md:rounded-[2rem] h-auto w-full max-w-6xl border border-slate-200 shadow-inner gap-1">
+        {/* Main Tabs Selection (Centered Pill) */}
+        <section className="w-full flex flex-col items-center">
+          <Tabs defaultValue="polo-a" className="w-full flex flex-col items-center">
+            <div className="w-full flex justify-center mb-16">
+              <TabsList className="flex flex-wrap h-auto p-1.5 bg-slate-100/60 rounded-full border border-slate-200/50 shadow-inner w-fit justify-center">
                 {tabItems.map((tab) => (
                   <TabsTrigger 
                     key={tab.value} 
                     value={tab.value} 
-                    className="rounded-xl transition-all font-bold text-slate-800 py-3 text-xs md:text-sm lg:text-base px-1 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
+                    className="rounded-full px-8 py-3 font-bold text-slate-500 transition-all duration-300 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-lg hover:text-slate-800 text-sm md:text-base"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -194,21 +194,21 @@ export default function ReadyToWearV229({ lang = "th" }: { lang?: string }) {
 
             <AnimatePresence mode="wait">
               {tabItems.map((mainTab) => (
-                <TabsContent key={mainTab.value} value={mainTab.value} className="focus-visible:outline-none">
-                  <div className="text-center mb-12 space-y-2">
+                <TabsContent key={mainTab.value} value={mainTab.value} className="w-full flex flex-col items-center focus-visible:outline-none">
+                  <div className="text-center mb-12">
                     <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tight">{mainTab.title}</h2>
-                    <div className="w-24 h-1.5 bg-red-600 mx-auto rounded-full" />
+                    <div className="w-24 h-1.5 bg-red-600 mx-auto mt-6 rounded-full" />
                   </div>
 
-                  {/* Sub-Tabs Section */}
-                  <Tabs defaultValue="color1" className="w-full">
-                    <div className="flex justify-center mb-10">
-                        <TabsList className="flex flex-wrap justify-center bg-slate-100/80 p-2 rounded-2xl md:rounded-full h-auto w-auto border border-slate-200 shadow-inner gap-1">
-                          {mainTab.subColorTabs.map((sub) => (
+                  {/* Sub-Tabs Section (Centered Pill) */}
+                  <Tabs defaultValue="color1" className="w-full flex flex-col items-center">
+                    <div className="w-full flex justify-center mb-10">
+                        <TabsList className="flex flex-wrap h-auto p-1.5 bg-slate-50 rounded-full border border-slate-100 shadow-sm w-fit justify-center">
+                          {mainTab.subColorTabs.map((sub: any) => (
                             <TabsTrigger 
                               key={sub.value} 
                               value={sub.value} 
-                              className="rounded-xl md:rounded-full transition-all font-bold text-slate-800 py-2 px-4 text-xs md:text-sm data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
+                              className="rounded-full px-6 py-2.5 font-bold text-slate-400 text-xs md:text-sm transition-all duration-300 data-[state=active]:text-red-600 data-[state=active]:bg-white data-[state=active]:shadow-md"
                             >
                               {sub.label}
                             </TabsTrigger>
@@ -216,8 +216,8 @@ export default function ReadyToWearV229({ lang = "th" }: { lang?: string }) {
                         </TabsList>
                     </div>
 
-                    {mainTab.subColorTabs.map((sub) => (
-                      <TabsContent key={sub.value} value={sub.value}>
+                    {mainTab.subColorTabs.map((sub: any) => (
+                      <TabsContent key={sub.value} value={sub.value} className="w-full outline-none">
                         <ColorRangeGallery 
                           path={sub.path} 
                           prefix={mainTab.prefix} 
