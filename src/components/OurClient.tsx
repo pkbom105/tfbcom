@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import IconSection from "./IconSection";
 
 const OurClient = ({ lang, dict }: { lang: string; dict?: any }) => {
   // 1. เตรียมข้อมูลโลโก้ (customer01.svg - customer57.svg)
@@ -74,7 +75,7 @@ const OurClient = ({ lang, dict }: { lang: string; dict?: any }) => {
       </section>
 
       {/* --- SECTION 2: WHY US --- */}
-      <section className="py-24 px-6 bg-slate-50 border-y border-slate-100">
+      <section className="py-20px-6 bg-slate-50 border-y border-slate-100">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
@@ -87,9 +88,12 @@ const OurClient = ({ lang, dict }: { lang: string; dict?: any }) => {
                   {dict?.whyus_desc || "ทำไมต้องสั่งผลิตเสื้อกับ Toffy Boutique เราคือผู้เชี่ยวชาญด้านการผลิตเครื่องแต่งกายที่ได้รับความไว้วางใจจากองค์กรชั้นนำทั่วประเทศ ด้วยประสบการณ์ที่ยาวนานและกระบวนการผลิตที่ทันสมัย"}
                 </p>
               </div>
-              <button className="px-10 py-4 bg-red-600 text-white font-bold rounded-full hover:bg-slate-900 transition-all transform hover:scale-105 shadow-xl">
-                {dict?.whyus_button || "สอบถามข้อมูลการผลิต"}
-              </button>
+              <a 
+                  href="/pages/contact/"
+                  className="px-10 py-4 bg-red-600 text-white font-bold rounded-full hover:bg-slate-900 transition-all transform hover:scale-105 shadow-xl inline-block text-center"
+                >
+                  {dict?.whyus_button || "สอบถามข้อมูลการผลิต"}
+                </a>
             </div>
 
             <div className="order-1 lg:order-2">
@@ -102,11 +106,15 @@ const OurClient = ({ lang, dict }: { lang: string; dict?: any }) => {
               </div>
             </div>
           </div>
+          <IconSection />
         </div>
+        
       </section>
+      {/* section 3  - icon section */}
+      
 
-      {/* --- SECTION 3: TESTIMONIALS --- */}
-      <section className="py-24 px-6 bg-white">
+      {/* --- SECTION 4: TESTIMONIALS --- */}
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-slate-900 uppercase tracking-tighter italic">{dict?.review_title || "What Clients Say"}</h2>

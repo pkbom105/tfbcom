@@ -2,40 +2,41 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Settings2, 
-  ClipboardCheck, 
-  Truck, 
-  Shirt, 
-  FileSearch,
-  Users,
-  Factory,
-  PenTool
-} from "lucide-react";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
 const stepsData = {
   th: [
-    { id: 1, title: "ระบุแบบเสื้อ", description: "ส่งรูปพร้อมรายละเอียดแบบเสื้อที่คุณต้องการเพื่อประเมินราคา หากยังไม่มีแบบ สามารถเลือกดูแบบเสื้อยอดนิยมจากเราได้", icon: <Shirt className="w-9 h-9 text-red-600" />, color: "bg-red-50" },
-    { id: 2, title: "ระบุเนื้อผ้า", description: "เลือกลักษณะเนื้อผ้าที่ต้องการ โดยทางเรามีบริการจัดส่งชิ้นตัวอย่างผ้าให้พิจารณาก่อนตัดสินใจโดยไม่มีค่าใช้จ่าย", icon: <FileSearch className="w-9 h-9 text-red-600" />, color: "bg-purple-50" },
-    { id: 3, title: "ระบุจำนวน", description: "แจ้งจำนวนที่ต้องการผลิต (ขั้นต่ำ 100 ตัวต่อแบบต่อสี) การผลิตจำนวนมากจะช่วยลดต้นทุนต่อหน่วยได้ สามารถคละไซซ์ได้", icon: <Users className="w-9 h-9 text-red-600" />, color: "bg-blue-50" },
-    { id: 4, title: "แจ้งประเมินราคา", description: "เมื่อได้รับรายละเอียดครบถ้วน ทางโรงงานจะรีบทำการประเมินราคาและจัดทำใบเสนอราคาให้ทันที", icon: <Settings2 className="w-9 h-9 text-red-600" />, color: "bg-cyan-50" },
-    { id: 5, title: "ยืนยันการสั่งซื้อ", description: "ลูกค้าเซ็นตอบรับใบเสนอราคา พร้อมชำระมัดจำการสั่งสินค้า 40% เพื่อเริ่มขั้นตอนถัดไป", icon: <ClipboardCheck className="w-9 h-9 text-red-600" />, color: "bg-emerald-50" },
-    { id: 6, title: "เสื้อตัวอย่าง", description: "หลังจากอนุมัติแบบ ทางโรงงานจะขึ้นเสื้อตัวอย่างจริงเพื่อยืนยันความถูกต้อง โดยใช้เวลาประมาณ 7 วันทำการ", icon: <Shirt className="w-9 h-9 text-red-600" />, color: "bg-lime-50" },
-    { id: 7, title: "ปรับแก้ และอนุมัติ", description: "ลูกค้าตรวจสอบเสื้อตัวอย่างและแจ้งปรับแก้ได้ตามต้องการ หากแก้ไขเล็กน้อยจะไม่มีค่าใช้จ่ายเพิ่มเติม", icon: <PenTool className="w-9 h-9 text-red-600" />, color: "bg-yellow-50" },
-    { id: 8, title: "ลงงานผลิต", description: "เมื่อยืนยันเสื้อตัวอย่างแล้ว จะเริ่มกระบวนการผลิตเต็มรูปแบบ ซึ่งจะใช้เวลาดำเนินการภายใน 30 วัน", icon: <Factory className="w-9 h-9 text-red-600" />, color: "bg-orange-50" },
-    { id: 9, title: "รอรับสินค้า", description: "สินค้าจะเสร็จสมบูรณ์ภายใน 30 วันหรือเร็วกว่า ลูกค้าชำระส่วนที่เหลือก่อนจัดส่งหรือในวันที่ส่งสินค้า", icon: <Truck className="w-9 h-9 text-red-600" />, color: "bg-pink-50" },
+    { id: 1, title: "ระบุแบบเสื้อ", description: "ส่งรูปพร้อมรายละเอียดแบบเสื้อที่คุณต้องการ หากยังไม่มีแบบ สามารถเลือกดูแบบเสื้อยอดนิยมจากเราได้", icon: "/hp/icon/1.png" },
+    { id: 2, title: "ระบุเนื้อผ้า", description: "เลือกลักษณะเนื้อผ้าที่ต้องการ โดยทางเรามีบริการจัดส่งชิ้นตัวอย่างผ้าให้พิจารณาก่อนตัดสินใจโดยไม่มีค่าใช้จ่าย", icon: "/hp/icon/2.png" },
+    { id: 3, title: "ระบุจำนวน", description: "แจ้งจำนวนที่ต้องการผลิต (ขั้นต่ำ 50 ตัวต่อแบบต่อสี) สามารถคละไซซ์ได้", icon: "/hp/icon/3.png" },
+    { id: 4, title: "แจ้งประเมินราคา", description: "เมื่อได้รับรายละเอียดครบถ้วน ทางโรงงานจะทำการประเมินราคาและจัดทำใบเสนอราคา", icon: "/hp/icon/4.png" },
+    { id: 5, title: "ส่งใบเสนอราคา", description: "โรงงานส่งใบเสนอราคาที่รายละเอียดให้ลูกค้าพิจารณา พร้อมเงื่อนไขการสั่งซื้อ", icon: "/hp/icon/6.png" },
+    { id: 6, title: "อนุมัติการสั่งซื้อ", description: "ลูกค้าอนุมัติใบเสนอราคา และชำระมัดจำการสั่งสินค้า 40% เพื่อเริ่มขั้นตอนถัดไป", icon: "/hp/icon/7.png" },
+    { id: 7, title: "ขึ้นสินค้าตัวอย่าง", description: "โรงงานเริ่มขึ้นตัวอย่างเสื้อจริงตามแบบและสเปกที่กำหนด", icon: "/hp/icon/8.png" },
+    { id: 8, title: "ผลิตสินค้าตัวอย่าง", description: "ภายใน 7 วันทำการ โรงงานจะผลิตเสื้อตัวอย่างเสร็จสิ้นและพร้อมส่งให้ลูกค้าตรวจสอบ", icon: "/hp/icon/9.png" },
+    { id: 9, title: "จัดส่งตัวอย่างอนุมัติ", description: "โรงงานจัดส่งเสื้อตัวอย่างให้ลูกค้าเพื่อตรวจสอบคุณภาพและความถูกต้องตามแบบที่ตกลงกัน", icon: "/hp/icon/10.png" },
+    { id: 10, title: "แจ้งปรับแก้ และอนุมัติ", description: "ลูกค้าตรวจสอบเสื้อตัวอย่าง และแจ้งปรับแก้ได้ตามต้องการ หากแก้ไขเล็กน้อยไม่มีค่าใช้จ่ายเพิ่มเติม", icon: "/hp/icon/11.png" },
+    { id: 11, title: "ยืนยันเสื้อนำผลิต", description: "เมื่อลูกค้าพอใจ ให้ยืนยันการปล่อยลงงานผลิตจำนวนเต็มตามใบสั่งซื้อ", icon: "/hp/icon/12.png" },
+    { id: 12, title: "ลงงานผลิต", description: "เมื่อได้การยืนยัน โรงงานจะเริ่มกระบวนการผลิตเต็มรูปแบบตามจำนวนที่สั่ง", icon: "/hp/icon/13.png" },
+    { id: 13, title: "สินค้าเสร็จพร้อมจัดส่ง", description: "สินค้าจะเสร็จสมบูรณ์ภายใน 30 วัน พร้อมทำการตรวจสอบคุณภาพก่อนจัดส่ง", icon: "/hp/icon/14.png" },
+    { id: 14, title: "จัดส่งสินค้า", description: "ลูกค้าชำระส่วนที่เหลือ 60% และโรงงานจัดส่งสินค้าไปยังที่ที่ลูกค้ากำหนด", icon: "/hp/icon/15.png" },
   ],
   en: [
-    { id: 1, title: "Specify Design", description: "Send us your design reference with details for a price estimate. If you don't have a design, you can browse our popular styles.", icon: <Shirt className="w-9 h-9 text-red-600" />, color: "bg-red-50" },
-    { id: 2, title: "Choose Fabric", description: "Select the fabric type you prefer. We offer free fabric samples delivered to you before you decide.", icon: <FileSearch className="w-9 h-9 text-red-600" />, color: "bg-purple-50" },
-    { id: 3, title: "Specify Quantity", description: "Inform us of the quantity you need (minimum 100 pcs per style per color). Larger quantities reduce unit cost. Mixed sizes are allowed.", icon: <Users className="w-9 h-9 text-red-600" />, color: "bg-blue-50" },
-    { id: 4, title: "Request Quotation", description: "Once we receive complete details, our factory will quickly prepare a detailed price quotation for you.", icon: <Settings2 className="w-9 h-9 text-red-600" />, color: "bg-cyan-50" },
-    { id: 5, title: "Confirm Order", description: "Customer signs the quotation and pays a 40% deposit to begin the next steps.", icon: <ClipboardCheck className="w-9 h-9 text-red-600" />, color: "bg-emerald-50" },
-    { id: 6, title: "Sample Garment", description: "After design approval, the factory produces a real sample garment to confirm accuracy. This takes approximately 7 business days.", icon: <Shirt className="w-9 h-9 text-red-600" />, color: "bg-lime-50" },
-    { id: 7, title: "Revise & Approve", description: "Customer inspects the sample and requests any revisions. Minor amendments are made at no extra charge.", icon: <PenTool className="w-9 h-9 text-red-600" />, color: "bg-yellow-50" },
-    { id: 8, title: "Full Production", description: "Once the sample is approved, full-scale production begins. This takes within 30 days.", icon: <Factory className="w-9 h-9 text-red-600" />, color: "bg-orange-50" },
-    { id: 9, title: "Receive Order", description: "Products are completed within 30 days or sooner. Customer pays the remaining balance before or upon delivery.", icon: <Truck className="w-9 h-9 text-red-600" />, color: "bg-pink-50" },
+    { id: 1, title: "Specify Design", description: "Send us your design reference with details. If you don't have one, browse our popular styles.", icon: "/hp/icon/1.png" },
+    { id: 2, title: "Choose Fabric", description: "Select the fabric type you prefer. We offer free fabric samples delivered to you before you decide.", icon: "/hp/icon/2.png" },
+    { id: 3, title: "Specify Quantity", description: "Inform us the quantity needed (minimum 50 pcs per style per color). Mixed sizes are allowed.", icon: "/hp/icon/3.png" },
+    { id: 4, title: "Request Quotation", description: "Once we receive complete details, our factory will quickly prepare a detailed price quotation.", icon: "/hp/icon/4.png" },
+    { id: 5, title: "Send Quotation", description: "Factory sends you the quotation with detailed specifications and payment terms.", icon: "/hp/icon/6.png" },
+    { id: 6, title: "Confirm Order", description: "Customer approves the quotation and pays 40% deposit to begin production.", icon: "/hp/icon/7.png" },
+    { id: 7, title: "Create Sample", description: "Factory begins creating a real sample garment according to your specifications.", icon: "/hp/icon/8.png" },
+    { id: 8, title: "Sample Production", description: "Within 7 business days, the factory completes the sample garment and prepares for shipment.", icon: "/hp/icon/9.png" },
+    { id: 9, title: "Send Sample", description: "Factory ships the sample garment to you for inspection and quality approval.", icon: "/hp/icon/10.png" },
+    { id: 10, title: "Review & Approve", description: "Customer inspects the sample and requests any revisions. Minor changes are complimentary.", icon: "/hp/icon/11.png" },
+    { id: 11, title: "Confirm for Production", description: "Once satisfied with the sample, customer confirms to proceed with full production.", icon: "/hp/icon/12.png" },
+    { id: 12, title: "Full Production", description: "Factory begins full-scale production of the confirmed order with complete specifications.", icon: "/hp/icon/13.png" },
+    { id: 13, title: "Products Ready", description: "Products are completed and fully quality checked within 30 days, ready for shipment.", icon: "/hp/icon/14.png" },
+    { id: 14, title: "Delivery", description: "Customer pays the remaining 60% balance. Factory delivers products to your specified location.", icon: "/hp/icon/15.png" },
   ],
 };
 
@@ -87,11 +88,17 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
                 <Card className="border-none shadow-[0_10px_40px_-15px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(220,38,38,0.12)] transition-all duration-500 rounded-[2rem] bg-white overflow-hidden hover:translate-x-2">
                   <CardContent className="p-8 md:p-10">
                     <div className="flex flex-col md:flex-row md:items-center gap-8">
-                      <div className={`flex-shrink-0 w-20 h-20 rounded-3xl ${step.color} flex items-center justify-center shadow-inner`}>
-                        {step.icon}
+                      <div className="flex-shrink-0 w-40 h-40 rounded-3xl bg-slate-50 flex items-center justify-center shadow-inner relative">
+                        <Image
+                          src={step.icon}
+                          alt={step.title}
+                          width={200}
+                          height={200}
+                          className="object-contain"
+                        />
                       </div>
                       <div className="flex-1 space-y-3">
-                        <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                        <h3 className="text-2xl md:text-3xl font-medium text-red-600  tracking-tight">
                           {step.title}
                         </h3>
                         <p className="text-slate-500 text-lg leading-relaxed font-medium">

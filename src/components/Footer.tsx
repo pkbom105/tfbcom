@@ -101,8 +101,15 @@ export default function Footer({ lang }: { lang: string }) {
               <a href="#" className="flex items-center gap-4 text-gray-700 hover:text-green-600 transition-colors group">
                 <div className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
                   <MessageCircle size={18} />
-                </div>
-                <span className="text-md md:text-sm font-semibold">Line ID: @toffyboutique</span>
+                </div>                
+                    <a 
+                      href="https://line.me/R/ti/p/@toffyboutique" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="font-medium underlinehover:text-red-600 hover:decoration-red-600 transition-all"
+                    >
+                      <span className="text-md md:text-sm font-semibold">Line Id: @toffyboutique</span>                      
+                    </a>
               </a>
 
               <a href="mailto:sales@toffyboutique.com" className="flex items-center gap-4 text-gray-700 hover:text-red-600 transition-colors group">

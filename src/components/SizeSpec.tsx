@@ -72,7 +72,7 @@ export default function SizeSpec({ lang, dict }: { lang: string; dict?: any }) {
             {SIZE_CATEGORIES.map((category, index) => (
               <Link
                 key={category.id}
-                href={lang === "en" ? `/en/pages/collection/${category.slug}` : `/pages/collection/${category.slug}`}
+                href={`/pages/sizespec/?id=${category.id}`}
                 className="group relative inline-flex items-center self-start text-slate-700 hover:text-red-600 transition-colors duration-300 pb-2 w-fit"
               >
                 <motion.div

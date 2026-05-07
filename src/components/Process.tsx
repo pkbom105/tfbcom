@@ -42,9 +42,12 @@ export default function Process({ lang, dict }: { lang: string; dict?: any }) {
                 <path d="M0 20H110M110 20L95 5M110 20L95 35" stroke="black" strokeWidth="2"/>
               </svg>
             </div>
-            <button className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-8 py-4 text-lg font-black uppercase hover:bg-red-600 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100 whitespace-nowrap">
-              {dict?.contact || "Contact us"}
-            </button>
+            <a 
+                href="/pages/contact/"
+                className="group flex items-center gap-4 border-2 border-slate-900 rounded-full px-8 py-4 text-lg font-black uppercase hover:bg-red-600 hover:text-white transition-all duration-500 shadow-xl shadow-slate-100 whitespace-nowrap inline-block"
+              >
+                {dict?.contact || "Contact us"}
+              </a>
           </div>
         </div>
 

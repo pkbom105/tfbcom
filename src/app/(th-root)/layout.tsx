@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "@/app/globals.css";
 import { Noto_Sans_Thai } from "next/font/google";
 import Navbar from "@/components/Navbar";
@@ -86,7 +87,20 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} className={notoColorThai.variable}>
-      {/* Apply Noto Sans Thai className และ variable ให้กับ body 
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-X523S45753"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-X523S45753');
+        `}
+      </Script>
+      {/* Apply Noto Sans Thai className และ variable ให้กับ body
         antialiased: ช่วยให้ฟอนต์ดูคมชัดขึ้นบนหน้าจอ Mac/iOS
         font-light: กำหนดน้ำหนักฟอนต์เริ่มต้น (Weight 300)
       */}

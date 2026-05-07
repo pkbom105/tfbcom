@@ -55,7 +55,7 @@ export default function ContactPage({ lang = "th" }: { lang?: string }) {
             <a href="https://line.me/R/ti/p/@toffyboutique" target="_blank" rel="noopener noreferrer" className="hover:text-red-600 transition-colors underline decoration-red-100 underline-offset-4">
               @toffyboutique
             </a>
-          </p>
+          </p>  
 
           <div className="mt-8 pt-6 border-t border-slate-100 flex items-center gap-6">
             <div className="flex-1">
