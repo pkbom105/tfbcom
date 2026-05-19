@@ -1,0 +1,396 @@
+{
+  "fabric_suppliers": [
+    {
+      "fabric": "Single Jersey Semi/Com 20",
+      "suppliers": [
+        "TSK ts.knitting",
+        "TCT ทีคัลเจอร์",
+        "VRY วิริยะ"
+      ]
+    },
+    {
+      "fabric": "Single Jersey Com 30",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "Single Jersey Semi/Com 32",
+      "suppliers": [
+        "TSK ts.knitting",
+        "TCT ทีคัลเจอร์",
+        "VRY วิริยะ",
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "Micro",
+      "suppliers": [
+        "PKP พรค้าผ้า",
+        "Jongsatit",
+        "SPS สมประสงค์",
+        "Fuji",
+        "KVV",
+        "PHL ปังหัว",
+        "PRS ปารีสค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "Supersoft 20",
+      "suppliers": [
+        "TCT ทีคัลเจอร์"
+      ]
+    },
+    {
+      "fabric": "Supersoft 30",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "VRY วิริยะ"
+      ]
+    },
+    {
+      "fabric": "Interlock 40",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "VRY วิริยะ",
+        "TSK ts.knitting",
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "CVC Single Jersey 30",
+      "suppliers": [
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "TC Single Jersey 30/32",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "LET เลิศอาภร"
+      ]
+    },
+    {
+      "fabric": "Syntrel",
+      "suppliers": [
+        "TCT ทีคัลเจอร์"
+      ]
+    },
+    {
+      "fabric": "IB",
+      "suppliers": [
+        "Fuji",
+        "KVV",
+        "PHL ปังหัว",
+        "PRS ปารีสค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "Cotton Spandex",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "เกล็ดปลา",
+      "suppliers": [
+        "VRY วิริยะ",
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "ไมโคร ดาวกระจาย",
+      "suppliers": [
+        "Fuji",
+        "KVV",
+        "PKP พรค้าผ้า",
+        "ปารีสค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "STRETCH597 ผ้าผสมสเปนเด็กซ์",
+      "suppliers": [
+        "TCT ทีคัลเจอร์"
+      ]
+    },
+    {
+      "fabric": "Drytech 401",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "SPS สมประสงค์",
+        "VRY วิริยะ",
+        "TSK ts.knitting",
+        "PKP พรค้าผ้า",
+        "SMC สมชาย"
+      ]
+    },
+    {
+      "fabric": "Drytech 201",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "SPS สมประสงค์",
+        "SMC สมชาย"
+      ]
+    },
+    {
+      "fabric": "Drytouch",
+      "suppliers": [
+        "Fab Fabrica"
+      ]
+    },
+    {
+      "fabric": "Dry First",
+      "suppliers": [
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "CVC Juti",
+      "suppliers": [
+        "SPS สมประสงค์",
+        "SMC สมชาย",
+        "Fabrica",
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "CVC Lacoste",
+      "suppliers": [
+        "SPS สมประสงค์",
+        "SMC สมชาย",
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "TC Juti",
+      "suppliers": [
+        "SPS สมประสงค์",
+        "SMC สมชาย",
+        "PKP พรค้าผ้า"
+      ]
+    },
+    {
+      "fabric": "Endurance",
+      "suppliers": [
+        "TCT ทีคัลเจอร์"
+      ]
+    },
+    {
+      "fabric": "TC Lacoste",
+      "suppliers": [
+        "TCT ทีคัลเจอร์",
+        "SPS สมประสงค์",
+        "PKP พรค้าผ้า",
+        "VRY วิริยะ"
+      ]
+    },
+    {
+      "fabric": "TK Micro Juti",
+      "suppliers": [
+        "SPS สมประสงค์",
+        "SMC สมชาย",
+        "PKP พรค้าผ้า",
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "UV TECH",
+      "suppliers": [
+        "SPS สมประสงค์",
+        "PKP พรค้าผ้า",
+        "Jon Jongsatit",
+        "Fuji",
+        "KVV"
+      ]
+    },
+    {
+      "fabric": "อะตอมหรือเม็ดข้าวโพค",
+      "suppliers": [
+        "Jon Jongsatit",
+        "KVV"
+      ]
+    },
+    {
+      "fabric": "Endurance Plus และ Lacoste",
+      "suppliers": [
+        "TCT ทีคัลเจอร์"
+      ]
+    },
+    {
+      "fabric": "Osaka",
+      "suppliers": [
+        "KCH กอบชัย",
+        "JSM เจียมสมาน"
+      ]
+    },
+    {
+      "fabric": "TC Comb Twill",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "DFN ดีไฟน์เนส",
+        "AVC อัลวาเซ่ Alvaasce",
+        "JFM หจก. เจ เอฟ เอ็ม",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Oxford",
+      "suppliers": [
+        "GLF จี.แอล.เอฟ",
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "DFN ดีไฟน์เนส D",
+        "SGT สหกรุ๊ป เท็กซ์ไทล์",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Stripe",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "SGT สหกรุ๊ป เท็กซ์ไทล์",
+        "TGT ไทยกรุ๊ปเท็กไทล์",
+        "TFM ทีเอฟมาลีเท็กซ์",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Wrinkle Free",
+      "suppliers": [
+        "DFN ดีไฟน์เนส D"
+      ]
+    },
+    {
+      "fabric": "Harrington Bone",
+      "suppliers": [
+        "DFN ดีไฟน์เนส D"
+      ]
+    },
+    {
+      "fabric": "Chambrey",
+      "suppliers": [
+        "JSM เจียมสมาน"
+      ]
+    },
+    {
+      "fabric": "CVC Oxford",
+      "suppliers": [
+        "SGT สหกรุ๊ป เท็กซ์ไทล์",
+        "DFN ดีไฟน์เนส"
+      ]
+    },
+    {
+      "fabric": "เท็กเจอร์ริ้วเล็กใหญ่",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "DFN ดีไฟน์เนส (เกรดคัตตอน พรีเมี่ยม)"
+      ]
+    },
+    {
+      "fabric": "โทเร",
+      "suppliers": [
+        "JSM เจียมสมาน"
+      ]
+    },
+    {
+      "fabric": "Premium Twill",
+      "suppliers": [
+        "DFN ดีไฟน์เนส"
+      ]
+    },
+    {
+      "fabric": "Super Comb twill",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์",
+        "AVC อัลวาเซ่ Alvaasce"
+      ]
+    },
+    {
+      "fabric": "Comb twill",
+      "suppliers": [
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Micro fiber/Peach/Taslan",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "JFM หจก. เจ เอฟ เอ็ม",
+        "SPN ซิงค์ พาณิชย์"
+      ]
+    },
+    {
+      "fabric": "Westpoint",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "DY",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Solon",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Toray Biscop",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "MTT มนตรา เทรดดิ้ง",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    },
+    {
+      "fabric": "Taffeta",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "MKS มงกุฎสิงห์",
+        "JFM หจก. เจ เอฟ เอ็ม",
+        "SPN ซิงค์ พาณิชย์"
+      ]
+    },
+    {
+      "fabric": "French Terry",
+      "suppliers": [
+        "VRY วิริยะ",
+        "TSK ts.knitting"
+      ]
+    },
+    {
+      "fabric": "Polar Fleece",
+      "suppliers": [
+        "VRY วิริยะ"
+      ]
+    },
+    {
+      "fabric": "Valentino",
+      "suppliers": [
+        "JSM เจียมสมาน",
+        "VST วีศิลป์เท็กไทล์"
+      ]
+    }
+  ]
+}

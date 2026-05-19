@@ -57,7 +57,7 @@ export default function SizeSpec({ lang, dict }: { lang: string; dict?: any }) {
           >
             <div className="w-full h-[340px] md:h-[420px] relative">
               <Image
-                src="/hp/20.png"
+                src="/hp/aa12.png"
                 alt="Size Spec Template Preview"
                 fill
                 className="object-contain"

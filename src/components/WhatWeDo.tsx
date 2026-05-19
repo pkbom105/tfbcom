@@ -7,29 +7,26 @@ import Link from "next/link";
 
 // --- รายการสินค้าพร้อม Label ---
 const ROW_1 = [
-  { id: 1, img: "/hp/5.png", name: "T-shirt" },
-  { id: 2, img: "/hp/6.png", name: "Polo" },
-  { id: 3, img: "/hp/7.png", name: "Shirt" },
-  { id: 4, img: "/hp/8.png", name: "Shirt" },
-  { id: 5, img: "/hp/9.png", name: "Workshop" },
+  { id: 1, img: "/png-1/2.png", name: "T-shirt" },
+  { id: 2, img: "/png-1/6.png", name: "Polo" },
+  { id: 3, img: "/png-1/14.png", name: "Shirt" },
+  { id: 4, img: "/png-1/16.png", name: "Shirt" },
+  { id: 5, img: "/png-1/22.png", name: "Workshop" },
+  { id: 6, img: "/png-1/30.png", name: "Engineer" },
+  { id: 7, img: "/png-1/57.png", name: "Jacket" },
+  { id: 8, img: "/png-1/42.png", name: "Security" },
 ];
 
 const ROW_2 = [
-  { id: 6, img: "/hp/54.png", name: "Engineer" },
-  { id: 7, img: "/hp/10.png", name: "Jacket" },
-  { id: 8, img: "/hp/53.png", name: "Security" },
-  { id: 9, img: "/hp/11.png", name: "HouseMaid" },
-  { id: 10, img: "/hp/12.png", name: "Chef" },
+  { id: 9, img: "/png-1/43.png", name: "House Maid" },
+  { id: 10, img: "/png-1/35.png", name: "Chef" },
+  { id: 11, img: "/png-1/59.png", name: "Vest" },
+  { id: 12, img: "/png-1/55.png", name: "Hoody" },
+  { id: 13, img: "/png-1/61.png", name: "Pant" },
+  { id: 14, img: "/png-1/53.png", name: "Pant" },
+  { id: 15, img: "/png-1/47.png", name: "Apron" },
+  { id: 16, img: "/png-1/51.png", name: "Apron" },
 ];
-
-const ROW_3 = [
-  { id: 11, img: "/hp/58.png", name: "Vest" },
-  { id: 12, img: "/hp/51.png", name: "Hoody" },
-  { id: 13, img: "/hp/59.png", name: "Pant" },
-  { id: 14, img: "/hp/56.png", name: "Apron" },
-  { id: 15, img: "/hp/45.png", name: "Apron" },
-];
-
 const PRODUCT_BUTTONS = [
   { name: "เสื้อยืด T-shirt", slug: "t-shirt" },
   { name: "เสื้อโปโล Polo", slug: "polo" },
@@ -54,7 +51,7 @@ export default function WhatWeDo({ lang, dict }: { lang: string; dict?: any }) {
 
         {/* --- Header --- */}
         <div className="border-0 pt-5 pb-14">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -69,19 +66,14 @@ export default function WhatWeDo({ lang, dict }: { lang: string; dict?: any }) {
 
         {/* --- Product Visuals (3 Rows) --- */}
         <div className="mb-24 space-y-20">
-          <div className="flex flex-wrap justify-center gap-10 md:gap-14">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-10">
             {ROW_1.map((item, idx) => (
-              <ProductIcon key={item.id} src={item.img} name={item.name} delay={idx * 0.05} />
+              <ProductIcon key={item.id} src={item.img} name={item.name} delay={idx * 0.08} />
             ))}
           </div>
-          <div className="flex flex-wrap justify-center gap-10 md:gap-14">
+          <div className="flex flex-wrap justify-center gap-5 md:gap-7">
             {ROW_2.map((item, idx) => (
-              <ProductIcon key={item.id} src={item.img} name={item.name} delay={idx * 0.05 + 0.25} />
-            ))}
-          </div>
-          <div className="flex flex-wrap justify-center gap-10 md:gap-14">
-            {ROW_3.map((item, idx) => (
-              <ProductIcon key={item.id} src={item.img} name={item.name} delay={idx * 0.05 + 0.5} />
+              <ProductIcon key={item.id} src={item.img} name={item.name} delay={idx * 0.07 + 0.25} />
             ))}
           </div>
         </div>
@@ -138,7 +130,7 @@ function ProductIcon({ src, name, delay }: { src: string; name: string; delay: n
         <motion.div
           whileHover={{ y: -8, scale: 1.35 }}
           transition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="relative w-40 h-40 grayscale-[20%] group-hover:grayscale-0 transition-all duration-100 z-10"
+          className="relative w-25 h-25 grayscale-[20%] group-hover:grayscale-0 transition-all duration-100 z-10"
         >
           <Image
             src={src}

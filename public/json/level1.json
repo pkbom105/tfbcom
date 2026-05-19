@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "name": "เสื้อคอกลม",
+      "code": "11",
+      "fabrics": [
+        "Single Jersey Semi/Com 20",
+        "Single Jersey Com 30",
+        "Single Jersey Semi/Com 32",
+        "Micro",
+        "Supersoft 20",
+        "Supersoft 30",
+        "Interlock 40",
+        "CVC Single Jersey 30",
+        "TC Single Jersey 30/32",
+        "Syntrel",
+        "IB",
+        "Cotton Spandex",
+        "เกล็ดปลา",
+        "ไมโคร ดาวกระจาย",
+        "STRETCH597 ผ้าผสมสเปนเด็กซ์"
+      ]
+    },
+    {
+      "name": "เสื้อโปโล",
+      "code": "12",
+      "fabrics": [
+        "Drytech 401",
+        "Drytech 201",
+        "Drytouch",
+        "Dry First",
+        "CVC Juti",
+        "CVC Lacoste",
+        "TC Juti",
+        "Endurance",
+        "TC Lacoste"
+      ]
+    },
+    {
+      "name": "เสื้อเชิ้ต",
+      "code": "13",
+      "fabrics": [
+        "TC Comb Twill",
+        "Oxford",
+        "Stripe",
+        "Wrinkle Free",
+        "Harrington Bone",
+        "Chambrey",
+        "CVC Oxford",
+        "เท็กเจอร์ริ้วเล็กใหญ่",
+        "โทเร",
+        "Premium Twill"
+      ]
+    },
+    {
+      "name": "เสื้อช็อป",
+      "code": "14",
+      "fabrics": [
+        "TC Comb Twill",
+        "Super Comb twill",
+        "Comb twill",
+        "Westpoint",
+        "DY",
+        "Solon",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "เสื้อแจ็คเก็ต",
+      "code": "15",
+      "fabrics": [
+        "Super Comb twill",
+        "Comb twill",
+        "Micro fiber/Peach/Taslan",
+        "Taffeta",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "เสื้อแจ็คเก็ตผ้ายืด",
+      "code": "16",
+      "fabrics": [
+        "French Terry",
+        "Polar Fleece"
+      ]
+    },
+    {
+      "name": "กางเกง/กางเกงคาโก้",
+      "code": "17",
+      "fabrics": [
+        "TC Comb Twill",
+        "Super Comb twill",
+        "Westpoint",
+        "DY",
+        "Solon",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "เสื้อเชฟ",
+      "code": "18",
+      "fabrics": [
+        "Super Comb twill",
+        "Westpoint",
+        "DY",
+        "Valentino",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "เสื้อแม่บ้าน",
+      "code": "19",
+      "fabrics": [
+        "Osaka",
+        "TC Comb Twill",
+        "DY",
+        "Solon",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "เสื้อรปภ",
+      "code": "20",
+      "fabrics": [
+        "TC Comb Twill",
+        "DY",
+        "Solon",
+        "Toray Biscop"
+      ]
+    },
+    {
+      "name": "ผ้ากันเปื้อน",
+      "code": "21",
+      "fabrics": [
+        "TC Comb Twill",
+        "Super Comb twill",
+        "Westpoint",
+        "DY",
+        "Solon",
+        "Toray Biscop"
+      ]
+    }
+  ]
+}
