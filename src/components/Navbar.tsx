@@ -115,7 +115,7 @@ export default function Navbar({ lang: initialLang }: { lang: string }) {
               <MenubarContent sideOffset={12} className={dropdownContentStyles}>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/process")}>{dict.order.items.process}</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/order")}>{dict.order.items.how_to_order}</MenubarItem>
-                <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/fabric")}>{dict.order.items.fabric}</MenubarItem>
+                <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/catalog")}>{dict.order.items.fabric}</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/sizespec")}>{dict.order.items.size_spec}</MenubarItem>
                 <MenubarItem className={subMenuItemStyles} onClick={() => navigateTo("/pages/ready-to-wear")}>{dict.order.items.ready_to_wear}</MenubarItem>
               </MenubarContent>
@@ -232,7 +232,7 @@ export default function Navbar({ lang: initialLang }: { lang: string }) {
                       {[
                         { label: dict.order.items.process, path: "/pages/process" },
                         { label: dict.order.items.how_to_order, path: "/pages/order" },
-                        { label: dict.order.items.fabric, path: "/pages/fabric" },
+                        { label: dict.order.items.fabric, path: "/pages/catalog" },
                         { label: dict.order.items.size_spec, path: "/pages/sizespec" },
                         { label: dict.order.items.ready_to_wear, path: "/pages/ready-to-wear" },
                       ].map((item) => (

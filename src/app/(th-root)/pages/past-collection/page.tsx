@@ -11,15 +11,15 @@ export default function PastCollectionPage({ lang = "th" }: { lang?: string }) {
   const t = (th: string, en: string) => isEn ? en : th;
 
   const tabItems = [
-    { value: "shirt", label: "เสื้อเชิ้ต", labelEn: "Shirt", title: "ตัวอย่างงานผลิตเสื้อเชิ้ต", titleEn: "Shirt Samples", count: 9, folder: "shirt-sample", startNumber: 1, ext: "png" },
-    { value: "polo", label: "เสื้อโปโล", labelEn: "Polo Shirt", title: "ตัวอย่างงานผลิตเสื้อโปโล", titleEn: "Polo Shirt Samples", count: 12, folder: "polo-sample", startNumber: 104, ext: "png" },
     { value: "tshirt", label: "เสื้อคอกลม", labelEn: "T-Shirt", title: "ตัวอย่างงานผลิตเสื้อคอกลม", titleEn: "T-Shirt Samples", count: 12, folder: "tshirt-sample", startNumber: 1, ext: "png" },
+    { value: "polo", label: "เสื้อโปโล", labelEn: "Polo Shirt", title: "ตัวอย่างงานผลิตเสื้อโปโล", titleEn: "Polo Shirt Samples", count: 12, folder: "polo-sample", startNumber: 104, ext: "png" },
+    { value: "shirt", label: "เสื้อเชิ้ต", labelEn: "Shirt", title: "ตัวอย่างงานผลิตเสื้อเชิ้ต", titleEn: "Shirt Samples", count: 9, folder: "shirt-sample", startNumber: 1, ext: "png" },
     { value: "mac", label: "เสื้อช็อป", labelEn: "Mechanic", title: "ตัวอย่างงานผลิตเสื้อช็อป", titleEn: "Workwear/Mechanic Samples", count: 10, folder: "mac-sample", startNumber: 42, ext: "png" },
-    { value: "jacket", label: "แจ็กเก็ต", labelEn: "Jacket", title: "ตัวอย่างงานผลิตแจ็กเก็ต", titleEn: "Jacket Samples", count: 6, folder: "jacket-sample", startNumber: 1, ext: "png" },
-    { value: "chef", label: "เสื้อเชฟ", labelEn: "Chef Wear", title: "ตัวอย่างงานผลิตเสื้อเชฟ", titleEn: "Chef Wear Samples", count: 6, folder: "chef-sample", startNumber: 1, ext: "png" },
+    { value: "jacket", label: "แจ็กเก็ต", labelEn: "Jacket", title: "ตัวอย่างงานผลิตแจ็กเก็ต", titleEn: "Jacket Samples", count: 9, folder: "jacket1", startNumber: 1, ext: "jpg" },
+    { value: "chef", label: "เสื้อเชฟ", labelEn: "Chef Wear", title: "ตัวอย่างงานผลิตเสื้อเชฟ", titleEn: "Chef Wear Samples", count: 4, folder: "chef1", startNumber: 1, ext: "jpg" },
     { value: "apron", label: "ผ้ากันเปื้อน", labelEn: "Apron", title: "ตัวอย่างงานผลิตผ้ากันเปื้อน", titleEn: "Apron Samples", count: 5, folder: "arpon", startNumber: 6, ext: "png" },
     { value: "pants", label: "กระโปรง/กางเกง", labelEn: "Skirts/Pants", title: "ตัวอย่างงานผลิตกระโปรงและกางเกง", titleEn: "Skirts/Pants Samples", count: 5, folder: "pants", startNumber: 1, ext: "png" },
-    { value: "others", label: "อื่นๆ", labelEn: "Others", title: "ผลงานผลิตอื่นๆ", titleEn: "Other Works", count: 6, folder: "others-sample", startNumber: 1, ext: "png" },
+    { value: "others", label: "อื่นๆ", labelEn: "Others", title: "ผลงานผลิตอื่นๆ", titleEn: "Other Works", count: 2, folder: "other1", startNumber: 1, ext: "jpg" },
   ];
 
   return (

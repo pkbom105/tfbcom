@@ -1,0 +1,388 @@
+{
+  "fabrics": [
+    {
+      "fabric_name": "Single Jersey Semi/Com 20",
+      "suppliers": [
+        { "supplier_name": "TSK ts.knitting", "has_picture": true },
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Single Jersey Com 30",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Single Jersey Semi/Com 32",
+      "suppliers": [
+        { "supplier_name": "TSK ts.knitting", "has_picture": true },
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Micro",
+      "suppliers": [
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false },
+        { "supplier_name": "Jongsatit", "has_picture": true },
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "Fuji", "has_picture": false },
+        { "supplier_name": "KVV", "has_picture": false },
+        { "supplier_name": "PHL ปังหัว", "has_picture": false },
+        { "supplier_name": "PRS ปารีสค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Supersoft 20",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Supersoft 30",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Interlock 40",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "CVC Single Jersey 30",
+      "suppliers": [
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "TC Single Jersey 30/32",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "LET เลิศอาภร", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Syntrel",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "IB",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Cotton Spandex",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "เกล็ดปลา",
+      "suppliers": [
+        { "supplier_name": "VRY วิริยะ", "has_picture": false },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "ไมโคร ดาวกระจาย",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "STRETCH597 ผ้าผสมสเปนเด็กซ์",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Drytech 401",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false },
+        { "supplier_name": "SMC สมชาย", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Drytech 201",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "SMC สมชาย", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Drytouch",
+      "suppliers": [
+        { "supplier_name": "Fab Fabrica", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Dry First",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "CVC Juti",
+      "suppliers": [
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "SMC สมชาย", "has_picture": false },
+        { "supplier_name": "Fabrica", "has_picture": true },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "CVC Lacoste",
+      "suppliers": [
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "SMC สมชาย", "has_picture": false },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "TC Juti",
+      "suppliers": [
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "SMC สมชาย", "has_picture": false },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Endurance",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "TC Lacoste",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true },
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false },
+        { "supplier_name": "VRY วิริยะ", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "TK Micro Juti",
+      "suppliers": [
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "SMC สมชาย", "has_picture": false },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "UV TECH",
+      "suppliers": [
+        { "supplier_name": "SPS สมประสงค์", "has_picture": true },
+        { "supplier_name": "PKP พรค้าผ้า", "has_picture": false },
+        { "supplier_name": "Jon Jongsatit", "has_picture": true },
+        { "supplier_name": "Fuji", "has_picture": false },
+        { "supplier_name": "KVV", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "อะตอมหรือเม็ดข้าวโพค",
+      "suppliers": [
+        { "supplier_name": "Jon Jongsatit", "has_picture": true },
+        { "supplier_name": "KVV", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Endurance Plus และ Lacoste",
+      "suppliers": [
+        { "supplier_name": "TCT ทีคัลเจอร์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Osaka",
+      "suppliers": [
+        { "supplier_name": "KCH กอบชัย", "has_picture": false },
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "TC Comb Twill",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "DFN ดีไฟน์เนส", "has_picture": false },
+        { "supplier_name": "AVC อัลวาเซ่ Alvaasce", "has_picture": false },
+        { "supplier_name": "JFM หจก. เจ เอฟ เอ็ม", "has_picture": false },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Oxford",
+      "suppliers": [
+        { "supplier_name": "GLF จี.แอล.เอฟ", "has_picture": false },
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "DFN ดีไฟน์เนส D", "has_picture": false },
+        { "supplier_name": "SGT สหกรุ๊ป เท็กซ์ไทล์", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Stripe",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "SGT สหกรุ๊ป เท็กซ์ไทล์", "has_picture": false },
+        { "supplier_name": "TGT ไทยกรุ๊ปเท็กไทล์", "has_picture": false },
+        { "supplier_name": "TFM ทีเอฟมาลีเท็กซ์", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Wrinkle Free",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Harrington Bone",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Chambrey",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "CVC Oxford",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "เท็กเจอร์ริ้วเล็กใหญ่",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "โทเร",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Premium Twill",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Super Comb twill",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true },
+        { "supplier_name": "AVC อัลวาเซ่ Alvaasce", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Comb twill",
+      "suppliers": [
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Micro fiber/Peach/Taslan",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "JFM หจก. เจ เอฟ เอ็ม", "has_picture": false },
+        { "supplier_name": "SPN ซิงค์ พาณิชย์", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Westpoint",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "DY",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Solon",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Toray Biscop",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "MTT มนตรา เทรดดิ้ง", "has_picture": false },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Taffeta",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "MKS มงกุฎสิงห์", "has_picture": false },
+        { "supplier_name": "JFM หจก. เจ เอฟ เอ็ม", "has_picture": false },
+        { "supplier_name": "SPN ซิงค์ พาณิชย์", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "French Terry",
+      "suppliers": [
+        { "supplier_name": "VRY วิริยะ", "has_picture": false },
+        { "supplier_name": "TSK ts.knitting", "has_picture": true }
+      ]
+    },
+    {
+      "fabric_name": "Polar Fleece",
+      "suppliers": [
+        { "supplier_name": "none", "has_picture": false }
+      ]
+    },
+    {
+      "fabric_name": "Valentino",
+      "suppliers": [
+        { "supplier_name": "JSM เจียมสมาน", "has_picture": true },
+        { "supplier_name": "VST วีศิลป์เท็กไทล์", "has_picture": true }
+      ]
+    }
+  ]
+}

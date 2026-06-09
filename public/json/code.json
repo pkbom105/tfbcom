@@ -1,102 +1,451 @@
 {
   "product_catalog": [
     {
-      "code": "21",
-      "category": "ผ้ากันเปื้อน",
+      "code": "11",
+      "category": "เสื้อคอกลม",
       "key_features": {
-        "focus": ["ความทนทานต่อการซัก", "การป้องกันสิ่งสกปรก", "น้ำหนักเบา ไม่รั้งคอ"],
-        "context": "สำหรับการผลิตผ้ากันเปื้อน"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "TC Comb Twill", "type": "คอตตอนผสมโพลีเอสเตอร์", "gsm_or_weight": "200 - 220", "description": "หนาปานกลาง เนื้อแน่น ทนทาน", "usage": "ผ้ากันเปื้อนพนักงานเสิร์ฟ, พนักงานขาย", "suitable_for": "ร้านอาหารทั่วไป, คาเฟ่ที่เน้นความเรียบง่าย" },
-            { "name": "Super Comb Twill", "type": "TC เกรดพรีเมียม (ทอละเอียด)", "gsm_or_weight": "210 - 230", "description": "ผิวเรียบเนียน ดูสะอาดและพรีเมียม", "usage": "ผ้ากันเปื้อนพรีเมียม เน้นภาพลักษณ์", "suitable_for": "บาริสต้า, ร้านอาหาร Fine Dining, Shop Brandname" },
-            { "name": "Westpoint", "type": "คอตตอน 100% (ทอลายเฉียง)", "gsm_or_weight": "260 - 300", "description": "หนา แข็งแรง ดูเท่สไตล์ดิบๆ", "usage": "ผ้ากันเปื้อนงานช่าง, งานศิลปะ, งานย่าง", "suitable_for": "ร้านกาแฟแนว Industrial, ช่างไม้, ช่างทำผม" },
-            { "name": "DY (ดีวาย)", "type": "โพลีเอสเตอร์ 100%", "gsm_or_weight": "190 - 210", "description": "ลื่น เงาเล็กน้อย เช็ดล้างคราบออกง่าย", "usage": "ผ้ากันเปื้อนราคาประหยัด, ผ้ากันเปื้อนแจก", "suitable_for": "งานอีเวนต์อาหาร, แม่ค้าตลาดสด, ของพรีเมียมแจก" },
-            { "name": "Solon (โซล่อน)", "type": "โพลีเอสเตอร์ (ทอขัด)", "gsm_or_weight": "200 - 220", "description": "ค่อนข้างแข็ง อยู่ทรงดีมาก ไม่ยับ", "usage": "ผ้ากันเปื้อนเน้นความคุ้มค่า ทนงานหนัก", "suitable_for": "ร้านอาหารตามสั่ง, พนักงานล้างจาน, ร้านขายของชำ" },
-            { "name": "Toray Biscop", "type": "โพลีผสมคอตตอนเกรดสูง", "gsm_or_weight": "220 - 240", "description": "เนื้อผ้าคงตัวดีที่สุด สีไม่ซีดจาง", "usage": "ผ้ากันเปื้อนยูนิฟอร์มองค์กร", "suitable_for": "เชนร้านอาหารใหญ่ๆ, โรงแรม (Housekeeping)" }
+            {
+              "name": "Single Jersey",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Viral Block",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Comb",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "20",
-      "category": "เสื้อรปภ.",
+      "code": "12",
+      "category": "เสื้อโปโล",
       "key_features": {
-        "focus": ["อยู่ทรง (Smart Look)", "ความทนทาน (Durability)"],
-        "context": "ต้องติดเครื่องหมาย/ติดอาร์ม และปฏิบัติงานกลางแจ้งหรือยืนประจำการนาน"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "TC Comb Twill", "type": "คอตตอนผสมโพลีเอสเตอร์", "gsm_or_weight": "กลาง", "description": "ผ้าแน่น ลายทแยงชัด อยู่ทรงสวย", "usage": "เสื้อรปภ. มาตรฐาน, ชุดกากี/ชุดกรมท่า", "suitable_for": "รปภ. หมู่บ้าน, คอนโด, หรือหน่วยงานทั่วไป" },
-            { "name": "DY (ดีวาย)", "type": "โพลีเอสเตอร์ 100%", "gsm_or_weight": "กลาง", "description": "ลื่น มีความเงาเล็กน้อย สีสดไม่ซีด", "usage": "เสื้อรปภ. ราคาประหยัด, ชุดฟอร์มแจก", "suitable_for": "งานรปภ. อีเวนต์, งานชั่วคราว หรือรปภ. ตลาด" },
-            { "name": "Solon (โซล่อน)", "type": "โพลีเอสเตอร์ (ทอขัด)", "gsm_or_weight": "กลาง-หนา", "description": "เนื้อแข็งและอยู่ทรงดีมาก ไม่ค่อยยับ", "usage": "เสื้อและกางเกงรปภ. เน้นระเบียบ", "suitable_for": "งานที่ต้องเน้นความเป๊ะของทรงเสื้อตลอดวัน" },
-            { "name": "Toray Biscop", "type": "โพลีผสมคอตตอนเกรดสูง", "gsm_or_weight": "หนาปานกลาง", "description": "เนื้อผ้าละเอียด คงตัวดีเยี่ยม ทนต่อการซัก", "usage": "ยูนิฟอร์มรปภ. เกรดพรีเมียม", "suitable_for": "รปภ. โรงแรมหรู, ห้างสรรพสินค้า หรือธนาคาร" }
+            {
+              "name": "DtLacoste",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Drytech",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Drytouch",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Endurance",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "SingleJersey",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Viralblock",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "19",
-      "category": "เสื้อแม่บ้าน",
+      "code": "13",
+      "category": "เสื้อเชิ้ต",
       "key_features": {
-        "focus": ["ความคล่องตัว (Mobility)", "ซับเหงื่อได้ดี (Sweat Absorption)", "ทนทานต่อการซัก (Wash Durability)"],
-        "context": "ต้องทำความสะอาดบ่อยครั้งเพื่อรักษาความสะอาดเรียบร้อย"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "Osaka (โอซาก้า)", "type": "โพลีเอสเตอร์ผสม (ทอเนื้อละเอียด)", "gsm_or_weight": "บางเบา", "description": "นุ่ม พลิ้วไหว ใส่สบายไม่ร้อน", "usage": "เสื้อแม่บ้านเน้นดีไซน์, เสื้อพนักงานทำความสะอาด", "suitable_for": "งานในโรงแรม หรือแม่บ้านประจำออฟฟิศที่ต้องการความสวยงาม" },
-            { "name": "TC Comb Twill", "type": "คอตตอนผสมโพลีเอสเตอร์", "gsm_or_weight": "กลาง", "description": "ผ้าแน่น อยู่ทรงสวย ระบายอากาศปานกลาง", "usage": "ยูนิฟอร์มแม่บ้านมาตรฐาน", "suitable_for": "แม่บ้านหน่วยงานราชการ หรือแม่บ้านคอนโด" },
-            { "name": "DY (ดีวาย)", "type": "โพลีเอสเตอร์ 100%", "gsm_or_weight": "กลาง", "description": "ลื่น มีความเงา สีสดไม่ซีดจาง", "usage": "เสื้อแม่บ้านราคาประหยัด, เสื้อแจก", "suitable_for": "งานอีเวนต์ทำความสะอาด หรือการใช้งานชั่วคราว" },
-            { "name": "Solon (โซล่อน)", "type": "โพลีเอสเตอร์ (ทอหนาปานกลาง)", "gsm_or_weight": "กลาง-หนา", "description": "ค่อนข้างแข็ง อยู่ทรงดีมาก ทนแรงเสียดสี", "usage": "ชุดแม่บ้านงานหนัก, ผ้ากันเปื้อนแม่บ้าน", "suitable_for": "แม่บ้านสายลุย งานซักล้าง หรือแม่บ้านโรงงาน" },
-            { "name": "Toray Biscop", "type": "โพลีผสมคอตตอนเกรดสูง", "gsm_or_weight": "หนาปานกลาง", "description": "เนื้อผ้าคงตัวดีที่สุด ไม่ยับง่าย", "usage": "ยูนิฟอร์มแม่บ้านระดับพรีเมียม", "suitable_for": "โรงแรม 5 ดาว หรือรีสอร์ทที่เน้นความเนี้ยบตลอดวัน" }
+            {
+              "name": "Basic",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Com Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cvc Oxford",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Orlon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Oxford",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Texture",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray Oxford",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "18",
-      "category": "เสื้อเชฟ",
+      "code": "14",
+      "category": "เสื้อช็อป",
       "key_features": {
-        "focus": ["ความทนทานต่อความร้อน", "การป้องกันละอองน้ำมัน", "การระบายอากาศ"],
-        "context": "ทำงานในสภาพแวดล้อมที่อุณหภูมิสูงและมีการขยับตัวตลอดเวลา"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "Super Comb Twill", "type": "TC เกรดพรีเมียม (ทอละเอียด)", "gsm_or_weight": "กลาง-หนา", "description": "ผิวเรียบเนียน ดูเนี้ยบ สะอาดตา", "usage": "เสื้อเชฟมาตรฐาน, ชุดพนักงานครัว", "suitable_for": "เชิ้ตเชฟในโรงแรมหรือร้านอาหาร Fine Dining" },
-            { "name": "Westpoint", "type": "คอตตอน 100% ทอหนาพิเศษ", "gsm_or_weight": "หนา (Heavy Duty)", "description": "หนา นุ่ม ระบายอากาศดีเยี่ยม", "usage": "เสื้อเชฟที่ต้องอยู่หน้าเตาไฟ", "suitable_for": "เชฟสายลุย งานปิ้งย่าง หรือครัวที่อากาศร้อนจัด" },
-            { "name": "DY (ดีวาย)", "type": "โพลีเอสเตอร์ 100%", "gsm_or_weight": "กลาง", "description": "ลื่น มีความเงา สีขาวสดใส", "usage": "เสื้อเชฟราคาประหยัด, เสื้อกุ๊ก", "suitable_for": "งานออกบูธอาหาร, นักศึกษาคหกรรม" },
-            { "name": "Valentino (วาเลนติโน่)", "type": "โพลีเอสเตอร์ใยละเอียด", "gsm_or_weight": "กลาง-หนา", "description": "เนื้อละเอียด ลื่นพริ้ว สวยงาม", "usage": "เสื้อเชฟเน้นดีไซน์, เสื้อระดับหัวหน้า", "suitable_for": "Executive Chef ที่เน้นภาพลักษณ์และความสง่างาม" },
-            { "name": "Toray Biscop", "type": "โพลีผสมคอตตอนเกรดสูง", "gsm_or_weight": "หนา", "description": "เนื้อผ้าคงตัวดีมาก ไม่หด สีไม่ซีด", "usage": "ยูนิฟอร์มครัวมาตรฐานสากล", "suitable_for": "ร้านอาหารเชน (Chain Restaurant) ที่เน้นความคงทน" }
+            {
+              "name": "KMP",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Garbardine",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Spendex",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Super Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Tc Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "17",
-      "category": "กางเกง/กางเกงคาร์โก้",
+      "code": "15",
+      "category": "เสื้อแจ็คเก็ต",
       "key_features": {
-        "focus": ["ความทนทานต่อการเสียดสีสูง", "การคืนตัวที่ดี", "ไม่ยับย่นระหว่างวัน"],
-        "context": "เนื้อผ้าต้องทนทานกว่าเสื้อและรักษาทรงกางเกงให้ดูดีตลอดการใช้งาน"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "TC Comb Twill", "type": "คอตตอนผสมโพลีเอสเตอร์", "gsm_or_weight": "200 - 220", "description": "เนื้อแน่น อยู่ทรง ไม่ค่อยยับ", "usage": "กางเกงทำงาน, กางเกงสแล็คพนักงาน", "suitable_for": "ยูนิฟอร์มสำนักงาน หรือเจ้าหน้าที่ตรวจการ" },
-            { "name": "Super Comb Twill", "type": "TC เกรดพรีเมียม (ทอละเอียด)", "gsm_or_weight": "210 - 230", "description": "ผิวเรียบเนียนกว่า ดูหรูหรา", "usage": "กางเกงสแล็คทรง Slim Fit, กางเกงกอล์ฟ", "suitable_for": "ผู้บริหาร หรือพนักงานที่ต้องพบปะลูกค้า" },
-            { "name": "Westpoint", "type": "คอตตอน 100% ทอแน่น (ลายเฉียงชัด)", "gsm_or_weight": "260 - 300", "description": "หนา แข็งแรง ยิ่งซักยิ่งนุ่ม", "usage": "กางเกงคาร์โก้, กางเกงช่างลุยงาน", "suitable_for": "งานวิศวกรสนาม, กิจกรรม Outdoor, สไตล์ Tactical" },
-            { "name": "DY (ดีวาย)", "type": "โพลีเอสเตอร์ 100%", "gsm_or_weight": "190 - 210", "description": "ลื่น มีความเงา สีสดไม่ซีด", "usage": "กางเกงพนักงานทั่วไป, กางเกงแจก", "suitable_for": "งานที่เน้นราคาประหยัดและเน้นสีสันที่โดดเด่น" },
-            { "name": "Solon (โซล่อน)", "type": "โพลีเอสเตอร์ (ทอขัด)", "gsm_or_weight": "200 - 220", "description": "ค่อนข้างแข็ง อยู่ทรงดีมาก", "usage": "กางเกงขายาวทั่วไป, ผ้ากันเปื้อน", "suitable_for": "งานที่ต้องเน้นความคุ้มค่าและดูแลรักษาง่าย" },
-            { "name": "Toray Biscop", "type": "โพลีผสมคอตตอนเกรดสูง", "gsm_or_weight": "220 - 240", "description": "ทนทานสูงสุด ไม่หด ไม่ย้วย", "usage": "กางเกงยูนิฟอร์มมาตรฐานสากล", "suitable_for": "องค์กรขนาดใหญ่ที่เน้นความคงทนระยะยาว" }
+            {
+              "name": "Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Kmp",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Spendex",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Super Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Tc Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray Biscop",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
@@ -105,129 +454,434 @@
       "code": "16",
       "category": "เสื้อแจ็คเก็ตผ้ายืด",
       "key_features": {
-        "focus": ["ความนุ่มนวล", "ความยืดหยุ่น", "ประสิทธิภาพในการกักเก็บความอบอุ่น"],
-        "context": "เน้นผิวสัมผัสที่แตกต่างกันตามลักษณะการใช้งานและสภาพอากาศ"
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
       },
       "groups": [
         {
           "group_name": "General",
           "fabrics": [
-            { "name": "French Terry (เกล็ดปลา)", "type": "คอตตอนผสมโพลีเอสเตอร์ (ด้านหลังทอเป็นห่วง)", "gsm_or_weight": "240-320 GSM", "description": "นุ่ม หนักแน่น ผิวด้านนอกเรียบเนียน ด้านในเป็นลอนห่วง", "usage": "เสื้อ Hoodie, เสื้อสเวตเตอร์, แจ็คเก็ตสไตล์สตรีท", "suitable_for": "ใส่ทำงานในห้องแอร์, ใส่คลุมออกกำลังกาย, อากาศเย็นปานกลาง" },
-            { "name": "Polar Fleece (ฟลีซ)", "type": "โพลีเอสเตอร์ 100% (ผ่านการปั่นขนฟู)", "gsm_or_weight": "200-300 GSM", "description": "นุ่มฟูคล้ายขนสัตว์ น้ำหนักเบาแต่ให้ความอบอุ่นสูง", "usage": "แจ็คเก็ตกันหนาว, เสื้อซับในกันหนาว, ผ้าห่ม", "suitable_for": "ใส่ในที่อากาศหนาวจัด, เที่ยวต่างประเทศ, เดินป่าหรือแคมป์ปิ้ง" }
+            {
+              "name": "French Terry",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polar Fleece",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "15",
-      "category": "เสื้อแจ็คเก็ต",
-      "key_features": { "focus": ["ความเป็นทางการ", "น้ำหนักเบา", "ฟังก์ชันการใช้งาน"], "context": "เสื้อแจ็คเก็ตแบ่งตามโครงสร้างและฟังก์ชัน" },
+      "code": "17",
+      "category": "กางเกง",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
       "groups": [
         {
-          "group_name": "กลุ่มผ้าตระกูลทวิลล์ (Structured Jackets)",
+          "group_name": "General",
           "fabrics": [
-            { "name": "Super Comb Twill", "type": "TC เกรดพรีเมียม (ทอแน่น)", "gsm_or_weight": "หนาปานกลาง", "description": "เรียบเนียน เนื้อแน่น ดูหรู", "usage": "แจ็คเก็ตบริษัท, เสื้อกั๊ก", "suitable_for": "ผู้บริหาร, พนักงานต้อนรับ" },
-            { "name": "Comb Twill", "type": "คอตตอนผสม หรือ คอตตอน 100%", "gsm_or_weight": "หนาปานกลาง", "description": "นุ่มกว่า สบายผิว ระบายอากาศดี", "usage": "แจ็คเก็ตสไตล์ลำลอง, เสื้อช็อป", "suitable_for": "งานในร่ม หรือแจ็คเก็ตแฟชั่น" },
-            { "name": "Toray Biscop", "type": "โพลีเอสเตอร์ผสมคอตตอนเกรดสูง", "gsm_or_weight": "หนา", "description": "ทนทานมาก สีไม่ซีด อยู่ทรงเป๊ะ", "usage": "แจ็คเก็ตยูนิฟอร์มองค์กรใหญ่", "suitable_for": "งานที่ต้องการความเนี้ยบและอายุการใช้งานนาน" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มผ้าใยสังเคราะห์ (Functional Jackets)",
-          "fabrics": [
-            { "name": "Micro Fiber", "type": "โพลีเอสเตอร์ไมโครไฟเบอร์", "gsm_or_weight": "เบา", "description": "ลื่น เรียบ เงาเล็กน้อย", "usage": "แจ็คเก็ตกีฬา, เสื้อทีมอีเวนต์", "suitable_for": "งานกลางแจ้ง, กิจกรรมสปอร์ต" },
-            { "name": "Micro Peach", "type": "ไมโครไฟเบอร์ (ขัดหน้าฟู)", "gsm_or_weight": "เบา", "description": "นุ่มเหมือนผิวลูกพีช ไม่สาก", "usage": "แจ็คเก็ตแฟชั่น, เสื้อพรีเมียม", "suitable_for": "แบรนด์เสื้อผ้า, เสื้อแจกเกรดเอ" },
-            { "name": "Taslan", "type": "ไนลอน/โพลีเอสเตอร์พิเศษ", "gsm_or_weight": "เบา-กลาง", "description": "มีความกรอบ ทนทาน กันน้ำได้ดีกว่า", "usage": "แจ็คเก็ตกันลม (Windbreaker)", "suitable_for": "งานสนาม, ขี่มอเตอร์ไซค์, กิจกรรมลุยๆ" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มผ้าซับในและงานประหยัด",
-          "fabrics": [
-            { "name": "Taffeta (ทาฟเฟต้า)", "type": "ไนลอน หรือ โพลีเอสเตอร์ 100%", "gsm_or_weight": "บางเบามาก", "description": "ลื่น เงา แข็งเล็กน้อย", "usage": "ใช้ทำซับในเสื้อ, เสื้อกันฝนบางๆ", "suitable_for": "เสื้อแจกราคาประหยัด, ซับในแจ็คเก็ต" }
+            {
+              "name": "Hanako",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "KMP",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Garbardine",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Spendex",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "14",
-      "category": "เสื้อช็อป",
-      "key_features": { "focus": ["ความแข็งแรง", "การระบายอากาศ", "ความคุ้มค่า"], "context": "เสื้อช็อปแบ่งตามความทนทานและการใช้งานหน้างาน" },
+      "code": "18",
+      "category": "เสื้อเชฟ",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
       "groups": [
         {
-          "group_name": "กลุ่มผ้าตระกูลทวิลล์ (Twill Series)",
+          "group_name": "General",
           "fabrics": [
-            { "name": "TC Comb Twill", "type": "คอตตอนผสมโพลีเอสเตอร์", "gsm_or_weight": "190-210 GSM", "description": "เนื้อผ้าแน่น อยู่ทรงสวย ไม่ค่อยยับ", "usage": "เสื้อช็อปพนักงาน, ชุดฟอร์มโรงงาน", "suitable_for": "งานทั่วไปที่เน้นความเนี้ยบและทนทาน" },
-            { "name": "Super Comb Twill", "type": "TC เกรดพรีเมียม (เส้นด้ายละเอียด)", "gsm_or_weight": "200-220 GSM", "description": "ผิวสัมผัสเรียบเนียนกว่าปกติ ขึ้นขนนิดเดียว", "usage": "เสื้อช็อปเกรดพรีเมียม, เสื้อหัวหน้างาน", "suitable_for": "คนที่ต้องการชุดช็อปที่ดูดี ไม่แข็งกระด้าง" },
-            { "name": "Comb Twill", "type": "คอตตอน 100%", "gsm_or_weight": "หนาปานกลาง", "description": "นุ่มกว่า TC ระบายอากาศดีกว่า", "usage": "เสื้อช็อปวิศวะ, เสื้อช็อปนักศึกษา", "suitable_for": "งานในที่ร่มหรือที่อากาศร้อนแต่ต้องการความหนา" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มเน้นความทนทานพิเศษ (Heavy Duty)",
-          "fabrics": [
-            { "name": "Westpoint", "type": "คอตตอน 100% ทอแน่นพิเศษ", "gsm_or_weight": "240-280 GSM", "description": "หนา แข็งแรงมาก ยิ่งซักยิ่งนุ่ม", "usage": "เสื้อช็อปงานช่างหนัก, งานลุยไฟอ่อนๆ", "suitable_for": "งานวิศวกรสนาม, งานช่างเครื่องกล" },
-            { "name": "Toray Biscop", "type": "โพลีเอสเตอร์ผสมคอตตอน", "gsm_or_weight": "กลาง-หนา", "description": "เนื้อผ้าคงตัวดีมาก สีไม่ตก ไม่หด", "usage": "เสื้อยูนิฟอร์มบริษัทมาตรฐานสูง", "suitable_for": "องค์กรที่ต้องการชุดที่ใส่ได้นานหลายปีโดยไม่เสียทรง" }
+            {
+              "name": "Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Kmp",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Spendex",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Super Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray Biscop",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "13",
-      "category": "เสื้อเชิ้ต",
-      "key_features": { "focus": ["ความเนี้ยบ", "รีดง่าย", "ลวดลาย"], "context": "เสื้อเชิ้ตแบ่งตามลุคทางธุรกิจและลำลอง" },
+      "code": "19",
+      "category": "เสื้อแม่บ้าน",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
       "groups": [
         {
-          "group_name": "กลุ่มมาตรฐานและยูนิฟอร์ม",
+          "group_name": "General",
           "fabrics": [
-            { "name": "TC Comb Twill", "type": "Poly + Cotton", "gsm_or_weight": "120-140", "description": "ผ้าแน่น ทนทาน มีลายเส้นทแยงชัด", "usage": "เสื้อช่าง, ชุดยูนิฟอร์มพนักงาน", "suitable_for": "งานที่ต้องการความทนทานสูง ซักบ่อย" },
-            { "name": "โทเร (Toray)", "type": "TC (เส้นด้ายเบอร์เล็ก)", "gsm_or_weight": "100-115", "description": "ค่อนข้างบาง อยู่ทรง แข็งเล็กน้อย", "usage": "เสื้อนักเรียน, เสื้อฟอร์มราคาประหยัด", "suitable_for": "งานจำนวนมากที่เน้นประหยัดงบ" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มอ็อกซ์ฟอร์ด (Oxford Series)",
-          "fabrics": [
-            { "name": "Oxford", "type": "Cotton 100%", "gsm_or_weight": "130-150", "description": "นุ่มแต่มี Texture ไม่ลื่น ระบายอากาศดี", "usage": "เชิ้ต Casual, เชิ้ตวัยรุ่น", "suitable_for": "ใส่เที่ยวหรือทำงานที่ไม่เป็นทางการมาก" },
-            { "name": "CVC Oxford", "type": "Cotton + Poly", "gsm_or_weight": "130-150", "description": "คล้าย Oxford แต่รีดง่ายกว่า ไม่ค่อยยับ", "usage": "เชิ้ตพนักงานออฟฟิศ", "suitable_for": "คนที่ชอบลุค Oxford แต่ขี้เกียจรีดผ้า" }
+            {
+              "name": "Hanako",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Garbardine",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "12",
-      "category": "เสื้อโปโล",
-      "key_features": { "focus": ["การระบายอากาศ", "ความคงตัวของทรง", "ความทนทาน"], "context": "เสื้อโปโลเน้นเทคโนโลยีการทอและการซับเหงื่อ" },
+      "code": "20",
+      "category": "เสื้อรปภ",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
       "groups": [
         {
-          "group_name": "กลุ่มนวัตกรรมระบายอากาศ (Dry Series)",
+          "group_name": "General",
           "fabrics": [
-            { "name": "Drytech 401", "type": "Cotton Inside / Poly Outside", "gsm_or_weight": "210-230", "description": "นุ่มผิวสัมผัสด้านใน ลื่นด้านนอก", "usage": "เสื้อโปโลพรีเมียม ใส่ทำงานทั้งวัน", "suitable_for": "องค์กรที่เน้นภาพลักษณ์และความสบาย" },
-            { "name": "Dry First", "type": "Polyester Quick Dry", "gsm_or_weight": "140-160", "description": "ลื่น แห้งไวมาก ไม่ติดตัว", "usage": "เสื้อโปโลแจก หรือเสื้อกิจกรรม", "suitable_for": "งานที่เน้นความคุ้มค่าและแห้งเร็ว" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มผ้าผสมมาตรฐาน (CVC & TC)",
-          "fabrics": [
-            { "name": "CVC Juti", "type": "Cotton 60-80% ผสม Poly", "gsm_or_weight": "200-220", "description": "นุ่ม ระบายอากาศดี ซับเหงื่อ", "usage": "ยูนิฟอร์มพนักงานออฟฟิศ", "suitable_for": "งานที่ต้องการความนุ่มเหมือนคอตตอน" },
-            { "name": "TC Juti", "type": "Poly 65% ผสม Cotton 35%", "gsm_or_weight": "190-210", "description": "ค่อนข้างอยู่ทรง ไม่ค่อยยับ", "usage": "ยูนิฟอร์มทั่วไป, เสื้อทีม", "suitable_for": "เน้นความทนทาน รีดง่าย สีไม่ตกง่าย" }
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray Biscop",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
     },
     {
-      "code": "11",
-      "category": "เสื้อคอกลม / เสื้อยืด",
-      "key_features": { "focus": ["ความเป็นธรรมชาติ", "ความนุ่มนวล", "การจัดการความชื้น"], "context": "เสื้อยืดแบ่งตามเกรดคอตตอนและนวัตกรรมผ้ากีฬา" },
+      "code": "21",
+      "category": "ผ้ากันเปื้อน",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
       "groups": [
         {
-          "group_name": "กลุ่มผ้า Cotton (Single Jersey)",
+          "group_name": "General",
           "fabrics": [
-            { "name": "Single Jersey Com 30", "type": "คอตตอน 100%", "gsm_or_weight": "150-160", "description": "นุ่มเนียน เงากว่าเกรดอื่น", "usage": "เสื้อยืด Brandname, เสื้อคุณภาพสูง", "suitable_for": "งานขายหน้าร้าน, แบรนด์เสื้อผ้า" },
-            { "name": "Single Jersey Semi 20", "type": "คอตตอน 100%", "gsm_or_weight": "190-210", "description": "หนา นุ่ม มีน้ำหนัก", "usage": "เสื้อยืด Oversize", "suitable_for": "คนชอบเสื้อผ้าหนา อยู่ทรง" }
-          ]
-        },
-        {
-          "group_name": "กลุ่มผ้าสังเคราะห์ / ผ้ากีฬา",
-          "fabrics": [
-            { "name": "Micro", "type": "โพลีเอสเตอร์ไมโครไฟเบอร์", "gsm_or_weight": "130-150", "description": "ลื่น เรียบ แห้งไว", "usage": "เสื้อกีฬาพื้นฐาน", "suitable_for": "เสื้อกิจกรรมกลางแจ้ง, เสื้อบอล" },
-            { "name": "Syntrel", "type": "โพลีเกรดพิเศษ", "gsm_or_weight": "140-160", "description": "เย็นสบาย ระบายเหงื่อเร็วมาก", "usage": "ชุดกีฬามืออาชีพ", "suitable_for": "นักวิ่ง, นักกอล์ฟ" }
+            {
+              "name": "KMP",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Polyester",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Serge Velentino",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Super Comb Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
           ]
         }
       ]
