@@ -2,7 +2,16 @@
 
 import { useState, useMemo, useCallback, useEffect } from "react";
 import Image from "next/image";
+import { X } from "lucide-react";
 import type { Product, CatalogData } from "@/lib/catalog-data";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
 // Product images mapping for top icons
 const PRODUCT_IMAGES: Record<string, string> = {
@@ -85,6 +94,8 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
   const [selectedProductCode, setSelectedProductCode] = useState<string>("14");
   const [selectedFabricName, setSelectedFabricName] = useState<string>("");
   const [selectedSupplierName, setSelectedSupplierName] = useState<string>("");
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxApi, setLightboxApi] = useState<CarouselApi | null>(null);
 
   // Initialize selections on mount
   useEffect(() => {
@@ -333,25 +344,31 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
               </h3>
 
               {currentProductImages.length > 0 ? (
-                <div className="flex flex-col gap-8">
+                <div className="grid grid-cols-2 gap-4">
                   {currentProductImages.map((imgUrl, index) => {
                     const isPng = imgUrl.toLowerCase().endsWith('.png');
                     return (
-                      <div key={index} className="mb-2">
-                        <div className="relative w-full bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden" style={{ minHeight: '800px', maxHeight: '900px' }}>
+                      <button
+                        key={index}
+                        onClick={() => {
+                          setLightboxOpen(true);
+                          setTimeout(() => lightboxApi?.scrollTo(index), 50);
+                        }}
+                        className="group text-left"
+                      >
+                        <div className="relative w-full bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer" style={{ aspectRatio: '4/5', maxHeight: '300px' }}>
                           <Image
                             src={imgUrl}
                             alt={`${currentProduct?.name} - ${selectedSupplierName?.split(' ')[0] || 'Supplier'} ${index + 1}`}
                             fill
-                            className={`rounded-lg shadow-md object-contain ${isPng ? 'p-6' : 'p-2'}`}
-                            sizes="(max-width: 1200px) 100vw, 1200px"
-                            priority={index === 0}
+                            className={`rounded-lg shadow-md object-contain transition-transform duration-300 group-hover:scale-105 ${isPng ? 'p-4' : 'p-1'}`}
+                            sizes="(max-width: 768px) 50vw, 400px"
                           />
                         </div>
-                        <p className="text-center text-sm text-gray-500 mt-2">
-                          {currentProduct?.name} - {selectedSupplierName?.split(' ')[0] || 'Unknown'} ({index + 1}/{currentProductImages.length})
+                        <p className="text-center text-xs text-gray-400 mt-1 truncate">
+                          {index + 1}/{currentProductImages.length}
                         </p>
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
@@ -366,6 +383,49 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
           </div>
         </div>
       </div>
+      {/* Lightbox Carousel Overlay */}
+      {lightboxOpen && currentProductImages.length > 0 && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            onClick={() => setLightboxOpen(false)}
+            className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
+
+          <div className="w-full max-w-4xl mx-4" onClick={(e) => e.stopPropagation()}>
+            <Carousel setApi={setLightboxApi} opts={{ loop: true }}>
+              <CarouselContent>
+                {currentProductImages.map((imgUrl, index) => {
+                  const isPng = imgUrl.toLowerCase().endsWith('.png');
+                  return (
+                    <CarouselItem key={index}>
+                      <div className="relative w-full" style={{ aspectRatio: '4/5', maxHeight: '80vh' }}>
+                        <Image
+                          src={imgUrl}
+                          alt={`${currentProduct?.name} - ${index + 1}`}
+                          fill
+                          className={`object-contain ${isPng ? 'p-8' : 'p-2'}`}
+                          sizes="90vw"
+                          priority
+                        />
+                      </div>
+                      <p className="text-center text-white/60 text-sm mt-3">
+                        {index + 1} / {currentProductImages.length}
+                      </p>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+              <CarouselPrevious className="text-white border-white/30 hover:bg-white/20 hover:text-white left-2" />
+              <CarouselNext className="text-white border-white/30 hover:bg-white/20 hover:text-white right-2" />
+            </Carousel>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
