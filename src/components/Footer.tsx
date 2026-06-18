@@ -56,7 +56,7 @@ export default function Footer({ lang }: { lang: string }) {
               <div className="flex items-start gap-3 text-gray-800 group font-medium">
                 <MapPin size={24} className="text-red-600 shrink-0 mt-1" />
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.app.goo.gl/A8iL6qFnCmEViMca7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-md md:text-sm leading-relaxed hover:text-red-600 transition-colors flex flex-col gap-2"
@@ -119,7 +119,7 @@ export default function Footer({ lang }: { lang: string }) {
                 <span className="text-md md:text-sm font-semibold">sales@toffyboutique.com</span>
               </a>
 
-              <a href="#" className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition-colors group">
+              <a href="https://www.facebook.com/toffyboutique" className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition-colors group">
                 <div className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
                   <Facebook size={18} />
                 </div>
