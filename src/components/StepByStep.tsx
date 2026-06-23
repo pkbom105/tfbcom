@@ -11,6 +11,7 @@ interface StepItem {
 interface StepImage {
   src: string;
   label: string;
+  href: string;
   border?: boolean; // เครื่องหมาย ? หมายถึงจะมีหรือไม่มีก็ได้
 }
 
@@ -25,10 +26,10 @@ export default function StepByStep({ lang, dict }: { lang: string; dict?: any })
 
   // 3. ข้อมูลรูปภาพ (4 รูปด้านล่าง)
   const images: StepImage[] = [
-    { src: "/hp/z1.png", label: dict?.img1_label || "แบบเสื้อ" },
-    { src: "/hp/z2.png", label: dict?.img2_label || "เนื้อผ้าและชาร์ทสี",  },
-    { src: "/hp/z3.png", label: dict?.img3_label || "ตัวอย่างงานผลิต" },
-    { src: "/hp/z4.png", label: dict?.img4_label || "ขั้นตอนการผลิต" },
+    { src: "/hp/z1.png", label: dict?.img1_label || "แบบเสื้อ", href: "/pages/collection/t-shirt/" },
+    { src: "/hp/z2.png", label: dict?.img2_label || "เนื้อผ้าและชาร์ทสี", href: "/pages/catalog/" },
+    { src: "/hp/z3.png", label: dict?.img3_label || "ตัวอย่างงานผลิต", href: "/pages/past-collection/" },
+    { src: "/hp/z4.png", label: dict?.img4_label || "ขั้นตอนการผลิต", href: "/pages/process/" },
   ];
   return (
     <section className="py-24 px-6 bg-white font-noto overflow-hidden">
@@ -64,9 +65,10 @@ export default function StepByStep({ lang, dict }: { lang: string; dict?: any })
         {/* --- Images Grid (4 Images) --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((img, index) => (
-            <div 
-              key={index} 
-              className={`relative aspect-[3/5] overflow-hidden shadow-xl group transition-all duration-500 ${
+            <a
+              key={index}
+              href={img.href}
+              className={`relative aspect-[3/5] overflow-hidden shadow-xl group transition-all duration-500 block ${
                 img.border ? " rounded-sm" : "rounded-sm"
               }`}
             >
@@ -86,7 +88,7 @@ export default function StepByStep({ lang, dict }: { lang: string; dict?: any })
 
               {/* ตกแต่งเพิ่มเติม: เส้นขอบขาวจางๆ ด้านใน */}
               <div className="absolute inset-4 border border-white/20 pointer-events-none"></div>
-            </div>
+            </a>
           ))}
         </div>
 

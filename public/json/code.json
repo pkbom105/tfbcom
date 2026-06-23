@@ -23,14 +23,6 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Viral Block",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
               "name": "Cotton Comb",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -89,23 +81,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Endurance",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
               "name": "Micro",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "SingleJersey",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -148,14 +124,6 @@
             },
             {
               "name": "Com Twill",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Cvc Oxford",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -440,40 +408,6 @@
             },
             {
               "name": "Westpoint",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "code": "16",
-      "category": "เสื้อแจ็คเก็ตผ้ายืด",
-      "key_features": {
-        "focus": [
-          "ทนทาน",
-          "คุณภาพดี"
-        ],
-        "context": "สำหรับการใช้งานทั่วไป"
-      },
-      "groups": [
-        {
-          "group_name": "General",
-          "fabrics": [
-            {
-              "name": "French Terry",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Polar Fleece",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",

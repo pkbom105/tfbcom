@@ -24,13 +24,6 @@
           }
         },
         {
-          "name": "Viral Block",
-          "suppliers": [
-            "TCT ทีคัลเจอร์"
-          ],
-          "url_pictures": {}
-        },
-        {
           "name": "Cotton Comb",
           "suppliers": [
             "TSK ts.knitting"
@@ -117,13 +110,6 @@
           }
         },
         {
-          "name": "Endurance",
-          "suppliers": [
-            "TCT ทีคัลเจอร์"
-          ],
-          "url_pictures": {}
-        },
-        {
           "name": "Micro",
           "suppliers": [
             "PKP พรค้าผ้า",
@@ -157,11 +143,6 @@
               "/05catalog/2polo/micro/tct/KNTCT-MicroHybridP2.jpg"
             ]
           }
-        },
-        {
-          "name": "SingleJersey",
-          "suppliers": [],
-          "url_pictures": {}
         },
         {
           "name": "Viralblock",
@@ -229,11 +210,6 @@
               "/05catalog/3shirt/com twill/vst/WVVST-TRComTwillP2.jpg"
             ]
           }
-        },
-        {
-          "name": "Cvc Oxford",
-          "suppliers": [],
-          "url_pictures": {}
         },
         {
           "name": "Micro Peach",
@@ -791,23 +767,6 @@
               "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
             ]
           }
-        }
-      ]
-    },
-    {
-      "name": "เสื้อแจ็คเก็ตผ้ายืด",
-      "code": "16",
-      "url_file_picture": "/05catalog/6jacket2/",
-      "fabrics": [
-        {
-          "name": "French Terry",
-          "suppliers": [],
-          "url_pictures": {}
-        },
-        {
-          "name": "Polar Fleece",
-          "suppliers": [],
-          "url_pictures": {}
         }
       ]
     },
