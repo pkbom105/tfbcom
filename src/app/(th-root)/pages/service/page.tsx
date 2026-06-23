@@ -9,6 +9,17 @@ import Image from "next/image";
 
 import { Monitor, Smartphone, Globe, MapPinned } from "lucide-react" // npm install lucide-react
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "รับผลิตเสื้อโปโล ยูนิฟอร์มพนักงาน",
+    description: "บริการรับผลิตเสื้อโปโลพนักงาน ชุดยูนิฟอร์มองค์กร และสินค้าพรีเมียม ครบวงจร",
+    provider: {
+      "@type": "Organization",
+      name: "บริษัท ทอฟฟี่ บูติก จำกัด",
+    },
+    areaServed: "TH",
+  };
   
   const features = [
      {        
@@ -33,6 +44,11 @@ import { Monitor, Smartphone, Globe, MapPinned } from "lucide-react" // npm inst
   
   export default function ContentGrid() {
     return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
       <div className="max-w-6xl mx-auto p-6 font-kanit">
       <br></br>
         <div className="grid md:grid-cols-3 gap-6">
@@ -69,5 +85,6 @@ import { Monitor, Smartphone, Globe, MapPinned } from "lucide-react" // npm inst
                 </div>
             </p>
       </div>
-    )
+    </>
+  )
 }

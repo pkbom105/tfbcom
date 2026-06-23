@@ -77,6 +77,7 @@ export default function StepByStep({ lang, dict }: { lang: string; dict?: any })
                 src={img.src}
                 alt={img.label}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
               />
               
               {/* Overlay with Textกึ่งกลาง */}

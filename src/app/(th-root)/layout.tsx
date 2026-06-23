@@ -4,6 +4,7 @@ import "@/app/globals.css";
 import { Noto_Sans_Thai } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { organizationSchema } from "@/lib/schema";
 
 /**
  * 1. Initialize Noto Sans Thai Font
@@ -38,6 +39,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://tfb.co.th",
+    languages: {
+      "th": "https://tfb.co.th",
+      "en": "https://tfb.co.th/en",
+      "x-default": "https://tfb.co.th",
+    },
   },
   openGraph: {
     title: "ToffyBoutique - รับผลิตเสื้อโปโลและยูนิฟอร์มพนักงาน",
@@ -74,6 +80,35 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "บริษัท ทอฟฟี่ บูติก จำกัด",
+  alternateName: "Toffy Boutique",
+  url: "https://tfb.co.th",
+  logo: "https://tfb.co.th/picture/toffyboutique-logo.png",
+  description: "รับผลิตเสื้อโปโลพนักงาน ยูนิฟอร์มพนักงาน ชุดฟอร์มพนักงาน ครบวงจร",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "258 ถนน พุทธบูชา แขวง บางมด",
+    addressLocality: "เขตจอมทอง",
+    addressRegion: "กรุงเทพฯ",
+    postalCode: "10150",
+    addressCountry: "TH",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+6624282591",
+    contactType: "sales",
+    email: "sales@toffyboutique.com",
+    availableLanguage: ["Thai", "English"],
+  },
+  sameAs: [
+    "https://www.facebook.com/toffyboutique",
+    "https://line.me/R/ti/p/@toffyboutique",
+  ],
+};
+
 /**
  * 3. Root Layout Component
  */
@@ -87,6 +122,25 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} className={notoColorThai.variable}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#dc2626" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Toffy Boutique" />
+        <meta name="application-name" content="Toffy Boutique" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/icon.png" type="image/png" sizes="512x512" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+      </head>
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-X523S45753"

@@ -9,12 +9,27 @@ import WhatWeProvide  from "@/components/WhatWeProvide";
 // import AboutFactory from "@/components/AboutFactory"; // Import ตัวใหม่
 import OurClient from "@/components/OurClient";
 import { getDictionary } from "@/lib/get-dictionary";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 export default async function HomePage({ lang = "th" }: { lang?: string }) {
   const dict = await getDictionary(lang as "th" | "en");
 
+  const langCode = lang as "th" | "en";
+  const schemas = [
+    organizationSchema(langCode),
+    websiteSchema(langCode),
+  ];
+
   return (
-    <main className="min-h-screen">        
+    <>
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <main className="min-h-screen">        
       {/* ส่วน Slide (aa1) */}
       <HeroSlider2 lang={lang} />
 
@@ -34,5 +49,6 @@ export default async function HomePage({ lang = "th" }: { lang?: string }) {
       
       <OurClient lang={lang} dict={dict.ourclient} />
     </main>
+    </>
   );
 }

@@ -98,18 +98,16 @@ export default function Footer({ lang }: { lang: string }) {
           <div className="space-y-6">
             <h4 className="text-black font-bold text-lg md:text-sm border-l-4 border-red-600 pl-4 uppercase">{t("ติดตามเรา", "Follow Us")}</h4>
             <div className="space-y-4">
-              <a href="#" className="flex items-center gap-4 text-gray-700 hover:text-green-600 transition-colors group">
+              <a
+                href="https://line.me/R/ti/p/@toffyboutique"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 text-gray-700 hover:text-green-600 transition-colors group"
+              >
                 <div className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
                   <MessageCircle size={18} />
-                </div>                
-                    <a 
-                      href="https://line.me/R/ti/p/@toffyboutique" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="font-medium underlinehover:text-red-600 hover:decoration-red-600 transition-all"
-                    >
-                      <span className="text-md md:text-sm font-semibold">Line Id: @toffyboutique</span>                      
-                    </a>
+                </div>
+                <span className="text-md md:text-sm font-semibold">Line Id: @toffyboutique</span>
               </a>
 
               <a href="mailto:sales@toffyboutique.com" className="flex items-center gap-4 text-gray-700 hover:text-red-600 transition-colors group">

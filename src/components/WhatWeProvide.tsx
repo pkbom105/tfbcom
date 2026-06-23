@@ -75,7 +75,14 @@ export default function AboutFactory({ lang, dict }: { lang: string; dict?: any 
                     viewport={{ once: true }} 
                     className="absolute top-0 right-0 w-[50%] aspect-square rounded-lg overflow-hidden shadow-2xl border-8 border-white"
                   >
-                    <video src="/hp/vdo2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+                    <video 
+                      src="/hp/vdo2.mp4" 
+                      autoPlay muted loop playsInline 
+                      className="w-full h-full object-cover"
+                      poster="/hp/z2.png"
+                    >
+                      {dict?.video_fallback || "Your browser does not support the video tag."}
+                    </video>
                   </motion.div>
                   
                   <motion.div 
@@ -85,7 +92,14 @@ export default function AboutFactory({ lang, dict }: { lang: string; dict?: any 
                     transition={{ delay: 0.3 }} 
                     className="absolute bottom-0 left-0 w-[55%] aspect-square rounded-lg overflow-hidden shadow-2xl border-8 border-white z-10"
                   >
-                    <video src="/hp/vdo1.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover" />
+                    <video 
+                      src="/hp/vdo1.mp4" 
+                      autoPlay muted loop playsInline 
+                      className="w-full h-full object-cover"
+                      poster="/hp/z1.png"
+                    >
+                      {dict?.video_fallback || "Your browser does not support the video tag."}
+                    </video>
                   </motion.div>
                 </div>
           

@@ -4,10 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, PhoneCall, Mail, Download, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { organizationSchema, localBusinessSchema } from "@/lib/schema";
 
 export default function ContactPage({ lang = "th" }: { lang?: string }) {
   const isEn = lang === "en";
   const t = (th: string, en: string) => isEn ? en : th;
+  const langCode = lang as "th" | "en";
+  const schemas = [organizationSchema(langCode), localBusinessSchema(langCode)];
   const features = [
     {
       icon: <MapPin className="w-10 h-10 text-red-500" />,
@@ -81,7 +84,15 @@ export default function ContactPage({ lang = "th" }: { lang?: string }) {
   ];
 
   return (
-    <main className="min-h-screen font-noto bg-white">
+    <>
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <main className="min-h-screen font-noto bg-white">
       {/* SECTION 1: Contact Cards */}
       <section className="bg-slate-50/50 py-20 xl:py-32 px-6">
         {/* ขยาย Container เป็น 1550px */}
@@ -252,5 +263,6 @@ export default function ContactPage({ lang = "th" }: { lang?: string }) {
         </div>
       </section>
     </main>
+    </>
   );
 }

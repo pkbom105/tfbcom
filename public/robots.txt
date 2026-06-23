@@ -1,4 +1,12 @@
+# Robots.txt for Toffy Boutique (tfb.co.th)
+# Allow all search engines to crawl the entire site
+
 User-agent: *
 Allow: /
 
+# Disallow admin/draft routes
+Disallow: /draft/
+Disallow: /api/
+
+# Sitemap
 Sitemap: https://tfb.co.th/sitemap.xml

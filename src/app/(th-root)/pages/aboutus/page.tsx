@@ -3,11 +3,22 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { organizationSchema } from "@/lib/schema";
 
 export default function AboutSection({ lang = "th" }: { lang?: string }) {
   const isEn = lang === "en";
+  const langCode = lang as "th" | "en";
+  const schemas = [organizationSchema(langCode)];
   return (
-    <main className="min-h-screen font-noto bg-white overflow-hidden">
+    <>
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+      <main className="min-h-screen font-noto bg-white overflow-hidden">
       
       {/* SECTION 1: ประวัติบริษัท */}
       <section className="max-w-[1200px] mx-auto px-6 py-12 xl:py-20">
@@ -227,5 +238,6 @@ export default function AboutSection({ lang = "th" }: { lang?: string }) {
       </section>
 
     </main>
+    </>
   );
 }

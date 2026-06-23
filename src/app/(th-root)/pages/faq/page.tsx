@@ -9,6 +9,7 @@ import {
 import { HelpCircle, MessageCircle } from "lucide-react"; // ตรวจสอบการ Import
 import { motion } from "framer-motion";
 import Link from "next/link"; // ใช้ Link ของ Next.js แทน <a> เพื่อความเร็ว
+import { faqPageSchema } from "@/lib/schema";
 
 export default function FAQPage({ lang = "th" }: { lang?: string }) {
   const isEn = lang === "en";
@@ -62,8 +63,15 @@ export default function FAQPage({ lang = "th" }: { lang?: string }) {
     }
   ];
 
+  const faqSchema = faqPageSchema(faqData);
+
   return (
-    <main className="min-h-screen font-kanit pb-20 bg-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <main className="min-h-screen font-kanit pb-20 bg-white">
         <div id="333" className="scroll-mt-40"> 
               {/* scroll-mt-24 ช่วยให้เวลาเลื่อนมาแล้วไม่โดน Navbar บัง */}
         </div>
@@ -114,5 +122,6 @@ export default function FAQPage({ lang = "th" }: { lang?: string }) {
         </Link>
       </section>
     </main>
+    </>
   );
 }

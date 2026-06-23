@@ -4,11 +4,52 @@ import React from "react";
 import { CircleArrowRight } from "lucide-react";
 import thDict from "@/dictionaries/th.json";
 import enDict from "@/dictionaries/en.json";
+import Picture from "@/components/Picture";
 
 export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
   const dict = lang === "en" ? enDict.process_page : thDict.process_page;
 
+  const isEn = lang === "en";
+  const processSteps = isEn 
+    ? [
+        "1. Contact us and discuss requirements",
+        "2. Design and quotation",
+        "3. Material selection and preparation",
+        "4. Sample production",
+        "5. Sample approval",
+        "6. Mass production",
+        "7. Quality inspection",
+        "8. Packing and delivery",
+      ]
+    : [
+        "1. ติดต่อและแจ้งความต้องการ",
+        "2. ออกแบบและเสนอราคา",
+        "3. เลือกวัตถุดิบและเตรียมการผลิต",
+        "4. ผลิตตัวอย่าง",
+        "5. อนุมัติตัวอย่าง",
+        "6. ดำเนินการผลิตจริง",
+        "7. ตรวจสอบคุณภาพ",
+        "8. บรรจุภัณฑ์และจัดส่ง",
+      ];
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: dict?.hero?.title || (isEn ? "Production Process" : "ขั้นตอนการผลิต"),
+    description: dict?.hero?.subtitle || (isEn ? "Manufacturing Process" : "กระบวนการผลิต"),
+    step: processSteps.map((stepText, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      text: stepText,
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
     <main className="min-h-screen bg-white font-noto pb-20">
       {/* --- Section: บทนำ --- */}
       <section className="bg-slate-50 py-16 px-6 border-b border-slate-100">
@@ -27,10 +68,11 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
       {/* --- Section 1: รูปภาพกว้างสุดจอ --- */}
       <section className="w-full">
         <div className="w-full h-[390px] md:h-[500px] overflow-hidden">
-          <img 
+          <Picture
             src="/process/p1.png" 
             alt="ภาพรวมการผลิต" 
             className="w-full h-full object-cover"
+            sizes="100vw"
           />
         </div>
       </section>
@@ -44,17 +86,17 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
               <p className="text-slate-800">{dict.material.subtitle}</p>
             </div>
             <div className="rounded-xl overflow-hidden bg-slate-100 aspect-video shadow-sm">
-              <img src="/process/p2.png" alt="การตรวจสอบผ้า" className="w-full h-full object-cover" />
+              <Picture src="/process/p2.png" alt="การตรวจสอบผ้า" className="w-full h-full object-cover" sizes="50vw" />
             </div>
           </div>
 
           <div className="flex flex-col space-y-6">
             <div className="grid grid-cols-2 gap-2">
               <div className="rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
-                <img src="/process/p3.png" alt="การตัดเย็บ 1" className="w-full h-full object-cover" />
+                <Picture src="/process/p3.png" alt="การตัดเย็บ 1" className="w-full h-full object-cover" sizes="25vw" />
               </div>
               <div className="rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
-                <img src="/process/p4.png" alt="การตัดเย็บ 2" className="w-full h-full object-cover" />
+                <Picture src="/process/p4.png" alt="การตัดเย็บ 2" className="w-full h-full object-cover" sizes="25vw" />
               </div>
             </div>
             <div>
@@ -311,5 +353,6 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
         </div>        
       </section>
     </main>
+    </>
   );
 }
