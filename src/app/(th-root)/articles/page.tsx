@@ -19,7 +19,7 @@ async function getArticlesData() {
       const filePath = path.join(articlesDirectory, folder, 'page.tsx');
       
       // ค่าเริ่มต้น (Default) กรณีหาข้อมูลในไฟล์ไม่เจอ
-      let meta = {
+      const meta = {
         title: folder.replace(/-/g, ' '),
         description: "อ่านรายละเอียดบทความสาระน่ารู้จาก Toffy Boutique",
         thumbnail: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800",

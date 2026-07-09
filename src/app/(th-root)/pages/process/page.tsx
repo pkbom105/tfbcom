@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { CircleArrowRight } from "lucide-react";
 import thDict from "@/dictionaries/th.json";
 import enDict from "@/dictionaries/en.json";
-import Picture from "@/components/Picture";
 
 export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
   const dict = lang === "en" ? enDict.process_page : thDict.process_page;
@@ -67,12 +67,14 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
       {/* --- Section 1: รูปภาพกว้างสุดจอ --- */}
       <section className="w-full">
-        <div className="w-full h-[390px] md:h-[500px] overflow-hidden">
-          <Picture
-            src="/process/p1.png" 
-            alt="ภาพรวมการผลิต" 
-            className="w-full h-full object-cover"
+        <div className="w-full h-[390px] md:h-[500px] relative overflow-hidden">
+          <Image
+            src="/process/p1.png"
+            alt="ภาพรวมการผลิต"
+            fill
+            className="object-cover"
             sizes="100vw"
+            priority
           />
         </div>
       </section>
@@ -85,18 +87,36 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">{dict.material.title}</h2>
               <p className="text-slate-800">{dict.material.subtitle}</p>
             </div>
-            <div className="rounded-xl overflow-hidden bg-slate-100 aspect-video shadow-sm">
-              <Picture src="/process/p2.png" alt="การตรวจสอบผ้า" className="w-full h-full object-cover" sizes="50vw" />
+            <div className="relative rounded-xl overflow-hidden bg-slate-100 aspect-video shadow-sm">
+              <Image
+                src="/process/p2.png"
+                alt="การตรวจสอบผ้า"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
           </div>
 
           <div className="flex flex-col space-y-6">
             <div className="grid grid-cols-2 gap-2">
-              <div className="rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
-                <Picture src="/process/p3.png" alt="การตัดเย็บ 1" className="w-full h-full object-cover" sizes="25vw" />
+              <div className="relative rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
+                <Image
+                  src="/process/p3.png"
+                  alt="การตัดเย็บ 1"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
               </div>
-              <div className="rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
-                <Picture src="/process/p4.png" alt="การตัดเย็บ 2" className="w-full h-full object-cover" sizes="25vw" />
+              <div className="relative rounded-xl overflow-hidden bg-slate-100 aspect-square shadow-sm">
+                <Image
+                  src="/process/p4.png"
+                  alt="การตัดเย็บ 2"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
               </div>
             </div>
             <div>
@@ -124,24 +144,48 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="flex flex-col gap-8">
-              <div className="rounded-2xl overflow-hidden shadow-md aspect-square">
-                <img src="/process/p5.png" alt="Process 5" className="w-full h-full object-cover" />
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square">
+                <Image
+                  src="/process/p5.png"
+                  alt="Process 5"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-md aspect-square">
-                <img src="/process/p6.png" alt="Process 6" className="w-full h-full object-cover" />
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square">
+                <Image
+                  src="/process/p6.png"
+                  alt="Process 6"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
               </div>
             </div>
 
             <div className="flex flex-col gap-8">
               <div className="grid grid-cols-2 gap-4 aspect-square">
                 {[7, 8, 9, 10].map((n) => (
-                  <div key={n} className="rounded-xl overflow-hidden shadow-sm bg-gray-200">
-                    <img src={`/process/p${n}.png`} alt={`Process ${n}`} className="w-full h-full object-cover" />
+                  <div key={n} className="relative rounded-xl overflow-hidden shadow-sm bg-gray-200">
+                    <Image
+                      src={`/process/p${n}.png`}
+                      alt={`Process ${n}`}
+                      fill
+                      className="object-cover"
+                      sizes="25vw"
+                    />
                   </div>
                 ))}
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-md aspect-square">
-                <img src="/process/p11.png" alt="Process 11" className="w-full h-full object-cover" />
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square">
+                <Image
+                  src="/process/p11.png"
+                  alt="Process 11"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
               </div>
             </div>
           </div>
@@ -154,11 +198,13 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             
             {/* ฝั่งซ้าย: รูปภาพหลัก (ปรับจาก Full Screen เป็น Rounded Box) */}
-            <div className="w-full aspect-[4/5] md:aspect-square lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl order-1">
-              <img 
-                src="/process/p12.png" 
-                alt="บรรยากาศแผนกเย็บ" 
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
+            <div className="relative w-full aspect-[4/5] md:aspect-square lg:aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl order-1">
+              <Image
+                src="/process/p12.png"
+                alt="บรรยากาศแผนกเย็บ"
+                fill
+                className="object-cover transition-transform duration-700 hover:scale-105"
+                sizes="50vw"
               />
             </div>
 
@@ -174,12 +220,24 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
                 {/* รูปรายละเอียด 2 รูปคู่กึ่งกลาง */}
                 <div className="flex w-full overflow-hidden rounded-2xl shadow-lg my-8 bg-slate-100">
-                  <div className="w-1/2 aspect-[3/2] border-r border-white/20">
-                    <img src="/process/p13.png" alt="รายละเอียดการเย็บ 1" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="w-1/2 aspect-[3/2]">
-                    <img src="/process/p14.png" alt="รายละเอียดการเย็บ 2" className="w-full h-full object-cover" />
-                  </div>
+                  <div className="relative w-1/2 aspect-[3/2] border-r border-white/20">
+                  <Image
+                    src="/process/p13.png"
+                    alt="รายละเอียดการเย็บ 1"
+                    fill
+                    className="object-cover"
+                    sizes="25vw"
+                  />
+                </div>
+                <div className="relative w-1/2 aspect-[3/2]">
+                  <Image
+                    src="/process/p14.png"
+                    alt="รายละเอียดการเย็บ 2"
+                    fill
+                    className="object-cover"
+                    sizes="25vw"
+                  />
+                </div>
                 </div>
               </div>
 
@@ -210,8 +268,14 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
             
             {/* Card 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="aspect-[3/4] overflow-hidden">
-                <img src="/process/p15.png" alt="ออกแบบตามความต้องการ" className="w-full h-full object-cover" />
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/process/p15.png"
+                  alt="ออกแบบตามความต้องการ"
+                  fill
+                  className="object-cover"
+                  sizes="33vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-md font-bold text-gray-900 mb-2">{dict.packing.item1}</h3>
@@ -220,8 +284,14 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
             {/* Card 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="aspect-[3/4] overflow-hidden">
-                <img src="/process/p16.png" alt="ควบคุมคุณภาพ" className="w-full h-full object-cover" />
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/process/p16.png"
+                  alt="ควบคุมคุณภาพ"
+                  fill
+                  className="object-cover"
+                  sizes="33vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-md font-bold text-gray-900 mb-2">{dict.packing.item2}</h3>
@@ -230,8 +300,14 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
             {/* Card 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="aspect-[3/4] overflow-hidden">
-                <img src="/process/p17.png" alt="การจัดส่ง" className="w-full h-full object-cover" />
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/process/p17.png"
+                  alt="การจัดส่ง"
+                  fill
+                  className="object-cover"
+                  sizes="33vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-md font-bold text-gray-900 mb-2">{dict.packing.item3}</h3>
@@ -262,11 +338,13 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
             {/* Main Delivery Image (Transparent) (60%) */}
             <div className="md:col-span-6 flex justify-center items-center">
-              <div className="w-full h-[250px] md:h-[350px] relative">
-                <img 
-                  src="/process/p20.png" 
-                  alt="บรรยากาศการส่งของ" 
-                  className="w-full h-full object-contain" 
+              <div className="relative w-full h-[250px] md:h-[350px]">
+                <Image
+                  src="/process/p20.png"
+                  alt="บรรยากาศการส่งของ"
+                  fill
+                  className="object-contain"
+                  sizes="50vw"
                 />
               </div>
             </div>
@@ -329,11 +407,13 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
 
             {/* Column 3: Logistics Showcase (Match Video Height) */}
             <div className="space-y-6">
-              <div className="rounded-xl overflow-hidden shadow-lg aspect-[3/4] bg-slate-50">
-                <img 
-                  src="/process/p19.png" 
-                  alt="รถขนส่งทอฟฟี่" 
-                  className="w-full h-full object-cover" 
+              <div className="relative rounded-xl overflow-hidden shadow-lg aspect-[3/4] bg-slate-50">
+                <Image
+                  src="/process/p19.png"
+                  alt="รถขนส่งทอฟฟี่"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
                 />
               </div>
               <p className="text-sm text-slate-500 italic text-center">{dict.delivery.truck_caption}</p>
@@ -344,13 +424,15 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
       </section>
       {/* --- Section 7: รูปปิดท้าย (แก้ไขลด White Space) --- */}
       <section className="w-full bg-white border-t border-slate-100">
-        <div className="w-full h-auto">
-          <img 
-            src="/process/p21.png" 
-            alt="การตรวจสอบคุณภาพสุดท้าย" 
-            className="w-full h-auto object-contain block" 
+        <div className="relative w-full h-[420px] md:h-[500px]">
+          <Image
+            src="/process/p21.png"
+            alt="การตรวจสอบคุณภาพสุดท้าย"
+            fill
+            className="object-contain"
+            sizes="100vw"
           />
-        </div>        
+        </div>
       </section>
     </main>
     </>
