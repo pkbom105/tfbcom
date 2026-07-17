@@ -481,7 +481,12 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
           {selectedSupplierName && selectedFabricName && (
             <div className="mb-8 border border-gray-300 rounded-xl p-4">
               <div className="flex items-baseline gap-2 mb-3 px-2">
-                <span className="text-gray-500 font-medium text-sm">{isEn ? "Supplier URL" : "URL ซัพพลายเออร์"}:</span>
+                <span className="text-gray-800 text-md font-bold">{isEn ? "Supplier URL" : "URL ซัพพลายเออร์"}:</span>
+                <span className="text-gray-800 text-md">
+                  {isEn
+                    ? "Copy this URL to bookmark or share the current fabric selection"
+                    : "สามารถ คัดลอก URL เพื่ออ้างอิงตำแหน่งเดิมของเนื้อผ้า"}
+                </span>
               </div>
               <div className="flex flex-col gap-2">
                 {(() => {
