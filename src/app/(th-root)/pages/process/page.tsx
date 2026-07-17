@@ -355,17 +355,14 @@ export default function MakeToOrderPage({ lang = "th" }: { lang?: string }) {
             
             {/* Column 1: Video Production/Loading */}
             <div className="space-y-6">
-              <div className="rounded-xl overflow-hidden shadow-lg aspect-[3/4] bg-slate-100">
-                <video 
-                  src="/process/p18.mp4" 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  Your browser does not support the video tag.
-                </video>
+              <div className="relative rounded-xl overflow-hidden shadow-lg aspect-[3/4] bg-slate-100">
+                <Image
+                  src="/process/p18.png"
+                  alt="Production loading"
+                  fill
+                  className="object-cover"
+                  sizes="25vw"
+                />
               </div>
               <p className="text-sm text-slate-500 italic text-center">{dict.delivery.video_caption}</p>
             </div>

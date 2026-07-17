@@ -13,7 +13,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
-// Product images mapping for top icons
+// Product images mapping for top icons (matches /05catalog/ folder order)
 const PRODUCT_IMAGES: Record<string, string> = {
   "11": "/png-1/2.png",
   "12": "/png-1/6.png",
@@ -21,27 +21,96 @@ const PRODUCT_IMAGES: Record<string, string> = {
   "14": "/png-1/22.png",
   "15": "/png-1/30.png",
   "16": "/png-1/55.png",
-  "17": "/png-1/53.png",
+  "20": "/png-1/24.png",
   "18": "/png-1/35.png",
   "19": "/png-1/43.png",
-  "20": "/png-1/24.png",
+  "17": "/png-1/53.png",
   "21": "/png-1/47.png",
 };
 
-// English product names for top icon labels
+// English product names for top icon labels (matches /05catalog/ folder names)
 const PRODUCT_NAMES_EN: Record<string, string> = {
   "11": "T-Shirt",
   "12": "Polo",
   "13": "Shirt",
   "14": "Workshop",
-  "15": "Jacket",
-  "16": "Stretch Jacket",
-  "17": "Trouser",
+  "15": "Jacket Woven",
+  "16": "Jacket Knit",
+  "20": "Security",
   "18": "Chef",
   "19": "Maid",
-  "20": "Security",
+  "17": "Trouser",
   "21": "Apron",
 };
+
+// Reverse map: supplier full name → short code
+const SUPPLIER_SHORT_CODES: Record<string, string> = {
+  "jsm": "jsm", "vst": "vst", "dfn": "dfn", "kmp": "kmp",
+  "spn": "spn", "sps": "sps", "tct": "tct", "smc": "smc",
+  "ntp": "ntp", "knt": "knt", "fuji": "fuji", "jng": "jng",
+  "kvv": "kvv", "phl": "phl", "pkp": "pkp", "prs": "prs",
+  "glf": "glf", "sgt": "sgt", "vry": "vry", "tsk": "tsk",
+  "avc": "avc", "jfm": "jfm", "mks": "mks", "mtt": "mtt",
+  "let": "let", "kch": "kch", "tgt": "tgt", "tfm": "tfm",
+  "npt": "npt", "fab": "fab", "fabrica": "fabrica", "sml": "sml",
+};
+
+const SUPPLIER_FULL_TO_SHORT: Record<string, string> = {
+  "JSM เจียมสมาน": "jsm",
+  "VST วีศิลป์เท็กไทล์": "vst",
+  "DFN ดีไฟน์เนส": "dfn",
+  "KMP": "kmp",
+  "SPN ซิงค์ พาณิชย์": "spn",
+  "SPS สมประสงค์": "sps",
+  "TCT ทีคัลเจอร์": "tct",
+  "SMC สมชาย": "smc",
+  "NTP": "ntp",
+  "KNT": "knt",
+  "Fuji": "fuji",
+  "Jng": "jng",
+  "KVV": "kvv",
+  "PHL ปังหัว": "phl",
+  "PKP พรค้าผ้า": "pkp",
+  "PRS ปารีสค้าผ้า": "prs",
+  "GLF จี.แอล.เอฟ": "glf",
+  "SGT สหกรุ๊ป เท็กซ์ไทล์": "sgt",
+  "VRY วิริยะ": "vry",
+  "TSK ts.knitting": "tsk",
+  "AVC อัลวาเซ่ Alvaasce": "avc",
+  "JFM หจก. เจ เอฟ เอ็ม": "jfm",
+  "MKS มงกุฎสิงห์": "mks",
+  "MTT มนตรา เทรดดิ้ง": "mtt",
+  "LET เลิศอาภร": "let",
+  "KCH กอบชัย": "kch",
+  "TGT ไทยกรุ๊ปเท็กไทล์": "tgt",
+  "TFM ทีเอฟมาลีเท็กซ์": "tfm",
+  "NPT": "npt",
+  "Fab Fabrica": "fab",
+  "Fabrica": "fabrica",
+  "SML": "sml",
+};
+
+function getSupplierShortCode(fullName: string): string {
+  return SUPPLIER_FULL_TO_SHORT[fullName] || fullName.split(' ')[0].toLowerCase();
+}
+
+// Reverse map: supplier short code → full name (built from SUPPLIER_FULL_TO_SHORT)
+const SUPPLIER_SHORT_TO_FULL: Record<string, string> = {};
+for (const [full, short] of Object.entries(SUPPLIER_FULL_TO_SHORT)) {
+  SUPPLIER_SHORT_TO_FULL[short] = full;
+}
+
+function getSupplierFullFromShort(shortCode: string): string | undefined {
+  return SUPPLIER_SHORT_TO_FULL[shortCode.toLowerCase()];
+}
+
+function slugifyFabric(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
+function unslugifyFabric(slug: string): string {
+  return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
 
 // English fabric detail translations (keyed by lowercase fabric name)
 type FabricEnDetail = { type: string; gsm_or_weight: string; description: string; usage: string; suitable_for: string };
@@ -91,21 +160,105 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
   const { products, catalogDetails } = catalogData;
   const isEn = lang === "en";
 
-  const [selectedProductCode, setSelectedProductCode] = useState<string>("14");
+  const [selectedProductCode, setSelectedProductCode] = useState<string>("11");
   const [selectedFabricName, setSelectedFabricName] = useState<string>("");
   const [selectedSupplierName, setSelectedSupplierName] = useState<string>("");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxApi, setLightboxApi] = useState<CarouselApi | null>(null);
+  const [copiedSupplier, setCopiedSupplier] = useState<string>("");
+  const [baseUrl, setBaseUrl] = useState<string>("");
 
-  // Initialize selections on mount
+  // Get base URL on mount and read URL params
   useEffect(() => {
-    const initialProduct = products.find((p: Product) => p.code === "14") || products[0];
-    if (initialProduct && initialProduct.fabrics.length > 0) {
-      setSelectedProductCode(initialProduct.code);
-      const firstFabric = initialProduct.fabrics[0].name;
-      setSelectedFabricName(firstFabric);
-      if (initialProduct.fabrics[0].suppliers.length > 0) {
-        setSelectedSupplierName(initialProduct.fabrics[0].suppliers[0]);
+    const url = new URL(window.location.href);
+    setBaseUrl(url.origin + url.pathname);
+
+    const pParam = url.searchParams.get("p");   // product code
+    const fParam = url.searchParams.get("f");   // fabric slug
+    const sParam = url.searchParams.get("s");   // supplier short code
+
+    if (pParam || fParam || sParam) {
+      // URL params exist - use them to select tabs
+      const targetProductCode = pParam || "14";
+      const targetProduct = products.find((pr: Product) => pr.code === targetProductCode) || products[0];
+      if (targetProduct) {
+        setSelectedProductCode(targetProduct.code);
+
+        // Find fabric by slug
+        let targetFabricName = "";
+        if (fParam) {
+          const slug = fParam.toLowerCase();
+          for (const fabric of targetProduct.fabrics) {
+            if (slugifyFabric(fabric.name) === slug) {
+              targetFabricName = fabric.name;
+              break;
+            }
+          }
+        }
+        if (!targetFabricName && targetProduct.fabrics.length > 0) {
+          targetFabricName = targetProduct.fabrics[0].name;
+        }
+        setSelectedFabricName(targetFabricName);
+
+        // Find supplier by short code
+        if (sParam && targetFabricName) {
+          const fabData = targetProduct.fabrics.find(
+            (f: { name: string }) => f.name === targetFabricName
+          );
+          if (fabData) {
+            const supplierFull = getSupplierFullFromShort(sParam);
+            if (supplierFull && fabData.suppliers.includes(supplierFull)) {
+              setSelectedSupplierName(supplierFull);
+            } else {
+              // Fallback: match by first word
+              const matched = fabData.suppliers.find((s: string) =>
+                s.split(' ')[0].toLowerCase() === sParam.toLowerCase()
+              );
+              setSelectedSupplierName(matched || fabData.suppliers[0] || "");
+            }
+          }
+        } else if (targetFabricName) {
+          const fabData = targetProduct.fabrics.find(
+            (f: { name: string }) => f.name === targetFabricName
+          );
+          if (fabData?.suppliers.length) {
+            setSelectedSupplierName(fabData.suppliers[0]);
+          }
+        }
+      }
+    } else {
+      // No URL params - use default: p=11&f=cvc-single-jersey-30&s=tsk
+      const targetProduct = products.find((p: Product) => p.code === "11") || products[0];
+      if (targetProduct) {
+        setSelectedProductCode(targetProduct.code);
+
+        // Find fabric "CVC Single Jersey 30"
+        let targetFabricName = "";
+        for (const fabric of targetProduct.fabrics) {
+          if (slugifyFabric(fabric.name) === "cvc-single-jersey-30") {
+            targetFabricName = fabric.name;
+            break;
+          }
+        }
+        if (!targetFabricName && targetProduct.fabrics.length > 0) {
+          targetFabricName = targetProduct.fabrics[0].name;
+        }
+        setSelectedFabricName(targetFabricName);
+
+        // Find supplier "TSK ts.knitting" (short code: tsk)
+        if (targetFabricName) {
+          const fabData = targetProduct.fabrics.find(
+            (f: { name: string }) => f.name === targetFabricName
+          );
+          if (fabData) {
+            const supplierFull = getSupplierFullFromShort("tsk");
+            if (supplierFull && fabData.suppliers.includes(supplierFull)) {
+              setSelectedSupplierName(supplierFull);
+            } else {
+              setSelectedSupplierName(fabData.suppliers[0] || "");
+            }
+          }
+        }
       }
     }
   }, [products]);
@@ -225,8 +378,24 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
       </div>
 
       {/* Top Product Icons */}
-      <div className="mb-12 flex justify-start gap-2 overflow-x-auto pb-4">
-        {[...products].sort((a, b) => Number(a.code) - Number(b.code)).map((product) => {
+      <div className="mb-12 flex mx-auto gap-2 overflow-x-auto pb-4">
+        {[...products].sort((a, b) => {
+          // Order matching /05catalog/ folder structure
+          const order: Record<string, number> = {
+            "11": 1,  // 1tshirt
+            "12": 2,  // 2polo
+            "13": 3,  // 3shirt
+            "14": 4,  // 4workshop
+            "15": 5,  // 5jacket-1-woven
+            "16": 6,  // 6jacket-2-knit
+            "20": 7,  // 7security
+            "18": 8,  // 8chef
+            "19": 9,  // 9maid
+            "17": 10, // 10trouser
+            "21": 11, // 11arpon
+          };
+          return (order[a.code] || 99) - (order[b.code] || 99);
+        }).map((product) => {
           const imgSrc = PRODUCT_IMAGES[product.code];
           const displayName = isEn ? (PRODUCT_NAMES_EN[product.code] || product.name) : product.name;
 
@@ -290,7 +459,7 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
         <div className="flex-1">
           {/* Supplier Button Group */}
           {suppliersWithPicture.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-8 border border-gray-300 rounded-full p-2 items-center">
+            <div className="flex flex-wrap gap-2 mb-4 border border-gray-300 rounded-full p-2 items-center">
               <div className="px-4 text-gray-500 font-medium">Supplier:</div>
               {suppliersWithPicture.map((supplier) => (
                 <button
@@ -305,6 +474,58 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
                   {supplier.split(' ')[0]}
                 </button>
               ))}
+            </div>
+          )}
+
+          {/* Supplier URL Display - 3-part ID: product code + fabric slug + supplier code */}
+          {selectedSupplierName && selectedFabricName && (
+            <div className="mb-8 border border-gray-300 rounded-xl p-4">
+              <div className="flex items-baseline gap-2 mb-3 px-2">
+                <span className="text-gray-500 font-medium text-sm">{isEn ? "Supplier URL" : "URL ซัพพลายเออร์"}:</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                {(() => {
+                  const productId = selectedProductCode;
+                  const fabricId = slugifyFabric(selectedFabricName);
+                  const supplierId = getSupplierShortCode(selectedSupplierName);
+                  const fullUrl = `${baseUrl}?p=${productId}&f=${fabricId}&s=${supplierId}`;
+                  const isCopied = copiedSupplier === selectedSupplierName;
+
+                  const handleCopyUrl = (e: React.MouseEvent) => {
+                    e.stopPropagation();
+                    navigator.clipboard.writeText(fullUrl).then(() => {
+                      setCopiedSupplier(selectedSupplierName);
+                      setTimeout(() => setCopiedSupplier(""), 2000);
+                    });
+                  };
+
+                  return (
+                    <div className="flex flex-col gap-2 px-4 py-3 rounded-lg bg-gray-50">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-medium text-sm text-gray-700">
+                          {currentProduct?.name.split(' ')[0] || selectedProductCode}
+                        </span>
+                        <span className="text-xs text-gray-400">/</span>
+                        <span className="text-sm text-gray-600">{selectedFabricName}</span>
+                        <span className="text-xs text-gray-400">/</span>
+                        <span className="text-sm text-gray-600">{selectedSupplierName.split(' ')[0]}</span>
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <code className="text-xs font-mono px-2 py-1 rounded flex-1 min-w-0 truncate bg-white border border-gray-200 text-gray-500">
+                          ?p={productId}&f={fabricId}&s={supplierId}
+                        </code>
+                        <button
+                          onClick={handleCopyUrl}
+                          className="text-xs px-3 py-1.5 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600 transition-colors whitespace-nowrap"
+                          title="Copy URL"
+                        >
+                          {isCopied ? (isEn ? "Copied!" : "คัดลอกแล้ว") : (isEn ? "Copy URL" : "คัดลอก URL")}
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
             </div>
           )}
 
@@ -344,7 +565,7 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
               </h3>
 
               {currentProductImages.length > 0 ? (
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-3 gap-4">
                   {currentProductImages.map((imgUrl, index) => {
                     const isPng = imgUrl.toLowerCase().endsWith('.png');
                     return (

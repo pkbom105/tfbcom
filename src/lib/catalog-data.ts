@@ -11,18 +11,18 @@ import path from "path";
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 const CATALOG_DIR = path.join(PUBLIC_DIR, "05catalog");
 
-// Product code to directory mapping
+// Product code to directory mapping (matches actual folder names in /05catalog/)
 const CODE_TO_DIR: Record<string, string> = {
   "11": "1tshirt",
   "12": "2polo",
   "13": "3shirt",
   "14": "4workshop",
-  "15": "5jacket",
-  "16": "6jacket2",
-  "17": "7trouser",
+  "15": "5jacket-1-woven",
+  "16": "6jacket-2-knit",
+  "17": "10trouser",
   "18": "8chef",
   "19": "9maid",
-  "20": "10security",
+  "20": "7security",
   "21": "11arpon",
 };
 
