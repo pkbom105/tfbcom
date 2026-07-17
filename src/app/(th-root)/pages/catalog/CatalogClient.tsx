@@ -477,7 +477,7 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
             </div>
           )}
 
-          {/* Supplier URL Display - 3-part ID: product code + fabric slug + supplier code */}
+          {/* URL ซัพพลายเออร์ - name + copy button only */}
           {selectedSupplierName && selectedFabricName && (
             <div className="mb-8 border border-gray-300 rounded-xl p-4">
               <div className="flex items-baseline gap-2 mb-3 px-2">
@@ -500,28 +500,21 @@ export default function CatalogClient({ catalogData, lang = "th" }: CatalogClien
                   };
 
                   return (
-                    <div className="flex flex-col gap-2 px-4 py-3 rounded-lg bg-gray-50">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-medium text-sm text-gray-700">
-                          {currentProduct?.name.split(' ')[0] || selectedProductCode}
-                        </span>
-                        <span className="text-xs text-gray-400">/</span>
-                        <span className="text-sm text-gray-600">{selectedFabricName}</span>
-                        <span className="text-xs text-gray-400">/</span>
-                        <span className="text-sm text-gray-600">{selectedSupplierName.split(' ')[0]}</span>
-                      </div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <code className="text-xs font-mono px-2 py-1 rounded flex-1 min-w-0 truncate bg-white border border-gray-200 text-gray-500">
-                          ?p={productId}&f={fabricId}&s={supplierId}
-                        </code>
-                        <button
-                          onClick={handleCopyUrl}
-                          className="text-xs px-3 py-1.5 rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600 transition-colors whitespace-nowrap"
-                          title="Copy URL"
-                        >
-                          {isCopied ? (isEn ? "Copied!" : "คัดลอกแล้ว") : (isEn ? "Copy URL" : "คัดลอก URL")}
-                        </button>
-                      </div>
+                    <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-3 rounded-lg bg-gray-50">
+                      <span className="font-medium text-sm text-gray-700">
+                        {currentProduct?.name.split(' ')[0] || selectedProductCode} / {selectedFabricName} / {selectedSupplierName.split(' ')[0]}
+                      </span>
+                      <button
+                        onClick={handleCopyUrl}
+                        className={`text-xs px-4 py-1.5 rounded-full transition-colors whitespace-nowrap ${
+                          isCopied
+                            ? "bg-green-500 text-white"
+                            : "bg-gray-200 hover:bg-gray-300 text-gray-600"
+                        }`}
+                        title="Copy URL"
+                      >
+                        {isCopied ? (isEn ? "Copied!" : "คัดลอกแล้ว") : (isEn ? "Copy URL" : "คัดลอก URL")}
+                      </button>
                     </div>
                   );
                 })()}

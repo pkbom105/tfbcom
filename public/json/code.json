@@ -15,7 +15,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "Single Jersey",
+              "name": "CVC Single Jersey 30",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -23,7 +23,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Cotton Comb",
+              "name": "Cotton Interlock",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -31,7 +31,63 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Micro",
+              "name": "Micro Smooth",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Texture",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey 20",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey 30",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey 32",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey Supersoft 20",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Syntrel",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TK Single Jersey 34",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -57,7 +113,87 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "DtLacoste",
+              "name": "CVC Lacouste Juti",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Dry First",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Edurance",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Edurance Plus",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Poly Viral Block",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey 20",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Single Jersey Supersoft 20",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TC Juti Lacoste",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TC Micro Hybrid",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TK Juti Lacoste",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TK Micro",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -87,14 +223,6 @@
               "description": "เนื้อผ้าคุณภาพดี",
               "usage": "ใช้งานทั่วไป",
               "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Viralblock",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
             }
           ]
         }
@@ -115,7 +243,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "Basic",
+              "name": "CVC Check",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -123,7 +251,47 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Com Twill",
+              "name": "CVC Oxford",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "CVC Stripe",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "CVC Wrinkle Free",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Canvas",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Harring Bone",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -147,7 +315,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Oxford",
+              "name": "Silky EasyCare",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -155,7 +323,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Texture",
+              "name": "Silky EasyCare Check",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -163,7 +331,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
+              "name": "Silky EasyCare Stripe",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -171,7 +339,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray Oxford",
+              "name": "TC ComTwill",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -179,7 +347,23 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Twill",
+              "name": "TC Oxford",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TC Stripe Texture",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TC Toray",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -205,7 +389,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "KMP",
+              "name": "Anti Static",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -221,6 +405,22 @@
               "suitable_for": "ทุกประเภท"
             },
             {
+              "name": "Cotton Twill Lafer",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "DY",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
               "name": "Garbardine",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -229,7 +429,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Micro Peach",
+              "name": "KMP",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -237,7 +437,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Polyester",
+              "name": "Poly Spendex",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -261,14 +461,6 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Spendex",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
               "name": "Super Comb Twill",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -277,7 +469,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Tc Comb Twill",
+              "name": "Toray Biscop",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -285,15 +477,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Twill",
+              "name": "Toray Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -327,6 +511,14 @@
           "group_name": "General",
           "fabrics": [
             {
+              "name": "Anti Static",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
               "name": "Comb Twill",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -335,7 +527,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Kmp",
+              "name": "DY",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -343,7 +535,31 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Polyester",
+              "name": "Garbardine",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Poly Spendex",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -367,31 +583,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Spendex",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
               "name": "Super Comb Twill",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Tc Comb Twill",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Toray",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -407,7 +599,65 @@
               "suitable_for": "ทุกประเภท"
             },
             {
+              "name": "Toray Popin",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
               "name": "Westpoint",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "category": "เสื้อแจ็คเก็ตผ้ายืด",
+      "key_features": {
+        "focus": [
+          "ทนทาน",
+          "คุณภาพดี"
+        ],
+        "context": "สำหรับการใช้งานทั่วไป"
+      },
+      "groups": [
+        {
+          "group_name": "General",
+          "fabrics": [
+            {
+              "name": "Baby FrenchTerry",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "CVC FrenchTerry",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Heavy",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Cotton Terry",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -433,15 +683,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "Hanako",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "KMP",
+              "name": "Anti Static",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -457,6 +699,30 @@
               "suitable_for": "ทุกประเภท"
             },
             {
+              "name": "Cotton Spandex Twill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "DY",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "DoubleBeam Spandex",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
               "name": "Garbardine",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -465,15 +731,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Micro Peach",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Polyester",
+              "name": "Poly Spendex",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -497,7 +755,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Spendex",
+              "name": "Super Comb Twill",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -505,7 +763,15 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
+              "name": "Toray Biscop",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Toray Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -547,7 +813,23 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Kmp",
+              "name": "DY",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Garbardine",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Poly Spendex",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -563,7 +845,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Spendex",
+              "name": "Solon",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -579,7 +861,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
+              "name": "Toray Biscop",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -587,7 +869,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray Biscop",
+              "name": "Toray Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -621,7 +903,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "Hanako",
+              "name": "DY",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -637,7 +919,23 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Polyester",
+              "name": "Hanako",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Micro Peach",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Osaka",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -654,6 +952,22 @@
             },
             {
               "name": "Solon",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "TC ComTwill",
+              "type": "ผ้าเนื้อเรียบ",
+              "gsm_or_weight": "มาตรฐาน",
+              "description": "เนื้อผ้าคุณภาพดี",
+              "usage": "ใช้งานทั่วไป",
+              "suitable_for": "ทุกประเภท"
+            },
+            {
+              "name": "Tc Toray",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -679,7 +993,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "Micro Peach",
+              "name": "DY",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -687,7 +1001,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Polyester",
+              "name": "Micro Peach",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -703,14 +1017,6 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
               "name": "Toray Biscop",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
@@ -719,7 +1025,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Twill",
+              "name": "Toray Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -753,31 +1059,7 @@
           "group_name": "General",
           "fabrics": [
             {
-              "name": "KMP",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Micro",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Polyester",
-              "type": "ผ้าเนื้อเรียบ",
-              "gsm_or_weight": "มาตรฐาน",
-              "description": "เนื้อผ้าคุณภาพดี",
-              "usage": "ใช้งานทั่วไป",
-              "suitable_for": "ทุกประเภท"
-            },
-            {
-              "name": "Serge Velentino",
+              "name": "DY",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -801,7 +1083,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Toray",
+              "name": "Toray Biscop",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",
@@ -809,7 +1091,7 @@
               "suitable_for": "ทุกประเภท"
             },
             {
-              "name": "Westpoint",
+              "name": "Toray Popin",
               "type": "ผ้าเนื้อเรียบ",
               "gsm_or_weight": "มาตรฐาน",
               "description": "เนื้อผ้าคุณภาพดี",

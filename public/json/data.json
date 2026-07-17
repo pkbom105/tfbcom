@@ -6,52 +6,184 @@
       "url_file_picture": "/05catalog/1tshirt/",
       "fabrics": [
         {
-          "name": "Single Jersey",
-          "suppliers": [
-            "NTP",
-            "SPS สมประสงค์"
-          ],
-          "url_pictures": {
-            "NTP": [
-              "/05catalog/1tshirt/Single Jersey/ntp/KNNPT-cotton32singleP1.jpg",
-              "/05catalog/1tshirt/Single Jersey/ntp/KNNPT-cotton32singleP2.jpg"
-            ],
-            "SPS สมประสงค์": [
-              "/05catalog/1tshirt/Single Jersey/sps/KNSPS-C32JerseyP1.jpg",
-              "/05catalog/1tshirt/Single Jersey/sps/KNSPS-C32JerseyP2.jpg",
-              "/05catalog/1tshirt/Single Jersey/sps/KNSPS-C32JerseyP3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Cotton Comb",
+          "name": "CVC Single Jersey 30",
           "suppliers": [
             "TSK ts.knitting"
           ],
           "url_pictures": {
             "TSK ts.knitting": [
-              "/05catalog/1tshirt/cotton comb/tsk/KNTSK-cottoncomb20P1.jpg",
-              "/05catalog/1tshirt/cotton comb/tsk/KNTSK-cottoncomb20P2.jpg",
-              "/05catalog/1tshirt/cotton comb/tsk/KNTSK-cottoncomb20P3.jpg"
+              "/05catalog/1tshirt/CVC Single Jersey 30/TSK/KN-TSK-CVC30P1.jpg",
+              "/05catalog/1tshirt/CVC Single Jersey 30/TSK/KN-TSK-CVC30P2.jpg"
             ]
           }
         },
         {
-          "name": "Micro",
+          "name": "Cotton Interlock",
           "suppliers": [
-            "JSM เจียมสมาน",
-            "SPN ซิงค์ พาณิชย์"
+            "TSK ts.knitting"
           ],
           "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/1tshirt/micro/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/1tshirt/micro/jsm/WVJSM-MicroPeachP2.jpg",
-              "/05catalog/1tshirt/micro/jsm/WVJSM-MicroPeachP3.jpg"
+            "TSK ts.knitting": [
+              "/05catalog/1tshirt/Cotton Interlock/tsk/KN-TSK-Cotton40InterlockP1.jpg",
+              "/05catalog/1tshirt/Cotton Interlock/tsk/KN-TSK-Cotton40InterlockP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Micro Smooth",
+          "suppliers": [
+            "FUJ",
+            "PHI",
+            "KVV",
+            "PRS ปารีสค้าผ้า"
+          ],
+          "url_pictures": {
+            "FUJ": [
+              "/05catalog/1tshirt/Micro Smooth/FUJ/KN-FUJ-Microsmooth...jpg"
             ],
-            "SPN ซิงค์ พาณิชย์": [
-              "/05catalog/1tshirt/micro/spn/WVSPN-Micro1P1.jpg",
-              "/05catalog/1tshirt/micro/spn/WVSPN-Micro1P2.jpg",
-              "/05catalog/1tshirt/micro/spn/WVSPN-Micro1P3.jpg"
+            "PHI": [
+              "/05catalog/1tshirt/Micro Smooth/PHI/KN-PHI-Microsmooth.jpg"
+            ],
+            "KVV": [
+              "/05catalog/1tshirt/Micro Smooth/kvv/KN-KVV-MicroSmoothP1...jpg",
+              "/05catalog/1tshirt/Micro Smooth/kvv/KN-KVV-MicrosmoothP2..jpg"
+            ],
+            "PRS ปารีสค้าผ้า": [
+              "/05catalog/1tshirt/Micro Smooth/prs/KN-PRS-Micro.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Micro Texture",
+          "suppliers": [
+            "FUJ",
+            "KVV",
+            "PHI"
+          ],
+          "url_pictures": {
+            "FUJ": [
+              "/05catalog/1tshirt/Micro Texture/FUJ/KN-FUJ-MicroRicegrain.jpg"
+            ],
+            "KVV": [
+              "/05catalog/1tshirt/Micro Texture/Kvv/KN-KVV-MicroCorngrain..jpg",
+              "/05catalog/1tshirt/Micro Texture/Kvv/KN-KVV-MicroManU.jpg"
+            ],
+            "PHI": [
+              "/05catalog/1tshirt/Micro Texture/PHI/KN-PHI-MicroPopcornL.jpg",
+              "/05catalog/1tshirt/Micro Texture/PHI/KN-PHI-MicroPopcornS.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey 20",
+          "suppliers": [
+            "TCT ทีคัลเจอร์",
+            "TSK ts.knitting",
+            "VRY วิริยะ"
+          ],
+          "url_pictures": {
+            "TSK ts.knitting": [
+              "/05catalog/1tshirt/Single Jersey 20/TSK/KN-TSK-C20semi.jpg",
+              "/05catalog/1tshirt/Single Jersey 20/TSK/KN-TSK-cottoncomb20P1.jpg",
+              "/05catalog/1tshirt/Single Jersey 20/TSK/KN-TSK-cottoncomb20P2.jpg",
+              "/05catalog/1tshirt/Single Jersey 20/TSK/KN-TSK-cottoncomb20P3.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/1tshirt/Single Jersey 20/VRY/KN-VRY-CottonPremiumC20.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey 30",
+          "suppliers": [
+            "TCT ทีคัลเจอร์",
+            "VRY วิริยะ"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/1tshirt/Single Jersey 30/tct/KN-TCT-CottonP1.jpg",
+              "/05catalog/1tshirt/Single Jersey 30/tct/KN-TCT-CottonP2.jpg",
+              "/05catalog/1tshirt/Single Jersey 30/tct/KN-TCT-CottonP3.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/1tshirt/Single Jersey 30/vry/KN-VRY-CottonC30P1.jpg",
+              "/05catalog/1tshirt/Single Jersey 30/vry/KN-VRY-CottonC30P2.jpg",
+              "/05catalog/1tshirt/Single Jersey 30/vry/KN-VRY-CottonPremiumC30.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey 32",
+          "suppliers": [
+            "NTP",
+            "SPS สมประสงค์",
+            "TCT ทีคัลเจอร์",
+            "TSK ts.knitting"
+          ],
+          "url_pictures": {
+            "NTP": [
+              "/05catalog/1tshirt/Single Jersey 32/ntp/KNNPT-cotton32singleP1.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/ntp/KNNPT-cotton32singleP2.jpg"
+            ],
+            "SPS สมประสงค์": [
+              "/05catalog/1tshirt/Single Jersey 32/sps/KNSPS-C32JerseyP1.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/sps/KNSPS-C32JerseyP2.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/sps/KNSPS-C32JerseyP3.jpg"
+            ],
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/1tshirt/Single Jersey 32/tct/KN-TCT-CottonP1.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tct/KN-TCT-CottonP2.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tct/KN-TCT-CottonP3.jpg"
+            ],
+            "TSK ts.knitting": [
+              "/05catalog/1tshirt/Single Jersey 32/tsk/KN-TSK-cottoncomb32P1.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tsk/KN-TSK-cottoncomb32P2.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tsk/KN-TSK-cottonsemicomb32P1.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tsk/KN-TSK-cottonsemicomb32P2.jpg",
+              "/05catalog/1tshirt/Single Jersey 32/tsk/KN-TSK-cottonsemicomb32P3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey Supersoft 20",
+          "suppliers": [
+            "TCT ทีคัลเจอร์",
+            "VRY วิริยะ"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP1.jpg",
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP2.1.jpg",
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP2.jpg",
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP3.jpg",
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP4.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/1tshirt/Single Jersey Supersoft 20/vry/KN-VRY-CottonSupersoft.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Syntrel",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/1tshirt/Syntrel/tct/KN-TCT-SyntrelP1.jpg",
+              "/05catalog/1tshirt/Syntrel/tct/KN-TCT-SyntrelP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TK Single Jersey 34",
+          "suppliers": [
+            "TSK ts.knitting"
+          ],
+          "url_pictures": {
+            "TSK ts.knitting": [
+              "/05catalog/1tshirt/TK Single Jersey 34/tsk/KN-TSK-TK34P1.jpg",
+              "/05catalog/1tshirt/TK Single Jersey 34/tsk/KN-TSK-TK34P2.jpg"
             ]
           }
         }
@@ -63,33 +195,246 @@
       "url_file_picture": "/05catalog/2polo/",
       "fabrics": [
         {
-          "name": "DtLacoste",
+          "name": "CVC Lacouste Juti",
           "suppliers": [
+            "PKP พรค้าผ้า",
+            "SMC สมชาย",
             "SPS สมประสงค์"
           ],
           "url_pictures": {
+            "PKP พรค้าผ้า": [
+              "/05catalog/2polo/CVC Lacouste Juti/Pkp/KN-PKP-CVCJutiP1..jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/Pkp/KN-PKP-CVCJutiP2.jpg"
+            ],
+            "SMC สมชาย": [
+              "/05catalog/2polo/CVC Lacouste Juti/smc/KN-SMC-CVCJutiP1.jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/smc/KN-SMC-CVCJutiP2.jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/smc/KN-SMC-CVCJutiP3.jpg"
+            ],
             "SPS สมประสงค์": [
-              "/05catalog/2polo/DtLacoste/sps/KNSPS-DTLacosteP1.jpg",
-              "/05catalog/2polo/DtLacoste/sps/KNSPS-DTLacosteP2.jpg",
-              "/05catalog/2polo/DtLacoste/sps/KNSPS-DTLacosteP3.jpg",
-              "/05catalog/2polo/DtLacoste/sps/KNSPS-DTLacosteP4.jpg"
+              "/05catalog/2polo/CVC Lacouste Juti/sps/KN-SPS-CVCJutiLacosteP1.jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/sps/KN-SPS-CVCJutiLacosteP2.jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/sps/KN-SPS-CVCJutiLacosteP3.jpg",
+              "/05catalog/2polo/CVC Lacouste Juti/sps/KN-SPS-CVCJutiLacosteP4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Dry First",
+          "suppliers": [
+            "Dry First"
+          ],
+          "url_pictures": {
+            "Dry First": [
+              "/05catalog/2polo/Dry First/KN-PKP-CVCDryFirst+.jpg",
+              "/05catalog/2polo/Dry First/KN-PKP-CVCDryFirst.jpg",
+              "/05catalog/2polo/Dry First/KN-PKP-CVCDryFirstUVTech+.jpg",
+              "/05catalog/2polo/Dry First/KN-PKP-CVCDryFirstUVTech..jpg"
+            ]
+          }
+        },
+        {
+          "name": "Edurance",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/2polo/Edurance/Tct/KN-TCT-TCEnduranceP1.jpg",
+              "/05catalog/2polo/Edurance/Tct/KN-TCT-TCEnduranceP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Edurance Plus",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/2polo/Edurance Plus/tct/KN-TCT-TCEndurancePlusP1.jpg",
+              "/05catalog/2polo/Edurance Plus/tct/KN-TCT-TCEndurancePlusP2.jpg",
+              "/05catalog/2polo/Edurance Plus/tct/KN-TCT-TCEndurancePlusP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Poly Viral Block",
+          "suppliers": [
+            "NPT"
+          ],
+          "url_pictures": {
+            "NPT": [
+              "/05catalog/2polo/Poly Viral Block/npt/WVNPT-ViralBlockP1.jpg",
+              "/05catalog/2polo/Poly Viral Block/npt/WVNPT-ViralBlockP2.jpg",
+              "/05catalog/2polo/Poly Viral Block/npt/WVNPT-ViralBlockP3.jpg",
+              "/05catalog/2polo/Poly Viral Block/npt/WVNPT-ViralBlockP4.jpg",
+              "/05catalog/2polo/Poly Viral Block/npt/WVNPT-ViralBlockP5.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey 20",
+          "suppliers": [
+            "TCT ทีคัลเจอร์",
+            "TSK ts.knitting",
+            "VRY วิริยะ"
+          ],
+          "url_pictures": {
+            "TSK ts.knitting": [
+              "/05catalog/2polo/Single Jersey 20/TSK/KN-TSK-C20semi.jpg",
+              "/05catalog/2polo/Single Jersey 20/TSK/KN-TSK-cottoncomb20P1.jpg",
+              "/05catalog/2polo/Single Jersey 20/TSK/KN-TSK-cottoncomb20P2.jpg",
+              "/05catalog/2polo/Single Jersey 20/TSK/KN-TSK-cottoncomb20P3.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/2polo/Single Jersey 20/VRY/KN-VRY-CottonPremiumC20.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Single Jersey Supersoft 20",
+          "suppliers": [
+            "TCT ทีคัลเจอร์",
+            "VRY วิริยะ"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/2polo/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP1.jpg",
+              "/05catalog/2polo/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP2.1.jpg",
+              "/05catalog/2polo/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP2.jpg",
+              "/05catalog/2polo/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP3.jpg",
+              "/05catalog/2polo/Single Jersey Supersoft 20/tct/KN-TCT-CottonSupersoftP4.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/2polo/Single Jersey Supersoft 20/vry/KN-VRY-CottonSupersoft.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TC Juti Lacoste",
+          "suppliers": [
+            "SMC สมชาย",
+            "SPS สมประสงค์",
+            "TCT ทีคัลเจอร์",
+            "TSK ts.knitting"
+          ],
+          "url_pictures": {
+            "SMC สมชาย": [
+              "/05catalog/2polo/TC Juti Lacoste/smc/KN-SMC-TC20LacosteP1.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/smc/KN-SMC-TC20LacosteP2.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/smc/KN-SMC-TC20LacosteP3.jpg"
+            ],
+            "SPS สมประสงค์": [
+              "/05catalog/2polo/TC Juti Lacoste/sps/KN-SPS-TC20JutiLacosteP1.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/sps/KN-SPS-TC20JutiLacosteP2.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/sps/KN-SPS-TC20JutiLacosteP3.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/sps/KN-SPS-TC20JutiLacosteP4.jpg"
+            ],
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/2polo/TC Juti Lacoste/tct/KN-TCT-TCLacosteP1.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/tct/KN-TCT-TCLacosteP2.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/tct/KN-TCT-TCLacosteP3.jpg"
+            ],
+            "TSK ts.knitting": [
+              "/05catalog/2polo/TC Juti Lacoste/tsk/KN-TSK-TClacosteP1.jpg",
+              "/05catalog/2polo/TC Juti Lacoste/tsk/KN-TSK-TClacosteP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TC Micro Hybrid",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/2polo/TC Micro Hybrid/tct/KN-TCT-MicroHybridP1.jpg",
+              "/05catalog/2polo/TC Micro Hybrid/tct/KN-TCT-MicroHybridP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TK Juti Lacoste",
+          "suppliers": [
+            "PKP พรค้าผ้า",
+            "SPS สมประสงค์"
+          ],
+          "url_pictures": {
+            "PKP พรค้าผ้า": [
+              "/05catalog/2polo/TK Juti Lacoste/Pkp/KN-PKP-TKJutiP1..jpg",
+              "/05catalog/2polo/TK Juti Lacoste/Pkp/KN-PKP-TKJutiP2.jpg"
+            ],
+            "SPS สมประสงค์": [
+              "/05catalog/2polo/TK Juti Lacoste/sps/KN-SPS-TKringJutiP1.jpg",
+              "/05catalog/2polo/TK Juti Lacoste/sps/KN-SPS-TKringJutiP2.jpg",
+              "/05catalog/2polo/TK Juti Lacoste/sps/KN-SPS-TKringJutiP3.jpg",
+              "/05catalog/2polo/TK Juti Lacoste/sps/KN-SPS-TKringJutiP4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TK Micro",
+          "suppliers": [
+            "PKP พรค้าผ้า",
+            "SMC สมชาย",
+            "SPS สมประสงค์",
+            "TSK ts.knitting"
+          ],
+          "url_pictures": {
+            "PKP พรค้าผ้า": [
+              "/05catalog/2polo/TK Micro/pkp/KN-PKP-TKmicroJuti..JPEG"
+            ],
+            "SMC สมชาย": [
+              "/05catalog/2polo/TK Micro/smc/KN-SMC-TK20JutiMicroP1.jpg",
+              "/05catalog/2polo/TK Micro/smc/KN-SMC-TK20JutiMicroP2.jpg",
+              "/05catalog/2polo/TK Micro/smc/KN-SMC-TK20JutiMicroP3.jpg"
+            ],
+            "SPS สมประสงค์": [
+              "/05catalog/2polo/TK Micro/sps/KN-SPS-TKMicroP1.jpg",
+              "/05catalog/2polo/TK Micro/sps/KN-SPS-TKMicroP2.jpg",
+              "/05catalog/2polo/TK Micro/sps/KN-SPS-TKMicroP3.jpg",
+              "/05catalog/2polo/TK Micro/sps/KN-SPS-TKMicroP4.jpg"
+            ],
+            "TSK ts.knitting": [
+              "/05catalog/2polo/TK Micro/tsk/KN-TSK-PolyMicroP1.jpg",
+              "/05catalog/2polo/TK Micro/tsk/KN-TSK-PolyMicroP2..jpg",
+              "/05catalog/2polo/TK Micro/tsk/KN-TSK-TKmicroJutiP1.jpg",
+              "/05catalog/2polo/TK Micro/tsk/KN-TSK-TKmicroJutiP2.jpg"
             ]
           }
         },
         {
           "name": "Drytech",
           "suppliers": [
-            "KNT",
-            "TCT ทีคัลเจอร์"
+            "SMC สมชาย",
+            "SPS สมประสงค์",
+            "TCT ทีคัลเจอร์",
+            "TSK ts.knitting",
+            "VRY วิริยะ"
           ],
           "url_pictures": {
-            "KNT": [
-              "/05catalog/2polo/drytech/knt/KNTCT-DryTechP1.jpg",
-              "/05catalog/2polo/drytech/knt/KNTCT-DryTechP2.jpg"
+            "SMC สมชาย": [
+              "/05catalog/2polo/drytech/smc/KN-SMC-DryTechP1.jpg",
+              "/05catalog/2polo/drytech/smc/KN-SMC-DryTechP2.jpg",
+              "/05catalog/2polo/drytech/smc/KN-SMC-DryTechP3.jpg"
+            ],
+            "SPS สมประสงค์": [
+              "/05catalog/2polo/drytech/sps/KN-SPS-DrytechLacosteP1.jpg",
+              "/05catalog/2polo/drytech/sps/KN-SPS-DrytechLacosteP2.jpg",
+              "/05catalog/2polo/drytech/sps/KN-SPS-DrytechLacosteP3.jpg",
+              "/05catalog/2polo/drytech/sps/KN-SPS-DrytechLacosteP4.jpg"
             ],
             "TCT ทีคัลเจอร์": [
               "/05catalog/2polo/drytech/tct/KNTCT-DryTechP1.jpg",
               "/05catalog/2polo/drytech/tct/KNTCT-DryTechP2.jpg"
+            ],
+            "TSK ts.knitting": [
+              "/05catalog/2polo/drytech/tsk/KN-TSK-CVCcooldry.jpg"
+            ],
+            "VRY วิริยะ": [
+              "/05catalog/2polo/drytech/vry/KN-VRY-DryTechP1.jpg",
+              "/05catalog/2polo/drytech/vry/KN-VRY-DryTechP2.jpg"
             ]
           }
         },
@@ -100,59 +445,33 @@
           ],
           "url_pictures": {
             "NPT": [
-              "/05catalog/2polo/drytouch/npt/KNNPT-DryTouchFusion.jpg",
-              "/05catalog/2polo/drytouch/npt/KNNPT-DryTouchP1.jpg",
-              "/05catalog/2polo/drytouch/npt/KNNPT-DryTouchP2.jpg",
-              "/05catalog/2polo/drytouch/npt/WVNPT-SupersoftDrytouchP1.jpg",
-              "/05catalog/2polo/drytouch/npt/WVNPT-SupersoftDrytouchP2.jpg",
-              "/05catalog/2polo/drytouch/npt/WVNPT-SupersoftDrytouchP3.jpg"
+              "/05catalog/2polo/drytouch/npt/KN-NPT-DryTouchFusion.jpg",
+              "/05catalog/2polo/drytouch/npt/KN-NPT-DryTouchP1.jpg",
+              "/05catalog/2polo/drytouch/npt/KN-NPT-DryTouchP2.jpg"
             ]
           }
         },
         {
           "name": "Micro",
           "suppliers": [
-            "PKP พรค้าผ้า",
-            "SMC สมชาย",
-            "SML",
-            "SPS สมประสงค์",
-            "TCT ทีคัลเจอร์"
+            "FUJ",
+            "KVV",
+            "PHI"
           ],
           "url_pictures": {
-            "PKP พรค้าผ้า": [
-              "/05catalog/2polo/micro/Pkp/KNPKP-Microsmooth.jpg"
+            "FUJ": [
+              "/05catalog/2polo/micro/FUJ/KN-FUJ-MicroRicegrain.jpg",
+              "/05catalog/2polo/micro/FUJ/KN-FUJ-Microsmooth...jpg"
             ],
-            "SMC สมชาย": [
-              "/05catalog/2polo/micro/smc/KNSMC-TC20MicroP1.jpg",
-              "/05catalog/2polo/micro/smc/KNSMC-TC20MicroP2.jpg",
-              "/05catalog/2polo/micro/smc/KNSMC-TC20MicroP3.jpg"
+            "KVV": [
+              "/05catalog/2polo/micro/Kvv/KN-KVV-MicroCorngrain..jpg",
+              "/05catalog/2polo/micro/Kvv/KN-KVV-MicroManU.jpg",
+              "/05catalog/2polo/micro/Kvv/KN-KVV-MicroSmoothP1...jpg",
+              "/05catalog/2polo/micro/Kvv/KN-KVV-MicrosmoothP2..jpg"
             ],
-            "SML": [
-              "/05catalog/2polo/micro/sml/KNSML-TCMicroCVC20P1.jpg",
-              "/05catalog/2polo/micro/sml/KNSML-TCMicroCVC20P2.jpg",
-              "/05catalog/2polo/micro/sml/KNSML-TCMicroCVC20P3.jpg"
-            ],
-            "SPS สมประสงค์": [
-              "/05catalog/2polo/micro/sps/KNSPS-TKMicroP1.jpg",
-              "/05catalog/2polo/micro/sps/KNSPS-TKMicroP2.jpg",
-              "/05catalog/2polo/micro/sps/KNSPS-TKMicroP3.jpg",
-              "/05catalog/2polo/micro/sps/KNSPS-TKMicroP4.jpg"
-            ],
-            "TCT ทีคัลเจอร์": [
-              "/05catalog/2polo/micro/tct/KNTCT-MicroHybridP1.jpg",
-              "/05catalog/2polo/micro/tct/KNTCT-MicroHybridP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Viralblock",
-          "suppliers": [
-            "NPT"
-          ],
-          "url_pictures": {
-            "NPT": [
-              "/05catalog/2polo/viralblock/npt/WVNPT-ViralBlockP1.jpg",
-              "/05catalog/2polo/viralblock/npt/WVNPT-ViralBlockP2.jpg"
+            "PHI": [
+              "/05catalog/2polo/micro/PHI/KN-PHI-MicroPopcornL.jpg",
+              "/05catalog/2polo/micro/PHI/KN-PHI-MicroPopcornS.jpg"
             ]
           }
         }
@@ -164,62 +483,193 @@
       "url_file_picture": "/05catalog/3shirt/",
       "fabrics": [
         {
-          "name": "Basic",
+          "name": "CVC Check",
           "suppliers": [
-            "Basic"
+            "CVC Check"
           ],
           "url_pictures": {
-            "Basic": [
-              "/05catalog/3shirt/basic/WVVST-TC210P1.jpg",
-              "/05catalog/3shirt/basic/WVVST-TC210P2.jpg",
-              "/05catalog/3shirt/basic/WVVST-TC210P3.jpg"
+            "CVC Check": [
+              "/05catalog/3shirt/CVC Check/2_501-1 Red CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-2 L.Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-3 D.Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-4 Navy CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-5 Black CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-6 Orange CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-7 Grey CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_501-8 Pink CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_505-1 Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_505-2 Red CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_505-3 D.Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_505-4 Black CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-1 D.Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-2 L.Blue CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-3 Pink CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-4 Navy CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-5 Red CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-6 Silver CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-8 Black CHECKS.jpg",
+              "/05catalog/3shirt/CVC Check/2_508-8 Plum CHECKS.jpg"
             ]
           }
         },
         {
-          "name": "Com Twill",
+          "name": "CVC Oxford",
           "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
+            "GLF จี.แอล.เอฟ",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/3shirt/com twill/jsm/WVJSM-ComTwill777P1.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-ComTwill777P2.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-ComTwill777P3.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-ComTwill777P4.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P1.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P2.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P3.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P4.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P5.jpg",
-              "/05catalog/3shirt/com twill/jsm/WVJSM-CombTwill4534P6.jpg"
+            "GLF จี.แอล.เอฟ": [
+              "/05catalog/3shirt/CVC Oxford/GLF/WV-GLF-OxfordP1.jpg",
+              "/05catalog/3shirt/CVC Oxford/GLF/WV-GLF-OxfordP2.jpg",
+              "/05catalog/3shirt/CVC Oxford/GLF/WV-GLF-OxfordP3.jpg",
+              "/05catalog/3shirt/CVC Oxford/GLF/WV-GLF-OxfordP4.jpg"
             ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/3shirt/com twill/vst/WVVST-SuperTCComTwillP1.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-SuperTCComTwillP2.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-SuperTCComTwillP3.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill2000P1.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill2000P2.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill2000P3.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill2000P4.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill340P1.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill340P2.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TCComTwill340P3.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TRComTwillP1.jpg",
-              "/05catalog/3shirt/com twill/vst/WVVST-TRComTwillP2.jpg"
+            "JSM เจียมสมาน": [
+              "/05catalog/3shirt/CVC Oxford/Jsm/WV-JSM-OxfordChambrayP1.jpg",
+              "/05catalog/3shirt/CVC Oxford/Jsm/WV-JSM-OxfordChambrayP2.jpg",
+              "/05catalog/3shirt/CVC Oxford/Jsm/WV-JSM-OxfordChambrayP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "CVC Stripe",
+          "suppliers": [
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-1 RED STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-2 L.Blue STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-3 D.Blue STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-4 Navy STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-5 Black STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-6 Orange STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-7 Grey STRIPES_.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_500-8 Pink STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_502-1 Pink-Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_502-2 Yellow-Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_502-3 Red-Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_502-4 Black-Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_504-1 Blue STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_504-2 Red STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_504-3 D.Blue STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_504-4 Black STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-1 D.Blue STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-2 L.Blue STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-3 Pink STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-4 Navy STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-5 Red STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-6 Silver STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-7 Black STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_507-8 Plum STRIPES.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_512-1 L.Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_512-2 Pink.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_512-3 D.Blue.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_512-4 Pruple.jpg",
+              "/05catalog/3shirt/CVC Stripe/SEC/2_512-5 Grey.jpg"
+            ]
+          }
+        },
+        {
+          "name": "CVC Wrinkle Free",
+          "suppliers": [
+            "DFN ดีไฟน์เนส"
+          ],
+          "url_pictures": {
+            "DFN ดีไฟน์เนส": [
+              "/05catalog/3shirt/CVC Wrinkle Free/DFN/WV-DFN-TRnon-wrinkleP1.jpg",
+              "/05catalog/3shirt/CVC Wrinkle Free/DFN/WV-DFN-TRnon-wrinkleP2.jpg",
+              "/05catalog/3shirt/CVC Wrinkle Free/DFN/WV-DFN-TRnon-wrinkleP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Canvas",
+          "suppliers": [
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 1 Pearl White_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 10 Chic Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 13 Violet_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 14 DK Blue Pink_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 15 Pink Dark Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 16 M.Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 17 Plum_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 18 Light Grey_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 19 Green_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 2 Purple_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 20 Royal Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 21 Orange_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 22 Burgendy_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 3 Soft Pink_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 4 Light Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 5 Dark Blue_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 6 Red_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 7 Black_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 8 Chic Grey_1.jpg",
+              "/05catalog/3shirt/Cotton Canvas/SEC/2_Canvas 9 Chic Pink_1.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Harring Bone",
+          "suppliers": [
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 1 White-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 10 Chic Pink-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 11 Chic Blue-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 2 Pink-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 3 Purple-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 5 Light Blue-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 6 Dark Blue-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 7 Royal Blue-2_1.jpg",
+              "/05catalog/3shirt/Cotton Harring Bone/SEC/1_Herring Bone 9 Grey-2_1.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Popin",
+          "suppliers": [
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-10_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-11_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-12_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-13_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-1_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-2_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-3_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-4_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-6_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-7_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-8_1.jpg",
+              "/05catalog/3shirt/Cotton Popin/SEC/DPL-9_1.jpg"
             ]
           }
         },
         {
           "name": "Micro Peach",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/3shirt/micro peach/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/3shirt/micro peach/jsm/WVJSM-MicroPeachP2.jpg"
+              "/05catalog/3shirt/Micro Peach/JSM/WV-JSM-MicroPeachP1.jpg",
+              "/05catalog/3shirt/Micro Peach/JSM/WV-JSM-MicroPeachP2.jpg",
+              "/05catalog/3shirt/Micro Peach/JSM/WV-JSM-MicroPeachP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/3shirt/Micro Peach/vst/WV-VST-Micropeach2004P1.JPEG",
+              "/05catalog/3shirt/Micro Peach/vst/WV-VST-Micropeach2004P2.JPEG"
             ]
           }
         },
@@ -230,77 +680,151 @@
           ],
           "url_pictures": {
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/3shirt/orlon/vst/WVVST-OrlonP1.jpg",
-              "/05catalog/3shirt/orlon/vst/WVVST-OrlonP2.jpg"
+              "/05catalog/3shirt/Orlon/vst/WV-VST-OrlonP1.jpg",
+              "/05catalog/3shirt/Orlon/vst/WV-VST-OrlonP2.jpg"
             ]
           }
         },
         {
-          "name": "Oxford",
+          "name": "Silky EasyCare",
           "suppliers": [
-            "GLF จี.แอล.เอฟ",
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-1 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-11 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-12 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-13 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-14 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-15 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-2 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-3 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-4 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-5 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-7 Silky+Easy care finish-2.jpg",
+              "/05catalog/3shirt/Silky EasyCare/SEC/200-8 Silky+Easy care finish-2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Silky EasyCare Check",
+          "suppliers": [
+            "Silky EasyCare Check"
+          ],
+          "url_pictures": {
+            "Silky EasyCare Check": [
+              "/05catalog/3shirt/Silky EasyCare Check/202-1 Silky+Easy care finish-23_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-2 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-3 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-4 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-5 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-6 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-7 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/202-8 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-1 Silky+Easy care finish-20_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-2 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-3 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-4 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-5 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-6 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Check/204-7 Silky+Easy care finish-2_1.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Silky EasyCare Stripe",
+          "suppliers": [
+            "SEC"
+          ],
+          "url_pictures": {
+            "SEC": [
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-1 Silky+Easy care finish-4_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-2 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-3 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-4 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-5 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-6 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-7 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/201-8 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-1 Silky+Easy care finish-18_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-2 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-3 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-4 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-5 Silky+Easy care finish-2_1.jpg",
+              "/05catalog/3shirt/Silky EasyCare Stripe/SEC/217-6 Silky+Easy care finish-2_1.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TC ComTwill",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์",
+            "DFN ดีไฟน์เนส",
             "JSM เจียมสมาน"
           ],
           "url_pictures": {
-            "GLF จี.แอล.เอฟ": [
-              "/05catalog/3shirt/oxford/GLF/WV-GLF-OxfordP1.jpg",
-              "/05catalog/3shirt/oxford/GLF/WV-GLF-OxfordP2.jpg",
-              "/05catalog/3shirt/oxford/GLF/WV-GLF-OxfordP3.jpg",
-              "/05catalog/3shirt/oxford/GLF/WV-GLF-OxfordP4.jpg"
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/3shirt/TC ComTwill/VST/WV-VST-TCComTwill340P1.jpg",
+              "/05catalog/3shirt/TC ComTwill/VST/WV-VST-TCComTwill340P2.jpg",
+              "/05catalog/3shirt/TC ComTwill/VST/WV-VST-TCComTwill340P3.jpg"
+            ],
+            "DFN ดีไฟน์เนส": [
+              "/05catalog/3shirt/TC ComTwill/dfn/WV-DFN-TwillP1.jpg",
+              "/05catalog/3shirt/TC ComTwill/dfn/WV-DFN-TwillP2.jpg",
+              "/05catalog/3shirt/TC ComTwill/dfn/WV-DFN-TwillP3.jpg",
+              "/05catalog/3shirt/TC ComTwill/dfn/WV-DFN-TwillP4.jpg"
             ],
             "JSM เจียมสมาน": [
-              "/05catalog/3shirt/oxford/JSM/WV-JSM-OxfordChambrayP1.jpg",
-              "/05catalog/3shirt/oxford/JSM/WV-JSM-OxfordChambrayP2.jpg",
-              "/05catalog/3shirt/oxford/JSM/WV-JSM-OxfordChambrayP3.jpg"
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/3shirt/TC ComTwill/jsm/WV-JSM-CombTwill4534P6.jpg"
             ]
           }
         },
         {
-          "name": "Texture",
-          "suppliers": [
-            "Texture"
-          ],
-          "url_pictures": {
-            "Texture": [
-              "/05catalog/3shirt/texture/WVJSM-TextureBigstripeP1.jpg",
-              "/05catalog/3shirt/texture/WVJSM-TextureSmallstripeP1.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Toray",
+          "name": "TC Oxford",
           "suppliers": [
             "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/3shirt/toray/JSM/WV-JSM-Toray210P1.jpg",
-              "/05catalog/3shirt/toray/JSM/WV-JSM-Toray210P2.jpg",
-              "/05catalog/3shirt/toray/JSM/WV-JSM-Toray210P3.jpg"
+              "/05catalog/3shirt/TC Oxford/JSM/WV-JSM-TCOxfordP1.jpg",
+              "/05catalog/3shirt/TC Oxford/JSM/WV-JSM-TCOxfordP2.jpg"
             ]
           }
         },
         {
-          "name": "Toray Oxford",
+          "name": "TC Stripe Texture",
           "suppliers": [
             "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/3shirt/toray oxford/JSM/WV-JSM-TorayOxfordP1.jpg",
-              "/05catalog/3shirt/toray oxford/JSM/WV-JSM-TorayOxfordP2.jpg"
+              "/05catalog/3shirt/TC Stripe Texture/jsm/WVJSM-TextureBigstripeP1.jpg",
+              "/05catalog/3shirt/TC Stripe Texture/jsm/WVJSM-TextureSmallstripeP1.jpg"
             ]
           }
         },
         {
-          "name": "Twill",
+          "name": "TC Toray",
           "suppliers": [
-            "DFN ดีไฟน์เนส"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
-            "DFN ดีไฟน์เนส": [
-              "/05catalog/3shirt/twill/dfn/WVDFN-TwillP1.jpg",
-              "/05catalog/3shirt/twill/dfn/WVDFN-TwillP2.jpg"
+            "JSM เจียมสมาน": [
+              "/05catalog/3shirt/TC Toray/jsm/WV-JSM-Toray210P1.jpg",
+              "/05catalog/3shirt/TC Toray/jsm/WV-JSM-Toray210P2.jpg",
+              "/05catalog/3shirt/TC Toray/jsm/WV-JSM-Toray210P3..jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/3shirt/TC Toray/vst/WV-VST-TC210P1.jpg",
+              "/05catalog/3shirt/TC Toray/vst/WV-VST-TC210P2.jpg",
+              "/05catalog/3shirt/TC Toray/vst/WV-VST-TC210P3.jpg"
             ]
           }
         }
@@ -311,6 +835,91 @@
       "code": "14",
       "url_file_picture": "/05catalog/4workshop/",
       "fabrics": [
+        {
+          "name": "Anti Static",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/4workshop/Anti Static/VST/WV-VST-Anti-static349.jpg",
+              "/05catalog/4workshop/Anti Static/VST/WV-VST-PolyAnti-staticP1.jpg",
+              "/05catalog/4workshop/Anti Static/VST/WV-VST-PolyAnti-staticP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Comb Twill",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "KPM"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/4workshop/Comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+            ],
+            "KPM": [
+              "/05catalog/4workshop/Comb twill/KPM/WV-KPM-2000P1.jpg",
+              "/05catalog/4workshop/Comb twill/KPM/WV-KPM-2000P2.jpg",
+              "/05catalog/4workshop/Comb twill/KPM/WV-KPM-2000P3.jpg",
+              "/05catalog/4workshop/Comb twill/KPM/WV-KPM-2000P4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Twill Lafer",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/4workshop/Cotton Twill Lafer/VST/WV-VST-CottonTwillLafer7852P1.jpg",
+              "/05catalog/4workshop/Cotton Twill Lafer/VST/WV-VST-CottonTwillLafer7852P2.jpg",
+              "/05catalog/4workshop/Cotton Twill Lafer/VST/WV-VST-CottonTwillLafer7852P3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "DY",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/4workshop/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/4workshop/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/4workshop/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/4workshop/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/4workshop/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/4workshop/DY/VST/WV-VST-Levi3000P3.JPEG"
+            ]
+          }
+        },
+        {
+          "name": "Garbardine",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/4workshop/Garbardine/jsm/WVJSM-GabardineP1.jpg",
+              "/05catalog/4workshop/Garbardine/jsm/WVJSM-GabardineP2.jpg",
+              "/05catalog/4workshop/Garbardine/jsm/WVJSM-GabardineP3.jpg"
+            ]
+          }
+        },
         {
           "name": "KMP",
           "suppliers": [
@@ -326,61 +935,17 @@
           }
         },
         {
-          "name": "Comb Twill",
+          "name": "Poly Spendex",
           "suppliers": [
             "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
-              "/05catalog/4workshop/comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Garbardine",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/4workshop/garbardine/jsm/WVJSM-GabardineP1.jpg",
-              "/05catalog/4workshop/garbardine/jsm/WVJSM-GabardineP2.jpg",
-              "/05catalog/4workshop/garbardine/jsm/WVJSM-GabardineP3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Micro Peach",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/4workshop/micro peach/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/4workshop/micro peach/jsm/WVJSM-MicroPeachP2.jpg",
-              "/05catalog/4workshop/micro peach/jsm/WVJSM-MicroPeachP3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Polyester",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/4workshop/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/4workshop/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/4workshop/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
+              "/05catalog/4workshop/Poly spendex/jsm/WVJSM-PolySpendexP1.jpg",
+              "/05catalog/4workshop/Poly spendex/jsm/WVJSM-PolySpendexP2.jpg",
+              "/05catalog/4workshop/Poly spendex/jsm/WVJSM-PolySpendexP3.jpg",
+              "/05catalog/4workshop/Poly spendex/jsm/WVJSM-PolySpendexP4.jpg",
+              "/05catalog/4workshop/Poly spendex/jsm/WVJSM-PolySpendexP5.jpg"
             ]
           }
         },
@@ -391,329 +956,62 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/4workshop/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeP1.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeP2.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeP3.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeP4.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
+              "/05catalog/4workshop/Serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
             ]
           }
         },
         {
           "name": "Solon",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonP1.jpg",
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonP2.jpg",
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonP3.jpg",
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonPremiumP1.jpg",
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonPremiumP2.jpg",
-              "/05catalog/4workshop/solon/jsm/WVJSM-SolonPremiumP3.jpg",
-              "/05catalog/4workshop/solon/jsm/WVVST-SolonP1.jpg",
-              "/05catalog/4workshop/solon/jsm/WVVST-SolonP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Spendex",
-          "suppliers": [
-            "Spendex"
-          ],
-          "url_pictures": {
-            "Spendex": [
-              "/05catalog/4workshop/spendex/WVJSM-PolySpendexP1.jpg",
-              "/05catalog/4workshop/spendex/WVJSM-PolySpendexP2.jpg",
-              "/05catalog/4workshop/spendex/WVJSM-PolySpendexP3.jpg",
-              "/05catalog/4workshop/spendex/WVJSM-PolySpendexP4.jpg",
-              "/05catalog/4workshop/spendex/WVJSM-PolySpendexP5.jpg"
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/4workshop/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/4workshop/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/4workshop/Solon/vst/WVVST-SolonP2.jpg"
             ]
           }
         },
         {
           "name": "Super Comb Twill",
           "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/4workshop/super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
-              "/05catalog/4workshop/super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
-              "/05catalog/4workshop/super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
-              "/05catalog/4workshop/super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
-              "/05catalog/4workshop/super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Tc Comb Twill",
-          "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill2000P1.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill2000P2.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill2000P3.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill2000P4.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill340P1.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill340P2.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TCComTwill340P3.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TRComTwillP1.jpg",
-              "/05catalog/4workshop/tc comb twill/vst/WV-VST-TRComTwillP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Toray",
-          "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/4workshop/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/4workshop/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
+              "/05catalog/4workshop/Super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
+              "/05catalog/4workshop/Super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
+              "/05catalog/4workshop/Super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
+              "/05catalog/4workshop/Super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
+              "/05catalog/4workshop/Super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
             ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/4workshop/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/4workshop/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/4workshop/toray/vst/WVVST-TorayBiscopP3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Twill",
-          "suppliers": [
-            "DFN ดีไฟน์เนส"
-          ],
-          "url_pictures": {
-            "DFN ดีไฟน์เนส": [
-              "/05catalog/4workshop/twill/dfn/WVDFN-TwillP1.jpg",
-              "/05catalog/4workshop/twill/dfn/WVDFN-TwillP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Westpoint",
-          "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/4workshop/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/4workshop/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/4workshop/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/4workshop/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/4workshop/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
-            ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/4workshop/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "name": "เสื้อแจ็คเก็ต",
-      "code": "15",
-      "url_file_picture": "/05catalog/5jacket/",
-      "fabrics": [
-        {
-          "name": "Comb Twill",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
-              "/05catalog/5jacket/comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Kmp",
-          "suppliers": [
-            "KMP"
-          ],
-          "url_pictures": {
-            "KMP": [
-              "/05catalog/5jacket/kmp/kmp/WVKPM-2000P1.jpg",
-              "/05catalog/5jacket/kmp/kmp/WVKPM-2000P2.jpg",
-              "/05catalog/5jacket/kmp/kmp/WVKPM-2000P3.jpg",
-              "/05catalog/5jacket/kmp/kmp/WVKPM-2000P4.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Polyester",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/5jacket/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/5jacket/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/5jacket/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Serge Velentino",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/5jacket/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Solon",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonP1.jpg",
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonP2.jpg",
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonP3.jpg",
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonPremiumP1.jpg",
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonPremiumP2.jpg",
-              "/05catalog/5jacket/solon/jsm/WVJSM-SolonPremiumP3.jpg",
-              "/05catalog/5jacket/solon/jsm/WVVST-SolonP1.jpg",
-              "/05catalog/5jacket/solon/jsm/WVVST-SolonP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Spendex",
-          "suppliers": [
-            "Spendex"
-          ],
-          "url_pictures": {
-            "Spendex": [
-              "/05catalog/5jacket/spendex/WVJSM-PolySpendexP1.jpg",
-              "/05catalog/5jacket/spendex/WVJSM-PolySpendexP2.jpg",
-              "/05catalog/5jacket/spendex/WVJSM-PolySpendexP3.jpg",
-              "/05catalog/5jacket/spendex/WVJSM-PolySpendexP4.jpg",
-              "/05catalog/5jacket/spendex/WVJSM-PolySpendexP5.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Super Comb Twill",
-          "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/5jacket/super comb twill/VST/WV-VST-SuperTCComTwillP1.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WV-VST-SuperTCComTwillP2.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WV-VST-SuperTCComTwillP3.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
-              "/05catalog/5jacket/super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Tc Comb Twill",
-          "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill2000P1.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill2000P2.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill2000P3.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill2000P4.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill340P1.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill340P2.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TCComTwill340P3.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TRComTwillP1.jpg",
-              "/05catalog/5jacket/tc comb twill/vst/WV-VST-TRComTwillP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Toray",
-          "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/5jacket/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/5jacket/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
-            ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/5jacket/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/5jacket/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/5jacket/toray/vst/WVVST-TorayBiscopP3.jpg"
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-SuperComTwill072P1.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-SuperComTwill072P2.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-SuperComTwill072P3.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-SuperComTwill072P4.jpg",
+              "/05catalog/4workshop/Super comb twill/jsm/WV-JSM-SuperComTwill072P5.jpg"
             ]
           }
         },
@@ -725,20 +1023,39 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
-              "/05catalog/5jacket/toray biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/4workshop/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/5jacket/toray biscop/vst/WV-VST-TorayBiscopP1.jpg",
-              "/05catalog/5jacket/toray biscop/vst/WV-VST-TorayBiscopP2.jpg",
-              "/05catalog/5jacket/toray biscop/vst/WV-VST-TorayBiscopP3.jpg"
+              "/05catalog/4workshop/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/4workshop/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/4workshop/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Toray Popin",
+          "suppliers": [
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/4workshop/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/4workshop/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/4workshop/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/4workshop/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/4workshop/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/4workshop/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
             ]
           }
         },
@@ -750,73 +1067,87 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/5jacket/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/5jacket/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/5jacket/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/5jacket/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/5jacket/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+              "/05catalog/4workshop/Westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
+              "/05catalog/4workshop/Westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
+              "/05catalog/4workshop/Westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
+              "/05catalog/4workshop/Westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
+              "/05catalog/4workshop/Westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/5jacket/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSingleP1.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSingleP2.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSingleP3.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
+              "/05catalog/4workshop/Westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
             ]
           }
         }
       ]
     },
     {
-      "name": "กางเกง",
-      "code": "17",
-      "url_file_picture": "/05catalog/7trouser/",
+      "name": "เสื้อแจ็คเก็ต",
+      "code": "15",
+      "url_file_picture": "/05catalog/5jacket-1-woven/",
       "fabrics": [
         {
-          "name": "Hanako",
+          "name": "Anti Static",
           "suppliers": [
-            "Hanako"
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
-            "Hanako": [
-              "/05catalog/7trouser/Hanako/WVVST-HanakoP1.jpg"
-            ]
-          }
-        },
-        {
-          "name": "KMP",
-          "suppliers": [
-            "KMP"
-          ],
-          "url_pictures": {
-            "KMP": [
-              "/05catalog/7trouser/KMP/KMP/WVKPM-2000P1.jpg",
-              "/05catalog/7trouser/KMP/KMP/WVKPM-2000P2.jpg",
-              "/05catalog/7trouser/KMP/KMP/WVKPM-2000P3.jpg",
-              "/05catalog/7trouser/KMP/KMP/WVKPM-2000P4.jpg"
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/5jacket-1-woven/Anti Static/VST/WV-VST-Anti-static349.jpg",
+              "/05catalog/5jacket-1-woven/Anti Static/VST/WV-VST-PolyAnti-staticP1.jpg",
+              "/05catalog/5jacket-1-woven/Anti Static/VST/WV-VST-PolyAnti-staticP2.jpg"
             ]
           }
         },
         {
           "name": "Comb Twill",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "KPM"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
-              "/05catalog/7trouser/comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+            ],
+            "KPM": [
+              "/05catalog/5jacket-1-woven/Comb twill/KPM/WV-KPM-2000P1.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/KPM/WV-KPM-2000P2.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/KPM/WV-KPM-2000P3.jpg",
+              "/05catalog/5jacket-1-woven/Comb twill/KPM/WV-KPM-2000P4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "DY",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/5jacket-1-woven/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/5jacket-1-woven/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/5jacket-1-woven/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/5jacket-1-woven/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/5jacket-1-woven/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/5jacket-1-woven/DY/VST/WV-VST-Levi3000P3.JPEG"
             ]
           }
         },
@@ -827,35 +1158,55 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/garbardine/jsm/WVJSM-GabardineP1.jpg",
-              "/05catalog/7trouser/garbardine/jsm/WVJSM-GabardineP2.jpg",
-              "/05catalog/7trouser/garbardine/jsm/WVJSM-GabardineP3.jpg"
+              "/05catalog/5jacket-1-woven/Garbardine/jsm/WVJSM-GabardineP1.jpg",
+              "/05catalog/5jacket-1-woven/Garbardine/jsm/WVJSM-GabardineP2.jpg",
+              "/05catalog/5jacket-1-woven/Garbardine/jsm/WVJSM-GabardineP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Micro",
+          "suppliers": [
+            "SPN ซิงค์ พาณิชย์"
+          ],
+          "url_pictures": {
+            "SPN ซิงค์ พาณิชย์": [
+              "/05catalog/5jacket-1-woven/Micro/Spn/WV-SPN-Micro1P1.jpg",
+              "/05catalog/5jacket-1-woven/Micro/Spn/WV-SPN-Micro1P2.jpg",
+              "/05catalog/5jacket-1-woven/Micro/Spn/WV-SPN-Micro1P3.jpg"
             ]
           }
         },
         {
           "name": "Micro Peach",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/micro peach/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/7trouser/micro peach/jsm/WVJSM-MicroPeachP2.jpg",
-              "/05catalog/7trouser/micro peach/jsm/WVJSM-MicroPeachP3.jpg"
+              "/05catalog/5jacket-1-woven/Micro Peach/Jsm/WV-JSM-MicroPeachP1.jpg",
+              "/05catalog/5jacket-1-woven/Micro Peach/Jsm/WV-JSM-MicroPeachP2.jpg",
+              "/05catalog/5jacket-1-woven/Micro Peach/Jsm/WV-JSM-MicroPeachP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/5jacket-1-woven/Micro Peach/VST/WV-VST-Micropeach2004P1.JPEG",
+              "/05catalog/5jacket-1-woven/Micro Peach/VST/WV-VST-Micropeach2004P2.JPEG"
             ]
           }
         },
         {
-          "name": "Polyester",
+          "name": "Poly Spendex",
           "suppliers": [
             "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/7trouser/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/7trouser/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
+              "/05catalog/5jacket-1-woven/Poly spendex/jsm/WVJSM-PolySpendexP1.jpg",
+              "/05catalog/5jacket-1-woven/Poly spendex/jsm/WVJSM-PolySpendexP2.jpg",
+              "/05catalog/5jacket-1-woven/Poly spendex/jsm/WVJSM-PolySpendexP3.jpg",
+              "/05catalog/5jacket-1-woven/Poly spendex/jsm/WVJSM-PolySpendexP4.jpg",
+              "/05catalog/5jacket-1-woven/Poly spendex/jsm/WVJSM-PolySpendexP5.jpg"
             ]
           }
         },
@@ -866,14 +1217,14 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/7trouser/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeP1.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeP2.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeP3.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeP4.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
+              "/05catalog/5jacket-1-woven/Serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
             ]
           }
         },
@@ -885,65 +1236,87 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonP1.jpg",
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonP2.jpg",
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonP3.jpg",
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonPremiumP1.jpg",
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonPremiumP2.jpg",
-              "/05catalog/7trouser/solon/JSM/WV-JSM-SolonPremiumP3.jpg"
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/5jacket-1-woven/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/7trouser/solon/VST/WV-VST-SolonP1.jpg",
-              "/05catalog/7trouser/solon/VST/WV-VST-SolonP2.jpg"
+              "/05catalog/5jacket-1-woven/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/5jacket-1-woven/Solon/vst/WVVST-SolonP2.jpg"
             ]
           }
         },
         {
-          "name": "Spendex",
+          "name": "Super Comb Twill",
           "suppliers": [
-            "Spendex"
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
-            "Spendex": [
-              "/05catalog/7trouser/spendex/WVJSM-PolySpendexP1.jpg",
-              "/05catalog/7trouser/spendex/WVJSM-PolySpendexP2.jpg",
-              "/05catalog/7trouser/spendex/WVJSM-PolySpendexP3.jpg",
-              "/05catalog/7trouser/spendex/WVJSM-PolySpendexP4.jpg",
-              "/05catalog/7trouser/spendex/WVJSM-PolySpendexP5.jpg"
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/5jacket-1-woven/Super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-SuperComTwill072P1.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-SuperComTwill072P2.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-SuperComTwill072P3.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-SuperComTwill072P4.jpg",
+              "/05catalog/5jacket-1-woven/Super comb twill/jsm/WV-JSM-SuperComTwill072P5.jpg"
             ]
           }
         },
         {
-          "name": "Toray",
+          "name": "Toray Biscop",
           "suppliers": [
             "JSM เจียมสมาน",
             "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/7trouser/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/7trouser/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/7trouser/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/7trouser/toray/vst/WVVST-TorayBiscopP3.jpg"
+              "/05catalog/5jacket-1-woven/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/5jacket-1-woven/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Toray Popin",
+          "suppliers": [
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/5jacket-1-woven/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/5jacket-1-woven/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/5jacket-1-woven/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/5jacket-1-woven/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
             ]
           }
         },
@@ -955,21 +1328,325 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/7trouser/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/7trouser/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/7trouser/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/7trouser/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/7trouser/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+              "/05catalog/5jacket-1-woven/Westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/7trouser/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSingleP1.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSingleP2.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSingleP3.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
+              "/05catalog/5jacket-1-woven/Westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "เสื้อแจ็คเก็ตผ้ายืด",
+      "code": "16",
+      "url_file_picture": "/05catalog/6jacket-2-knit/",
+      "fabrics": [
+        {
+          "name": "Baby FrenchTerry",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/6jacket-2-knit/Baby FrenchTerry/tct/KN-TCT-BabyFrenchTerry.jpg"
+            ]
+          }
+        },
+        {
+          "name": "CVC FrenchTerry",
+          "suppliers": [
+            "CVC FrenchTerry"
+          ],
+          "url_pictures": {
+            "CVC FrenchTerry": [
+              "/05catalog/6jacket-2-knit/CVC FrenchTerry/KN-TSK-CVCFrenchTerry.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Heavy",
+          "suppliers": [
+            "TCT ทีคัลเจอร์"
+          ],
+          "url_pictures": {
+            "TCT ทีคัลเจอร์": [
+              "/05catalog/6jacket-2-knit/Cotton Heavy/Tct/KN-TCT-Cotton25Heavy.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Terry",
+          "suppliers": [
+            "BLT"
+          ],
+          "url_pictures": {
+            "BLT": [
+              "/05catalog/6jacket-2-knit/Cotton Terry/BLT/KN-BLT-CottonTerry.jpg",
+              "/05catalog/6jacket-2-knit/Cotton Terry/BLT/KN-BLT-FrenchTerry.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "กางเกง",
+      "code": "17",
+      "url_file_picture": "/05catalog/10trouser/",
+      "fabrics": [
+        {
+          "name": "Anti Static",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Anti Static/VST/WV-VST-Anti-static349.jpg",
+              "/05catalog/10trouser/Anti Static/VST/WV-VST-PolyAnti-staticP1.jpg",
+              "/05catalog/10trouser/Anti Static/VST/WV-VST-PolyAnti-staticP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Comb Twill",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "KPM"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/10trouser/Comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+            ],
+            "KPM": [
+              "/05catalog/10trouser/Comb twill/KPM/WV-KPM-2000P1.jpg",
+              "/05catalog/10trouser/Comb twill/KPM/WV-KPM-2000P2.jpg",
+              "/05catalog/10trouser/Comb twill/KPM/WV-KPM-2000P3.jpg",
+              "/05catalog/10trouser/Comb twill/KPM/WV-KPM-2000P4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Spandex Twill",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Cotton Spandex Twill/vst/WV-VST-CottonSpandexTwill6081.jpg"
+            ]
+          }
+        },
+        {
+          "name": "DY",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/10trouser/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/10trouser/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/10trouser/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/10trouser/DY/VST/WV-VST-Levi3000P3.JPEG"
+            ]
+          }
+        },
+        {
+          "name": "DoubleBeam Spandex",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/DoubleBeam Spandex/vst/WV-VST-double beam spandex669.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Garbardine",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Garbardine/jsm/WVJSM-GabardineP1.jpg",
+              "/05catalog/10trouser/Garbardine/jsm/WVJSM-GabardineP2.jpg",
+              "/05catalog/10trouser/Garbardine/jsm/WVJSM-GabardineP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Poly Spendex",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Poly spendex/jsm/WVJSM-PolySpendexP1.jpg",
+              "/05catalog/10trouser/Poly spendex/jsm/WVJSM-PolySpendexP2.jpg",
+              "/05catalog/10trouser/Poly spendex/jsm/WVJSM-PolySpendexP3.jpg",
+              "/05catalog/10trouser/Poly spendex/jsm/WVJSM-PolySpendexP4.jpg",
+              "/05catalog/10trouser/Poly spendex/jsm/WVJSM-PolySpendexP5.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Serge Velentino",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeP1.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeP2.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeP3.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeP4.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
+              "/05catalog/10trouser/Serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Solon",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/10trouser/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/10trouser/Solon/vst/WVVST-SolonP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Super Comb Twill",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
+              "/05catalog/10trouser/Super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
+              "/05catalog/10trouser/Super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
+              "/05catalog/10trouser/Super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
+              "/05catalog/10trouser/Super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-SuperComTwill072P1.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-SuperComTwill072P2.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-SuperComTwill072P3.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-SuperComTwill072P4.jpg",
+              "/05catalog/10trouser/Super comb twill/jsm/WV-JSM-SuperComTwill072P5.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Toray Biscop",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/10trouser/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/10trouser/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/10trouser/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Toray Popin",
+          "suppliers": [
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/10trouser/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/10trouser/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/10trouser/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/10trouser/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/10trouser/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Westpoint",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/10trouser/Westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
+              "/05catalog/10trouser/Westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
+              "/05catalog/10trouser/Westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
+              "/05catalog/10trouser/Westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
+              "/05catalog/10trouser/Westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSingleP1.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSingleP2.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSingleP3.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
+              "/05catalog/10trouser/Westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
             ]
           }
         }
@@ -983,34 +1660,74 @@
         {
           "name": "Comb Twill",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "KPM"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
-              "/05catalog/8chef/comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/8chef/Comb twill/JSM/WV-JSM-CombTwill4534P6.jpg"
+            ],
+            "KPM": [
+              "/05catalog/8chef/Comb twill/KPM/WV-KPM-2000P1.jpg",
+              "/05catalog/8chef/Comb twill/KPM/WV-KPM-2000P2.jpg",
+              "/05catalog/8chef/Comb twill/KPM/WV-KPM-2000P3.jpg",
+              "/05catalog/8chef/Comb twill/KPM/WV-KPM-2000P4.jpg"
             ]
           }
         },
         {
-          "name": "Kmp",
+          "name": "DY",
           "suppliers": [
-            "KMP"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
-            "KMP": [
-              "/05catalog/8chef/kmp/kmp/WVKPM-2000P1.jpg",
-              "/05catalog/8chef/kmp/kmp/WVKPM-2000P2.jpg",
-              "/05catalog/8chef/kmp/kmp/WVKPM-2000P3.jpg",
-              "/05catalog/8chef/kmp/kmp/WVKPM-2000P4.jpg"
+            "JSM เจียมสมาน": [
+              "/05catalog/8chef/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/8chef/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/8chef/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/8chef/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/8chef/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/8chef/DY/VST/WV-VST-Levi3000P3.JPEG"
+            ]
+          }
+        },
+        {
+          "name": "Garbardine",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/8chef/Garbardine/jsm/WVJSM-GabardineP1.jpg",
+              "/05catalog/8chef/Garbardine/jsm/WVJSM-GabardineP2.jpg",
+              "/05catalog/8chef/Garbardine/jsm/WVJSM-GabardineP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Poly Spendex",
+          "suppliers": [
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/8chef/Poly spendex/jsm/WVJSM-PolySpendexP1.jpg",
+              "/05catalog/8chef/Poly spendex/jsm/WVJSM-PolySpendexP2.jpg",
+              "/05catalog/8chef/Poly spendex/jsm/WVJSM-PolySpendexP3.jpg",
+              "/05catalog/8chef/Poly spendex/jsm/WVJSM-PolySpendexP4.jpg",
+              "/05catalog/8chef/Poly spendex/jsm/WVJSM-PolySpendexP5.jpg"
             ]
           }
         },
@@ -1021,81 +1738,62 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/8chef/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeP1.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeP2.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeP3.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeP4.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
+              "/05catalog/8chef/Serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
             ]
           }
         },
         {
-          "name": "Spendex",
-          "suppliers": [
-            "Spendex"
-          ],
-          "url_pictures": {
-            "Spendex": [
-              "/05catalog/8chef/spendex/WVJSM-PolySpendexP1.jpg",
-              "/05catalog/8chef/spendex/WVJSM-PolySpendexP2.jpg",
-              "/05catalog/8chef/spendex/WVJSM-PolySpendexP3.jpg",
-              "/05catalog/8chef/spendex/WVJSM-PolySpendexP4.jpg",
-              "/05catalog/8chef/spendex/WVJSM-PolySpendexP5.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Super Comb Twill",
-          "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/8chef/super comb twill/VST/WV-VST-SuperTCComTwillP1.jpg",
-              "/05catalog/8chef/super comb twill/VST/WV-VST-SuperTCComTwillP2.jpg",
-              "/05catalog/8chef/super comb twill/VST/WV-VST-SuperTCComTwillP3.jpg",
-              "/05catalog/8chef/super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
-              "/05catalog/8chef/super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
-              "/05catalog/8chef/super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
-              "/05catalog/8chef/super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
-              "/05catalog/8chef/super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Toray",
+          "name": "Solon",
           "suppliers": [
             "JSM เจียมสมาน",
             "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/8chef/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/8chef/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/8chef/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/8chef/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/8chef/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/8chef/toray/vst/WVVST-TorayBiscopP3.jpg"
+              "/05catalog/8chef/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/8chef/Solon/vst/WVVST-SolonP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Super Comb Twill",
+          "suppliers": [
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/8chef/Super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
+              "/05catalog/8chef/Super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
+              "/05catalog/8chef/Super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
+              "/05catalog/8chef/Super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
+              "/05catalog/8chef/Super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-SuperComTwill072P1.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-SuperComTwill072P2.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-SuperComTwill072P3.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-SuperComTwill072P4.jpg",
+              "/05catalog/8chef/Super comb twill/jsm/WV-JSM-SuperComTwill072P5.jpg"
             ]
           }
         },
@@ -1107,20 +1805,39 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
-              "/05catalog/8chef/toray biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/8chef/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/8chef/toray biscop/vst/WV-VST-TorayBiscopP1.jpg",
-              "/05catalog/8chef/toray biscop/vst/WV-VST-TorayBiscopP2.jpg",
-              "/05catalog/8chef/toray biscop/vst/WV-VST-TorayBiscopP3.jpg"
+              "/05catalog/8chef/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/8chef/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/8chef/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Toray Popin",
+          "suppliers": [
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/8chef/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/8chef/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/8chef/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/8chef/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/8chef/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/8chef/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
             ]
           }
         },
@@ -1132,21 +1849,21 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/8chef/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/8chef/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/8chef/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/8chef/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/8chef/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+              "/05catalog/8chef/Westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
+              "/05catalog/8chef/Westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
+              "/05catalog/8chef/Westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
+              "/05catalog/8chef/Westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
+              "/05catalog/8chef/Westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/8chef/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSingleP1.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSingleP2.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSingleP3.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
+              "/05catalog/8chef/Westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
             ]
           }
         }
@@ -1158,13 +1875,21 @@
       "url_file_picture": "/05catalog/9maid/",
       "fabrics": [
         {
-          "name": "Hanako",
+          "name": "DY",
           "suppliers": [
-            "Hanako"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
-            "Hanako": [
-              "/05catalog/9maid/Hanako/WVVST-HanakoP1.jpg"
+            "JSM เจียมสมาน": [
+              "/05catalog/9maid/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/9maid/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/9maid/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/9maid/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/9maid/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/9maid/DY/VST/WV-VST-Levi3000P3.JPEG"
             ]
           }
         },
@@ -1175,22 +1900,54 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/9maid/garbardine/jsm/WVJSM-GabardineP1.jpg",
-              "/05catalog/9maid/garbardine/jsm/WVJSM-GabardineP2.jpg",
-              "/05catalog/9maid/garbardine/jsm/WVJSM-GabardineP3.jpg"
+              "/05catalog/9maid/Garbardine/jsm/WVJSM-GabardineP1.jpg",
+              "/05catalog/9maid/Garbardine/jsm/WVJSM-GabardineP2.jpg",
+              "/05catalog/9maid/Garbardine/jsm/WVJSM-GabardineP3.jpg"
             ]
           }
         },
         {
-          "name": "Polyester",
+          "name": "Hanako",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/9maid/Hanako/VST/WVVST-HanakoP1.jpg",
+              "/05catalog/9maid/Hanako/VST/WVVST-HanakoP2.jpg",
+              "/05catalog/9maid/Hanako/VST/WVVST-HanakoThickP1.jpg",
+              "/05catalog/9maid/Hanako/VST/WVVST-HanakoThickP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Micro Peach",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/9maid/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/9maid/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/9maid/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
+              "/05catalog/9maid/Micro Peach/Jsm/WV-JSM-MicroPeachP1.jpg",
+              "/05catalog/9maid/Micro Peach/Jsm/WV-JSM-MicroPeachP2.jpg",
+              "/05catalog/9maid/Micro Peach/Jsm/WV-JSM-MicroPeachP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/9maid/Micro Peach/VST/WV-VST-Micropeach2004P1.JPEG",
+              "/05catalog/9maid/Micro Peach/VST/WV-VST-Micropeach2004P2.JPEG"
+            ]
+          }
+        },
+        {
+          "name": "Osaka",
+          "suppliers": [
+            "KCH กอบชัย"
+          ],
+          "url_pictures": {
+            "KCH กอบชัย": [
+              "/05catalog/9maid/Osaka/KCH/WV-KCH-Osaka-01.jpg",
+              "/05catalog/9maid/Osaka/KCH/WV-KCH-Osaka-02.jpg",
+              "/05catalog/9maid/Osaka/KCH/WV-KCH-Osaka-03.jpg"
             ]
           }
         },
@@ -1201,14 +1958,14 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/9maid/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeP1.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeP2.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeP3.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeP4.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
+              "/05catalog/9maid/Serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
             ]
           }
         },
@@ -1220,16 +1977,64 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonP1.jpg",
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonP2.jpg",
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonP3.jpg",
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonPremiumP1.jpg",
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonPremiumP2.jpg",
-              "/05catalog/9maid/solon/JSM/WV-JSM-SolonPremiumP3.jpg"
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/9maid/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/9maid/solon/VST/WV-VST-SolonP1.jpg",
-              "/05catalog/9maid/solon/VST/WV-VST-SolonP2.jpg"
+              "/05catalog/9maid/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/9maid/Solon/vst/WVVST-SolonP2.jpg"
+            ]
+          }
+        },
+        {
+          "name": "TC ComTwill",
+          "suppliers": [
+            "DFN ดีไฟน์เนส",
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
+          ],
+          "url_pictures": {
+            "DFN ดีไฟน์เนส": [
+              "/05catalog/9maid/TC ComTwill/DFN/WV-DFN-TwillP1.jpg",
+              "/05catalog/9maid/TC ComTwill/DFN/WV-DFN-TwillP2.jpg",
+              "/05catalog/9maid/TC ComTwill/DFN/WV-DFN-TwillP3.jpg",
+              "/05catalog/9maid/TC ComTwill/DFN/WV-DFN-TwillP4.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/9maid/TC ComTwill/VST/WV-VST-TCComTwill340P1.jpg",
+              "/05catalog/9maid/TC ComTwill/VST/WV-VST-TCComTwill340P2.jpg",
+              "/05catalog/9maid/TC ComTwill/VST/WV-VST-TCComTwill340P3.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P1.jpg",
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P2.jpg",
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P3.jpg",
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P4.jpg",
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P5.jpg",
+              "/05catalog/9maid/TC ComTwill/jsm/WV-JSM-CombTwill4534P6.jpg"
+            ]
+          }
+        },
+        {
+          "name": "Tc Toray",
+          "suppliers": [
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
+          ],
+          "url_pictures": {
+            "JSM เจียมสมาน": [
+              "/05catalog/9maid/Tc Toray/JSM/WV-JSM-Toray210P1.jpg",
+              "/05catalog/9maid/Tc Toray/JSM/WV-JSM-Toray210P2.jpg",
+              "/05catalog/9maid/Tc Toray/JSM/WV-JSM-Toray210P3..jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/9maid/Tc Toray/VST/WV-VST-TC210P1.jpg",
+              "/05catalog/9maid/Tc Toray/VST/WV-VST-TC210P2.jpg",
+              "/05catalog/9maid/Tc Toray/VST/WV-VST-TC210P3.jpg"
             ]
           }
         }
@@ -1238,31 +2043,42 @@
     {
       "name": "เสื้อรปภ",
       "code": "20",
-      "url_file_picture": "/05catalog/10security/",
+      "url_file_picture": "/05catalog/7security/",
       "fabrics": [
         {
-          "name": "Micro Peach",
+          "name": "DY",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/10security/micro peach/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/10security/micro peach/jsm/WVJSM-MicroPeachP2.jpg",
-              "/05catalog/10security/micro peach/jsm/WVJSM-MicroPeachP3.jpg"
+              "/05catalog/7security/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/7security/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/7security/DY/JSM/WV-JSM-DY4711P3.JPEG"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/7security/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/7security/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/7security/DY/VST/WV-VST-Levi3000P3.JPEG"
             ]
           }
         },
         {
-          "name": "Polyester",
+          "name": "Micro Peach",
           "suppliers": [
-            "JSM เจียมสมาน"
+            "JSM เจียมสมาน",
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/10security/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/10security/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/10security/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
+              "/05catalog/7security/Micro Peach/Jsm/WV-JSM-MicroPeachP1.jpg",
+              "/05catalog/7security/Micro Peach/Jsm/WV-JSM-MicroPeachP2.jpg",
+              "/05catalog/7security/Micro Peach/Jsm/WV-JSM-MicroPeachP3.jpg"
+            ],
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/7security/Micro Peach/VST/WV-VST-Micropeach2004P1.JPEG",
+              "/05catalog/7security/Micro Peach/VST/WV-VST-Micropeach2004P2.JPEG"
             ]
           }
         },
@@ -1274,52 +2090,16 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/10security/solon/jsm/WVJSM-SolonP1.jpg",
-              "/05catalog/10security/solon/jsm/WVJSM-SolonP2.jpg",
-              "/05catalog/10security/solon/jsm/WVJSM-SolonP3.jpg",
-              "/05catalog/10security/solon/jsm/WVJSM-SolonPremiumP1.jpg",
-              "/05catalog/10security/solon/jsm/WVJSM-SolonPremiumP2.jpg",
-              "/05catalog/10security/solon/jsm/WVJSM-SolonPremiumP3.jpg",
-              "/05catalog/10security/solon/jsm/WVVST-SolonP1.jpg",
-              "/05catalog/10security/solon/jsm/WVVST-SolonP2.jpg"
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/7security/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/10security/solon/VST/WV-VST-SolonP1.jpg",
-              "/05catalog/10security/solon/VST/WV-VST-SolonP2.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Toray",
-          "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/10security/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/10security/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
-            ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/10security/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/10security/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/10security/toray/vst/WVVST-TorayBiscopP3.jpg"
+              "/05catalog/7security/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/7security/Solon/vst/WVVST-SolonP2.jpg"
             ]
           }
         },
@@ -1331,32 +2111,39 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
-              "/05catalog/10security/toray biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/7security/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/10security/toray biscop/vst/WV-VST-TorayBiscopP1.jpg",
-              "/05catalog/10security/toray biscop/vst/WV-VST-TorayBiscopP2.jpg",
-              "/05catalog/10security/toray biscop/vst/WV-VST-TorayBiscopP3.jpg"
+              "/05catalog/7security/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/7security/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/7security/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
             ]
           }
         },
         {
-          "name": "Twill",
+          "name": "Toray Popin",
           "suppliers": [
-            "DFN ดีไฟน์เนส"
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
-            "DFN ดีไฟน์เนส": [
-              "/05catalog/10security/twill/dfn/WVDFN-TwillP1.jpg",
-              "/05catalog/10security/twill/dfn/WVDFN-TwillP2.jpg"
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/7security/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/7security/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/7security/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/7security/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/7security/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/7security/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
             ]
           }
         },
@@ -1368,21 +2155,21 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/10security/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/10security/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/10security/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/10security/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/10security/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+              "/05catalog/7security/Westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
+              "/05catalog/7security/Westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
+              "/05catalog/7security/Westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
+              "/05catalog/7security/Westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
+              "/05catalog/7security/Westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/10security/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSingleP1.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSingleP2.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSingleP3.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
+              "/05catalog/7security/Westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
             ]
           }
         }
@@ -1394,66 +2181,21 @@
       "url_file_picture": "/05catalog/11arpon/",
       "fabrics": [
         {
-          "name": "KMP",
-          "suppliers": [
-            "KMP"
-          ],
-          "url_pictures": {
-            "KMP": [
-              "/05catalog/11arpon/KMP/KMP/WVKPM-2000P1.jpg",
-              "/05catalog/11arpon/KMP/KMP/WVKPM-2000P2.jpg",
-              "/05catalog/11arpon/KMP/KMP/WVKPM-2000P3.jpg",
-              "/05catalog/11arpon/KMP/KMP/WVKPM-2000P4.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Micro",
+          "name": "DY",
           "suppliers": [
             "JSM เจียมสมาน",
-            "SPN ซิงค์ พาณิชย์"
+            "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/11arpon/micro/jsm/WVJSM-MicroPeachP1.jpg",
-              "/05catalog/11arpon/micro/jsm/WVJSM-MicroPeachP2.jpg",
-              "/05catalog/11arpon/micro/jsm/WVJSM-MicroPeachP3.jpg"
+              "/05catalog/11arpon/DY/JSM/WV-JSM-DY4711P1.JPEG",
+              "/05catalog/11arpon/DY/JSM/WV-JSM-DY4711P2.JPEG",
+              "/05catalog/11arpon/DY/JSM/WV-JSM-DY4711P3.JPEG"
             ],
-            "SPN ซิงค์ พาณิชย์": [
-              "/05catalog/11arpon/micro/spn/WVSPN-Micro1P1.jpg",
-              "/05catalog/11arpon/micro/spn/WVSPN-Micro1P2.jpg",
-              "/05catalog/11arpon/micro/spn/WVSPN-Micro1P3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Polyester",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/11arpon/polyester/jsm/WVJSM-Polyester100DY4711P1.jpg",
-              "/05catalog/11arpon/polyester/jsm/WVJSM-Polyester100DY4711P2.jpg",
-              "/05catalog/11arpon/polyester/jsm/WVJSM-Polyester100DY4711P3.jpg"
-            ]
-          }
-        },
-        {
-          "name": "Serge Velentino",
-          "suppliers": [
-            "JSM เจียมสมาน"
-          ],
-          "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeP1.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeP2.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeP3.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeP4.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeValentinoP1.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeValentinoP2.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeValentinoP3.jpg",
-              "/05catalog/11arpon/serge velentino/jsm/WVJSM-SergeValentinoP4.jpg"
+            "VST วีศิลป์เท็กไทล์": [
+              "/05catalog/11arpon/DY/VST/WV-VST-Levi3000P1.jpg",
+              "/05catalog/11arpon/DY/VST/WV-VST-Levi3000P2.JPEG",
+              "/05catalog/11arpon/DY/VST/WV-VST-Levi3000P3.JPEG"
             ]
           }
         },
@@ -1465,96 +2207,87 @@
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonP1.jpg",
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonP2.jpg",
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonP3.jpg",
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonPremiumP1.jpg",
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonPremiumP2.jpg",
-              "/05catalog/11arpon/solon/jsm/WVJSM-SolonPremiumP3.jpg",
-              "/05catalog/11arpon/solon/jsm/WVVST-SolonP1.jpg",
-              "/05catalog/11arpon/solon/jsm/WVVST-SolonP2.jpg"
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonP1.jpg",
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonP2.jpg",
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonP3.jpg",
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonPremiumP1.jpg",
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonPremiumP2.jpg",
+              "/05catalog/11arpon/Solon/jsm/WVJSM-SolonPremiumP3.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/11arpon/solon/VST/WV-VST-SolonP1.jpg",
-              "/05catalog/11arpon/solon/VST/WV-VST-SolonP2.jpg"
+              "/05catalog/11arpon/Solon/vst/WVVST-SolonP1.jpg",
+              "/05catalog/11arpon/Solon/vst/WVVST-SolonP2.jpg"
             ]
           }
         },
         {
           "name": "Super Comb Twill",
           "suppliers": [
-            "VST วีศิลป์เท็กไทล์"
+            "VST วีศิลป์เท็กไทล์",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/11arpon/super comb twill/VST/WV-VST-SuperTCComTwillP1.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WV-VST-SuperTCComTwillP2.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WV-VST-SuperTCComTwillP3.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
-              "/05catalog/11arpon/super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
+              "/05catalog/11arpon/Super comb twill/VST/WVJSM-SuperComTwillP1.jpg",
+              "/05catalog/11arpon/Super comb twill/VST/WVJSM-SuperComTwillP2.jpg",
+              "/05catalog/11arpon/Super comb twill/VST/WVJSM-SuperComTwillP3.jpg",
+              "/05catalog/11arpon/Super comb twill/VST/WVJSM-SuperComTwillP4.jpg",
+              "/05catalog/11arpon/Super comb twill/VST/WVJSM-SuperComTwillP5.jpg"
+            ],
+            "JSM เจียมสมาน": [
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-ComTwill777P1.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-ComTwill777P2.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-ComTwill777P3.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-ComTwill777P4.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-SuperComTwill072P1.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-SuperComTwill072P2.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-SuperComTwill072P3.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-SuperComTwill072P4.jpg",
+              "/05catalog/11arpon/Super comb twill/jsm/WV-JSM-SuperComTwill072P5.jpg"
             ]
           }
         },
         {
-          "name": "Toray",
+          "name": "Toray Biscop",
           "suppliers": [
             "JSM เจียมสมาน",
             "VST วีศิลป์เท็กไทล์"
           ],
           "url_pictures": {
             "JSM เจียมสมาน": [
-              "/05catalog/11arpon/toray/jsm/WVJSM-Toray210P1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-Toray210P2.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-Toray210P3.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopDoubleP1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopDoubleP2.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopDoubleP3.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopDoubleP4.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopDoubleP5.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopP1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopP2.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopP3.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayBiscopP4.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayOxfordP1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayOxfordP2.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayPoplinP1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayPoplinP2.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayPoppin8846P1.jpg",
-              "/05catalog/11arpon/toray/jsm/WVJSM-TorayPoppin8846P2.jpg"
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP1.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP2.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP3.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP4.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopDoubleP5.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopP1.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopP2.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopP3.jpg",
+              "/05catalog/11arpon/Toray Biscop/jsm/WV-JSM-TorayBiscopP4.jpg"
             ],
             "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/11arpon/toray/vst/WVVST-TorayBiscopP1.jpg",
-              "/05catalog/11arpon/toray/vst/WVVST-TorayBiscopP2.jpg",
-              "/05catalog/11arpon/toray/vst/WVVST-TorayBiscopP3.jpg"
+              "/05catalog/11arpon/Toray Biscop/vst/WVVST-TorayBiscopP1.jpg",
+              "/05catalog/11arpon/Toray Biscop/vst/WVVST-TorayBiscopP2.jpg",
+              "/05catalog/11arpon/Toray Biscop/vst/WVVST-TorayBiscopP3.jpg"
             ]
           }
         },
         {
-          "name": "Westpoint",
+          "name": "Toray Popin",
           "suppliers": [
-            "JSM เจียมสมาน",
-            "VST วีศิลป์เท็กไทล์"
+            "MTT มนตรา เทรดดิ้ง",
+            "JSM เจียมสมาน"
           ],
           "url_pictures": {
-            "JSM เจียมสมาน": [
-              "/05catalog/11arpon/westpoint/jsm/WV-JSM-WestpointdoubleP1.jpg",
-              "/05catalog/11arpon/westpoint/jsm/WV-JSM-WestpointdoubleP2.jpg",
-              "/05catalog/11arpon/westpoint/jsm/WV-JSM-WestpointsingleP1.jpg",
-              "/05catalog/11arpon/westpoint/jsm/WV-JSM-WestpointsingleP2.jpg",
-              "/05catalog/11arpon/westpoint/jsm/WV-JSM-WestpointsingleP3.jpg"
+            "MTT มนตรา เทรดดิ้ง": [
+              "/05catalog/11arpon/Toray Popin/MTT/WV-MTT-TorayPoppin8846P1.jpg",
+              "/05catalog/11arpon/Toray Popin/MTT/WV-MTT-TorayPoppin8846P2.jpg"
             ],
-            "VST วีศิลป์เท็กไทล์": [
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointDoubleLaferP1.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointDoubleLaferP2.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSingleP1.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSingleP2.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSingleP3.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSpandexP1.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSpandexP2.jpg",
-              "/05catalog/11arpon/westpoint/vst/WV-VST-WestpointSpandexP3.jpg"
+            "JSM เจียมสมาน": [
+              "/05catalog/11arpon/Toray Popin/jsm/WVJSM-TorayPoplinP1.jpg",
+              "/05catalog/11arpon/Toray Popin/jsm/WVJSM-TorayPoplinP2.jpg",
+              "/05catalog/11arpon/Toray Popin/jsm/WVJSM-TorayPoppin8846P1.jpg",
+              "/05catalog/11arpon/Toray Popin/jsm/WVJSM-TorayPoppin8846P2.jpg"
             ]
           }
         }
